@@ -1,6 +1,7 @@
 import React from "react";
 import "./Whoweare.css"
 import WhoweareBack from "../StructuraInfo/Whoweareback.png"
+import CountUp from 'react-countup';
 const WhoweAre = () => {
     return (
 
@@ -15,7 +16,13 @@ const WhoweAre = () => {
                             <div className="SingleBox" data-aos="fade-up"
                                 data-aos-duration="1000">
                                 <div className="CounterBox">
-                                    20,000+
+                                    {/* 20,000+ */}
+                                    <CountUp
+                                        end={20000}
+                                        duration={10}
+                                        suffix="+"
+                                    />
+
                                     Retail Roll Outs
                                     till date
                                     <div className="icon-box">
@@ -26,7 +33,11 @@ const WhoweAre = () => {
                             <div className="SingleBox" data-aos="fade-up"
                                 data-aos-duration="1000">
                                 <div className="CounterBox">
-                                    100%
+                                    <CountUp
+                                        end={100}
+                                        duration={10}
+                                        suffix="%"
+                                    />
                                     Near-100% Client
                                     Retention rate
                                     <div className="icon-box">
@@ -37,7 +48,11 @@ const WhoweAre = () => {
                             <div className="SingleBox" data-aos="fade-up"
                                 data-aos-duration="2000" >
                                 <div className="CounterBox">
-                                    32+
+                                    <CountUp
+                                        end={32}
+                                        duration={10}
+                                        suffix="+"
+                                    />
                                     Countries where our
                                     projects have been located
                                     <div className="icon-box">
