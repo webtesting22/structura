@@ -1,0 +1,116 @@
+.headingTabsSection{
+    display: flex;
+    justify-content: space-between;
+}
+.headingTabsSection h1{
+    font-size: 58px;
+    font-weight: 500;
+}
+.categoryProjectsBtn {
+    display: flex;
+    align-items: center;
+}
+.tabsContentcards{
+    margin-top: 50px;
+}
+.activeBtn{
+    height: 50px;
+    border: none;
+    width: 200px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.nonActiveBtn{
+    height: 50px;
+    border: none;
+    width: 200px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.activeBtn:hover,
+.nonActiveBtn:hover{
+    height: 50px;
+    border: none;
+    width: 200px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin: 0px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.projectsCardDesigns{
+    /* width: 30%; */
+    border-bottom: 2px solid gray;
+    position: relative;
+    margin: 10px;
+}
+
+.projectsCardDesigns .cardImage{
+    height: 50vh;
+    overflow: hidden;
+}
+.projectsCardDesigns .cardImage img{
+    width: 100%;
+}
+.projectsCardDesigns .cardContent{
+    padding: 20px 0px;
+    position: relative;
+}
+.projectsCardDesigns .cardContent span{
+    color: gray;
+    margin-bottom: 10px;
+}
+.projectsCardDesigns .cardContent h2{
+    margin-top: 10px;
+    font-weight: 400;
+    color: black;
+}
+.projectsCardDesigns .arrowIcon{
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+    rotate: -0deg;
+    transition: .5s;
+    font-size: 20px;
+}
+.projectsCardDesigns:hover .arrowIcon{
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+    rotate: -45deg;
+    transition: .5s;
+    font-size: 20px;
+}
+.projectsCardDesigns hr{
+    height: 2px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    width: 0%;
+    bottom: -9px;
+    transition: 0.7s;
+    transition: 0.7s;
+    border: none;
+}
+.projectsCardDesigns:hover hr{
+    height: 2px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    bottom: -9px;
+    transition: 0.7s;
+    border: none;
+}
+
+@media (max-width:900px){
+    .headingTabsSection{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}

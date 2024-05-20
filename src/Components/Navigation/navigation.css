@@ -1,0 +1,68 @@
+
+.structuranavigationContainer{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid rgba(201, 201, 201, 0.521);
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    background: transparent;
+    backdrop-filter: blur(0px);
+    transition: 2s;
+}
+.structuranavigationContainer .logo{
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    transition: 2s;
+}
+.structuranavigationContainer.scrolled {
+    height: 50px;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    transition: 1s;
+}
+.structuranavigationContainer.scrolled .logo{
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    transition: 2s;
+
+}
+.structuranavigationContainer .inside-header-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 70px;
+    transition: .5s;
+    /* height: 100%; */
+}
+.HeaderEdit{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.HeaderEdit button{
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    border: none;
+    padding: 10px 30px;
+
+}
+.HeaderEdit button:hover{
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    border: none;
+}
+@media (max-width:600px){
+    .structuranavigationContainer .inside-header-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 20px;
+        transition: .5s;
+        /* height: 100%; */
+    }
+}

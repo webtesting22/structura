@@ -1,0 +1,112 @@
+#WhoweAre {
+    background-color: whitesmoke;
+}
+
+.WhoweAreContainer {
+    width: 100%;
+    display: flex;
+}
+
+.WhoweareImage-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.WhoweareContent-container {
+    width: 100%;
+    /* height: 100%;     */
+}
+
+.WhoweareContentText {
+    padding: 2rem;
+}
+
+.Smalltagline h4 div {
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    margin-right: 10px;
+
+}
+
+.Smalltagline h4 {
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    /* margin-left: 12px; */
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.WhoweareContentText h1 {
+    margin-bottom: 26px;
+    font-size: 58px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.WhoweareContentText p {
+    color: #535c62;
+    line-height: 30px;
+}
+
+.boxesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.SingleBox {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+    /* position: relative; */
+    /* height: 100%; */
+}
+
+.CounterBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+}
+
+.icon-box {
+    height: 50px;
+    width: 50px;
+    background-color: whitesmoke;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+@media (max-width:769px){
+    .WhoweAreContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .WhoweareContent-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+@media (max-width:550px){
+    .boxesContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .SingleBox {
+        width: 100%;
+    }
+    .WhoweareContentText {
+        padding: 0.5rem;
+    }
+}
