@@ -1,4 +1,4 @@
-import React ,{useState }from "react";
+import React, { useState } from "react";
 import "./HomePageProject.css"
 import { Row, Col } from "antd";
 const HomePageProject = () => {
@@ -52,7 +52,7 @@ const HomePageProject = () => {
                             <h1 className="sectionHeading">We Build the Projects</h1>
                         </div>
                         <div className="categoryProjectsBtn">
-                            <button className={activeTab === 'Residential' ? 'activeBtn' : 'nonActiveBtn'}  onClick={() => setActiveTab('Residential')}>Residential</button>
+                            <button className={activeTab === 'Residential' ? 'activeBtn' : 'nonActiveBtn'} onClick={() => setActiveTab('Residential')}>Residential</button>
                             <button className={activeTab === 'Commercial' ? 'activeBtn' : 'nonActiveBtn'} onClick={() => setActiveTab('Commercial')}>Commercial</button>
                         </div>
                     </div>

@@ -15,35 +15,44 @@ const WhoweAre = () => {
                             <div className="SingleBox" data-aos="fade-up"
                                 data-aos-duration="1000">
                                 <div className="CounterBox">
+                                    20,000+
+                                    Retail Roll Outs
+                                    till date
                                     <div className="icon-box">
-
+                                        <i class='bx bx-buildings' ></i>
                                     </div>
                                 </div>
                             </div>
                             <div className="SingleBox" data-aos="fade-up"
                                 data-aos-duration="1000">
                                 <div className="CounterBox">
+                                    100%
+                                    Near-100% Client
+                                    Retention rate
                                     <div className="icon-box">
-
+                                        <i class='bx bx-buildings' ></i>
                                     </div>
                                 </div>
                             </div>
                             <div className="SingleBox" data-aos="fade-up"
                                 data-aos-duration="2000" >
                                 <div className="CounterBox">
+                                    32+
+                                    Countries where our
+                                    projects have been located
                                     <div className="icon-box">
-
+                                        <i class='bx bx-buildings' ></i>
                                     </div>
                                 </div>
                             </div>
-                            <div className="SingleBox" data-aos="fade-up"
+                            {/* <div className="SingleBox" data-aos="fade-up"
                                 data-aos-duration="2000">
                                 <div className="CounterBox">
                                     <div className="icon-box">
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="WhoweareContent-container">
