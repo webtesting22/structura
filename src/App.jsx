@@ -5,7 +5,10 @@ import "./App.css"
 import "./index.css"
 import Navigation from './Components/Navigation/Navigation';
 import StructuraHome from './Components/HomeDisplay/StructuraHome';
-// import Footer from './Components/Footer/Footer';
+import Footer from './Components/Footer/Footer';
+import AboutUs from './Components/AboutUs/AboutUs';
+import StructuraCommonHero from './Components/AllPageCommonHero/StructuraCommonHero';
+import BottomToTopBtn from './Components/BottomTotopBtn/BottomTotopBtn';
 function App() {
 
   return (
@@ -13,8 +16,11 @@ function App() {
       <Navigation />
       <Routes>
         <Route exact path="/" element={<StructuraHome />} />
+        <Route exact path="/AboutUs" element={<AboutUs />} />
+        <Route exact path="/StructuraCommonHero" element={<StructuraCommonHero />} />
       </Routes>
-    {/* <Footer/> */}
+      <BottomToTopBtn/>
+    <Footer/>
 
     </Router>
   );

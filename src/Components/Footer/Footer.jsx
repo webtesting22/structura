@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css"
 import { Row, Col } from "antd";
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <>
@@ -13,7 +14,7 @@ const Footer = () => {
                                     <div>
                                         <h1>Structura</h1>
                                         <br />
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque reiciendis esse sed commodi <br /> architecto ratione temporibus impedit maiores laborum dolorem.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque reiciendis esse sed commodi architecto ratione temporibus impedit maiores laborum dolorem.</p>
                                     </div>
                                 </div>
                             </Col>
@@ -45,7 +46,7 @@ const Footer = () => {
                     </div>
                     <br /><br />
                     <div className="copyrightText">
-                        <p>@2024 Outlead solution. All rights reserved.</p>
+                        <p>@2024 <Link to="https://www.outleadsolutions.com/" target="_blank">Outlead solution.</Link> All rights reserved.</p>
                     </div>
 
                 </div>

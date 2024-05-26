@@ -1,0 +1,46 @@
+.bottom-to-top-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 555555555;
+}
+
+.bottom-to-top-container button {
+
+    border: none;
+    height: 50px;
+    width: 50px;
+    background: black;
+    border-radius: 50%;
+    z-index: 5;
+    transition: .5s;
+    animation: moveUpDown 1s infinite alternate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bottom-to-top-container.visible {
+    transition: .5s;
+    opacity: 1;
+
+}
+
+.bottom-to-top-container button img {
+    width: 46px;
+    rotate: 180deg;
+    animation: moveUpDown 1s infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}

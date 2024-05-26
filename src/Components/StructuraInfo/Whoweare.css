@@ -77,19 +77,20 @@
     background-color: rgb(255, 255, 255);
     margin: 5px;
     display: flex;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
     border-bottom: 2px solid transparent;
     transition: .5s;
+    padding-left: 23px;
 }
 .CounterBox:hover{
     border-bottom: 2px solid black;
     transition: .5s;
 }
 .CounterBox span{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .icon-box {
     height: 40px;

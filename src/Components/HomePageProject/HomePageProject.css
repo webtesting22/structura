@@ -93,7 +93,7 @@
     position: absolute;
     width: 0%;
     bottom: -9px;
-    transition: 0.7s;
+    /* transition: 0.7s; */
     transition: 0.7s;
     border: none;
 }

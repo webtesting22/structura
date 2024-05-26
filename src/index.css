@@ -6,6 +6,7 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 p {
@@ -22,14 +23,41 @@ h6 {
     margin: 0px;
     font-family: "Roboto", sans-serif;
 }
+.sectionPadding{
+    padding: 1rem 0rem;
+}
 section{
     padding: 2rem 3rem;
 }
 .sectionHeading{
-    margin-bottom: 26px;
+    margin-bottom: 20px;
     font-size: 58px;
     font-weight: 500;
     margin-top: 10px;
+}
+.bigHeading{
+    font-size: 55px;
+    font-weight: 400;
+}
+.commomBtn{
+    height: 40px;
+    border: none;
+    width: 150px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin: 10px 0px;
+    cursor: pointer;
+    transition: .5s;
+}
+.commomBtn:hover{
+    height: 40px;
+    border: 1px solid black;
+    width: 150px;
+    background-color: transparent;
+    color: black;
+    margin: 10px 0px;
+    cursor: pointer;
+    transition: .5s;
 }
 .structuranavigationContainer .PrimaryBlackBtn{
     background-color: rgb(255, 255, 255);
