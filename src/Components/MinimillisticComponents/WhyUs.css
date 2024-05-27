@@ -1,0 +1,98 @@
+.whyUsContainer {
+    display: flex;
+    width: 100%;
+}
+
+.combineContainers {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+  } */
+/* .left-column {
+    width: 40%;
+} */
+
+.leftSideContainer{
+    width: 40%;
+}
+.right-column {
+    width: 60%;
+}
+
+.leftSideContainer,
+.right-column {
+    /* width: 50%; */
+    padding: 0rem 4rem;
+}
+.left-column{
+    margin-top: 20rem;
+}
+.left-column.sticky {
+    position: sticky;
+    top: 50%;
+    align-self: flex-start;
+    transition: top 0.5s ease, position 0.5s ease;
+}
+
+/* /* .left-column.static {
+    position: static;
+    transition: top 0.5s ease, position 0.5s ease;
+  } */
+*/ .right-column {
+    padding-bottom: 100px;
+    /* Extra space to ensure the scrolling behavior */
+}
+
+/* Optional: Styling for demonstration */
+
+
+.right-column {
+    background-color: whitesmoke;
+    display: flex;
+    /* height: 200vh; */
+}
+
+.left-column .contentContainer {
+    position: absolute;
+    right: -10%;
+    bottom: 0px;
+    /* top: 90%;
+    margin-top: 0rem; */
+}
+
+
+.rightSideContainerColum{
+    padding: 10rem 0rem;
+}
+.cardContainerWhyChooseUS{
+    margin: 2rem 1rem;
+    /* height: 40vh; */
+    /* background-color: ; */
+}
+.cardContainerWhyChooseUS h1{
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+.cardContainerWhyChooseUS p{
+    text-align: center;
+    /* padding: 0rem 2rem; */
+}
+
+.iconCardContainer i{
+    font-size: 50px;
+}
+
+@media (max-width:769px){
+    .combineContainers {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+}

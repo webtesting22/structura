@@ -25,7 +25,8 @@
     background-color: white;
     margin: 5px;
     padding: 30px 20px;
-    /* height: 230px; */
+    height: 230px;
+    /* height: 45vh; */
     transition: .5s;
     border-bottom: 2px solid transparent;
     transition: .7s;
@@ -58,7 +59,9 @@
     width: 33%;
     position: relative;
 }
-
+#WhyUssection{
+    padding: 0px;
+}
 @media(min-width:700px) and (max-width:980px) {
     .servicesCards {
         background-color: white;

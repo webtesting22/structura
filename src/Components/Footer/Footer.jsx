@@ -9,38 +9,28 @@ const Footer = () => {
                 <div className="footerSection">
                     <div>
                         <Row style={{ margin: "auto" }}>
-                            <Col lg={12} >
-                                <div className="footer-left-side-container">
-                                    <div>
-                                        <h1>Structura</h1>
-                                        <br />
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque reiciendis esse sed commodi architecto ratione temporibus impedit maiores laborum dolorem.</p>
-                                    </div>
+                            <Col lg={8} >
+                                <div>
+                                    <h3>New York Office</h3>
+                                    <p>SKETS studio, 373 BroadWay, Suite 611,
+                                        New York City, New York 10013
+                                        Mobile: 917.414.6441
+                                    </p>
                                 </div>
                             </Col>
-                            <Col lg={12} >
-                                <div className="linksContainer">
-                                    <div>
-                                        <h3>Quick Links</h3>
-                                        <ul>
-                                            <li>Hello Demo</li>
-                                            <li>Hello Demo</li>
-                                            <li>Hello Demo</li>
-                                            <li>Hello Demo</li>
-                                            <li>Hello Demo</li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <h3>Social Links</h3>
-                                        <ul>
-                                            <li>Hello Demo</li>
-                                            <li>Hello Demo</li>
-                                            <li>Hello Demo</li>
-                                            <li>Hello Demo</li>
-                                            <li>Hello Demo</li>
-                                        </ul>
-                                    </div>
+                            <Col lg={8} >
+                                <div>
+                                    <h3>HeadQuarters</h3>
+                                    <p>SKETS Studio Private Limited
+                                        226, Patparganj Functional Industrial Estate,
+                                        Delhi 110092, India. Phone + 91 981004142</p>
                                 </div>
+                            </Col>
+                            <Col lg={8}>
+                                <h3>SKETS Campus</h3>
+                                <p>SKETS Studio Private Limited
+                                    297 & 298, Patparganj Industrial Estate,
+                                    Delhi 110092, India. Phone + 91 981004142</p>
                             </Col>
                         </Row>
                     </div>

@@ -10,6 +10,7 @@ import InteriorDesignIcon from "./IconsImages/interiordesign.png"
 import EngeneeringIcon from "./IconsImages/ENGINEERING.png"
 import ArchitectureIcon from "./IconsImages/ARCHITECTURE.png"
 import VisualizationIcon from "./IconsImages/VISUALIZATION.png"
+import WhyUsComponent from "../MinimillisticComponents/WhyUsComponent";
 const AboutUs = () => {
     const routeLinks = [
         { path: "/", name: "Home" },
@@ -52,25 +53,30 @@ const AboutUs = () => {
                 routeLinks={routeLinks}
             />
             <section id="servicesSection">
-                <div className="Smalltagline"><h4 className="sectionHeading"><div></div>WHO WE ARE</h4></div>
-                <h1 data-aos="fade-up" className="bigHeading"
-                    data-aos-duration="1000">Our Expertise</h1>
-                <br /><br />
-                <div className="servicecontainerRow">
-                    {ServicesCardData.map((item, index) => (
-                        <div key={index} className="servicesSingleBox" data-aos="fade-up" data-aos-delay={`${index * 300}`} data-aos-duration="1000">
-                            <div className="servicesCards">
-                                <div style={{ paddingBottom: "20px" }}>
-                                    <div className="servicesiconbox">
-                                        <img src={item.iconImage} alt="" />
+            <div className="sectionPadding"></div>
+                <div className="sectionPadding"></div>
+                <div>
+                    <div className="Smalltagline"><h4 className="sectionHeading"><div></div>WHO WE ARE</h4></div>
+                    <h1 data-aos="fade-up" className="bigHeading"
+                        data-aos-duration="1000">Our Expertise</h1>
+                    <br /><br />
+                    <div className="servicecontainerRow">
+                        {ServicesCardData.map((item, index) => (
+                            <div key={index} className="servicesSingleBox" data-aos="fade-up" data-aos-delay={`${index * 300}`} data-aos-duration="1000">
+                                <div className="servicesCards">
+                                    <div style={{ paddingBottom: "20px" }}>
+                                        <div className="servicesiconbox">
+                                            <img src={item.iconImage} alt="" />
+                                        </div>
                                     </div>
+                                    <h4>{item.Title}</h4>
+                                    <p>{item.Descriptions}</p>
                                 </div>
-                                <h4>{item.Title}</h4>
-                                <p>{item.Descriptions}</p>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
+
                 {/* <div class="marquee">
                     <div class="marquee--inner">
                         <span>
@@ -81,6 +87,14 @@ const AboutUs = () => {
                         </span>
                     </div>
                 </div> */}
+                <div className="sectionPadding"></div>
+                <div className="sectionPadding"></div>
+            </section>
+            <section id="WhyUssection">
+                
+                <div>
+                    <WhyUsComponent />
+                </div>
             </section>
 
         </>
