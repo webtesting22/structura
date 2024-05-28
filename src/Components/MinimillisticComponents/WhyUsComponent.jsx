@@ -68,10 +68,6 @@ const WhyUsComponent = () => {
         <>
             <div className="whyUsContainer">
                 <div className="container" style={{ width: "100%" }}>
-
-                    {/* <div className="sectionPadding"></div>
-                    <div className="sectionPadding"></div>
-                    <div className="sectionPadding"></div> */}
                     <div className="combineContainers">
 
                         {/* <div className="container"> */}
@@ -94,12 +90,14 @@ const WhyUsComponent = () => {
                             </div>
                         </div>
                         <div className="right-column" ref={rightColumnRef}>
+                            <div className='colorOverlayBack'>
 
+                            </div>
                             {/* Content for right column */}
                             <div style={{ width: "100%" }}>
 
                                 <div className='rightSideContainerColum'>
-                                    <Row style={{ textAlign: "center" }}>
+                                    <Row style={{ textAlign: "center",display:"flex",justifyContent:"center" }}>
                                         {WhyChooseUsCards.map((item, index) => (
                                             <Col lg={12} key={index}>
                                                 <div className='cardContainerWhyChooseUS' data-aos="fade-up" data-aos-delay={`${index * 300}`} data-aos-duration="800">

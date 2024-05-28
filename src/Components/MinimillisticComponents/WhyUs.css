@@ -17,11 +17,27 @@
     width: 40%;
 } */
 
-.leftSideContainer{
+.leftSideContainer {
     width: 40%;
 }
+
 .right-column {
     width: 60%;
+    background-image: url("./backOverlay.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+}
+
+.colorOverlayBack {
+    height: 300vh;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.737);
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    top: 0;
 }
 
 .leftSideContainer,
@@ -29,9 +45,11 @@
     /* width: 50%; */
     padding: 0rem 4rem;
 }
-.left-column{
-    margin-top: 20rem;
+
+.left-column {
+    margin-top: 10rem;
 }
+
 .left-column.sticky {
     position: sticky;
     top: 50%;
@@ -66,33 +84,76 @@
 }
 
 
-.rightSideContainerColum{
+.rightSideContainerColum {
     padding: 10rem 0rem;
 }
-.cardContainerWhyChooseUS{
+
+.cardContainerWhyChooseUS {
     margin: 2rem 1rem;
     /* height: 40vh; */
     /* background-color: ; */
 }
-.cardContainerWhyChooseUS h1{
+
+.cardContainerWhyChooseUS h1 {
     font-size: 30px;
     font-weight: 400;
     padding-bottom: 1rem;
 }
-.cardContainerWhyChooseUS p{
+
+.cardContainerWhyChooseUS p {
     text-align: center;
     /* padding: 0rem 2rem; */
 }
 
-.iconCardContainer i{
+.iconCardContainer i {
     font-size: 50px;
 }
 
-@media (max-width:769px){
+@media (max-width:769px) {
+    .right-column {
+        width: 60%;
+        background-image: url("./backOverlay.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .rightSideContainerColum {
+        padding: 5rem 0rem;
+        /* background-color: white; */
+    }
+
+    .left-column {
+        margin-top: 8rem;
+    }
+
+    .left-column .contentContainer {
+        position: absolute;
+        left: 1%;
+        right: 0px;
+        bottom: 0px;
+        padding-bottom: 2rem;
+    }
+
+    .leftSideContainer,
+    .right-column {
+        /* width: 50%; */
+        padding: 0rem 0rem;
+    }
+
+    .leftSideContainer {
+        width: 100%;
+    }
+
+    .right-column {
+        width: 100%;
+    }
+
     .combineContainers {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
     }
-    
+
 }

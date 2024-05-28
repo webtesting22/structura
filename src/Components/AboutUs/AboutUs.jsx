@@ -53,7 +53,7 @@ const AboutUs = () => {
                 routeLinks={routeLinks}
             />
             <section id="servicesSection">
-            <div className="sectionPadding"></div>
+                <div className="sectionPadding"></div>
                 <div className="sectionPadding"></div>
                 <div>
                     <div className="Smalltagline"><h4 className="sectionHeading"><div></div>WHO WE ARE</h4></div>
