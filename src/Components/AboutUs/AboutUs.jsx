@@ -11,6 +11,7 @@ import EngeneeringIcon from "./IconsImages/ENGINEERING.png"
 import ArchitectureIcon from "./IconsImages/ARCHITECTURE.png"
 import VisualizationIcon from "./IconsImages/VISUALIZATION.png"
 import WhyUsComponent from "../MinimillisticComponents/WhyUsComponent";
+import BoxCarousalContainer from "../MinimillisticComponents/BoxCarousalContainer/BoxCarousalContainer";
 const AboutUs = () => {
     const routeLinks = [
         { path: "/", name: "Home" },
@@ -89,9 +90,12 @@ const AboutUs = () => {
                 </div> */}
                 <div className="sectionPadding"></div>
                 <div className="sectionPadding"></div>
-            </section>
-            <section id="WhyUssection">
+                <BoxCarousalContainer/>
                 
+            </section>
+            
+            <section id="WhyUssection">
+
                 <div>
                     <WhyUsComponent />
                 </div>

@@ -104,8 +104,8 @@ const WhyUsComponent = () => {
                                                     <div className='iconCardContainer'>
                                                         <i class='bx bxs-hard-hat' ></i>
                                                     </div>
-                                                    <h1>{item.Title}</h1>
-                                                    <p>{item.Descriptions}</p>
+                                                    <h4 style={{marginBottom:"10px"}}>{item.Title}</h4>
+                                                    <p style={{fontSize:"16px"}}>{item.Descriptions}</p>
                                                 </div>
                                             </Col>
                                         ))}
