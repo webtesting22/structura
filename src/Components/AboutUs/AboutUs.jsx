@@ -90,10 +90,10 @@ const AboutUs = () => {
                 </div> */}
                 <div className="sectionPadding"></div>
                 <div className="sectionPadding"></div>
-                <BoxCarousalContainer/>
-                
+                <BoxCarousalContainer />
+
             </section>
-            
+
             <section id="WhyUssection">
 
                 <div>

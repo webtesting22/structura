@@ -11,7 +11,7 @@ const StructuraCommonHero = (props) => {
 
                 </div>
                 <div className="imageContainerWithText">
-                    <div className="imageContaiener">
+                    <div className="imageContaiener" style={{ width: "100%" }}>
                         <img src={image} alt="Hero Image" />
                     </div>
                     <div className="contentContainer">

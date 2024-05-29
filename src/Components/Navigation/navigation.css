@@ -1,10 +1,9 @@
-
-.structuranavigationContainer{
+.structuranavigationContainer {
     height: 80px;
     width: 100%;
     display: flex;
     align-items: center;
-    border-bottom:1px solid rgba(201, 201, 201, 0.521);
+    border-bottom: 1px solid rgba(201, 201, 201, 0.521);
     position: fixed;
     top: 0;
     z-index: 6;
@@ -12,24 +11,28 @@
     backdrop-filter: blur(0px);
     transition: 2s;
 }
-.structuranavigationContainer .logo{
+
+.structuranavigationContainer .logo {
     font-size: 1.2rem;
     color: rgb(255, 255, 255);
     transition: 2s;
 }
+
 .structuranavigationContainer.scrolled {
     height: 50px;
     background-color: transparent;
     backdrop-filter: blur(2px);
     transition: 1s;
 }
-.structuranavigationContainer.scrolled .logo{
+
+.structuranavigationContainer.scrolled .logo {
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
     transition: 2s;
 
 }
-.structuranavigationContainer .inside-header-container{
+
+.structuranavigationContainer .inside-header-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -37,12 +40,14 @@
     transition: .5s;
     /* height: 100%; */
 }
-.HeaderEdit{
+
+.HeaderEdit {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-.HeaderEdit button{
+
+.HeaderEdit button {
     background-color: black;
     color: white;
     border-radius: 0px;
@@ -50,14 +55,137 @@
     padding: 10px 30px;
 
 }
-.HeaderEdit button:hover{
+
+.HeaderEdit button:hover {
     background-color: black;
     color: white;
     border-radius: 3px;
     border: none;
 }
-@media (max-width:600px){
-    .structuranavigationContainer .inside-header-container{
+
+/* :where(.css-dev-only-do-not-override-mzwlov).ant-drawer .ant-drawer-body{
+    padding: 0px;
+} */
+.DrawerBody {
+    /* height: 100%; */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.listContainer {
+    height: 100%;
+    margin-top: 3rem;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.listContainer ul {
+    padding: 0px;
+}
+
+.listContainer ul li {
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 0px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    /* color: rgb(255, 255, 255); */
+}
+
+.listContainer ul li a {
+    color: rgb(0, 0, 0);
+}
+
+.structuraTitle {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.structuraTitle span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Set initial opacity and transition for the animation box */
+.animationBoxContainer {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    /* Adjust the duration as needed */
+}
+
+@keyframes fadeInLeftToRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px) translateY(0px);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(20px) translateY(0px) rotate(-45deg);
+    }
+}
+
+/* Change opacity to 1 when hovering over the li */
+.nav-item:hover+.animationBoxContainer {
+    animation: fadeInLeftToRight 0.9s forwards;
+}
+
+/* :where(.css-dev-only-do-not-override-mzwlov).ant-drawer .ant-drawer-body {
+    background-image: url("./ResidentialBacl.webp");
+    background-size: cover;
+} */
+
+.overlayContainer {
+    position: absolute;
+    height: 200vh;
+    background-color: rgba(255, 255, 255, 0.861);
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.projectNavRow {
+    height: 85vh;
+    overflow: auto;
+}
+
+/* Webkit Browsers (Chrome, Safari) */
+.projectNavRow::-webkit-scrollbar {
+    width: 3px;
+    /* Width of the entire scrollbar */
+}
+
+.projectNavRow::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the track */
+    border-radius: 10px;
+    /* Rounded corners for the track */
+}
+
+.projectNavRow::-webkit-scrollbar-thumb {
+    background: #000000;
+    /* Color of the thumb */
+    border-radius: 10px;
+    /* Rounded corners for the thumb */
+}
+
+#MainDrawerBack {
+    background-image: url("../Navigation/ResidentialBacl.webp");
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    /* background-color: ; */
+}
+
+@media (max-width:600px) {
+    .structuranavigationContainer .inside-header-container {
         display: flex;
         justify-content: space-between;
         width: 100%;
