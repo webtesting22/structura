@@ -50,7 +50,7 @@ const Navigation = () => {
 
     const NavigationLinks = [
         {
-            NavLink: "About US",
+            NavLink: "About Us",
             path: "/AboutUs"
         },
         {
@@ -121,7 +121,7 @@ const Navigation = () => {
             <header className={`structuranavigationContainer ${isScrolled ? 'scrolled' : ''}`}>
                 <div className="inside-header-container">
                     <div style={{ display: "flex", alignItems: "center" }}>
-                        <h2 className="logo">Structura</h2>
+                        <Link to="/"><h2 className="logo">Structura</h2></Link>
                     </div>
                     <div>
                         <Button type="primary" onClick={showDrawer}>

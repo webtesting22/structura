@@ -5,7 +5,7 @@
 
 }
 
-#StructuraHeroSection{
+#StructuraHeroSection {
     padding: 0px;
 }
 
@@ -41,17 +41,22 @@
 
 @keyframes scrollAnimation {
     0% {
-      top: calc(65% - 5px); /* Initial position */
+        top: calc(65% - 5px);
+        /* Initial position */
     }
+
     50% {
-      top: calc(65% + 5px); /* Move down by 5px halfway through the animation */
+        top: calc(65% + 5px);
+        /* Move down by 5px halfway through the animation */
     }
+
     100% {
-      top: calc(65% - 5px); /* Return to the initial position at the end */
+        top: calc(65% - 5px);
+        /* Return to the initial position at the end */
     }
-  }
-  
-  .scrollDownBtnContainer {
+}
+
+.scrollDownBtnContainer {
     height: 50px;
     width: 50px;
     background-color: transparent;
@@ -61,9 +66,10 @@
     top: 65%;
     z-index: 6666;
     border: 1px solid white;
-    animation: scrollAnimation 2s infinite; /* Apply the animation */
-  }
-  
+    animation: scrollAnimation 2s infinite;
+    /* Apply the animation */
+}
+
 
 /* rightsidecontainer css -----------------------------------------*/
 .right-side-image-container {
@@ -76,7 +82,8 @@
 /* .right-side-image-container img{
     width: 100%;
 } */
-.right-side-image-container .imageOverlay {
+.right-side-image-container .imageOverlay,
+.left-side-container .imageOverlay {
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -116,13 +123,18 @@
     height: 100%;
 }
 
-@media (max-width:800px){
-    .left-side-container{
+.view-only-Mobile {
+    display: none;
+}
+
+@media (max-width:800px) {
+    .left-side-container {
         display: block;
         width: 0px;
         transition: .5s;
     }
-    .right-side-image-container{
+
+    .right-side-image-container {
         width: 100%;
         transition: .5s;
     }

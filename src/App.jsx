@@ -9,6 +9,7 @@ import Footer from './Components/Footer/Footer';
 import AboutUs from './Components/AboutUs/AboutUs';
 import StructuraCommonHero from './Components/AllPageCommonHero/StructuraCommonHero';
 import BottomToTopBtn from './Components/BottomTotopBtn/BottomTotopBtn';
+import AllProjects from './Components/AllProjects/AllProjects';
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/" element={<StructuraHome />} />
         <Route exact path="/AboutUs" element={<AboutUs />} />
         <Route exact path="/StructuraCommonHero" element={<StructuraCommonHero />} />
+        <Route exact path="/AllProjects" element={<AllProjects />} />
       </Routes>
       <BottomToTopBtn/>
     <Footer/>

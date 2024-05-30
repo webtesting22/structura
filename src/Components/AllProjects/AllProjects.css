@@ -1,0 +1,28 @@
+.subCategoryProjectsBtn {
+    display: flex;
+}
+
+.activeBtnSub {
+    height: 50px;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 200px;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0px 10px;
+    cursor: pointer;
+
+}
+
+.nonActiveBtnSub {
+    height: 50px;
+    border-bottom: 2px solid transparent;
+    border: none;
+    width: 200px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    margin: 0px 10px;
+    cursor: pointer;
+}

@@ -27,8 +27,37 @@ const HomeHero = () => {
         <>
             <section id="StructuraHeroSection">
                 <div className="Herosectionadjust">
-                   
+
                     <div className="left-side-container">
+                        <div className="view-only-Mobile">
+                            <div className="imageOverlay">
+
+                            </div>
+                            <Swiper
+                                spaceBetween={30}
+                                effect={'fade'}
+                                autoplay={{
+                                    delay: 2000,
+                                    disableOnInteraction: false,
+                                }}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                style={{ height: "100vh" }}
+                                modules={[Autoplay, EffectFade, Pagination]}
+                                className="mySwiper"
+                            >
+                                {StructuraCarousalImages.map((item, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className="slidesImg-container">
+                                            <img src={item.image} className="zoom-animation" />
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+
+
+                            </Swiper>
+                        </div>
                         <div className="content-container">
                             <div className="content" data-aos="fade-up"
                                 data-aos-duration="2000">
@@ -39,8 +68,8 @@ const HomeHero = () => {
                             </div>
                         </div>
                         <div className="scrollDownBtnContainer" data-aos="fade-up"
-                                data-aos-duration="1000"  data-aos-delay="2000">
-                                    <img src={DownArrow} alt=""  style={{width:"100%"}}/>
+                            data-aos-duration="1000" data-aos-delay="2000">
+                            <img src={DownArrow} alt="" style={{ width: "100%" }} />
                         </div>
                     </div>
                     <div className="right-side-image-container">

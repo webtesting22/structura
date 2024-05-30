@@ -11,7 +11,7 @@ const StructuraCommonHero = (props) => {
 
                 </div>
                 <div className="imageContainerWithText">
-                    <div className="imageContaiener" style={{ width: "100%" }}>
+                    <div className="imageContainer" style={{ width: "100%" }}>
                         <img src={image} alt="Hero Image" />
                     </div>
                     <div className="contentContainer">
@@ -19,8 +19,7 @@ const StructuraCommonHero = (props) => {
                             data-aos-duration="2000">
                             <h4>{text}</h4>
                         </div>
-                    </div>
-                    <div className="routeChangelinks"
+                        <div className="routeChangelinks"
                         data-aos="fade-up"
                         data-aos-duration="1000"
                         data-aos-delay="2000">
@@ -33,6 +32,8 @@ const StructuraCommonHero = (props) => {
                             ))}
                         </div>
                     </div>
+                    </div>
+                    
                 </div>
             </section>
         </>

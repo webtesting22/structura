@@ -4,8 +4,8 @@ import { Row, Col } from "antd";
 import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
 const HomePageProject = () => {
     const [activeTab, setActiveTab] = useState('Residential');
-   
-    
+
+
     const ResidentialProjectsCardData = [
         {
             cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -68,19 +68,19 @@ const HomePageProject = () => {
                         <Row>
                             {(activeTab === 'Residential' ? ResidentialProjectsCardData : CommertialProjectsCardData).map((item, index) => (
                                 <Col lg={8} md={8} key={index}>
-                                            <div className="projectsCardDesigns" data-aos="fade-up" data-aos-delay={`${index * 300}`} data-aos-duration="1000">
-                                                <div className="cardImage">
-                                                    <img src={item.cardImage} alt="" />
-                                                </div>
-                                                <div className="cardContent">
-                                                    <span className="Category">{item.cardCategory}</span>
-                                                    <h2>{item.cardTitle}</h2>
-                                                    <div className="arrowIcon">
-                                                        <i className='bx bx-right-arrow-alt'></i> {/* Note: Use className instead of class for React */}
-                                                    </div>
-                                                </div>
-                                                <hr />
+                                    <div className="projectsCardDesigns" data-aos="fade-up" data-aos-delay={`${index * 300}`} data-aos-duration="1000">
+                                        <div className="cardImage">
+                                            <img src={item.cardImage} alt="" />
+                                        </div>
+                                        <div className="cardContent">
+                                            <span className="Category">{item.cardCategory}</span>
+                                            <h2>{item.cardTitle}</h2>
+                                            <div className="arrowIcon">
+                                                <i className='bx bx-right-arrow-alt'></i> {/* Note: Use className instead of class for React */}
                                             </div>
+                                        </div>
+                                        <hr />
+                                    </div>
 
                                 </Col>
                             ))}
