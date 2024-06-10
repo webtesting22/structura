@@ -30,39 +30,37 @@ const WhyUsComponent = () => {
             window.removeEventListener('resize', handleScroll);
         };
     }, []);
+    
     const WhyChooseUsCards = [
         {
-            Title: "INTERIOR DESIGN",
-            Descriptions: "We are a Market Leader in Interior Design Documentation with a specialization in Hospitality."
+            Title: "Architectural CAD Drafting",
+            Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
         },
         {
-            Title: "EXPERIENCE",
-            Descriptions: "We have completed over 1500 large-scale projects along with 20,000+ Retail roll-outs across 32 countries over the past 18 years."
+            Title: "Architectural BIM Services",
+            Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
         },
         {
-            Title: "INFRASTRUCTURE",
-            Descriptions: "State of the art IT infrastructure with Data Integrity and data security, Global Connectivity, up to date Hardware/Software, Cloud & Remote Collaboration with IT-enabled Project Planning and Tracking mechanisms"
+            Title: "Facade BIM Services",
+            Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
         },
         {
-            Title: "BIM EXPERTISE",
-            Descriptions: "Completed over 300 projects in BIM - both in Architecture & Engineering."
+            Title: "Structural CAD Drafting",
+            Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
         },
         {
-            Title: 'FLEXIBILITY',
-            Descriptions: "625+ architects and engineers provide flexibility of ramping team size up/down based on project requirements."
+            Title: 'MEP CAD Drafting',
+            Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
         },
         {
-            Title: "PROCESS EXCELLENCE",
-            Descriptions: "We deliver unmatched business value through process excellence and quality frameworks."
+            Title: "Structural BIM Services",
+            Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
         },
         {
-            Title: "REPEAT CLIENTELE",
-            Descriptions: "Most of our clients are long-standing as we provide relationship-based, tailor-made solutions. Since inception, we have had 4 large studios running, turning our clients into Partners in growth & success."
+            Title: "MEP BIM Services",
+            Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
         },
-        {
-            Title: "RETENTION RATE",
-            Descriptions: "We have a near 100% retention rate since inception."
-        }
+       
     ]
     return (
         <>
@@ -100,7 +98,7 @@ const WhyUsComponent = () => {
                                     <Row style={{ textAlign: "center",display:"flex",justifyContent:"center" }}>
                                         {WhyChooseUsCards.map((item, index) => (
                                             <Col lg={12} key={index}>
-                                                <div className='cardContainerWhyChooseUS' data-aos="fade-up" data-aos-delay={`${index * 300}`} data-aos-duration="800">
+                                                <div className='cardContainerWhyChooseUS' data-aos="fade-up" data-aos-delay={`${index * 300}`} data-aos-duration="500">
                                                     <div className='iconCardContainer'>
                                                         <i class='bx bxs-hard-hat' ></i>
                                                     </div>

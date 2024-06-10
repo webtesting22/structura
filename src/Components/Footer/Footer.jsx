@@ -11,7 +11,8 @@ const Footer = () => {
                         <Row style={{ margin: "auto" }}>
                             <Col lg={8} >
                                 <div>
-                                    <h3>New York Office</h3>
+                                    <i class='bx bx-building-house'></i>
+                                    <h2>New York Office</h2>
                                     <p>SKETS studio, 373 BroadWay, Suite 611,
                                         New York City, New York 10013
                                         Mobile: 917.414.6441
@@ -20,14 +21,16 @@ const Footer = () => {
                             </Col>
                             <Col lg={8} >
                                 <div>
-                                    <h3>HeadQuarters</h3>
+                                    <i class='bx bx-building-house'></i>
+                                    <h2>HeadQuarters</h2>
                                     <p>SKETS Studio Private Limited
                                         226, Patparganj Functional Industrial Estate,
                                         Delhi 110092, India. Phone + 91 981004142</p>
                                 </div>
                             </Col>
                             <Col lg={8}>
-                                <h3>SKETS Campus</h3>
+                                <i class='bx bx-building-house'></i>
+                                <h2>SKETS Campus</h2>
                                 <p>SKETS Studio Private Limited
                                     297 & 298, Patparganj Industrial Estate,
                                     Delhi 110092, India. Phone + 91 981004142</p>
@@ -36,7 +39,7 @@ const Footer = () => {
                     </div>
                     <br /><br />
                     <div className="copyrightText">
-                        <p>@2024 <Link to="https://www.outleadsolutions.com/" target="_blank">Outlead solution.</Link> All rights reserved.</p>
+                        <p>@2024 <Link to="https://www.outleadsolutions.com/" target="_blank"><b>Outlead solution.</b></Link> All rights reserved.</p>
                     </div>
 
                 </div>

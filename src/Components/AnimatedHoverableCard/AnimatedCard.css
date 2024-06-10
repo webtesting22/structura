@@ -1,0 +1,92 @@
+.animatedCardContainer {
+    height: 70vh;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.animatedCardContainer {
+    height: 70vh;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+}
+.animatedCardContainer:hover {
+    height: 68vh;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+}
+
+.animatedCardContainer img {
+    width: 100%;
+    transition: .5s;
+}
+
+.animatedCardContainer:hover img {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.insideContainer {
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    /* padding: 0px 30px; */
+}
+
+.topSideAnimationBar {
+    margin: 0px 30px;
+    border-bottom: 1px solid white;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.topSideAnimationBar h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.topSideAnimationBar i {
+    color: white;
+}
+
+.topSideAnimationBar hr {
+    border: 2px solid white;
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    margin: 0px;
+    transition: 0.5s;
+}
+
+.animatedCardContainer:hover .topSideAnimationBar hr {
+    border: 2px solid white;
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    transition: 0.5s;
+    margin: 0px;
+}
+
+.animatedCardContainer .topSideAnimationBar i {
+    rotate: 0deg;
+    transition: .5s;
+    font-size: 20px;
+}
+
+.animatedCardContainer:hover .topSideAnimationBar i {
+    rotate: -45deg;
+    transition: .5s;
+}
+@media (max-width:769px){
+    .animatedCardContainer {
+        height: 70vh;
+        margin: 5px 0px;
+        overflow: hidden;
+        position: relative;
+    }
+}

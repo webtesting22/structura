@@ -129,7 +129,7 @@
 
 @media (max-width:800px) {
     .left-side-container {
-        display: block;
+        display: none;
         width: 0px;
         transition: .5s;
     }
