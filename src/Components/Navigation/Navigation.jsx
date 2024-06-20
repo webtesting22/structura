@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { MdOutlineCancel } from "react-icons/md";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { Row, Col } from "antd"
+import LocationIcon from "../../../public/images/LocationIcon.png"
 // import ResidentialBack from "./ResidentialBack.webp"
 const Navigation = () => {
     const [open, setOpen] = useState(false);
@@ -58,11 +59,11 @@ const Navigation = () => {
             path: "/AllProjects"
         },
         {
-            NavLink: "Residential",
+            NavLink: "HIGH RISE BUILDINGS",
             onClick: showChildrenDrawer
         },
         {
-            NavLink: "Commercial",
+            NavLink: "BUNGLOWS",
             onClick: showSecondChildrenDrawer
         },
         {
@@ -83,18 +84,18 @@ const Navigation = () => {
     const ResidentialProjectsCardData = [
         {
             cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            cardCategory: "Commercial & Residential",
-            cardTitle: "Residencial Project Name"
+            cardCategory: "GANDHINAGAR",
+            cardTitle: "NIRMAAN SATVA"
         },
         {
             cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            cardCategory: "Commercial & Residential",
-            cardTitle: "Residencial Project Name"
+            cardCategory: "AHMEDABAD",
+            cardTitle: "NIRMAAN HEIGHTS"
         },
         {
             cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            cardCategory: "Commercial & Residential",
-            cardTitle: "Residencial Project Name"
+            cardCategory: "ANAND",
+            cardTitle: "SUKIRTAN AURA"
         },
 
     ]
@@ -192,7 +193,7 @@ const Navigation = () => {
                                 alignItems: "center"
                             }}>
                             <div>
-                                <h3>Residential Projects</h3>
+                                <h3>HIGH RISE BUILDINGS</h3>
                             </div>
                             <button className="closedBtn" onClick={onChildrenDrawerClose}>Closed</button>
                         </div>
@@ -205,7 +206,7 @@ const Navigation = () => {
                                                 <img src={item.cardImage} alt="" />
                                             </div>
                                             <div className="cardContent">
-                                                <span className="Category">{item.cardCategory}</span>
+                                                <span className="Category" style={{ display: "flex", alignItems: "center" }}><img src={LocationIcon} alt="" style={{ width: "15px", height: "15px" }} />&nbsp;{item.cardCategory}</span>
                                                 <h2>{item.cardTitle}</h2>
                                                 <div className="arrowIcon">
                                                     <i className='bx bx-right-arrow-alt'></i> {/* Note: Use className instead of class for React */}

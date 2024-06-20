@@ -39,7 +39,7 @@ const Footer = () => {
                     </div>
                     <br /><br />
                     <div className="copyrightText">
-                        <p>@2024 <Link to="https://www.outleadsolutions.com/" target="_blank"><b>Outlead solution.</b></Link> All rights reserved.</p>
+                        <p>@2024 <Link to="https://www.outleadsolutions.com/" target="_blank"><b>Outlead solutions.</b></Link> All rights reserved.</p>
                     </div>
 
                 </div>

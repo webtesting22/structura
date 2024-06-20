@@ -26,3 +26,108 @@
     margin: 0px 10px;
     cursor: pointer;
 }
+
+.ColumsStyleContainers {
+    display: flex;
+    width: 100%;
+}
+
+.ColumsStyleContainers .FiltersContainers {
+    width: 20%;
+}
+
+.ColumsStyleContainers .FiltersProjectsContainer {
+    width: 80%;
+}
+
+.FilterContainer ul li {
+    text-transform: capitalize;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+}
+
+.FilterContainer .nonActiveBtnActive {
+    height: 50px;
+    border: none;
+    width: 100%;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.FilterContainer .nonActiveBtn:hover {
+    height: 50px;
+    border: none;
+    width: 100%;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.ColumsStyleContainers {
+    padding-top: 2rem;
+}
+
+#SelectMobile {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+#SelectMobile:active,
+#SelectMobile:focus {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: black;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.FiltersContainers {
+    position: sticky;
+    top: 10%;
+    z-index: 5;
+}
+
+.FilterContainer {
+    position: sticky;
+    top: 30%;
+    z-index: 5;
+}
+
+@media (max-width:769px) {
+    .ColumsStyleContainers {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding-top: 0.5rem;
+    }
+
+    .ColumsStyleContainers .FiltersContainers {
+        width: 100%;
+    }
+
+    .ColumsStyleContainers .FiltersProjectsContainer {
+        width: 100%;
+    }
+
+    .projectsCardDesigns {
+        margin: 10px 0px;
+    }
+
+}
