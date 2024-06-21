@@ -193,4 +193,8 @@
         transition: .5s;
         /* height: 100%; */
     }
+
+    .projectNavRow .ant-row .ant-col  {
+        width: 100%;
+    }
 }

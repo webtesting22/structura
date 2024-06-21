@@ -127,7 +127,36 @@
     display: none;
 }
 
+#MySwiper {
+    height: 100vh;
+}
+
 @media (max-width:800px) {
+    .Herosectionadjust {
+        display: flex;
+        height: 100%;
+        position: relative;
+
+    }
+
+    .right-side-image-container .imageOverlay,
+    .left-side-container .imageOverlay {
+        height: 40vh;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.587);
+    }
+
+    .slidesImg-container {
+        height: 40vh;
+        overflow: hidden;
+    }
+
+    #MySwiper {
+        height: 40vh;
+    }
+
     .left-side-container {
         display: none;
         width: 0px;

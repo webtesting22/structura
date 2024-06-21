@@ -79,16 +79,16 @@ const HomeHero = () => {
                         <Swiper
                             spaceBetween={30}
                             effect={'fade'}
-                            // autoplay={{
-                            //     delay: 2000,
-                            //     disableOnInteraction: false,
-                            // }}
+                            autoplay={{
+                                delay: 2000,
+                                disableOnInteraction: false,
+                            }}
                             pagination={{
                                 clickable: true,
                             }}
-                            style={{ height: "100vh" }}
                             modules={[Autoplay, EffectFade, Pagination]}
                             className="mySwiper"
+                            id="Myswiper"
                         >
                             {StructuraCarousalImages.map((item, index) => (
                                 <SwiperSlide key={index}>

@@ -3,14 +3,9 @@
     margin: 10px;
     overflow: hidden;
     position: relative;
-}
-.animatedCardContainer {
-    height: 70vh;
-    margin: 10px;
-    overflow: hidden;
-    position: relative;
     transition: .5s;
 }
+
 .animatedCardContainer:hover {
     height: 68vh;
     margin: 10px;
@@ -82,11 +77,20 @@
     rotate: -45deg;
     transition: .5s;
 }
-@media (max-width:769px){
+
+@media (max-width:769px) {
     .animatedCardContainer {
-        height: 70vh;
+        height: 100%;
         margin: 5px 0px;
         overflow: hidden;
         position: relative;
+    }
+    .animatedCardContainer:hover {
+        height: 100%;
+        /* margin: 10px; */
+        overflow: hidden;
+        position: relative;
+        transition: .5s;
+        margin: 20px 0px;
     }
 }

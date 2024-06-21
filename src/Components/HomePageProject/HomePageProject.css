@@ -116,5 +116,8 @@
         justify-content: space-between;
         flex-direction: column;
     }
+    .tabsContentcards .cardsContent .ant-row .ant-col{
+        width: 100%;
+    }
 
 }

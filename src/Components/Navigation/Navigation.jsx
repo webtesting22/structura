@@ -6,6 +6,7 @@ import { MdOutlineCancel } from "react-icons/md";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { Row, Col } from "antd"
 import LocationIcon from "../../../public/images/LocationIcon.png"
+import AllProjectsData from "../AllProjects/AllProjectsData";
 // import ResidentialBack from "./ResidentialBack.webp"
 const Navigation = () => {
     const [open, setOpen] = useState(false);
@@ -59,11 +60,11 @@ const Navigation = () => {
             path: "/AllProjects"
         },
         {
-            NavLink: "HIGH RISE BUILDINGS",
+            NavLink: "High Rise Buildings",
             onClick: showChildrenDrawer
         },
         {
-            NavLink: "BUNGLOWS",
+            NavLink: "Bunglows",
             onClick: showSecondChildrenDrawer
         },
         {
@@ -195,20 +196,20 @@ const Navigation = () => {
                                 alignItems: "center"
                             }}>
                             <div>
-                                <h3>HIGH RISE BUILDINGS</h3>
+                                <h3>High Rise Buildings</h3>
                             </div>
                             <button className="closedBtn" onClick={onChildrenDrawerClose}>Closed</button>
                         </div>
                         <div className="projectNavRow">
                             <Row>
-                                {ResidentialProjectsCardData.map((item, index) => (
+                                {AllProjectsData[0].ProjectDetails.slice(0, 3).map((item, index) => (
                                     <Col lg={24} md={8} key={index}>
                                         <div className="projectsCardDesigns" >
                                             <div className="cardImage" style={{ height: "30vh", overflow: "hidden" }}>
                                                 <img src={item.cardImage} alt="" />
                                             </div>
                                             <div className="cardContent">
-                                                <span className="Category" style={{ display: "flex", alignItems: "center" }}><img src={LocationIcon} alt="" style={{ width: "15px", height: "15px" }} />&nbsp;{item.cardCategory}</span>
+                                                <span className="Category" style={{ display: "flex", alignItems: "center" }}><img src={LocationIcon} alt="" style={{ width: "15px", height: "15px" }} />&nbsp;{item.Location}</span>
                                                 <h2>{item.cardTitle}</h2>
                                                 <div className="arrowIcon">
                                                     <i className='bx bx-right-arrow-alt'></i> {/* Note: Use className instead of class for React */}
@@ -220,6 +221,11 @@ const Navigation = () => {
                                     </Col>
                                 ))}
                             </Row>
+                            <Link to="/AllProjects" onClick={() => {
+                                onClose();
+                                onChildrenDrawerClose();
+                            }}
+                            ><button className="commomBtn" style={{ width: "100%" }}>Explore All Projects</button></Link>
                         </div>
                     </Drawer>
                     <Drawer
@@ -236,24 +242,24 @@ const Navigation = () => {
                                 alignItems: "center"
                             }}>
                             <div>
-                                <h4>Commercial Projects</h4>
+                                <h4>Bunglows</h4>
                             </div>
 
                             <button className="closedBtn" onClick={onSecondChildrenDrawerClose}>Closed</button>
                         </div>
                         <div className="projectNavRow">
                             <Row>
-                                {CommertialProjectsCardData.map((item, index) => (
+                                {AllProjectsData[1].ProjectDetails.slice(0, 3).map((item, index) => (
                                     <Col lg={24} md={8} key={index}>
-                                        <div className="projectsCardDesigns">
+                                        <div className="projectsCardDesigns" >
                                             <div className="cardImage" style={{ height: "30vh", overflow: "hidden" }}>
                                                 <img src={item.cardImage} alt="" />
                                             </div>
                                             <div className="cardContent">
-                                                <span className="Category">{item.cardCategory}</span>
+                                                <span className="Category" style={{ display: "flex", alignItems: "center" }}><img src={LocationIcon} alt="" style={{ width: "15px", height: "15px" }} />&nbsp;{item.Location}</span>
                                                 <h2>{item.cardTitle}</h2>
                                                 <div className="arrowIcon">
-                                                    <i className='bx bx-right-arrow-alt'></i> {/* Note: Use className instead of class for React */}
+                                                    <i className='bx bx-right-arrow-alt'></i> 
                                                 </div>
                                             </div>
                                             <hr />
@@ -262,6 +268,11 @@ const Navigation = () => {
                                     </Col>
                                 ))}
                             </Row>
+                            <Link to="/AllProjects" onClick={() => {
+                                onClose();
+                                onSecondChildrenDrawerClose();
+                            }}
+                            ><button className="commomBtn" style={{ width: "100%" }}>Explore All Projects</button></Link>
                         </div>
                     </Drawer>
                 </div>
