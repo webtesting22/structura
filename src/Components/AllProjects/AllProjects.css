@@ -129,5 +129,7 @@
     .projectsCardDesigns {
         margin: 10px 0px;
     }
-
+    .ProjectsDataContainer .ant-row .ant-col{
+        width: 100%;
+    }
 }

@@ -52,8 +52,11 @@
 }
 
 .projectsCardDesigns .cardImage{
-    height: 50vh;
+    height: 35vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 .projectsCardDesigns .cardImage img{
     width: 100%;
@@ -113,4 +116,5 @@
         justify-content: space-between;
         flex-direction: column;
     }
+
 }

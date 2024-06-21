@@ -1,0 +1,39 @@
+.AllServicesSection {
+    background-color: red;
+    display: flex;
+    height: 200vh;
+}
+
+.AllServicesSection .LeftSideAnimatedLinks {
+    width: 10%;
+    background-color: green;
+    height: 50vh;
+    margin: 10px;
+    position: fixed;
+}
+
+.AllServicesSection .AllServicesdata {
+    width: 90%;
+    height: 50vh;
+    background-color: aqua;
+    margin: 10px;
+}
+
+.leftSideLinksContainer ul {
+    padding: 0px;
+}
+
+.leftSideLinksContainer ul li {
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.leftSideProgressContainer {
+    display: flex;
+}
+
+.leftSideProgressContainer .ProgressBarPageScroll {
+    height: 50vh;
+    width: 5px;
+    background-color: bisque;
+}

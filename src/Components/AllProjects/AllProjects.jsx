@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import TopBack from '../Navigation/ResidentialBacl.webp';
 import "./AllProjects.css";
@@ -101,7 +101,7 @@ const AllProjects = () => {
                                 ))}
 
                             </ul> */}
-                             {isMobile ? (
+                            {isMobile ? (
                                 <select
                                     value={selectedTitle}
                                     onChange={(e) => {
@@ -153,7 +153,7 @@ const AllProjects = () => {
                                                 </div>
                                                 <div className="cardContent">
                                                     <span className="Category">{details.Status}</span>
-                                                    <h2>{truncateTitle(details.cardTitle, 15)}</h2>
+                                                    <h2>{truncateTitle(details.cardTitle, 20)}</h2>
                                                     <div className="arrowIcon">
                                                         <i className='bx bx-right-arrow-alt'></i> {/* Note: Use className instead of class for React */}
                                                     </div>

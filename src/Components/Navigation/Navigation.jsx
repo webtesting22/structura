@@ -67,10 +67,12 @@ const Navigation = () => {
             onClick: showSecondChildrenDrawer
         },
         {
-            NavLink: "Certification And Reviews"
+            NavLink: "Certification And Reviews",
+            path: "/clientsanddirectors"
         },
         {
-            NavLink: "Founder and Clients"
+            NavLink: "Services",
+            path: "/allservices"
         },
     ];
     const handleLinkClick = (item) => {
