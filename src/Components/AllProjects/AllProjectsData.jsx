@@ -11,6 +11,12 @@ import sukirtanAura from "../../../public/images/ProjectsImages/HighRiseBuilding
 import SuparnaResidence from "../../../public/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/01.jpg"
 import ZaveriGreens from "../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/01.jpg"
 import ZionSkyfields from "../../../public/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/01.jpg"
+
+
+import AmitBhaiBunglow from "../../../public/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/Cam_002.jpg"
+import BHADRESHBHAIBUNGALOW from "../../../public/images/ProjectsImages/Banglows/BHADRESHBHAI - BUNGALOW/Cam_01_03.jpg"
+import CHINTANBHAIRESIDENCE from "../../../public/images/ProjectsImages/Banglows/CHINTANBHAI RESIDENCE/DAY_CAM 01.jpg"
+import DEEPBHAIBUNGALOW from "../../../public/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/06.jpg"
 const AllProjectsData = [
     {
         Title: "High Rise Buildings",
@@ -20,14 +26,14 @@ const AllProjectsData = [
                 cardTitle: "Nirmaan Satva",
                 Location: "GANDHINAGAR",
                 ArchitectName: "9th STREET",
-                Developer: "NIRMAAN GROUP"
+                Developer: "Nirmaan Group"
             },
             {
                 cardImage: Nirmanheights,
                 cardTitle: "Nirmaan Heights",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET",
-                Developer: "NIRMAAN GROUP"
+                Developer: "Nirmaan Group"
             },
             {
                 cardImage: sukirtanAura,
@@ -46,14 +52,14 @@ const AllProjectsData = [
                 cardTitle: "Zaveri Greens",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET",
-                Developer: "ZAVERI REALTY"
+                Developer: "Zaveri Realty"
             },
             {
                 cardImage: ZionSkyfields,
                 cardTitle: "Zion Skyfield",
                 Location: "Ahmedabad",
                 ArchitectName: "B17 ARCHITECT",
-                Developer: "ZION GROUP"
+                Developer: "Zion Group"
             },
             {
                 cardImage: MajesticSquare,
@@ -78,21 +84,21 @@ const AllProjectsData = [
                 cardTitle: "Sankalp Ananta Sahibag",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET",
-                Developer: "SANKALP GROUP"
+                Developer: "Sankalp Group"
             },
             {
                 cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 cardTitle: "Ivory Orchards",
                 Location: "AVNAV ARCHITECT",
                 ArchitectName: "9th STREET",
-                Developer: "ADDOR GROUP"
+                Developer: "Addor Group"
             },
             {
                 cardImage: BeaufortPark,
                 cardTitle: "Beaufort Park",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET",
-                Developer: "TRYSHKA"
+                Developer: "Tryshka"
             },
             {
                 cardImage: Girirajdreams,
@@ -111,7 +117,7 @@ const AllProjectsData = [
                 cardTitle: "Nirmaan Sahvas",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET",
-                Developer: "NIRMAAN GROUP"
+                Developer: "Nirmaan Group"
             },
             {
                 cardImage: ProfitRoyal,
@@ -131,7 +137,7 @@ const AllProjectsData = [
                 ArchitectName: "DCPL"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: AmitBhaiBunglow,
                 cardTitle: "House For Amit Shah",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
@@ -161,7 +167,7 @@ const AllProjectsData = [
                 ArchitectName: "DCPL"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: DEEPBHAIBUNGALOW,
                 cardTitle: "Deep Bhai Bunglow",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
@@ -227,7 +233,7 @@ const AllProjectsData = [
                 ArchitectName: "DCPL"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: CHINTANBHAIRESIDENCE,
                 cardTitle: "Chintanbhai Residence",
                 Location: "Ahmedabad",
                 ArchitectName: "DREAMSCAPE"
@@ -239,7 +245,7 @@ const AllProjectsData = [
                 ArchitectName: "DCPL"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: BHADRESHBHAIBUNGALOW,
                 cardTitle: "Bhadreshbhai",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"

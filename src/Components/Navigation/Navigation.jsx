@@ -71,10 +71,10 @@ const Navigation = () => {
             NavLink: "Directors and Clients",
             path: "/clientsanddirectors"
         },
-        // {
-        //     NavLink: "Services",
-        //     path: "/allservices"
-        // },
+        {
+            NavLink: "Services",
+            path: "/allservices"
+        },
     ];
     const handleLinkClick = (item) => {
         if (!item.onClick) {

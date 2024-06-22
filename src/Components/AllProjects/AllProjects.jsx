@@ -154,8 +154,17 @@ const AllProjects = () => {
                                                 <div className="cardContent">
                                                     <span className="Category">{details.Status}</span>
                                                     <h2>{truncateTitle(details.cardTitle, 20)}</h2>
+                                                    <br />
+                                                    <div>
+                                                        <span>Developer</span>
+                                                        <p style={{ fontSize: "15px", marginTo: "10px" }}>{details.Developer ? (
+                                                            details.Developer
+                                                        ) : (
+                                                            <i className='bx bx-hard-hat'></i>
+                                                        )}</p>
+                                                    </div>
                                                     <div className="arrowIcon">
-                                                        <i className='bx bx-right-arrow-alt'></i> {/* Note: Use className instead of class for React */}
+                                                        <i className='bx bx-right-arrow-alt'></i>
                                                     </div>
                                                 </div>
                                                 <hr />

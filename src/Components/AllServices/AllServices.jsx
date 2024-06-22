@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import "./AllServices.css";
-
+import { Link } from "react-router-dom";
 const AllServices = () => {
     const [showList, setShowList] = useState(false);
+
     const routeLinks = [
         { path: "/", name: "Home" },
-        { path: "/clientsanddirectors", name: "Clients And Directors" },
+        { path: "/clientsanddirectors", name: " Clients And Directors" },
         // Add more links as needed
     ];
     const Image =
@@ -34,22 +35,206 @@ const AllServices = () => {
     return (
         <>
             <StructuraCommonHero image={Image} text="Directors and Clients" routeLinks={routeLinks} />
+            <section>
+                <div className="Smalltagline">
+                    <h4 className="sectionHeading"><div></div>All Services</h4>
+                    <h1 data-aos="fade-up" className="bigHeading"
+                        data-aos-duration="1000">Provides</h1>
+                </div>
+            </section>
             <section className="AllServicesSection">
+
+
                 <div className="LeftSideAnimatedLinks">
-                    <div className="leftSideProgressContainer">
-                        <div className="ProgressBarPageScroll"></div>
-                        <div className="leftSideLinksContainer">
-                            <ul id="scrollList" className={showList ? "showList" : "hideList"}>
-                                <li>BIM REVIT & VECTORWORKS</li>
-                                <li>INTERIOR DESIGN</li>
-                                <li>ARCHITECTURE</li>
-                                <li>MECHANICAL, ELECTRICAL, PLUMBING & FIREFIGHTING</li>
-                                <li>3D VISUALIZATION</li>
+                    <div className="progressbar">
+
+                    </div>
+                    <ul >
+                        <li>BIM</li>
+                        <li>BIM REVIT & VECTORWORKS</li>
+                        <li>INTERIOR DESIGN</li>
+                        <li>ARCHITECTURE</li>
+                        <li>ECHANICAL, ELECTRICAL,...</li>
+                        <li>3D VISUALIZATION</li>
+                    </ul>
+                </div>
+                <div className="AllServicesdata">
+                    <div>
+                        <h1 className="DualTopHeading">B<span>IM</span></h1>
+                        <p>We were one of the early adopters of BIM and have worked on over 325+
+                            large architectural, interior, and engineering projects apart from 10,000+
+                            Retail outlets.</p>
+                        <br />
+                        <p>We have over 12+ years of experience in providing high-quality BIM Services to our clients in both
+                            the Architecture and Interior Design industries. We work with architectural practices based in the
+                            U.S., U.K. Australia & MENA region.
+                        </p>
+                        <br />
+                        <p>Our clientele include Architects, ID Firms, Engineers, Construction Firms, Developers & Business
+                            Owners.</p>
+                    </div>
+
+                    <div>
+                        <h1 className="DualTopHeading">R<span>EVIT & VECTORWORKS</span></h1>
+                        <div>
+                            <h4>Pre-Design</h4>
+                            <ul>
+                                <li>Program Schemes and Design Schemes</li>
+                                <li>Massing study Model</li>
+                                <li>3D Presentations</li>
+                                <li>Marketing material</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Schematic Design</h4>
+                            <ul>
+                                <li>3D Design Intent Model & Early conflict resolution</li>
+                                <li>Embedding product info.</li>
+                                <li>Orientation and Energy analysis, Site & Area Analysis</li>
+                                <li>Schematic Design Set</li>
+                                <li>“Intelligent” Parametric Library creation</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Design Development</h4>
+                            <ul>
+                                <li>Update Design per feedback</li>
+                                <li>Coordination and Clash detection</li>
+                                <li>ASMEPF coordinated Model</li>
+                                <li>DD Documentation set</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Construction Documents</h4>
+                            <ul>
+                                <li>ASMEPF Coordinated BIM model with Interference analysis</li>
+                                <li>Permit drawings for approvals & BID sets</li>
+                                <li>Exterior & Interior Construction Details drawings</li>
+                                <li>Schedules, quantities, area reports, etc.</li>
+                                <li>Value engineering</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Bid Stage</h4>
+                            <ul>
+                                <li>Procurement tracking</li>
+                                <li>Instantly verify data</li>
+                                <li>Tracking budget</li>
+                                <li>Accurate specifications</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Construction</h4>
+                            <ul>
+                                <li>Construction Sequencing (4D modeling)</li>
+                                <li>Monitoring progress</li>
+                                <li>Speedy fabrication process</li>
+                                <li>Sub-contractor coordination</li>
+                                <li>5D modeling</li>
+                                <li>Tracking construction progress vis-a-vis cost</li>
+                                <li>Change management process</li>
+                                <li>As-built Modeling</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>FacilityMgmt.</h4>
+                            <ul>
+                                <li>Double ‘Digital’ asset</li>
+                                <li>Maintenance management</li>
                             </ul>
                         </div>
                     </div>
+                    <div>
+                        <h1 className="DualTopHeading">I<span>NTERIOR DESIGN</span></h1>
+                        <p>We are a market leader in Design Document and arguably the World's no 1 in Documentation
+                            for Interior projects. We lead the market in the following verticals : </p>
+                        <br />
+                        <div>
+                            <h4>Hospitality :</h4>
+                            <ul>
+                                <li>More than 250 experts with a cumulative experience of 400+ years.</li>
+                                <li>A glamorous portfolio of 1100+ I.D. projects Worldwide.</li>
+                                <li>Experience in creating Iconic buildings from the ground up</li>
+                                <li>Experts in BIM & AutoCAD to suit all needs</li>
+                                <li>35% more cost-efficient</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Corporate Interiors : </h4>
+                            <ul>
+                                <li>An Experience of more than 350 projects.</li>
+                                <li>A dedicated team of over 20 people</li>
+                                <li>The flexibility of expansion in accordance with the project.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className="DualTopHeading">A<span>RCHITECTURE</span> </h1>
+                        <p>Our architects are trained in global design standards and construction technology. Owing to our
+                            specialization, our team value-adds by proactively working on projects even with minimal inputs.</p>
+                        <br />
+                        <p>We act as an extended arm of the client’s studio, providing documentation services for Architectural
+                            projects</p>
+                        <br />
+                        <div>
+                            <h4>We have completed large Architectural projects in the following sectors:</h4>
+                            <ul>
+                                <li>Institutional & Public Buildings</li>
+                                <li>Retail Outlets & Rollouts</li>
+                                <li>Mixed-use</li>
+                                <li>Hotels and Resorts</li>
+                                <li>Restaurants & Clubs</li>
+                                <li>Commercial Buildings</li>
+                                <li>Residential (Single family & Multi-storied)</li>
+                                <li>Renovation of Projects</li>
+                                <li>Healthcare</li>
+                                <li>Aged-care</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className="DualTopHeading">E<span>CHANICAL, ELECTRICAL, PLUMBING & FIREFIGHTING</span></h1>
+                        <p>SKETS MEP team is supported by highly experienced Engineers and Designers providing
+                            HVAC/Mechanical, Electrical, Plumbing, Fire Fighting, Fire Alarm, Public Address, Security,
+                            Telephone/Data Documentation & BIM services to Consultants, Contractors and Real-Estate
+                            Developers. </p>
+                        <br />
+                        <p>We work closely with design firms during the design development stages using a well-defined
+                            process. Our team members work with a range of inputs, including conceptual drawings, hand
+                            sketches, data sheets, design calculation excels, Red-Line Markups, and Single-Line Diagrams.</p>
+                        <br />
+                        <p><b>We specialize in BIM modeling to validate the design for constructability, performance,
+                            and maintenance. </b></p>
+                        <br />
+                        <p><b>Our MEP team has executed various Design Development projects with respect to BS,
+                            IS, NBC, NFPA, IEEE, ASME and ASHRAE codes.
+                        </b></p>
+                    </div>
+                    <div>
+                        <h1 className="DualTopHeading">3<span>D VISUALIZATION</span></h1>
+                        <p>The 3D Visualization Studio stands apart as our designers and specialists understand Architecture,
+                            Engineering, and Interior Design.</p>
+                        <br />
+                        <p><b>Our 3D designers are experts at creating 'Realistic Images & 3D Walkthroughs' for Corporate
+                            interiors, Hotels, Villas, Residences, Retail Outlets, Exhibitions, Commercial buildings, Malls
+                            and so on.
+                        </b></p>
+                        <br />
+                        <div>
+                            <h4>3D Services:</h4>
+                            <ul>
+                                <li>Presentation Drawings</li>
+                                <li>Interactive VR based Walkthroughs in Unreal Engine Package</li>
+                                <li>Unreal Engine Walkthroughs & Flythroughs</li>
+                                <li>3D Still Rendering</li>
+                                <li>3D Interior and External Animation</li>
+                                <li>4D & 5D Modeling and Animation</li>
+                            </ul>
+                            <p><b>Our team of experienced architects, engineers, designers and artists
+                                pool their skills to create amazing 3D & 4D visualization & animations</b></p>
+                        </div>
+                    </div>
                 </div>
-                <div className="AllServicesdata"></div>
             </section>
         </>
     );
