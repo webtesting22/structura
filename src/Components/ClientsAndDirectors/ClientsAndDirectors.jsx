@@ -1,7 +1,9 @@
 import React from "react";
 import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import { Row, Col } from "antd";
+import ClientCard from "./ClientCard";
 import "./animatedCardSection.css"
+import SwiperSlider from "./SwiperSlider"
 const ClientsAndDirectors = () => {
     const routeLinks = [
         { path: "/", name: "Home" },
@@ -67,7 +69,12 @@ const ClientsAndDirectors = () => {
                     </Row>
 
                 </div>
+                <div id="clientSection">
+                    <h1 className="bigHeading">Our Clients</h1>
+                    <ClientCard />
+                </div>
             </section>
+
         </>
     )
 }

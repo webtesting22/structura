@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import "./AllServices.css";
 import { Link } from "react-router-dom";
 const AllServices = () => {
     const [showList, setShowList] = useState(false);
+    const [progress, setProgress] = useState(0);
 
     const routeLinks = [
         { path: "/", name: "Home" },
@@ -12,7 +13,22 @@ const AllServices = () => {
     ];
     const Image =
         "https://images.unsplash.com/photo-1616531770192-6eaea74c2456?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+    const BIM = useRef(null);
+    const REVIT = useRef(null);
+    const INTERIOR = useRef(null);
+    const ARCHITECTURE = useRef(null);
+    const MECHANICAL = useRef(null);
+    const VISUALIZATION = useRef(null);
 
+    const scrollToSection = (ref) => {
+
+        const offsetTop = ref.current.offsetTop;
+        const offset = -50; // Adjust this value to set how much below the top you want to scroll
+        window.scrollTo({
+            top: offsetTop + offset,
+            behavior: 'smooth'
+        });
+    };
     useEffect(() => {
         const handleScroll = () => {
             const scrollDistance = window.scrollY;
@@ -50,16 +66,16 @@ const AllServices = () => {
 
                     </div>
                     <ul >
-                        <li>BIM</li>
-                        <li>BIM REVIT & VECTORWORKS</li>
-                        <li>INTERIOR DESIGN</li>
-                        <li>ARCHITECTURE</li>
-                        <li>ECHANICAL, ELECTRICAL,...</li>
-                        <li>3D VISUALIZATION</li>
+                        <li onClick={() => scrollToSection(BIM)}>BIM</li>
+                        <li onClick={() => scrollToSection(REVIT)}>BIM REVIT & VECTORWORKS</li>
+                        <li onClick={() => scrollToSection(INTERIOR)}>INTERIOR DESIGN</li>
+                        <li onClick={() => scrollToSection(ARCHITECTURE)}>ARCHITECTURE</li>
+                        <li onClick={() => scrollToSection(MECHANICAL)}>MECHANICAL, ELECTRICAL,...</li>
+                        <li onClick={() => scrollToSection(VISUALIZATION)}>3D VISUALIZATION</li>
                     </ul>
                 </div>
                 <div className="AllServicesdata">
-                    <div>
+                    <div ref={BIM}>
                         <h1 className="DualTopHeading">B<span>IM</span></h1>
                         <p>We were one of the early adopters of BIM and have worked on over 325+
                             large architectural, interior, and engineering projects apart from 10,000+
@@ -74,7 +90,7 @@ const AllServices = () => {
                             Owners.</p>
                     </div>
 
-                    <div>
+                    <div ref={REVIT}>
                         <h1 className="DualTopHeading">R<span>EVIT & VECTORWORKS</span></h1>
                         <div>
                             <h4>Pre-Design</h4>
@@ -144,7 +160,7 @@ const AllServices = () => {
                             </ul>
                         </div>
                     </div>
-                    <div>
+                    <div ref={INTERIOR}>
                         <h1 className="DualTopHeading">I<span>NTERIOR DESIGN</span></h1>
                         <p>We are a market leader in Design Document and arguably the World's no 1 in Documentation
                             for Interior projects. We lead the market in the following verticals : </p>
@@ -168,7 +184,7 @@ const AllServices = () => {
                             </ul>
                         </div>
                     </div>
-                    <div>
+                    <div ref={ARCHITECTURE}>
                         <h1 className="DualTopHeading">A<span>RCHITECTURE</span> </h1>
                         <p>Our architects are trained in global design standards and construction technology. Owing to our
                             specialization, our team value-adds by proactively working on projects even with minimal inputs.</p>
@@ -192,8 +208,8 @@ const AllServices = () => {
                             </ul>
                         </div>
                     </div>
-                    <div>
-                        <h1 className="DualTopHeading">E<span>CHANICAL, ELECTRICAL, PLUMBING & FIREFIGHTING</span></h1>
+                    <div ref={MECHANICAL}>
+                        <h1 className="DualTopHeading">M<span>ECHANICAL, ELECTRICAL, PLUMBING & FIREFIGHTING</span></h1>
                         <p>SKETS MEP team is supported by highly experienced Engineers and Designers providing
                             HVAC/Mechanical, Electrical, Plumbing, Fire Fighting, Fire Alarm, Public Address, Security,
                             Telephone/Data Documentation & BIM services to Consultants, Contractors and Real-Estate
@@ -210,7 +226,7 @@ const AllServices = () => {
                             IS, NBC, NFPA, IEEE, ASME and ASHRAE codes.
                         </b></p>
                     </div>
-                    <div>
+                    <div ref={VISUALIZATION}>
                         <h1 className="DualTopHeading">3<span>D VISUALIZATION</span></h1>
                         <p>The 3D Visualization Studio stands apart as our designers and specialists understand Architecture,
                             Engineering, and Interior Design.</p>
@@ -234,8 +250,27 @@ const AllServices = () => {
                                 pool their skills to create amazing 3D & 4D visualization & animations</b></p>
                         </div>
                     </div>
+
+
                 </div>
+
             </section>
+
+            <div className="AllServicesData">
+                <div>
+                    <h1 data-aos="fade-up" className="bigHeading"
+                        data-aos-duration="1000">AWARDS & RECOGNITIONS</h1>
+                </div>
+                <h1 className="DualTopHeading">E<span>xcellence Award</span></h1>
+                <p>Our strong commitment in providing the very best for our clients is reflected in the Excellence award
+                    conferred to us by one of the biggest US-based firms. The award was presented by the company’s Founder &
+                    CEO for excellence in Design Documentation service provided by SKETS.
+                </p>
+                <h1 className="DualTopHeading">A<span>uto desk India Case Study</span></h1>
+                <p>We were approached by AutoDesk to make a case study which reflects our technical capabilities in Revit. It
+                    showcased our work process, ability to handle & deliver complex Revit projects & our dedication towards
+                    quality excellence.</p>
+            </div>
         </>
     );
 };

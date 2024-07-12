@@ -15,7 +15,9 @@
     cursor: pointer;
 
 }
-
+.projectsCardDesigns{
+    cursor:pointer;
+}
 .nonActiveBtnSub {
     height: 50px;
     border-bottom: 2px solid transparent;
@@ -77,7 +79,16 @@
 .ColumsStyleContainers {
     padding-top: 2rem;
 }
-
+.modal-images{
+    height: 80vh;
+    overflow: auto;
+}
+/* .modal-images img{
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 3/2;
+    object-fit: contain; */
+/* } */
 #SelectMobile {
     width: 100%;
     padding: 10px;
@@ -109,6 +120,7 @@
     top: 30%;
     z-index: 5;
 }
+
 
 @media (max-width:769px) {
     .ColumsStyleContainers {

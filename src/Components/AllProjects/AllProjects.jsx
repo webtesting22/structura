@@ -3,13 +3,15 @@ import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import TopBack from '../Navigation/ResidentialBacl.webp';
 import "./AllProjects.css";
 import AllProjectsData from "./AllProjectsData";
-import { Row, Col } from "antd";
+import { Row, Col, Modal } from "antd";
 
 const AllProjects = () => {
     const [activeTab, setActiveTab] = useState('Residential');
     const [activeSubTab, setActiveSubTab] = useState('Ongoing');
     const [selectedTitle, setSelectedTitle] = useState(AllProjectsData[0].Title);
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // Check if it's mobile on initial render
+    const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalDetails, setModalDetails] = useState(null);
 
     // Function to handle window resize
     const handleResize = () => {
@@ -40,7 +42,22 @@ const AllProjects = () => {
         }
         return title;
     };
-
+    
+    const showModal = (details) => {
+        setModalDetails(details);
+        setIsModalOpen(true);
+      };
+    
+      const handleOk = () => {
+        setIsModalOpen(false);
+        setModalDetails(null);
+      };
+    
+      const handleCancel = () => {
+        setIsModalOpen(false);
+        setModalDetails(null);
+      };
+    
 
     return (
         <>
@@ -143,17 +160,22 @@ const AllProjects = () => {
                                     filteredProject.ProjectDetails.map((details, detailIndex) => (
                                         <Col lg={8} md={12} key={detailIndex}>
                                             <div
+                                              onClick={() => showModal(details)}
                                                 className="projectsCardDesigns"
                                                 data-aos="fade-up"
                                                 data-aos-delay={`${index * 300}`}
                                                 data-aos-duration="1000"
                                             >
+                                                    
                                                 <div className="cardImage">
                                                     <img src={details.cardImage} alt={details.cardTitle} />
                                                 </div>
                                                 <div className="cardContent">
                                                     <span className="Category">{details.Status}</span>
-                                                    <h2>{truncateTitle(details.cardTitle, 20)}</h2>
+                                                    <h2 >{truncateTitle(details.cardTitle, 20)}</h2>
+                                                    <Modal mask={false} title="Project Images" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                                                      <Col span={8}><img src={details.galleryImages} className="modalImage"/></Col>
+                                                    </Modal>
                                                     <br />
                                                     <div>
                                                         <span>Developer</span>
@@ -173,6 +195,32 @@ const AllProjects = () => {
                                     ))
                                 ))}
                             </Row>
+                            {modalDetails && (
+        <Modal
+          width={800}
+          title="Project Images"
+          open={isModalOpen}
+          onOk={handleOk}
+          onCancel={handleCancel}
+          style={{ boxShadow: "none" }}
+        >
+          <Row>
+            {modalDetails.galleryImages && modalDetails.galleryImages.length > 0 ? (
+              modalDetails.galleryImages.map((image, index) => (
+                <Col span={12} key={index}>
+                  <div style={{ padding: "5px" }}>
+                    <img style={{ width: "100%" }} src={image} className="modalImage" alt={`Project Image ${index + 1}`} />
+                  </div>
+                </Col>
+              ))
+            ) : (
+              <Col span={24} style={{ textAlign: 'center', padding: '20px' }}>
+                <p>No Images Found</p>
+              </Col>
+            )}
+          </Row>
+        </Modal>
+      )}
                         </div>
                     </div>
                 </div>

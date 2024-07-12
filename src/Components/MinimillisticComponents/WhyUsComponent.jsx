@@ -33,33 +33,51 @@ const WhyUsComponent = () => {
     
     const WhyChooseUsCards = [
         {
-            Title: "Architectural CAD Drafting",
-            Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+            // Title: "Architectural CAD Drafting",
+            // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+            Title:"Interior Design",
+            Descriptions:"We are a Market Leader in Interior Design Documentation with a specialization in Hospitality.",
         },
         {
-            Title: "Architectural BIM Services",
-            Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+            // Title: "Architectural BIM Services",
+            // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+            Title:"Experience",
+            Descriptions:"We have completed over 1500 large-scale projects along with 20,000+ Retail roll-outs across 32 countries over the past 18 years",
         },
         {
-            Title: "Facade BIM Services",
-            Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+            // Title: "Facade BIM Services",
+            // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+            Title:"Infrastructure",
+            Descriptions:"State of the art IT infrastructure with Data Integrity and data security, Global Connectivity, up to date Hardware/Software, Cloud & Remote Collaboration with IT-enabled Project Planning and Tracking mechanisms.",
         },
         {
-            Title: "Structural CAD Drafting",
-            Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+            // Title: "Structural CAD Drafting",
+            // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+            Title:"Bim Expertise",
+            Descriptions:"Completed over 300 projects in BIM - both in Architecture & Engineering.",
         },
         {
-            Title: 'MEP CAD Drafting',
-            Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+            // Title: 'MEP CAD Drafting',
+            // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+            Title:"Flexibility",
+            Descriptions:"625+ architects and engineers provide flexibility of ramping team size up/down based on project requirements.",
         },
         {
-            Title: "Structural BIM Services",
-            Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+            // Title: "Structural BIM Services",
+            // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+            Title:"PROCESS EXCELLENCE",
+            Descriptions:"We deliver unmatched business value through process excellence and quality frameworks.",
         },
         {
-            Title: "MEP BIM Services",
-            Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+            // Title: "MEP BIM Services",
+            // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+            Title:"REPEAT CLIENTELE",
+            Descriptions:"Most of our clients are long-standing as we provide relationship-based, tailor-made solutions. Since inception, we have had 4 large studios running, turning our clients into Partners in growth & success."
         },
+        {
+            Title:"RETENTION RATE",
+            Descriptions:"We have a near 100% retention rate since inception.",
+        }
        
     ]
     return (
@@ -81,7 +99,7 @@ const WhyUsComponent = () => {
                                         <div>
                                             <div className="Smalltagline"><h4 className="sectionHeading"><div></div>Why Us</h4></div>
                                             <h1 data-aos="fade-up" className="bigHeading"
-                                                data-aos-duration="1000">Why Choose Us</h1>
+                                                data-aos-duration="1000">Why Us</h1>
                                         </div>
                                     </div>
                                 </div>
