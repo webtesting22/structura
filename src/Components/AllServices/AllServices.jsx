@@ -8,7 +8,7 @@ const AllServices = () => {
 
     const routeLinks = [
         { path: "/", name: "Home" },
-        { path: "/clientsanddirectors", name: " Clients And Directors" },
+        { path: "/allservices", name: "All Services" },
         // Add more links as needed
     ];
     const Image =
@@ -52,7 +52,7 @@ const AllServices = () => {
 
     return (
         <>
-            <StructuraCommonHero image={Image} text="Directors and Clients" routeLinks={routeLinks} />
+            <StructuraCommonHero image={Image} text="All Services" routeLinks={routeLinks} />
             <section>
                 <div className="Smalltagline">
                     <h4 className="sectionHeading"><div></div>All Services</h4>
