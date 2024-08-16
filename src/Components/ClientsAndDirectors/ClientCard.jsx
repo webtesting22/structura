@@ -10,30 +10,22 @@ const ClientCard = () => {
     return (
         <div className="clientCardContainer">
             <Swiper
-                // slidesPerView={6}
-                // centeredSlides={true}
-                // spaceBetween={30}
-                slidesPerView={4}
+            slidesPerView={3}
                 spaceBetween={30}
                 freeMode={true}
+                centeredSlides={true}
                 loop={true}
-                // autoplay={{
-                //   delay: 2500,
-                //   disableOnInteraction: false,
-                // }}
-                // pagination={{
-                //     clickable: true,
-                // }}
                 autoplay={{
-                    delay: 0, // Continuous scroll
+                    delay: 2500,
+                    
                     disableOnInteraction: false,
-                    pauseOnMouseEnter: true,
+                   
                 }}
-                speed={7000} // Adjust speed for smooth scrolling
-                modules={[FreeMode, Autoplay]}
-                // navigation={true}
-                // modules={[Autoplay, Pagination, Navigation]}
-                // // modules={[Pagination]}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={false}
+                modules={[Autoplay]}
                 className="mySwiper"
             >
                 {clientData.map((client, index) => (

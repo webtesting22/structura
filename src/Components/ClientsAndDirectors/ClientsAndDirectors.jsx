@@ -3,7 +3,7 @@ import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import { Row, Col } from "antd";
 import ClientCard from "./ClientCard";
 import "./animatedCardSection.css"
-import SwiperSlider from "./SwiperSlider"
+
 const ClientsAndDirectors = () => {
     const routeLinks = [
         { path: "/", name: "Home" },

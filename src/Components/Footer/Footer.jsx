@@ -26,14 +26,17 @@ const Footer = () => {
                                     <p>SKETS Studio Private Limited
                                         226, Patparganj Functional Industrial Estate,
                                         Delhi 110092, India. Phone + 91 981004142</p>
+
                                 </div>
                             </Col>
                             <Col lg={8}>
                                 <i class='bx bx-building-house'></i>
+
                                 <h2>SKETS Campus</h2>
                                 <p>SKETS Studio Private Limited
                                     297 & 298, Patparganj Industrial Estate,
                                     Delhi 110092, India. Phone + 91 981004142</p>
+
                             </Col>
                         </Row>
                     </div>

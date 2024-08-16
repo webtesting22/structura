@@ -17,8 +17,8 @@
     width: 100%;
     padding: 20px;
     background-color: #f9f9f9;
-  } */
-  
+  }
+   */
   .client-card {
     height: auto;
     text-align: center;
@@ -30,20 +30,23 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    margin: 10px;
+    margin: 20px 10px;
   }
   
   .client-logo {
     aspect-ratio: 3/2;
     object-fit: contain;
     width: 25%;
-    /* width: 100px;
-    height: auto;
-    margin-bottom: 10px; */
+    margin: 10px;
   }
-  
+ 
   h3 {
     font-size: 16px;
     margin: 0;
   }
-  
+  @media (min-width:990px){
+    .client-card{
+      width: 100%;
+      margin: 10px 10px;
+    }
+  }

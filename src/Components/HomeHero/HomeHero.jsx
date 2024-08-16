@@ -58,7 +58,7 @@ const HomeHero = () => {
 
                             </Swiper>
                         </div>
-                        <div className="content-container">
+                        <div className="content-container" >
                             <div className="content" data-aos="fade-up"
                                 data-aos-duration="2000">
                                 <h4>Together, let's build a better

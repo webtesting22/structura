@@ -99,7 +99,7 @@ const WhyUsComponent = () => {
                                         <div>
                                             <div className="Smalltagline"><h4 className="sectionHeading"><div></div>Why Us</h4></div>
                                             <h1 data-aos="fade-up" className="bigHeading"
-                                                data-aos-duration="1000">Why Us</h1>
+                                                data-aos-duration="1000">Why Choose Us</h1>
                                         </div>
                                     </div>
                                 </div>

@@ -29,6 +29,8 @@ const AllServices = () => {
             behavior: 'smooth'
         });
     };
+
+
     useEffect(() => {
         const handleScroll = () => {
             const scrollDistance = window.scrollY;
@@ -58,13 +60,15 @@ const AllServices = () => {
                         data-aos-duration="1000">Provides</h1>
                 </div>
             </section>
-            <section className="AllServicesSection">
+
+            <section className="AllServicesSection" >
 
 
                 <div className="LeftSideAnimatedLinks">
                     <div className="progressbar">
 
                     </div>
+
                     <ul >
                         <li onClick={() => scrollToSection(BIM)}>BIM</li>
                         <li onClick={() => scrollToSection(REVIT)}>BIM REVIT & VECTORWORKS</li>
@@ -261,15 +265,17 @@ const AllServices = () => {
                     <h1 data-aos="fade-up" className="bigHeading"
                         data-aos-duration="1000">AWARDS & RECOGNITIONS</h1>
                 </div>
-                <h1 className="DualTopHeading">E<span>xcellence Award</span></h1>
-                <p>Our strong commitment in providing the very best for our clients is reflected in the Excellence award
-                    conferred to us by one of the biggest US-based firms. The award was presented by the company’s Founder &
-                    CEO for excellence in Design Documentation service provided by SKETS.
-                </p>
-                <h1 className="DualTopHeading">A<span>uto desk India Case Study</span></h1>
-                <p>We were approached by AutoDesk to make a case study which reflects our technical capabilities in Revit. It
-                    showcased our work process, ability to handle & deliver complex Revit projects & our dedication towards
-                    quality excellence.</p>
+                <div className="awards-container" >
+                    <h1 className="DualTopHeading">E<span>xcellence Award</span></h1>
+                    <p>Our strong commitment in providing the very best for our clients is reflected in the Excellence award
+                        conferred to us by one of the biggest US-based firms. The award was presented by the company’s Founder &
+                        CEO for excellence in Design Documentation service provided by SKETS.
+                    </p>
+                    <h1 className="DualTopHeading">A<span>uto desk India Case Study</span></h1>
+                    <p>We were approached by AutoDesk to make a case study which reflects our technical capabilities in Revit. It
+                        showcased our work process, ability to handle & deliver complex Revit projects & our dedication towards
+                        quality excellence.</p>
+                </div>
             </div>
         </>
     );

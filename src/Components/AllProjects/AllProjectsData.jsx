@@ -1,207 +1,207 @@
-import BeaufortPark from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/01.jpg"
-import MajesticSquare from "../../../public/images/ProjectsImages/HighRiseBuilding/MajesticSquare/04.jpg"
-import AmayProjects from "../../../public/images/ProjectsImages/HighRiseBuilding/AMAY PROJECTS/01.jpeg"
-import Girirajdreams from "../../../public/images/ProjectsImages/HighRiseBuilding/Girirajdreams/01.png"
-import Nirmanheights from "../../../public/images/ProjectsImages/HighRiseBuilding/Nirmanheights/01.jpg"
-import NirmanSahvas from "../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/01.jpg"
-import Nirmansatva from "../../../public/images/ProjectsImages/HighRiseBuilding/Nirmansatva/01.jpg"
-import NirmanGiriraj from "../../../public/images/ProjectsImages/HighRiseBuilding/NirmanGiriraj/01.jpg"
-import ProfitRoyal from "../../../public/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/01.jpg"
-import SankalpAnanta from "../../../public/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/01.jpg"
-import sukirtanAura from "../../../public/images/ProjectsImages/HighRiseBuilding/sukirtanAura/01.png"
-import SuparnaResidence from "../../../public/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/01.jpg"
-import ZaveriGreens from "../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/01.jpg"
-import ZionSkyfields from "../../../public/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/01.jpg"
+import BeaufortPark from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/01.jpg"
+import MajesticSquare from "/images/ProjectsImages/HighRiseBuilding/MajesticSquare/04.jpg"
+import AmayProjects from "/images/ProjectsImages/HighRiseBuilding/AMAY PROJECTS/01.jpeg"
+import Girirajdreams from "/images/ProjectsImages/HighRiseBuilding/Girirajdreams/01.png"
+import Nirmanheights from "/images/ProjectsImages/HighRiseBuilding/Nirmanheights/01.jpg"
+import NirmanSahvas from "/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/01.jpg"
+import Nirmansatva from "/images/ProjectsImages/HighRiseBuilding/Nirmansatva/01.jpg"
+import NirmanGiriraj from "/images/ProjectsImages/HighRiseBuilding/NirmanGiriraj/01.jpg"
+import ProfitRoyal from "/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/01.jpg"
+import SankalpAnanta from "/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/01.jpg"
+import sukirtanAura from "/images/ProjectsImages/HighRiseBuilding/sukirtanAura/01.png"
+import SuparnaResidence from "/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/01.jpg"
+import ZaveriGreens from "/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/01.jpg"
+import ZionSkyfields from "/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/01.jpg"
 
 
-import AmitBhaiBunglow from "../../../public/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/01.jpg"
-import BHADRESHBHAIBUNGALOW from "../../../public/images/ProjectsImages/Banglows/BHADRESHBHAI - BUNGALOW/Cam_01_03.jpg"
-import CHINTANBHAIRESIDENCE from "../../../public/images/ProjectsImages/Banglows/CHINTANBHAI RESIDENCE/DAY_CAM 01.jpg"
-import DEEPBHAIBUNGALOW from "../../../public/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/06.jpg"
+import AmitBhaiBunglow from "/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/01.jpg"
+import BHADRESHBHAIBUNGALOW from "/images/ProjectsImages/Banglows/BHADRESHBHAI - BUNGALOW/Cam_01_03.jpg"
+import CHINTANBHAIRESIDENCE from "/images/ProjectsImages/Banglows/CHINTANBHAI RESIDENCE/DAY_CAM 01.jpg"
+import DEEPBHAIBUNGALOW from "/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/06.jpg"
 
 //High Rise Buildings
 
 //Nirman Satva
 
 import NirmanSatvaImage1 from "/images/ProjectsImages/HighRiseBuilding/Nirmansatva/01.jpg"
-import NirmanSatvaImage2 from "../../../public/images/ProjectsImages/HighRiseBuilding/Nirmansatva/02.jpg"
+import NirmanSatvaImage2 from "/images/ProjectsImages/HighRiseBuilding/Nirmansatva/02.jpg"
 
 //Amay Projects
 
-import AmayProjectsImage1 from "../../../public/images/ProjectsImages/HighRiseBuilding/AMAY PROJECTS/01.jpeg"
-import AmayProjectsImage2 from "../../../public/images/ProjectsImages/HighRiseBuilding/AMAY PROJECTS/02.jpeg"
-import AmayProjectsImage3 from "../../../public/images/ProjectsImages/HighRiseBuilding/AMAY PROJECTS/03.jpeg"
+import AmayProjectsImage1 from "/images/ProjectsImages/HighRiseBuilding/AMAY PROJECTS/01.jpeg"
+import AmayProjectsImage2 from "/images/ProjectsImages/HighRiseBuilding/AMAY PROJECTS/02.jpeg"
+import AmayProjectsImage3 from "/images/ProjectsImages/HighRiseBuilding/AMAY PROJECTS/03.jpeg"
 
 //Beaufort Park
 
-import BeaufortParkImage1 from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/01.jpg"
-import BeaufortParkImage2 from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/02.jpg"
-import BeaufortParkImage3 from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/03.jpg"
-import BeaufortParkImage4 from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/04.jpg"
-import BeaufortParkImage5 from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/05.jpg"
-import BeaufortParkImage6 from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/06.jpg"
-import BeaufortParkImage7 from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/07.jpg"
-import BeaufortParkImage8 from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/08.jpg"
-import BeaufortParkImage9 from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/09.jpg"
-import BeaufortParkImage10 from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/10.jpg"
-import BeaufortParkImage11 from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/11.jpg"
-import BeaufortParkImage12 from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/12.jpg"
-import BeaufortParkImage13 from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/13.jpg"
-import BeaufortParkImage14 from "../../../public/images/ProjectsImages/HighRiseBuilding/BeaufortPark/14.jpg"
+import BeaufortParkImage1 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/01.jpg"
+import BeaufortParkImage2 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/02.jpg"
+import BeaufortParkImage3 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/03.jpg"
+import BeaufortParkImage4 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/04.jpg"
+import BeaufortParkImage5 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/05.jpg"
+import BeaufortParkImage6 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/06.jpg"
+import BeaufortParkImage7 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/07.jpg"
+import BeaufortParkImage8 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/08.jpg"
+import BeaufortParkImage9 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/09.jpg"
+import BeaufortParkImage10 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/10.jpg"
+import BeaufortParkImage11 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/11.jpg"
+import BeaufortParkImage12 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/12.jpg"
+import BeaufortParkImage13 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/13.jpg"
+import BeaufortParkImage14 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/14.jpg"
 
 //Giriraj Dreams
 
-import GirirajdreamsImage1 from "../../../public/images/ProjectsImages/HighRiseBuilding/Girirajdreams/01.png"
-import GirirajdreamsImage2 from "../../../public/images/ProjectsImages/HighRiseBuilding/Girirajdreams/02.png"
+import GirirajdreamsImage1 from "/images/ProjectsImages/HighRiseBuilding/Girirajdreams/01.png"
+import GirirajdreamsImage2 from "/images/ProjectsImages/HighRiseBuilding/Girirajdreams/02.png"
 
 //Ivory Orchards
 
-import IvoryOrchardsImage1 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/01.jpeg"
-import IvoryOrchardsImage2 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/02.jpeg"
-import IvoryOrchardsImage3 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/03.jpeg"
-import IvoryOrchardsImage4 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/04.jpeg"
-import IvoryOrchardsImage5 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/05.jpeg"
-import IvoryOrchardsImage6 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/06.jpeg"
-import IvoryOrchardsImage7 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/07.jpeg"
-import IvoryOrchardsImage8 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/08.jpeg"
-import IvoryOrchardsImage9 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/09.jpeg"
-import IvoryOrchardsImage10 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/10.jpeg"
-import IvoryOrchardsImage11 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/11.jpeg"
-import IvoryOrchardsImage12 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/12.jpeg"
-import IvoryOrchardsImage13 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/13.jpeg"
-import IvoryOrchardsImage14 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/14.jpeg"
-import IvoryOrchardsImage15 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/15.jpeg"
-import IvoryOrchardsImage16 from "../../../public/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/16.jpeg"
+import IvoryOrchardsImage1 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/01.jpeg"
+import IvoryOrchardsImage2 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/02.jpeg"
+import IvoryOrchardsImage3 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/03.jpeg"
+import IvoryOrchardsImage4 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/04.jpeg"
+import IvoryOrchardsImage5 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/05.jpeg"
+import IvoryOrchardsImage6 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/06.jpeg"
+import IvoryOrchardsImage7 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/07.jpeg"
+import IvoryOrchardsImage8 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/08.jpeg"
+import IvoryOrchardsImage9 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/09.jpeg"
+import IvoryOrchardsImage10 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/10.jpeg"
+import IvoryOrchardsImage11 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/11.jpeg"
+import IvoryOrchardsImage12 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/12.jpeg"
+import IvoryOrchardsImage13 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/13.jpeg"
+import IvoryOrchardsImage14 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/14.jpeg"
+import IvoryOrchardsImage15 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/15.jpeg"
+import IvoryOrchardsImage16 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/16.jpeg"
 
 //Majestic Square
 
-import MajesticSquareImage1 from "../../../public/images/ProjectsImages/HighRiseBuilding/MajesticSquare/01.jpg"
-import MajesticSquareImage2 from "../../../public/images/ProjectsImages/HighRiseBuilding/MajesticSquare/02.jpg"
-import MajesticSquareImage3 from "../../../public/images/ProjectsImages/HighRiseBuilding/MajesticSquare/03.jpg"
-import MajesticSquareImage4 from "../../../public/images/ProjectsImages/HighRiseBuilding/MajesticSquare/04.jpg"
-import MajesticSquareImage5 from "../../../public/images/ProjectsImages/HighRiseBuilding/MajesticSquare/05.jpg"
-import MajesticSquareImage6 from "../../../public/images/ProjectsImages/HighRiseBuilding/MajesticSquare/06.jpg"
-import MajesticSquareImage7 from "../../../public/images/ProjectsImages/HighRiseBuilding/MajesticSquare/07.jpg"
+import MajesticSquareImage1 from "/images/ProjectsImages/HighRiseBuilding/MajesticSquare/01.jpg"
+import MajesticSquareImage2 from "/images/ProjectsImages/HighRiseBuilding/MajesticSquare/02.jpg"
+import MajesticSquareImage3 from "/images/ProjectsImages/HighRiseBuilding/MajesticSquare/03.jpg"
+import MajesticSquareImage4 from "/images/ProjectsImages/HighRiseBuilding/MajesticSquare/04.jpg"
+import MajesticSquareImage5 from "/images/ProjectsImages/HighRiseBuilding/MajesticSquare/05.jpg"
+import MajesticSquareImage6 from "/images/ProjectsImages/HighRiseBuilding/MajesticSquare/06.jpg"
+import MajesticSquareImage7 from "/images/ProjectsImages/HighRiseBuilding/MajesticSquare/07.jpg"
 
 //Nirman Giriraj
 
-import NirmanGirirajImage1 from "../../../public/images/ProjectsImages/HighRiseBuilding/NirmanGiriraj/01.jpg"
-import NirmanGirirajImage2 from "../../../public/images/ProjectsImages/HighRiseBuilding/NirmanGiriraj/02.jpg"
-import NirmanGirirajImage3 from "../../../public/images/ProjectsImages/HighRiseBuilding/NirmanGiriraj/03.jpg"
+import NirmanGirirajImage1 from "/images/ProjectsImages/HighRiseBuilding/NirmanGiriraj/01.jpg"
+import NirmanGirirajImage2 from "/images/ProjectsImages/HighRiseBuilding/NirmanGiriraj/02.jpg"
+import NirmanGirirajImage3 from "/images/ProjectsImages/HighRiseBuilding/NirmanGiriraj/03.jpg"
 
 //Nirman Heights
 
-import NirmanheightsImage1 from "../../../public/images/ProjectsImages/HighRiseBuilding/Nirmanheights/01.jpg"
-import NirmanheightsImage2 from "../../../public/images/ProjectsImages/HighRiseBuilding/Nirmanheights/02.jpg"
-import NirmanheightsImage3 from "../../../public/images/ProjectsImages/HighRiseBuilding/Nirmanheights/03.jpg"
+import NirmanheightsImage1 from "/images/ProjectsImages/HighRiseBuilding/Nirmanheights/01.jpg"
+import NirmanheightsImage2 from "/images/ProjectsImages/HighRiseBuilding/Nirmanheights/02.jpg"
+import NirmanheightsImage3 from "/images/ProjectsImages/HighRiseBuilding/Nirmanheights/03.jpg"
 
 //Nirman Sahvas
 
-import NirmanSahvasImage1 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/01.jpg'
-import NirmanSahvasImage2 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/02.jpg'
-import NirmanSahvasImage3 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/03.jpg'
-import NirmanSahvasImage4 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/04.jpg'
-import NirmanSahvasImage5 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/05.jpg'
-import NirmanSahvasImage6 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/06.jpg'
-import NirmanSahvasImage7 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/07.jpg'
-import NirmanSahvasImage8 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/08.jpg'
-import NirmanSahvasImage9 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/09.jpg'
-import NirmanSahvasImage10 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/10.jpg'
-import NirmanSahvasImage11 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/11.jpg'
-import NirmanSahvasImage12 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/12.jpg'
-import NirmanSahvasImage13 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/13.jpg'
-import NirmanSahvasImage14 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/14.jpg'
-import NirmanSahvasImage15 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/15.jpg'
-import NirmanSahvasImage16 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/16.jpg'
-import NirmanSahvasImage17 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/17.jpg'
-import NirmanSahvasImage18 from '../../../public/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/18.jpg'
+import NirmanSahvasImage1 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/01.jpg'
+import NirmanSahvasImage2 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/02.jpg'
+import NirmanSahvasImage3 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/03.jpg'
+import NirmanSahvasImage4 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/04.jpg'
+import NirmanSahvasImage5 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/05.jpg'
+import NirmanSahvasImage6 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/06.jpg'
+import NirmanSahvasImage7 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/07.jpg'
+import NirmanSahvasImage8 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/08.jpg'
+import NirmanSahvasImage9 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/09.jpg'
+import NirmanSahvasImage10 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/10.jpg'
+import NirmanSahvasImage11 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/11.jpg'
+import NirmanSahvasImage12 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/12.jpg'
+import NirmanSahvasImage13 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/13.jpg'
+import NirmanSahvasImage14 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/14.jpg'
+import NirmanSahvasImage15 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/15.jpg'
+import NirmanSahvasImage16 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/16.jpg'
+import NirmanSahvasImage17 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/17.jpg'
+import NirmanSahvasImage18 from '/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/18.jpg'
 
 //Profit Royal
 
-import ProfitRoyalImage1 from '../../../public/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/01.jpg'
-import ProfitRoyalImage2 from '../../../public/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/02.jpg'
-import ProfitRoyalImage3 from '../../../public/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/03.jpg'
-import ProfitRoyalImage4 from '../../../public/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/04.jpg'
-import ProfitRoyalImage5 from '../../../public/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/05.jpg'
+import ProfitRoyalImage1 from '/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/01.jpg'
+import ProfitRoyalImage2 from '/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/02.jpg'
+import ProfitRoyalImage3 from '/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/03.jpg'
+import ProfitRoyalImage4 from '/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/04.jpg'
+import ProfitRoyalImage5 from '/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/05.jpg'
 
 
 //Sankalp Ananta
 
-import SankalpAnantaImage1 from '../../../public/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/01.jpg'
-import SankalpAnantaImage2 from '../../../public/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/02.jpg'
-import SankalpAnantaImage3 from '../../../public/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/03.jpg'
-import SankalpAnantaImage4 from '../../../public/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/04.jpg'
-import SankalpAnantaImage5 from '../../../public/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/05.jpg'
+import SankalpAnantaImage1 from '/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/01.jpg'
+import SankalpAnantaImage2 from '/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/02.jpg'
+import SankalpAnantaImage3 from '/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/03.jpg'
+import SankalpAnantaImage4 from '/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/04.jpg'
+import SankalpAnantaImage5 from '/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/05.jpg'
 
 
 //Sukirtan Aura
 
-import SukirtanAuraImage1 from "../../../public/images/ProjectsImages/HighRiseBuilding/sukirtanAura/01.png"
-import SukirtanAuraImage2 from "../../../public/images/ProjectsImages/HighRiseBuilding/sukirtanAura/02.png"
+import SukirtanAuraImage1 from "/images/ProjectsImages/HighRiseBuilding/sukirtanAura/01.png"
+import SukirtanAuraImage2 from "/images/ProjectsImages/HighRiseBuilding/sukirtanAura/02.png"
 
 //Suparna Residence
 
-import SuparnaResidenceImage1 from '../../../public/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/01.jpg'
-import SuparnaResidenceImage2 from '../../../public/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/02.jpg'
-import SuparnaResidenceImage3 from '../../../public/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/03.jpg'
-import SuparnaResidenceImage4 from '../../../public/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/04.jpg'
-import SuparnaResidenceImage5 from '../../../public/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/05.jpg'
+import SuparnaResidenceImage1 from '/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/01.jpg'
+import SuparnaResidenceImage2 from '/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/02.jpg'
+import SuparnaResidenceImage3 from '/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/03.jpg'
+import SuparnaResidenceImage4 from '/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/04.jpg'
+import SuparnaResidenceImage5 from '/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/05.jpg'
 
 //Zaveri Greens
 
-import ZaveriGreensImage1 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/01.jpg'
-import ZaveriGreensImage2 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/02.jpg'
-import ZaveriGreensImage3 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/03.jpg'
-import ZaveriGreensImage4 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/04.jpg'
-import ZaveriGreensImage5 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/05.jpg'
-import ZaveriGreensImage6 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/06.jpg'
-import ZaveriGreensImage7 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/07.jpg'
-import ZaveriGreensImage9 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/09.jpg'
-import ZaveriGreensImage10 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/10.jpg'
-import ZaveriGreensImage11 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/11.jpg'
-import ZaveriGreensImage12 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/12.jpg'
-import ZaveriGreensImage13 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/13.jpg'
-import ZaveriGreensImage14 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/14.jpg'
-import ZaveriGreensImage15 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/15.jpg'
-import ZaveriGreensImage16 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/16.jpg'
-import ZaveriGreensImage17 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/17.jpg'
-import ZaveriGreensImage18 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/18.jpg'
-import ZaveriGreensImage19 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/19.jpg'
+import ZaveriGreensImage1 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/01.jpg'
+import ZaveriGreensImage2 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/02.jpg'
+import ZaveriGreensImage3 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/03.jpg'
+import ZaveriGreensImage4 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/04.jpg'
+import ZaveriGreensImage5 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/05.jpg'
+import ZaveriGreensImage6 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/06.jpg'
+import ZaveriGreensImage7 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/07.jpg'
+import ZaveriGreensImage9 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/09.jpg'
+import ZaveriGreensImage10 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/10.jpg'
+import ZaveriGreensImage11 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/11.jpg'
+import ZaveriGreensImage12 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/12.jpg'
+import ZaveriGreensImage13 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/13.jpg'
+import ZaveriGreensImage14 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/14.jpg'
+import ZaveriGreensImage15 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/15.jpg'
+import ZaveriGreensImage16 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/16.jpg'
+import ZaveriGreensImage17 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/17.jpg'
+import ZaveriGreensImage18 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/18.jpg'
+import ZaveriGreensImage19 from '/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/19.jpg'
 
 //Zion Sky fields
 
-import ZionSkyfieldsImage1 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/01.jpg'
-import ZionSkyfieldsImage2 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/02.jpg'
-import ZionSkyfieldsImage3 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/03.jpg'
-import ZionSkyfieldsImage4 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/04.jpg'
-import ZionSkyfieldsImage5 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/05.jpg'
-import ZionSkyfieldsImage6 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/06.jpg'
-import ZionSkyfieldsImage7 from '../../../public/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/07.jpg'
+import ZionSkyfieldsImage1 from '/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/01.jpg'
+import ZionSkyfieldsImage2 from '/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/02.jpg'
+import ZionSkyfieldsImage3 from '/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/03.jpg'
+import ZionSkyfieldsImage4 from '/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/04.jpg'
+import ZionSkyfieldsImage5 from '/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/05.jpg'
+import ZionSkyfieldsImage6 from '/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/06.jpg'
+import ZionSkyfieldsImage7 from '/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/07.jpg'
 
 //Bungalows
 
 //Amit Bhai Bungalow
-import AmitBhaiBunglowImage1 from "../../../public/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/01.jpg"
-import AmitBhaiBunglowImage2 from "../../../public/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/02.jpg"
-import AmitBhaiBunglowImage3 from "../../../public/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/03.jpg"
-import AmitBhaiBunglowImage4 from "../../../public/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/04.jpg"
-import AmitBhaiBunglowImage5 from "../../../public/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/05.jpg"
+import AmitBhaiBunglowImage1 from "/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/01.jpg"
+import AmitBhaiBunglowImage2 from "/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/02.jpg"
+import AmitBhaiBunglowImage3 from "/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/03.jpg"
+import AmitBhaiBunglowImage4 from "/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/04.jpg"
+import AmitBhaiBunglowImage5 from "/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/05.jpg"
 
 //Chintan Bhai Residency
 
-import CHINTANBHAIRESIDENCEImage1 from "../../../public/images/ProjectsImages/Banglows/CHINTANBHAI RESIDENCE/DAY_CAM 01.jpg"
-import CHINTANBHAIRESIDENCEImage2 from "../../../public/images/ProjectsImages/Banglows/CHINTANBHAI RESIDENCE/DAY_CAM 02.jpg"
-import CHINTANBHAIRESIDENCEImage3 from "../../../public/images/ProjectsImages/Banglows/CHINTANBHAI RESIDENCE/DAY_CAM 03.jpg"
-import CHINTANBHAIRESIDENCEImage4 from "../../../public/images/ProjectsImages/Banglows/CHINTANBHAI RESIDENCE/DAY_CAM 04.jpg"
+import CHINTANBHAIRESIDENCEImage1 from "/images/ProjectsImages/Banglows/CHINTANBHAI RESIDENCE/DAY_CAM 01.jpg"
+import CHINTANBHAIRESIDENCEImage2 from "/images/ProjectsImages/Banglows/CHINTANBHAI RESIDENCE/DAY_CAM 02.jpg"
+import CHINTANBHAIRESIDENCEImage3 from "/images/ProjectsImages/Banglows/CHINTANBHAI RESIDENCE/DAY_CAM 03.jpg"
+import CHINTANBHAIRESIDENCEImage4 from "/images/ProjectsImages/Banglows/CHINTANBHAI RESIDENCE/DAY_CAM 04.jpg"
 
 //Deep Bhai Bungalow
 
-import DEEPBHAIBUNGALOWImage1 from "../../../public/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/01.jpg"
-import DEEPBHAIBUNGALOWImage2 from "../../../public/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/02.jpg"
-import DEEPBHAIBUNGALOWImage3 from "../../../public/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/03.jpg"
-// import DEEPBHAIBUNGALOWImage4 from "../../../public/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/04.jpg"
-import DEEPBHAIBUNGALOWImage5 from "../../../public/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/05.jpg"
-import DEEPBHAIBUNGALOWImage6 from "../../../public/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/06.jpg"
+import DEEPBHAIBUNGALOWImage1 from "/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/01.jpg"
+import DEEPBHAIBUNGALOWImage2 from "/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/02.jpg"
+import DEEPBHAIBUNGALOWImage3 from "/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/03.jpg"
+// import DEEPBHAIBUNGALOWImage4 from "/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/04.jpg"
+import DEEPBHAIBUNGALOWImage5 from "/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/05.jpg"
+import DEEPBHAIBUNGALOWImage6 from "/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/06.jpg"
 
 const AllProjectsData = [
     {
