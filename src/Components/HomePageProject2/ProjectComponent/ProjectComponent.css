@@ -31,6 +31,7 @@
   transition: width 1s ease-in-out;
   object-fit: cover; 
   height: 500px;
+  opacity: 0.8;
 }
 .imageWrapper {
     display: flex;
@@ -42,6 +43,7 @@
     width: 100%;
     object-fit: cover;
     height: 500px;
+    opacity: 1;
 }
 
 .imageWrapper img.collapsed {
