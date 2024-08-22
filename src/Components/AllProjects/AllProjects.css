@@ -145,3 +145,6 @@
         width: 100%;
     }
 }
+.ant-modal .ant-modal-content{
+    box-shadow: none;
+}

@@ -1,0 +1,19 @@
+.imageWrapper {
+    display: flex;
+    width: 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+.imageWrapper img {
+    flex-grow: 1;
+    width: 33.33%;
+    transition: transform 0.5s ease-in-out, flex-grow 0.5s ease-in-out;
+    transform-origin: center center;
+    object-fit: contain;
+}
+
+.imageWrapper img.collapsed {
+    transform: scale(0);
+    opacity: 0;
+}

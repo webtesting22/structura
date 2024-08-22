@@ -261,8 +261,8 @@ const AllServices = () => {
             </section>
 
             <div className="AllServicesData">
-                <div>
-                    <h1 data-aos="fade-up" className="bigHeading"
+                <div style={{padding:"2rem 3rem"}}>
+                         <h1 data-aos="fade-up" className="bigHeading"
                         data-aos-duration="1000">AWARDS & RECOGNITIONS</h1>
                 </div>
                 <div className="awards-container" >

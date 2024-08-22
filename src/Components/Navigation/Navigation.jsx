@@ -1,30 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
-import { FaCircleArrowRight } from "react-icons/fa6";
-import LocationIcon from "../../../public/images/LocationIcon.png";
 import "./nav.css";
 
 const Navigation = () => {
     const [isNavVisible, setIsNavVisible] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 300);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
     const toggleNav = () => {
         setIsNavVisible(prevState => !prevState);
     };
 
     return (
-        <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+        <nav className={`navbar ${isNavVisible ? 'nav-open' : ''}`}>
+
             <div className="logo-container">
                 <Link to="/">
                     <h2 className="logo">Structura</h2>

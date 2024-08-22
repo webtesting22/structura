@@ -1,99 +1,105 @@
 /* General styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 10;
-    transition: background-color 0.3s, height 0.3s;
-  }
-  
-  .navbar.scrolled {
-    background-color: rgba(255, 255, 255, 0.9);
-    height: 60px;
-  }
-  
-  .logo-container {
-    flex: 1;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    margin: 0;
-    color: black;
-  }
-  
-  .nav-toggler {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    z-index: 20; /* Ensure it is above other elements */
-    position: relative;
-    /* Adjust button position to stay within borders */
-    margin-right: 20px;
-  }
-  
-  /* Menu styling */
-  .nav-menu {
-    display: none; /* Hide menu by default */
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: white;
-    width: 200px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 10; /* Ensure it is above other elements */
-    opacity: 0; /* Start with hidden menu */
-    transition: opacity 0.3s, transform 0.3s; /* Smooth transition */
-    transform: translateY(-20px); /* Start with slightly shifted menu */
-  }
-  
-  /* Menu visibility for small screens */
-  .nav-menu.open {
-    display: flex; /* Show menu when button is clicked */
-    opacity: 1; /* Fade in menu */
-    transform: translateY(0); /* Move to its position */
-  }
-  
-  /* Responsive styles */
-  @media (min-width: 992px) {
-    .nav-menu {
-      display: none; 
-      position: static;
-      flex-direction: row;
-      background-color: transparent;
-      box-shadow: none;
-      width: auto;
-    }
-  
-    .nav-menu ul {
-      display: flex;
-      padding: 0;
-      margin: 0;
-    }
-  
-    .nav-menu li {
-      padding:0 10px;
-      border-bottom: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .nav-menu li a {
-      text-decoration: none;
-      color: black;
-      font-size: 1rem;
-    }
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: transparent; /* Initially transparent */
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  height: 70px;
+  transition: background-color 0.5s ease; /* Smooth background transition */
+}
+
+.navbar.nav-open {
+  background-color: white; /* Background turns white when nav is open */
+}
+
+.logo-container {
+  z-index: 1; /* Ensure logo stays on top */
+  /* height: 100px; */
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin: 0;
+  color: black; /* Initially white text */
+  background:transparent;
+}
+
+.nav-toggler {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 20;
+  position: relative;
+  margin-right: 20px;
+}
+
+/* Menu styling */
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: absolute;
+  /* top: 60px; */
+  top:0;
+  right: 0;
+  /* right: -220px; Start off-screen to the right */
+  background-color: white;
+  height: 100%;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  opacity: 0; 
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+  transform: translateX(100%); /* Initial transform */
+}
+
+.nav-menu.open {
+  opacity: 1; /* Fade in */
+  transform: translateX(0); /* Slide in from right */
+}
+
+.nav-menu ul {
+  display: flex; /* Display the list items in a row */
+  flex-direction: row; /* Ensure the items are laid out horizontally */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove bullet points */
+}
+.nav-menu {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: none;
+  width: auto;
+
+}
+
+.nav-menu.open {
+  transform: none;
+}
+
+.nav-menu li {
+  padding: 0 10px;
+  list-style: none;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+}
+.navbar.nav-open .logo-container{
+  color: black;
+}

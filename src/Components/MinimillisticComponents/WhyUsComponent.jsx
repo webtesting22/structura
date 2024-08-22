@@ -95,7 +95,7 @@ const WhyUsComponent = () => {
 
                                 {/* Content for left column */}
                                 <div style={{ position: "relative" }}>
-                                    <div className='contentContainer'>
+                                    <div className='contentContainer1'>
                                         <div>
                                             <div className="Smalltagline"><h4 className="sectionHeading"><div></div>Why Us</h4></div>
                                             <h1 data-aos="fade-up" className="bigHeading"

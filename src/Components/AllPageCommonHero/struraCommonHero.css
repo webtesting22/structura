@@ -16,12 +16,12 @@
 
 }
 
-.contentContainer {
+.contentContainer1 {
     position: absolute;
     z-index: 4;
 }
 
-.contentContainer .content h4 {
+.contentContainer1 .content h4 {
     text-align: center;
     font-size: 3rem;
     color: white;
@@ -91,14 +91,14 @@
 
     }
 
-    .contentContainer .content h4 {
+    .contentContainer1 .content h4 {
         text-align: center;
         font-size: 2rem;
         color: white;
         font-weight: 300;
     }
 
-    .contentContainer {
+    .contentContainer1 {
         position: absolute;
         z-index: 4;
         bottom: 20%;
