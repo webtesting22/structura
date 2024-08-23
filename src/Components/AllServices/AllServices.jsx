@@ -259,9 +259,9 @@ const AllServices = () => {
                 </div>
 
             </section>
-
+                <hr />
             <div className="AllServicesData">
-                <div style={{padding:"2rem 3rem"}}>
+                <div className="PaddingAdjust">
                          <h1 data-aos="fade-up" className="bigHeading"
                         data-aos-duration="1000">AWARDS & RECOGNITIONS</h1>
                 </div>
@@ -277,6 +277,7 @@ const AllServices = () => {
                         quality excellence.</p>
                 </div>
             </div>
+            <br /><br />
         </>
     );
 };

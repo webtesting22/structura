@@ -67,8 +67,13 @@
 .AllServicesdata>div{
     margin: 3rem 0rem;
 }
-
+.PaddingAdjust{
+    padding: 2rem 3rem;
+}
 @media (max-width:769px){
+    .PaddingAdjust{
+        padding: 0rem 0.5rem;
+    }
     .LeftSideAnimatedLinks{
         display: none;
     }
@@ -81,7 +86,8 @@
         width: 100%;
         /* padding-left: 0rem; */
         /* margin: 3 rem 0 rem; */
-        margin: 10px 40px;
+        margin: 10px 0px;
+        padding: 2rem 0.5rem;
         /* margin-left: 0; */
     }
 }
