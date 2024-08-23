@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import "./nav.css";
 import CloseIcon from "../../../public/images/cross.png";
-
+import { MdMenu } from "react-icons/md";
+import { RxCross2 } from "react-icons/rx";
 const Navigation = () => {
     const [isNavVisible, setIsNavVisible] = useState(false);
     const toggleNav = () => {
@@ -26,9 +27,9 @@ const Navigation = () => {
                     <li onClick={toggleNav}><Link to="/AllServices">Services</Link></li>
                 </ul>
             </div>
-            <button className="nav-toggler" onClick={toggleNav}>
+            <button className="nav-toggler" onClick={toggleNav} style={{borderRadius:"8px"}}>
                 {/* Menu */}
-                {isNavVisible? <img src={CloseIcon}  style={{width:"1.5rem",height:"1.5rem"}}/> : <i class='bx bx-menu'></i>}
+                {isNavVisible? <RxCross2 /> : <MdMenu />}
                
             </button>
         </nav>
