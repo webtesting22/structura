@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import "./AllServices.css";
 import { Link } from "react-router-dom";
+import Image from "../AllServices/4.png"
 const AllServices = () => {
     const [showList, setShowList] = useState(false);
     const [progress, setProgress] = useState(0);
@@ -11,8 +12,7 @@ const AllServices = () => {
         { path: "/allservices", name: "All Services" },
         // Add more links as needed
     ];
-    const Image =
-        "https://images.unsplash.com/photo-1616531770192-6eaea74c2456?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+   
     const BIM = useRef(null);
     const REVIT = useRef(null);
     const INTERIOR = useRef(null);

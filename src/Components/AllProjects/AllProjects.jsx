@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
-import TopBack from '../Navigation/ResidentialBacl.webp';
+import TopBack from '../AllProjects/2.png';
 import "./AllProjects.css";
 import AllProjectsData from "./AllProjectsData";
 import { Row, Col, Modal } from "antd";

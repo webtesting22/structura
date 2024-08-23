@@ -13,6 +13,7 @@ import VisualizationIcon from "./IconsImages/VISUALIZATION.png"
 import WhyUsComponent from "../MinimillisticComponents/WhyUsComponent";
 import BoxCarousalContainer from "../MinimillisticComponents/BoxCarousalContainer/BoxCarousalContainer";
 import AnimatedHoverableCards from "../AnimatedHoverableCard/AnimatedHoverableCard";
+import AboutUsPoster from "../AboutUs/1.png"
 const AboutUs = () => {
     const routeLinks = [
         { path: "/", name: "Home" },
@@ -24,7 +25,7 @@ const AboutUs = () => {
     return (
         <>
             <StructuraCommonHero
-                image="https://images.unsplash.com/photo-1518400953623-bbb1790c9499?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                image={AboutUsPoster}
                 text="About Company Here"
                 routeLinks={routeLinks}
             />

@@ -3,6 +3,7 @@ import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import { Row, Col } from "antd";
 import ClientCard from "./ClientCard";
 import "./animatedCardSection.css"
+import HeroImage from "../ClientsAndDirectors/3.png"
 
 const ClientsAndDirectors = () => {
     const routeLinks = [
@@ -35,7 +36,7 @@ const ClientsAndDirectors = () => {
     return (
         <>
             <StructuraCommonHero
-                image={Image}
+                image={HeroImage}
                 text="Directors and Clients"
                 routeLinks={routeLinks}
             />
