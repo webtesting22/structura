@@ -107,3 +107,22 @@
 .navbar.nav-open .logo-container{
   color: black;
 }
+.nav-toggler i{
+  font-size: 1.5rem;
+}
+@media(max-width:576px){
+  .nav-toggler{
+    margin-right: 30px;
+    height: 40px;
+  }
+  .nav-menu li a{
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .logo{
+    font-size: 1rem;
+  }
+  .navbar{
+    height: 50px;
+  }
+}

@@ -76,7 +76,7 @@ const ProjectComponent = () => {
                             <button className="commomBtn" style={{margin:"10px 0px"}}>View More</button>
                         </div>
                     </Col>
-                    <Col lg={4} className="projectLinksContainer">
+                    <Col lg={4} xs={24} className="projectLinksContainer">
                         {Object.keys(projectImages).map((project) => (
                             <div key={project}  style={{ margin:"20px 10px" }}>
                                 <a
