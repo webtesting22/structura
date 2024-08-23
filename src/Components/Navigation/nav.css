@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-color: transparent; /* Initially transparent */
+  backdrop-filter: blur(5px);
   border-bottom: 1px solid #ddd;
   position: fixed;
   width: 100%;
@@ -38,8 +38,9 @@
   cursor: pointer;
   font-size: 1rem;
   z-index: 20;
+  width: 70  px;
   position: relative;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 /* Menu styling */
@@ -98,8 +99,11 @@
 .nav-menu li a {
   text-decoration: none;
   color: black;
-  font-size: 1.7rem;
+  font-size: 18px;
 }
 .navbar.nav-open .logo-container{
   color: black;
+}
+.nav-toggler i{
+  font-size: 1.5rem;
 }
