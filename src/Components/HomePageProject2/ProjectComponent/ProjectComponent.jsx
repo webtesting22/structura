@@ -21,19 +21,24 @@ const ProjectComponent = () => {
     const imageRefs = useRef([]);
 
     const projectImages = {
-        'High Rise Buildings': [
-            HighRise1, HighRise2, HighRise3,
-        ],
-        'Bungalows': [
-            Bungalow1, Bungalow2, Bungalow3,
-        ],
-        'Weekend Villas': [
-            WeekendVilla1, WeekendVilla2, WeekendVilla3,
-        ],
-        'Institute': [
-            Institute1, Institute2, Institute3,
-        ],
+        'High Rise Buildings': {
+            images: [HighRise1, HighRise2, HighRise3],
+            description: 'High Rise Buildings are modern architectural marvels designed to maximize urban space.'
+        },
+        'Bungalows': {
+            images: [Bungalow1, Bungalow2, Bungalow3],
+            description: 'Bungalows offer a cozy, single-story living experience with ample space and comfort.'
+        },
+        'Weekend Villas': {
+            images: [WeekendVilla1, WeekendVilla2, WeekendVilla3],
+            description: 'Weekend Villas are perfect for a getaway, providing luxury and relaxation in a tranquil setting.'
+        },
+        'Institute': {
+            images: [Institute1, Institute2, Institute3],
+            description: 'Institutes are educational establishments designed to foster learning and innovation.'
+        },
     };
+
     const handleProjectChange = (project) => {
         setActiveProject(project);
     };
@@ -50,47 +55,41 @@ const ProjectComponent = () => {
                 <Row>
                     <Col lg={14} className="imageContainer1">
                         <div className="imageWrapper">
-                            {projectImages[activeProject].map((image, index) => (
+                            {projectImages[activeProject]?.images.map((image, index) => (
                                 <img
                                     key={index}
                                     src={image}
                                     alt={activeProject}
                                     onMouseEnter={() => setHoveredIndex(index)}
                                     onMouseLeave={() => setHoveredIndex(null)}
-                                    // className={hoveredIndex === index ? 'hovered' : hoveredIndex !== null ? 'collapsed' : ''}
-                                    // ref={(el) => (imageRefs.current[index] = el)}
-                                    // onMouseEnter={() => handleMouseEnter(index)}
-                                    // onMouseLeave={handleMouseLeave}
-                                    // style={
-                                    //     hoveredIndex === index
-                                    //         ? { width: imageRefs.current[index]?.naturalWidth }
-                                    //         : hoveredIndex !== null
-                                    //             ? { width: '0%' }
-                                    //             : { width: '33.33%' }
-                                    // }
                                     className={hoveredIndex === index ? 'hovered' : hoveredIndex !== null ? 'collapsed' : ''}
-
                                 />
                             ))}
                         </div>
                     </Col>
                     <Col lg={6}>
-
-                        <h1 className="projectTitle">{activeProject}</h1>
-
-
+                        <div className="mainAreaContent">
+                            <h1 className="projectTitle">{activeProject}</h1>
+                            <p className="projectDescription">
+                                {projectImages[activeProject]?.description}
+                            </p>
+                            <button className="commomBtn" style={{margin:"10px 0px"}}>View More</button>
+                        </div>
                     </Col>
                     <Col lg={4} className="projectLinksContainer">
                         {Object.keys(projectImages).map((project) => (
-                            <a
-                                key={project}
-                                onClick={() => handleProjectChange(project)}
-                                style={{ cursor: 'pointer' }}
-                            >
-                                {project}
-                            </a>
+                            <div key={project}  style={{ margin:"20px 10px" }}>
+                                <a
+                                    onClick={() => handleProjectChange(project)}
+                                   
+                                >
+                                    {project}
+                                </a>
+                                <hr />
+                            </div>
                         ))}
                     </Col>
+
                 </Row>
             </div>
         </>
