@@ -69,7 +69,7 @@ const HomeHero = () => {
                         </div>
                         <div className="scrollDownBtnContainer" data-aos="fade-up"
                             data-aos-duration="1000" data-aos-delay="2000">
-                            <img src={DownArrow} alt="" style={{ width: "100%" }} />
+                            <img src={DownArrow} alt="" style={{ width: "100%",cursor:"pointer" }}  onClick={() => window.scrollBy({ top: 650, behavior: 'smooth' })}/>
                         </div>
                     </div>
                     <div className="right-side-image-container">
