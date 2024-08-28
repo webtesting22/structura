@@ -12,7 +12,7 @@ const AllServices = () => {
         { path: "/allservices", name: "All Services" },
         // Add more links as needed
     ];
-   
+
     const BIM = useRef(null);
     const REVIT = useRef(null);
     const INTERIOR = useRef(null);
@@ -259,12 +259,12 @@ const AllServices = () => {
                 </div>
 
             </section>
-                <hr />
+            <hr />
             <div className="AllServicesData">
-                <div className="PaddingAdjust">
-                         <h1 data-aos="fade-up" className="bigHeading"
-                        data-aos-duration="1000">AWARDS & RECOGNITIONS</h1>
-                </div>
+                {/* <div className="PaddingAdjust"> */}
+                <h1 data-aos="fade-up" className="bigHeading"
+                    data-aos-duration="1000">AWARDS & RECOGNITIONS</h1>
+
                 <div className="awards-container" >
                     <h1 className="DualTopHeading">E<span>xcellence Award</span></h1>
                     <p>Our strong commitment in providing the very best for our clients is reflected in the Excellence award
@@ -275,6 +275,7 @@ const AllServices = () => {
                     <p>We were approached by AutoDesk to make a case study which reflects our technical capabilities in Revit. It
                         showcased our work process, ability to handle & deliver complex Revit projects & our dedication towards
                         quality excellence.</p>
+                    {/* </div> */}
                 </div>
             </div>
             <br /><br />
