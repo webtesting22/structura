@@ -46,19 +46,19 @@ const AllProjects = () => {
     const showModal = (details) => {
         setModalDetails(details);
         setIsModalOpen(true);
-        console.log("Modal open");
+        
     };
 
     const handleOk = () => {
         setIsModalOpen(false);
         setModalDetails(null);
-        console.log("Model close");
+        
     };
 
     const handleCancel = () => {
         setIsModalOpen(false);
         setModalDetails(null);
-        console.log("Model close");
+        
     };
 
 
