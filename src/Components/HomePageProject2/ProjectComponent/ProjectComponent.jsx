@@ -1,9 +1,10 @@
 import React from "react";
 import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./ProjectComponent.css";
 import { Row, Col } from "antd";
 import HighRise1 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/05.jpeg"
-import HighRise2 from "/images/ProjectsImages/HighRiseBuilding/Girirajdreams/02.png"
+import HighRise2 from "/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/12.jpg"
 import HighRise3 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/07.jpeg"
 import Bungalow1 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/08.jpeg"
 import Bungalow2 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/10.jpeg"
@@ -24,6 +25,7 @@ const ProjectComponent = () => {
         'High Rise Buildings': {
             images: [HighRise1, HighRise2, HighRise3],
             description: 'High Rise Buildings are modern architectural marvels designed to maximize urban space.'
+            
         },
         'Bungalows': {
             images: [Bungalow1, Bungalow2, Bungalow3],
@@ -67,13 +69,15 @@ const ProjectComponent = () => {
                             ))}
                         </div>
                     </Col>
-                    <Col lg={6}>
+                    <br/>
+                    <Col lg={6} xs={24}>
                         <div className="mainAreaContent">
                             <h1 className="projectTitle">{activeProject}</h1>
                             <p className="projectDescription">
                                 {projectImages[activeProject]?.description}
                             </p>
-                            <button className="commomBtn" style={{margin:"10px 0px"}}>View More</button>
+                          <Link to="/AllProjects"><button className="commomBtn" style={{margin:"10px 0px"}}>View More</button></Link>
+                            
                         </div>
                     </Col>
                     <Col lg={4} xs={24} className="projectLinksContainer">
@@ -81,7 +85,6 @@ const ProjectComponent = () => {
                             <div key={project}  style={{ margin:"20px 10px" }}>
                                 <a
                                     onClick={() => handleProjectChange(project)}
-                                   
                                 >
                                     {project}
                                 </a>
