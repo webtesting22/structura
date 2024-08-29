@@ -45,7 +45,7 @@ const Footer = () => {
                             </Col>
                         </Row>
                     </div>
-                    <br /><br />
+                
                     <div className="copyrightText">
                         <div className="iconsContainer">
                             <i class='bx bxl-instagram'></i>

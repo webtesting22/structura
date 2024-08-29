@@ -1,15 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import "./nav.css";
+import {Button,Drawer} from "antd";
 import CloseIcon from "../../../public/images/cross.png";
 import { MdMenu } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
+import menuBg from "./ResidentialBacl.webp";
 const Navigation = () => {
     const [isNavVisible, setIsNavVisible] = useState(false);
     const toggleNav = () => {
         setIsNavVisible(prevState => !prevState);
     };
-
+    const [open, setOpen] = useState(false);
+    const showDrawer = () => {
+      setOpen(true);
+    };
+    const onClose = () => {
+      setOpen(false);
+    };
     return (
         <nav className={`navbar ${isNavVisible ? 'nav-open' : ''}`}>
 
@@ -18,19 +26,22 @@ const Navigation = () => {
                     <h2 className="logo">Structura</h2>
                 </Link>
             </div>
-
+          
             <div className={`nav-menu ${isNavVisible ? 'open' : ''}`}>
+            
+            <div className="overlay"> </div>
                 <ul>
                     <li onClick={toggleNav}><Link to="/AboutUs">About Us</Link></li>
                     <li onClick={toggleNav}><Link to="/AllProjects">All Projects</Link></li>
                     <li onClick={toggleNav}><Link to="/ClientsAndDirectors">Directors And Clients</Link></li>
                     <li onClick={toggleNav}><Link to="/AllServices">Services</Link></li>
                 </ul>
-            </div>
-            <button className="nav-toggler" onClick={toggleNav} style={{borderRadius:"8px"}}>
-                {/* Menu */}
-                {isNavVisible? <RxCross2 /> : <MdMenu />}
                
+            </div>
+            <button className="nav-toggler" onClick={toggleNav} style={{ borderRadius: "8px" }}>
+                {/* Menu */}
+                {isNavVisible ? <RxCross2 /> : <MdMenu />}
+
             </button>
         </nav>
     );
