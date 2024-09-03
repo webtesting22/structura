@@ -1,6 +1,7 @@
 import React from "react";
 import "./Whoweare.css"
 import WhoweareBack from "../StructuraInfo/Whoweareback.png"
+import { Link } from "react-router-dom";
 import CountUp from 'react-countup';
 const WhoweAre = () => {
     return (
@@ -80,7 +81,7 @@ const WhoweAre = () => {
                             <p data-aos="fade-up"
                                 data-aos-duration="2000">Our team has worked on 1500+ multifarious projects. Positioning itself as a navigator, SKETS has been
                                 guiding customers on their quest for maximizing business value.</p>
-                                <button className="commomBtn">View More</button>
+                                <button className="commomBtn"><Link to="/AboutUs">About Us</Link></button>
                         </div>
                     </div>
                 </div>
