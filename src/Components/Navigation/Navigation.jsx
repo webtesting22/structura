@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import "./nav.css";
-import {Button,Drawer} from "antd";
-import CloseIcon from "../../../public/images/cross.png";
+import StructuraLogo from "/images/logoNoBG.png"
 import { MdMenu } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
-import menuBg from "./ResidentialBacl.webp";
+
 const Navigation = () => {
     const [isNavVisible, setIsNavVisible] = useState(false);
     const toggleNav = () => {
@@ -23,7 +22,7 @@ const Navigation = () => {
 
             <div className="logo-container">
                 <Link to="/">
-                    <h2 className="logo">Structura</h2>
+                    <img src={StructuraLogo} />
                 </Link>
             </div>
           
@@ -35,6 +34,7 @@ const Navigation = () => {
                     <li onClick={toggleNav}><Link to="/AllProjects">All Projects</Link></li>
                     <li onClick={toggleNav}><Link to="/ClientsAndDirectors">Directors And Clients</Link></li>
                     <li onClick={toggleNav}><Link to="/AllServices">Services</Link></li>
+                    {/* <li><Link to="https://nirmaan-main.vercel.app/" target="_blank">Nirmaan</Link></li> */}
                 </ul>
                
             </div>
