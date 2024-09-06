@@ -77,14 +77,16 @@ const WhoweAre = () => {
                         <div className="WhoweareContentText">
                             <div className="Smalltagline"><h4 className="sectionHeading"><div></div>WHO WE ARE</h4></div>
                             <h1 data-aos="fade-up"
-                                data-aos-duration="1000">Hello Demo Content</h1>
+                                data-aos-duration="1000">Structura</h1>
                             <p data-aos="fade-up"
                                 data-aos-duration="2000">Our team has worked on 1500+ multifarious projects. Positioning itself as a navigator, SKETS has been
                                 guiding customers on their quest for maximizing business value.</p>
                                 <Link to="/AboutUs"> <button className="commomBtn">About Us</button></Link>
                         </div>
                     </div>
+                   
                 </div>
+                {/* <h1>Find Out More About Us On <a href="https://nirmaan-main.vercel.app/">Nirmaan</a></h1> */}
                 <div className="sectionPadding mobileNone"></div>
                 <div className="sectionPadding mobileNone"></div>
             </section>
