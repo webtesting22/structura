@@ -8,8 +8,8 @@ const WhoweAre = () => {
 
         <>
             <section id="WhoweAre">
-                <div className="sectionPadding"></div>
-                <div className="sectionPadding"></div>
+                <div className="sectionPadding mobileNone"></div>
+                <div className="sectionPadding mobileNone"></div>
                 <div className="WhoweAreContainer">
                     {/* <div className="backgroundOverlay-image">
                         <img src={WhoweareBack} alt="" />
@@ -81,12 +81,12 @@ const WhoweAre = () => {
                             <p data-aos="fade-up"
                                 data-aos-duration="2000">Our team has worked on 1500+ multifarious projects. Positioning itself as a navigator, SKETS has been
                                 guiding customers on their quest for maximizing business value.</p>
-                                <button className="commomBtn"><Link to="/AboutUs">About Us</Link></button>
+                                <Link to="/AboutUs"> <button className="commomBtn">About Us</button></Link>
                         </div>
                     </div>
                 </div>
-                <div className="sectionPadding"></div>
-                <div className="sectionPadding"></div>
+                <div className="sectionPadding mobileNone"></div>
+                <div className="sectionPadding mobileNone"></div>
             </section>
         </>
     )

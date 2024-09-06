@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import "./nav.css";
-import StructuraLogo from "/images/logoNoBG.png"
+import StructuraLogo from "/images/structuraLogo.png"
 import { MdMenu } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
 
