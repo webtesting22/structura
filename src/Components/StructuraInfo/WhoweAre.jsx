@@ -27,7 +27,7 @@ const WhoweAre = () => {
                                     />
 
                                     <p>Retail Roll Outs
-                                    till date</p>
+                                        till date</p>
                                     <div className="icon-box">
                                         <i class='bx bx-buildings' ></i>
                                     </div>
@@ -42,7 +42,7 @@ const WhoweAre = () => {
                                         suffix="%"
                                     />
                                     <p>Near-100% Client
-                                    Retention rate</p>
+                                        Retention rate</p>
                                     <div className="icon-box">
                                         <i class='bx bx-buildings' ></i>
                                     </div>
@@ -57,7 +57,7 @@ const WhoweAre = () => {
                                         suffix="+"
                                     />
                                     <p>Countries where our
-                                    projects have been located</p>
+                                        projects have been located</p>
                                     <div className="icon-box">
                                         <i class='bx bx-buildings' ></i>
                                     </div>
@@ -81,12 +81,13 @@ const WhoweAre = () => {
                             <p data-aos="fade-up"
                                 data-aos-duration="2000">Our team has worked on 1500+ multifarious projects. Positioning itself as a navigator, SKETS has been
                                 guiding customers on their quest for maximizing business value.</p>
-                                <Link to="/AboutUs"> <button className="commomBtn">About Us</button></Link>
+                            <Link to="/AboutUs"> <button className="commomBtn">About Us</button></Link>
                         </div>
                     </div>
-                   
+
                 </div>
-                {/* <h1>Find Out More About Us On <a href="https://nirmaan-main.vercel.app/">Nirmaan</a></h1> */}
+                <h1 data-aos="fade-up"
+                    data-aos-duration="2000" className="NirmaanHeading">Find Out More About Us On <a href="https://nirmaan-main.vercel.app/" target="_blank">Nirmaan!</a></h1>
                 <div className="sectionPadding mobileNone"></div>
                 <div className="sectionPadding mobileNone"></div>
             </section>
