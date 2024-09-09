@@ -86,10 +86,11 @@ const WhoweAre = () => {
                     </div>
 
                 </div>
-                <h1 data-aos="fade-up"
-                    data-aos-duration="2000" className="NirmaanHeading">Find Out More About Us On <a href="https://nirmaan-main.vercel.app/" target="_blank">Nirmaan!</a></h1>
+                <div className="NirmaanHeading"><h1 data-aos="fade-up"
+                    data-aos-duration="1000">Find Out More About Us On <a href="https://nirmaan-main.vercel.app/" target="_blank">Nirmaan!</a></h1></div>
+                
                 <div className="sectionPadding mobileNone"></div>
-                <div className="sectionPadding mobileNone"></div>
+                {/* <div className="sectionPadding mobileNone"></div> */}
             </section>
         </>
     )
