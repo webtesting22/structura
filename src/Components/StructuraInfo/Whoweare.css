@@ -121,6 +121,9 @@
   text-fill-color: transparent;
   background-size: 500% auto;
   animation: textShine 5s ease-in-out infinite alternate;
+  border: 1px solid blue;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 @keyframes textShine {
