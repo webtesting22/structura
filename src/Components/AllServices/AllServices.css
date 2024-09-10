@@ -10,8 +10,8 @@
     height: 50vh;
     margin: 10px;
     position: sticky;
-    top: 50%;
-    margin-top: 70vh;
+    top: 30%;
+    /* margin-top: 70vh; */
 }
 
 .AllServicesSection .AllServicesdata {

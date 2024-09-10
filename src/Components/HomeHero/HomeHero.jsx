@@ -7,6 +7,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { EffectFade, Autoplay, Pagination } from 'swiper/modules';
 import DownArrow from "../HomeHero/downArrow.png"
+import arrow from "./arrow.png";
+import { FaArrowDown } from "react-icons/fa";
+
 const HomeHero = () => {
 
     const StructuraCarousalImages = [
@@ -67,9 +70,15 @@ const HomeHero = () => {
                                 </h4>
                             </div>
                         </div>
-                        <div className="scrollDownBtnContainer" data-aos="fade-up"
-                            data-aos-duration="1000" data-aos-delay="2000">
-                            <img src={DownArrow} alt="" style={{ width: "100%",cursor:"pointer" }}  onClick={() => window.scrollBy({ top: 650, behavior: 'smooth' })}/>
+                        <div className="scrollDownBtnContainer"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                            data-aos-delay="2000"
+                        >
+                        {/* <i class='bx bx-down-arrow-alt' style={{color:"#ffffff"}}  ></i> */}
+                        {/* <FaArrowDown className="downArrow" /> */}
+
+                            <img src={arrow} alt="" style={{ width: "100%", cursor: "pointer" }} onClick={() => window.scrollBy({ top: 650, behavior: 'smooth' })} />
                         </div>
                     </div>
                     <div className="right-side-image-container">

@@ -31,7 +31,9 @@
 
 .bottom-to-top-container button img {
     width: 46px;
+    /* width: 100%; */
     rotate: 180deg;
+    transition: 0.5s;
     animation: moveUpDown 1s infinite alternate;
 }
 

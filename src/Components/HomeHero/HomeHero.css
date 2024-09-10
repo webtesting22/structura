@@ -16,6 +16,10 @@
     height: 100%;
     position: relative;
     background-color: black;
+    /* background:url(/images/bg7.jpg);
+    background-size: cover;
+    background-position: center; */
+    
 }
 
 .left-side-container .content-container {
@@ -90,6 +94,7 @@
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.587);
 }
+
 
 .slidesImg-container {
     height: 100vh;
