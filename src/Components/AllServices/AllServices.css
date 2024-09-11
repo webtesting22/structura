@@ -85,7 +85,8 @@
     overflow: hidden;
     position: sticky;
     top: 0;
-    transition: filter 0.5s ease; /* Smooth transition for the darkening effect */
+    transition: filter 0.5s ease;
+    /* Smooth transition for the darkening effect */
 }
 
 .StackCardContainer img {
@@ -101,7 +102,8 @@
 .StackCardContainer .Imageoverlay {
     height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Start with slight darkness */
+    background-color: rgba(0, 0, 0, 0.53);
+    /* Start with slight darkness */
     position: absolute;
     z-index: 2;
     top: 0;
@@ -114,11 +116,49 @@
 
 /* Class to darken the image when it’s not active */
 .StackCardContainer.dark {
-    filter: brightness(0.5); /* Darken the image */
+    filter: brightness(0.5);
+    /* Darken the image */
+}
+
+
+.AnimatedCardContentContainer {
+    position: absolute;
+    z-index: 55;
+    top: 0px;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContentInsideContainer {
+    width: 60%;
+    margin: 20px 30px;
+}
+
+.ContentInsideContainer h4 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.ContentInsideContainer ul li,
+.ContentInsideContainer p {
+    color: white;
+    margin: 10px 0px;
+    font-size: 18px;
+}
+.FirstWord {
+    color: rgb(188, 119, 66); /* Set the color for the first word */
 }
 
 
 @media (max-width:769px) {
+    .ContentInsideContainer {
+        width: 100%;
+        margin: 20px 10px;
+    }
     .PaddingAdjust {
         padding: 0rem;
     }

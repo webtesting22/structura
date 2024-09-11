@@ -280,7 +280,6 @@ const AllServices = () => {
                     </div>
                 </div>
             </div> */}
-            <br /><br />
         </>
     );
 };
