@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./HomeHero.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -7,10 +7,29 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { EffectFade, Autoplay, Pagination } from 'swiper/modules';
 import DownArrow from "../HomeHero/downArrow.png"
-import arrow from "./arrow.png";
-import { FaArrowDown } from "react-icons/fa";
-
+import { MdEmail } from "react-icons/md";
+import { FaPhone } from "react-icons/fa6";
 const HomeHero = () => {
+    const headings = [
+        "Together, let's build a better construction experience",
+        'Building with confidence and trust',
+        'Creating a lasting construction legacy'
+    ];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [fade, setFade] = useState(true);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFade(false);  // Start fading out
+            setTimeout(() => {
+                setCurrentIndex((prevIndex) => (prevIndex + 1) % headings.length);
+                setFade(true);  // Fade in after switching
+            }, 1000); // Wait for fade-out animation to finish
+        }, 3000); // Change every 3 seconds
+
+        return () => clearInterval(interval); // Cleanup on component unmount
+    }, []);
 
     const StructuraCarousalImages = [
         {
@@ -31,7 +50,7 @@ const HomeHero = () => {
             <section id="StructuraHeroSection">
                 <div className="Herosectionadjust">
 
-                    <div className="left-side-container">
+                    {/* <div className="left-side-container">
                         <div className="view-only-Mobile">
                             <div className="imageOverlay">
 
@@ -75,19 +94,54 @@ const HomeHero = () => {
                             data-aos-duration="1000"
                             data-aos-delay="2000"
                         >
-                        {/* <i class='bx bx-down-arrow-alt' style={{color:"#ffffff"}}  ></i> */}
-                        {/* <FaArrowDown className="downArrow" /> */}
+                            <i class='bx bx-down-arrow-alt' style={{color:"#ffffff"}}  ></i>
+                            <FaArrowDown className="downArrow" />
 
-                            <img src={arrow} alt="" style={{ width: "100%", cursor: "pointer" }} onClick={() => window.scrollBy({ top: 650, behavior: 'smooth' })} />
+                            <img src={DownArrow} alt="" style={{ width: "100%", cursor: "pointer" }} onClick={() => window.scrollBy({ top: 650, behavior: 'smooth' })} />
                         </div>
-                    </div>
+                    </div> */}
                     <div className="right-side-image-container">
+                        <div className="content-container" >
+                            <div className="content" data-aos="fade-up"
+                                data-aos-duration="2000">
+                                <h4 className={`fade ${!fade ? 'fade-exit' : ''}`}>
+                                    {headings[currentIndex]}
+                                </h4>
+                            </div>
+                            <div className="scrollDownBtnContainer"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                                data-aos-delay="2000"
+                            >
+                                {/* <i class='bx bx-down-arrow-alt' style={{ color: "#ffffff" }}  ></i>
+                                <FaArrowDown className="downArrow" /> */}
+
+                                <img src={DownArrow} alt="" style={{ width: "100%", cursor: "pointer" }} onClick={() => window.scrollBy({ top: 650, behavior: 'smooth' })} />
+                            </div>
+                            <div className="BottomContactContainer">
+                                <div>
+                                    <h4> <span>SAUMYA C. SHAH & SHYAM C. SHAH</span>
+                                        <br /> CEO, STRUCTURA CONSULTANTS</h4>
+                                </div>
+                                <div>
+                                    <span><MdEmail /> <a href="mailto:CONNECT@STRUCTURACONSULTANTS.COM" target="_blank">CONNECT@STRUCTURACONSULTANTS.COM</a>
+                                    </span>
+                                    <span>
+                                        <FaPhone />&nbsp;
+                                        <a href="tel:+919825324480">+91-9825324480</a>&nbsp;,&nbsp;
+                                        <a href="tel:+919099024581">+91-9099024581</a>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+
                         <div className="imageOverlay">
 
                         </div>
                         <Swiper
                             spaceBetween={30}
-                            effect={'fade'}
+                            // effect={'fade'}
                             autoplay={{
                                 delay: 2000,
                                 disableOnInteraction: false,
@@ -95,7 +149,9 @@ const HomeHero = () => {
                             pagination={{
                                 clickable: true,
                             }}
-                            modules={[Autoplay, EffectFade, Pagination]}
+                            loop={true}
+                            speed={1000}
+                            modules={[Autoplay, Pagination]}
                             className="mySwiper"
                             id="Myswiper"
                         >

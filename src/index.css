@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 
 body {
     margin: 0px;
@@ -12,8 +15,9 @@ a {
 
 p {
     margin: 0px;
-    font-family: "Roboto", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
+    color: #535c62;
 }
 
 h1,
@@ -23,10 +27,12 @@ h4,
 h5,
 h6 {
     margin: 0px;
-    font-family: "Roboto", sans-serif;
+    font-family: "PT Sans", sans-serif;
 }
-ul li{
-    font-family: "Roboto", sans-serif;
+
+ul li {
+    font-family: "PT Sans", sans-serif;
+    color: #535c62;
 }
 
 .sectionPadding {
@@ -45,8 +51,9 @@ section {
 }
 
 .bigHeading {
-    font-size: 55px;
+    font-size: 40px;
     font-weight: 400;
+    color: rgb(188,119,66);
 }
 
 .openBtn,
@@ -81,7 +88,7 @@ section {
     height: 40px;
     border: none;
     width: 150px;
-    background-color: black;
+    background-color: rgb(188,119,66);
     color: rgb(255, 255, 255);
     margin: 10px 0px;
     cursor: pointer;
@@ -90,10 +97,10 @@ section {
 
 .commomBtn:hover {
     height: 40px;
-    border: 1px solid black;
+    border: 1px solid rgb(188,119,66);
     width: 150px;
     background-color: transparent;
-    color: black;
+    color: rgb(188,119,66);
     margin: 10px 0px;
     cursor: pointer;
     transition: .5s;
@@ -122,18 +129,35 @@ section {
 }
 
 .DualTopHeading {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400;
     margin-bottom: 2rem;
 }
 
 @media (max-width:600px) {
+    .DualTopHeading {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .DualTopHeading span {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+
     section {
-        padding: 2rem 0.5rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .sectionPadding {
+        padding: 0.2rem 0rem;
     }
 
 }
-i:hover{
+
+i:hover {
     transform: rotate(90deg);
     transition: transform 0.5s ease;
 }

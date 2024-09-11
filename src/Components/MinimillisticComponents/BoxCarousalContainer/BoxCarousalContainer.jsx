@@ -67,11 +67,11 @@ const BoxCarousalContainer = () => {
                         },
                       }}
                     autoplay={{
-                        delay: 0, // Continuous scroll
+                        delay: 200, // Continuous scroll
                         disableOnInteraction: false,
                         pauseOnMouseEnter: true,
                     }}
-                    speed={5000} // Adjust speed for smooth scrolling
+                    speed={1000} // Adjust speed for smooth scrolling
                     modules={[ Autoplay]}
                     className="mySwiper"
                 >

@@ -11,12 +11,33 @@ const Navigation = () => {
         setIsNavVisible(prevState => !prevState);
     };
     const [open, setOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
     const showDrawer = () => {
-      setOpen(true);
+        setOpen(true);
     };
     const onClose = () => {
-      setOpen(false);
+        setOpen(false);
     };
+    useEffect(() => {
+        const handleScroll = () => {
+            // Check if the scroll position is greater than 500px for devices with width >= 700px
+            if (window.scrollY > 500 && window.innerWidth >= 700) {
+                setIsScrolled(true);
+            }
+            // For mobile devices (width < 700px) and scroll position > 200px, adjust the threshold accordingly
+            else if (window.scrollY > 200 && window.innerWidth < 700) {
+                setIsScrolled(true);
+            }
+            else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <nav className={`navbar ${isNavVisible ? 'nav-open' : ''}`}>
 
@@ -25,10 +46,10 @@ const Navigation = () => {
                     <img src={StructuraLogo} />
                 </Link>
             </div>
-          
+
             <div className={`nav-menu ${isNavVisible ? 'open' : ''}`}>
-            
-            <div className="overlay"> </div>
+
+                <div className="overlay"> </div>
                 <ul>
                     <li onClick={toggleNav}><Link to="/AboutUs">About Us</Link></li>
                     <li onClick={toggleNav}><Link to="/AllProjects">All Projects</Link></li>
@@ -36,12 +57,14 @@ const Navigation = () => {
                     <li onClick={toggleNav}><Link to="/AllServices">Services</Link></li>
                     {/* <li><Link to="https://nirmaan-main.vercel.app/" target="_blank">Nirmaan</Link></li> */}
                 </ul>
-               
-            </div>
-            <button className="nav-toggler" onClick={toggleNav} style={{ borderRadius: "8px" }}>
-                {/* Menu */}
-                {isNavVisible ? <RxCross2 /> : <MdMenu />}
 
+            </div>
+            <button
+                className="nav-toggler"
+                onClick={toggleNav}
+                style={{ borderRadius: '8px', color: isScrolled ? 'black' : 'white' }}
+            >
+                {isNavVisible ? <RxCross2 /> : <MdMenu />}
             </button>
         </nav>
     );

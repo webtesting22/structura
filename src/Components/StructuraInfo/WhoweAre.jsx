@@ -3,6 +3,7 @@ import "./Whoweare.css"
 import WhoweareBack from "../StructuraInfo/Whoweareback.png"
 import { Link } from "react-router-dom";
 import CountUp from 'react-countup';
+import StructuraLogo from "/images/structuraLogo.png"
 const WhoweAre = () => {
     return (
 
@@ -75,9 +76,11 @@ const WhoweAre = () => {
                     </div>
                     <div className="WhoweareContent-container">
                         <div className="WhoweareContentText">
-                            <div className="Smalltagline"><h4 className="sectionHeading"><div></div>WHO WE ARE</h4></div>
-                            <h1 data-aos="fade-up"
-                                data-aos-duration="1000">STRUCTURA CONSULTANTS</h1>
+                            {/* <div className="Smalltagline"><h4 className="sectionHeading"><div></div>WHO WE ARE</h4></div> */}
+                            {/* <div style={{display}}> */}
+                                <img src={StructuraLogo} style={{ width: "50px" }} alt="" /><h1 data-aos="fade-up"
+                                    data-aos-duration="1000">STRUCTURA CONSULTANTS</h1>
+                            {/* </div> */}
                             <p data-aos="fade-up"
                                 data-aos-duration="2000">Our team has worked on 1500+ multifarious projects. Positioning itself as a navigator, SKETS has been
                                 guiding customers on their quest for maximizing business value.</p>
@@ -87,7 +90,7 @@ const WhoweAre = () => {
 
                 </div>
                 {/* <div className="NirmaanHeading"><h1 data-aos="fade-up" data-aos-duration="1000">Find Out More About Us On <a href="https://nirmaan-main.vercel.app/" target="_blank">Nirmaan!</a></h1></div> */}
-                
+
                 <div className="sectionPadding mobileNone"></div>
                 {/* <div className="sectionPadding mobileNone"></div> */}
             </section>

@@ -15,32 +15,48 @@
     width: 30%;
     height: 100%;
     position: relative;
-    background-color:rgba(0, 0, 0);
-    /* background:url(/images/bg3.jpg);
+    background-color: rgba(0, 0, 0);
+    /* background: url(/images/bg3.jpg); */
     background-size: cover;
-    background-position: center; */
-    
+    background-position: center;
+
 }
 
-.left-side-container .content-container {
-    height: 100vh;
+.content-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 5;
+    z-index: 3;
 }
 
-.left-side-container .content-container .content {
+.content-container .content {
     position: absolute;
-    right: -500px;
+    left: 50px;
+    width: 50%;
 }
 
-.left-side-container .content-container .content h4 {
-    text-align: center;
+
+.content-container .content h4 {
+    /* text-align: center; */
     font-size: 3rem;
     color: white;
     font-weight: 300;
+}
+
+.scrollDownBtnContainer {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    left: 200px;
+    margin-top: -20px;
+    /* bottom: 200px;  */
+    z-index: 6666;
+    border: 1px solid white;
+    animation: scrollAnimation 2s infinite;
 }
 
 @keyframes scrollAnimation {
@@ -60,20 +76,13 @@
     }
 }
 
-.scrollDownBtnContainer {
-    height: 50px;
-    width: 50px;
-    background-color: transparent;
-    border-radius: 50%;
-    position: absolute;
-    right: -290px;
-    bottom: 100px;
-    /* position: relative; */
-    /* top: 25%; */
-    z-index: 6666;
-    border: 1px solid white;
-    animation: scrollAnimation 2s infinite;
-    /* Apply the animation */
+.fade {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.fade-exit {
+    opacity: 0;
 }
 
 
@@ -138,12 +147,74 @@
     height: 100vh;
 }
 
+.BottomContactContainer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    /* padding: 0px; */
+    display: flex;
+    justify-content: space-between;
+    color: #c2c2c2a3;
+    font-size: 13px;
+}
+
+.BottomContactContainer a {
+    color: #c2c2c2a3;
+}
+
+.BottomContactContainer>div {
+    padding: 0px 30px;
+}
+
+.BottomContactContainer>div h4 {
+    text-align: center;
+}
+
+.BottomContactContainer>div h4 span {
+    color: white;
+}
+
+.BottomContactContainer>div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
 @media (max-width:800px) {
+    .content-container .content h4 {
+        font-size: 1.2rem;
+    }
+
+    .content-container .content {
+        width: 90%;
+        left: 10px;
+        bottom: 50px;
+    }
+
+    .scrollDownBtnContainer {
+        height: 30px;
+        width: 30px;
+        background-color: transparent;
+        border-radius: 50%;
+        position: absolute;
+        left: 40px;
+        margin-top: 10px;
+        display: none;
+        /* bottom: 200px;  */
+        z-index: 6666;
+        border: 1px solid white;
+        animation: scrollAnimation 2s infinite;
+    }
+
     .Herosectionadjust {
         display: flex;
         height: 100%;
         position: relative;
 
+    }
+
+    .BottomContactContainer {
+        display: none;
     }
 
     .right-side-image-container .imageOverlay,

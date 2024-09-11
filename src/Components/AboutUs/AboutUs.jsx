@@ -21,12 +21,12 @@ const AboutUs = () => {
         // Add more links as needed
     ];
 
-   
+
     return (
         <>
             <StructuraCommonHero
                 image={AboutUsPoster}
-                text="About Company Here"
+                text="Crafting Strong Foundations for a Better Tomorrow"
                 routeLinks={routeLinks}
             />
             <section id="servicesSection">
@@ -40,7 +40,7 @@ const AboutUs = () => {
 
                     <div className="expertiseCards">
                         <div className="animatedCards">
-                            <AnimatedHoverableCards/>
+                            <AnimatedHoverableCards />
                         </div>
                     </div>
                     {/* <div className="servicecontainerRow">

@@ -66,7 +66,7 @@ const AllProjects = () => {
         <>
             <StructuraCommonHero
                 image={TopBack}
-                text="All the Project Here"
+                text="Innovative Projects, Proven Success"
                 routeLinks={routeLinks}
             />
             <section id="AllProjects">

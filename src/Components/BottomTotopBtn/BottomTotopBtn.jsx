@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./bottomtoup.css";
-// import UpArrow from "../HomeHero/downArrow.png"
-import UpArrow from "../HomeHero/arrow.png";
+import UpArrow from "../HomeHero/downArrow.png"
+// import UpArrow from "../HomeHero/arrow.png";
 const BottomToTopBtn = () => {
     const [isVisible, setIsVisible] = useState(false);
 
