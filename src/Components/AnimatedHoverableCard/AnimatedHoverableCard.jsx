@@ -12,47 +12,95 @@ const AnimatedHoverableCards = () => {
     const ServicesCardData = [
         {
             // iconImage: BimIcon,
-            Title: "BIM",
+            Title: " Structural Design",
             img: img2,
             Descriptions: "Having adopted BIM early on, SKETS' BIM Studio is among the largest globally. SKETS has more than 200 experts dedicated for BIM who have completed 325+ large scale projects till date.",
             redirect: "/AllServices#BIM",
         },
         {
             // iconImage: InteriorDesignIcon,
-            Title: "INTERIOR DESIGN",
+            Title: " MEP Design",
             img: img3,
             Descriptions: "We are Market Leader in Interior Design Documentation with specialization in Hospitality.",
-            redirect:"/AllServices#INTERIORDESIGN",
+            redirect: "/AllServices#INTERIORDESIGN",
         },
         {
             // iconImage: EngeneeringIcon,
-            Title: "ENGINEERING",
+            Title: "Interior Design",
             img: img4,
             Descriptions: "We have experienced Engineers and CAD Operators providing HVAC/Mechanical, Electrical, Plumbing, Fire Fighting, Documentation services to Consultants, Contractors, Real-Estate Developers, and Owners.",
-            redirect:"/AllServices#ENGINEERING",
+            redirect: "/AllServices#ENGINEERING",
         },
         {
             // iconImage: ArchitectureIcon,
-            Title: "ARCHITECTURE & STRUCTURE",
+            Title: "Architectural CAD Drafting",
             img: img5,
             Descriptions: "SKETS has completed over 400 Architectural projects using both Revit and AutoCad. We also have a dedicated studio working on Structural projects.",
-            redirect:"/AllServices#ARCHITECTURE",
+            redirect: "/AllServices#ARCHITECTURE",
         },
         {
             // iconImage: VisualizationIcon,
-            Title: "3D VISUALIZATION",
+            Title: "Structural CAD Drafting",
             img: img6,
             Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
-            redirect:"/AllServices#VISUALIZATION"
+            redirect: "/AllServices#VISUALIZATION"
 
-        }
+        },
+        {
+            // iconImage: VisualizationIcon,
+            Title: " MEP CAD Drafting",
+            img: img6,
+            Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
+            redirect: "/AllServices#VISUALIZATION"
+
+        },
+        {
+            // iconImage: VisualizationIcon,
+            Title: " Architectural BIM Services",
+            img: img6,
+            Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
+            redirect: "/AllServices#VISUALIZATION"
+
+        },
+        {
+            // iconImage: VisualizationIcon,
+            Title: "Structural BIM Services",
+            img: img6,
+            Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
+            redirect: "/AllServices#VISUALIZATION"
+
+        },
+        {
+            // iconImage: VisualizationIcon,
+            Title: "MEP BIM Services",
+            img: img6,
+            Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
+            redirect: "/AllServices#VISUALIZATION"
+
+        },
+        {
+            // iconImage: VisualizationIcon,
+            Title: "Facade BIM Services",
+            img: img6,
+            Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
+            redirect: "/AllServices#VISUALIZATION"
+
+        },
+        {
+            // iconImage: VisualizationIcon,
+            Title: " Rendering Services",
+            img: img6,
+            Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
+            redirect: "/AllServices#VISUALIZATION"
+
+        },
     ]
     return (
         <>
             <div className="animatedCardSection">
                 <Row>
                     {ServicesCardData.map((item, index) => (
-                        <Col lg={8} key={index}>
+                        <Col lg={6} md={8} key={index}>
                             <Link to={item.redirect}>
                                 <div className="animatedCardContainer">
                                     <img src={item.img} alt="" />
@@ -66,7 +114,7 @@ const AnimatedHoverableCards = () => {
                                         </div>
                                     </div>
                                 </div>
-                                </Link>
+                            </Link>
                         </Col>
                     ))}
 

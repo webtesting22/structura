@@ -3,6 +3,7 @@ import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import "./AllServices.css";
 import { Link } from "react-router-dom";
 import Image from "../AllServices/4.png"
+import AnimatedStackCards from "./AnimationStackCards";
 const AllServices = () => {
     const [showList, setShowList] = useState(false);
     const [progress, setProgress] = useState(0);
@@ -53,7 +54,8 @@ const AllServices = () => {
     return (
         <>
             <StructuraCommonHero image={Image} text="All Services" routeLinks={routeLinks} />
-            <section>
+            <AnimatedStackCards />
+            {/* <section>
                 <div className="Smalltagline">
                     <h4 className="sectionHeading"><div></div>All Services</h4>
                     <h1 data-aos="fade-up" className="bigHeading"
@@ -277,7 +279,7 @@ const AllServices = () => {
                         quality excellence.</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <br /><br />
         </>
     );
