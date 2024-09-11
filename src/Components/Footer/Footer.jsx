@@ -8,9 +8,11 @@ const Footer = () => {
             <section id="Footer">
                 <div className="footerSection">
                     <div>
+                    {/* <div className="NirmaanHeading"><h1>Find Out More About Us On <a>Nirmaan!</a></h1></div><br/> */}
                         <Row style={{ margin: "auto" }}>
                             <Col lg={8} >
                                 <div>
+
                                     <i class='bx bx-building-house'></i>
                                     <h2>New York Office</h2>
                                     <p>
@@ -57,6 +59,7 @@ const Footer = () => {
                             <i class='bx bxl-linkedin' ></i>
                             <i class='bx bxl-facebook' ></i>
                         </div>
+                       
                         <p>@2024 <Link to="https://www.outleadsolutions.com/" target="_blank"><b>Outlead solutions.</b></Link> All rights reserved.</p>
                     </div>
 

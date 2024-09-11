@@ -53,7 +53,7 @@ const BoxCarousalContainer = () => {
                 <Swiper
                     slidesPerView={6}
                     spaceBetween={30}
-                    freeMode={true}
+                    // freeMode={true}
                     loop={true}
                     // pagination={{
                     //     clickable: true,
@@ -71,8 +71,8 @@ const BoxCarousalContainer = () => {
                         disableOnInteraction: false,
                         pauseOnMouseEnter: true,
                     }}
-                    speed={7000} // Adjust speed for smooth scrolling
-                    modules={[FreeMode, Autoplay]}
+                    speed={5000} // Adjust speed for smooth scrolling
+                    modules={[ Autoplay]}
                     className="mySwiper"
                 >
                     {AboutUsExpertisecarousalData.map((item, index) => (

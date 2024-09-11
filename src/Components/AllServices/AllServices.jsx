@@ -79,7 +79,7 @@ const AllServices = () => {
                     </ul>
                 </div>
                 <div className="AllServicesdata">
-                    <div ref={BIM}>
+                    <div ref={BIM} id="BIM">
                         <h1 className="DualTopHeading">B<span>IM</span></h1>
                         <p>We were one of the early adopters of BIM and have worked on over 325+
                             large architectural, interior, and engineering projects apart from 10,000+
@@ -164,7 +164,7 @@ const AllServices = () => {
                             </ul>
                         </div>
                     </div>
-                    <div ref={INTERIOR}>
+                    <div ref={INTERIOR} id="INTERIORDESIGN">
                         <h1 className="DualTopHeading">I<span>NTERIOR DESIGN</span></h1>
                         <p>We are a market leader in Design Document and arguably the World's no 1 in Documentation
                             for Interior projects. We lead the market in the following verticals : </p>
@@ -230,7 +230,7 @@ const AllServices = () => {
                             IS, NBC, NFPA, IEEE, ASME and ASHRAE codes.
                         </b></p>
                     </div>
-                    <div ref={VISUALIZATION}>
+                    <div ref={VISUALIZATION} id="VISUALIZATION">
                         <h1 className="DualTopHeading">3<span>D VISUALIZATION</span></h1>
                         <p>The 3D Visualization Studio stands apart as our designers and specialists understand Architecture,
                             Engineering, and Interior Design.</p>
@@ -261,7 +261,7 @@ const AllServices = () => {
             </section>
             <hr />
             <div className="AllServicesData">
-                {/* <div className="PaddingAdjust"> */}
+                <div className="PaddingAdjust">
                 <h1 data-aos="fade-up" className="bigHeading"
                     data-aos-duration="1000">AWARDS & RECOGNITIONS</h1>
 
@@ -275,7 +275,7 @@ const AllServices = () => {
                     <p>We were approached by AutoDesk to make a case study which reflects our technical capabilities in Revit. It
                         showcased our work process, ability to handle & deliver complex Revit projects & our dedication towards
                         quality excellence.</p>
-                    {/* </div> */}
+                    </div>
                 </div>
             </div>
             <br /><br />
