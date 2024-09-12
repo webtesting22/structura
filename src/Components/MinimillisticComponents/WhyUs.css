@@ -125,9 +125,11 @@
         /* background-color: white; */
     }
 
-    /* .left-column {
-        margin-top: 8rem;
-    } */
+    .left-column {
+        margin-top: 1rem;
+        margin-right: 0px;
+        padding: 20px;
+    }
 
     .left-column .contentContainer {
         position: absolute;
