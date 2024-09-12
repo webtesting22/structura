@@ -96,11 +96,11 @@
   /* Fade in */
   transform: translateX(0);
   /* Slide in from right */
+  transform: none;
+  display: flex;
+  justify-content: end;
 }
 
-.nav-menu.open {
-  transform: none;
-}
 
 .nav-menu ul {
   display: flex;

@@ -18,14 +18,14 @@ const AnimatedHoverableCards = () => {
     const ServicesCardData = [
         {
             // iconImage: BimIcon,
-            Title: " Structural Design",
+            Title: "Structural Design",
             img: img1,
             Descriptions: "Having adopted BIM early on, SKETS' BIM Studio is among the largest globally. SKETS has more than 200 experts dedicated for BIM who have completed 325+ large scale projects till date.",
             redirect: "/AllServices#BIM",
         },
         {
             // iconImage: InteriorDesignIcon,
-            Title: " MEP Design",
+            Title: "MEP Design",
             img: img2,
             Descriptions: "We are Market Leader in Interior Design Documentation with specialization in Hospitality.",
             redirect: "/AllServices#INTERIORDESIGN",
@@ -108,7 +108,7 @@ const AnimatedHoverableCards = () => {
                     {ServicesCardData.map((item, index) => (
                         <Col lg={6} md={8} key={index}>
                             <Link to={item.redirect}>
-                                <div className="animatedCardContainer">
+                                <div className="animatedCardContainer" >
                                     <img src={item.img} alt="" />
                                     <div className="insideContainer">
                                         <div className="topSideAnimationBar">

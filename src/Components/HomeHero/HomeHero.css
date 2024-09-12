@@ -246,3 +246,17 @@
         transition: .5s;
     }
 }
+
+.ant-modal .ant-modal-content{
+    /* display: flex; */
+    padding: 0px !important;
+}
+.ant-modal .ant-modal-body{
+    display: flex;
+}
+.ant-modal .ant-modal-close{
+    color: white;
+}
+.ant-modal .ant-modal-close:hover{
+    color: white;
+}

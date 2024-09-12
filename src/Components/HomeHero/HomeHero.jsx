@@ -9,7 +9,10 @@ import { EffectFade, Autoplay, Pagination } from 'swiper/modules';
 import DownArrow from "../HomeHero/downArrow.png"
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
+import AutoOpenPoster from "./AutoOpenPoster.jpg"
+import { Modal } from "antd";
 const HomeHero = () => {
+    const [isModalVisible, setIsModalVisible] = useState(false);
     const headings = [
         "Together, let's build a better construction experience",
         'Building with confidence and trust',
@@ -45,8 +48,33 @@ const HomeHero = () => {
             image: "https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
     ]
+    useEffect(() => {
+        // This will trigger when the component mounts (e.g., page reloads)
+        setIsModalVisible(true);
+    }, []);
+
+    const handleOk = () => {
+        setIsModalVisible(false);
+    };
+
+    const handleCancel = () => {
+        setIsModalVisible(false);
+    };
+
     return (
         <>
+            <div id="HomeModal">
+                <Modal
+                    title={null}
+                    visible={isModalVisible}
+                    onOk={handleOk}
+                    onCancel={handleCancel}
+                    footer={null}
+                >
+
+                    <img src={AutoOpenPoster} alt="" style={{ width: "100%" }} />
+                </Modal>
+            </div>
             <section id="StructuraHeroSection">
                 <div className="Herosectionadjust">
 

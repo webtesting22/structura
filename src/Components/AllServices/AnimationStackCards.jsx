@@ -10,21 +10,21 @@ import img8 from "./Images/8.png"
 import img9 from "./Images/9.png"
 import img10 from "./Images/10.png"
 import img11 from "./Images/11.png"
-const AnimatedStackCards = () => {
+const AnimatedStackCards = ({activeCard }) => {
     const containersRef = useRef([]);
 
     useEffect(() => {
         const observerOptions = {
-            threshold: 0.7, // Trigger when 70% of the image is visible
+            threshold: 0.7,
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 const container = entry.target;
                 if (entry.isIntersecting) {
-                    container.classList.remove('dark'); // Remove dark class when intersecting
+                    container.classList.remove('dark');
                 } else {
-                    container.classList.add('dark'); // Add dark class when not intersecting
+                    container.classList.add('dark');
                 }
             });
         }, observerOptions);
@@ -39,6 +39,7 @@ const AnimatedStackCards = () => {
             });
         };
     }, []);
+
     const StackCards = [
         {
             img: img1,
@@ -190,7 +191,7 @@ const AnimatedStackCards = () => {
                     };
                     return (
                         <div
-                            key={index}
+                        key={item.id}
                             className="StackCardContainer"
                             ref={(el) => (containersRef.current[index] = el)}
                         >
