@@ -89,11 +89,22 @@
 .AddressColums>div hr {
   background-color: rgb(188, 119, 66);
   border: 1px solid rgb(188, 119, 66);
+  width: 50px;
+  opacity: 0.5;
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  transition: .5s;
+}
+.AddressColums>div:hover hr {
+  background-color: rgb(188, 119, 66);
+  border: 1px solid rgb(188, 119, 66);
   width: 100px;
   opacity: 1;
   margin: 0px;
   margin-top: 5px;
   margin-bottom: 10px;
+  transition: .5s;
 }
 
 /* .AddressColums {

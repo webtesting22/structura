@@ -7,7 +7,6 @@ import { Row, Col, Modal } from "antd";
 
 const AllProjects = () => {
     const [activeTab, setActiveTab] = useState('Residential');
-    const [activeSubTab, setActiveSubTab] = useState('Ongoing');
     const [selectedTitle, setSelectedTitle] = useState(AllProjectsData[0].Title);
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // Check if it's mobile on initial render
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -46,19 +45,20 @@ const AllProjects = () => {
     const showModal = (details) => {
         setModalDetails(details);
         setIsModalOpen(true);
-        
+        console.log("open")
+
     };
 
     const handleOk = () => {
         setIsModalOpen(false);
         setModalDetails(null);
-        
+
     };
 
     const handleCancel = () => {
         setIsModalOpen(false);
         setModalDetails(null);
-        
+
     };
 
 
@@ -176,9 +176,9 @@ const AllProjects = () => {
                                                 <div className="cardContent">
                                                     <span className="Category">{details.Status}</span>
                                                     <h2 >{truncateTitle(details.cardTitle, 20)}</h2>
-                                                    <Modal mask={false} title="Project Images" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                                                    {/* <Modal mask={false} title="Project Images" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
                                                         <Col span={8}><img src={details.galleryImages} className="modalImage" /></Col>
-                                                    </Modal>
+                                                    </Modal> */}
                                                     <br />
                                                     <div>
                                                         <span>Developer</span>
@@ -206,6 +206,8 @@ const AllProjects = () => {
                                     onOk={handleOk}
                                     onCancel={handleCancel}
                                     style={{ boxShadow: "none" }}
+                                    footer={null}
+                                    className="ProjectModal"
                                 >
                                     <Row>
                                         {modalDetails.galleryImages && modalDetails.galleryImages.length > 0 ? (

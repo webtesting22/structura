@@ -148,3 +148,11 @@
 .ant-modal .ant-modal-content{
     box-shadow: none;
 }
+
+.ProjectModal .ant-modal-close{
+    color: black;
+}
+.ProjectModal .ant-modal-body,
+.ProjectModal .ant-modal-header{
+   padding: 10px 20px;
+}
