@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Row, Col, Descriptions } from "antd"
 import "./WhyUs.css"
 import Title from 'antd/es/skeleton/Title';
+import StructuraLogo from "/images/structuraLogo.png";
 const WhyUsComponent = () => {
     const [isSticky, setIsSticky] = useState(true);
     const rightColumnRef = useRef(null);
@@ -118,7 +119,8 @@ const WhyUsComponent = () => {
                                             <Col lg={12} key={index}>
                                                 <div className='cardContainerWhyChooseUS' data-aos="fade-up" data-aos-delay={`${index * 300}`} data-aos-duration="500">
                                                     <div className='iconCardContainer'>
-                                                        <i class='bx bxs-hard-hat' ></i>
+                                                        {/* <i class='bx bxs-hard-hat' ></i> */}
+                                                        <img src={StructuraLogo} style={{width:"15%"}}/>
                                                     </div>
                                                     <h4 style={{marginBottom:"10px"}}>{item.Title}</h4>
                                                     <p style={{fontSize:"16px"}}>{item.Descriptions}</p>

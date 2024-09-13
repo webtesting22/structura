@@ -205,6 +205,8 @@
     /* top:0; */
     right: 0;
     position: fixed;
+    display: flex;
+    justify-content: center;
     height: 100vh;
     background-size: cover;
     background-position: center;
