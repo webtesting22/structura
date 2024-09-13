@@ -96,6 +96,7 @@
   margin-bottom: 10px;
   transition: .5s;
 }
+
 .AddressColums>div:hover hr {
   background-color: rgb(188, 119, 66);
   border: 1px solid rgb(188, 119, 66);
@@ -107,24 +108,25 @@
   transition: .5s;
 }
 
-/* .AddressColums {
-  display: flex;
-  flex-wrap: wrap;
-} */
-.FooterRebuild div span{
+.FooterRebuild div span {
   color: white;
   display: flex;
   align-items: center;
   margin: 5px 0px;
 }
-.FooterRebuild div span a{
+
+.FooterRebuild div span a {
   font-size: 18px;
 }
-.FooterRebuild .Contact{
+
+.FooterRebuild .Contact {
   display: flex;
   flex-direction: column;
 }
 
+.Contact a:hover{
+  color: white;
+}
 @media (max-width:769px) {
   .footerSection {
     background-color: rgb(25 25 25);
