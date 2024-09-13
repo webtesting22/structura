@@ -111,6 +111,19 @@
   display: flex;
   flex-wrap: wrap;
 } */
+.FooterRebuild div span{
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 5px 0px;
+}
+.FooterRebuild div span a{
+  font-size: 18px;
+}
+.FooterRebuild .Contact{
+  display: flex;
+  flex-direction: column;
+}
 
 @media (max-width:769px) {
   .footerSection {

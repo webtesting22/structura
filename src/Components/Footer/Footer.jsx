@@ -3,6 +3,8 @@ import "./Footer.css"
 import { Row, Col } from "antd";
 import { Link } from "react-router-dom";
 import StructuraLogo from "/images/structuraLogo.png"
+import { MdEmail } from "react-icons/md";
+import { FaPhone } from "react-icons/fa6";
 const Footer = () => {
     return (
         <>
@@ -16,6 +18,15 @@ const Footer = () => {
                                     <br /><br />
                                     <p>At <b>STRUCTURA</b>, we specialize in delivering high-quality construction services, combining innovation and craftsmanship to bring your vision to life, ensuring lasting results with professionalism and integrity on every project.</p>
                                     <br />
+                                    <div className="Contact">
+                                        <span><MdEmail />&nbsp; <a href="mailto:connect@structuraconsultants.com">connect@structuraconsultants.com</a></span>
+                                        <span><FaPhone /> &nbsp;        <a href="tel:+919825324480">+91-9825324480</a>
+                                        &nbsp; 
+                                            OR
+                                            &nbsp; 
+                                            <a href="tel:+919099024581">+91-9099024581</a>
+                                        </span>
+                                    </div>
                                     <button className="commomBtn">Connect</button>
                                 </div>
                             </Col>
@@ -62,7 +73,7 @@ const Footer = () => {
                                 </div>
                             </Col>
                         </Row>
-                       
+
                         <hr />
                     </div>
                     <div className="BottomLine">

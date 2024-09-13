@@ -1,20 +1,21 @@
-#SwiperSliderContainer{
+#SwiperSliderContainer {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: auto;
     text-align: center;
 }
-.continuesCarousalItems .icons span{
+
+.continuesCarousalItems .icons span {
     background-color: black;
     color: white;
-   display: flex;
-   width: 20px;
-   height: 20px;
-   margin: 10px auto;
-   align-items: center;
-   justify-content: center;
-   padding: 5px;
-   border-radius: 10px;
-   font-size: 20px;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
 }

@@ -48,7 +48,7 @@ const ClientsAndDirectors = () => {
                 <div className="BoardAndDirectorsContainer">
                     <Row>
                         {DirectorsContent.map((item, index) => (
-                            <Col lg={6} md={12} key={index}>
+                            <Col lg={8} md={12} key={index}>
                                 <div className="projectsCardDesigns" data-aos="fade-up" data-aos-duration="1000">
                                     <div className="cardImage">
                                         <img src={item.image} alt={item.cardTitle} />
@@ -70,12 +70,16 @@ const ClientsAndDirectors = () => {
                     </Row>
 
                 </div>
+
+
+            </section>
+            <section>
                 <div id="clientSection">
                     <h1 className="bigHeading">Our Clients</h1>
+                    <br /><br />
                     <ClientCard />
                 </div>
             </section>
-
         </>
     )
 }

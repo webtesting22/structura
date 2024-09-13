@@ -6,11 +6,13 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: "PT Sans", sans-serif;
 }
 
 a {
     text-decoration: none;
     color: white;
+    font-family: "PT Sans", sans-serif;
 }
 
 p {

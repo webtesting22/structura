@@ -10,19 +10,28 @@ const ClientCard = () => {
     return (
         <div className="clientCardContainer">
             <Swiper
-            slidesPerView={3}
+                slidesPerView={2}
                 spaceBetween={30}
                 freeMode={true}
                 centeredSlides={true}
                 loop={true}
                 autoplay={{
-                    delay: 2500,
-                    
+                    delay: 2000,
+
                     disableOnInteraction: false,
-                   
+
                 }}
                 pagination={{
                     clickable: true,
+                }}
+                speed={700}
+                breakpoints={{
+                    // when window width is <= 768px
+                    768: {
+                        slidesPerView: 5, // Show 2 slides per view on mobile
+                        spaceBetween: 20, // Adjust space between slides if needed
+                    },
+                    // you can add more breakpoints for different screen sizes if needed
                 }}
                 navigation={false}
                 modules={[Autoplay]}
@@ -30,7 +39,7 @@ const ClientCard = () => {
             >
                 {clientData.map((client, index) => (
                     <SwiperSlide key={index}>
-                        <div className="client-card">
+                        <div>
                             <img src={client.companyLogo} alt={client.companyTitle} className="client-logo" />
                             <h3>{client.companyTitle}</h3>
                         </div>

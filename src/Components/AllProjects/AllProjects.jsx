@@ -25,7 +25,7 @@ const AllProjects = () => {
 
     const routeLinks = [
         { path: "/", name: "Home" },
-        { path: "/AllProjects", name: "AllProjects" },
+        { path: "/AllProjects", name: "All Projects" },
         // Add more links as needed
     ];
 
@@ -74,41 +74,9 @@ const AllProjects = () => {
                     <div className="Smalltagline">
                         <h4 className="sectionHeading"><div></div>All Projects</h4>
                     </div>
-                    {/* <h1 data-aos="fade-up" className="bigHeading" data-aos-duration="1000">
-                        Residential and Commercial Projects
-                    </h1> */}
+
                 </div>
-                {/* <div className="sectionPadding"></div> */}
-                {/* <div className="categoryProjectsBtn">
-                    <button 
-                        className={activeTab === 'Residential' ? 'activeBtn' : 'nonActiveBtn'} 
-                        onClick={() => setActiveTab('Residential')}
-                    >
-                        Residential
-                    </button>
-                    <button 
-                        className={activeTab === 'Commercial' ? 'activeBtn' : 'nonActiveBtn'} 
-                        onClick={() => setActiveTab('Commercial')}
-                    >
-                        Commercial
-                    </button>
-                </div>
-               <br />
-                <div className="subCategoryProjectsBtn">
-                    <button
-                        className={activeSubTab === 'Ongoing' ? 'activeBtnSub' : 'nonActiveBtnSub'}
-                        onClick={() => setActiveSubTab('Ongoing')}
-                    >
-                        Ongoing
-                    </button>
-                    <button
-                        className={activeSubTab === 'Completed' ? 'activeBtnSub' : 'nonActiveBtnSub'}
-                        onClick={() => setActiveSubTab('Completed')}
-                    >
-                        Completed
-                    </button>
-                </div> */}
-                {/* <div className="sectionPadding"></div> */}
+
 
                 <div className="ColumsStyleContainers">
                     <div className="FiltersContainers">
