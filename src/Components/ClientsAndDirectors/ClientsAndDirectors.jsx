@@ -63,7 +63,7 @@ const ClientsAndDirectors = () => {
                                     <div className="cardContent">
                                         <h2>{item.DirectorName}</h2>
                                         <br />
-                                        <p>{item.DirectorContent}</p>
+                                        <p style={{minHeight:"180px"}}>{item.DirectorContent}</p>
                                         {/* Add other content here */}
                                     </div>
                                     {/* <div className="arrowIcon">
