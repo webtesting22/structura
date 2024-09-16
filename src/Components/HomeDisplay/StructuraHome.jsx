@@ -14,7 +14,7 @@ const StructuraHome = () => {
             <HomePageProject2 />
             <section>
                 <div id="clientSection">
-                    <h1 className="bigHeading">Our Clients</h1>
+                    <h1 className="bigHeading" style={{textAlign:"center"}}>Our Clients</h1>
                     <br /><br />
                     <ClientCard />
                 </div>
