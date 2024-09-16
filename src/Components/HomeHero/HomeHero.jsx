@@ -44,7 +44,7 @@ const HomeHero = () => {
 
     const StructuraCarousalImages = [
         {
-            image: img1,
+            image: img6,
         },
         {
             image: img5,
