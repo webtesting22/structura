@@ -12,7 +12,7 @@ import img8 from "../AnimatedHoverableCard/8.png"
 import img9 from "../AnimatedHoverableCard/9.png"
 import img10 from "../AnimatedHoverableCard/10.png"
 import img11 from "../AnimatedHoverableCard/11.png"
-import { Link, redirect } from "react-router-dom";
+import { Link} from "react-router-dom";
 import AllServices from "../AllServices/AllServices";
 const AnimatedHoverableCards = () => {
     const ServicesCardData = [

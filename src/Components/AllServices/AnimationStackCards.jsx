@@ -39,10 +39,21 @@ const AnimatedStackCards = ({activeCard }) => {
             });
         };
     }, []);
+    useEffect(() => {
+        const hash = window.location.hash;
+        if (hash) {
+            const element = document.getElementById(hash.substring(1));  // Remove the # from the hash
+            if (element) {
+                element.scrollIntoView({ behavior:'auto' });
+            }
+        }
+    }, []);
+    
 
     const StackCards = [
         {
             id:"StructuralDesign",
+            ref:"StructuralDesign",
             img: img1,
             serviceTitle: "STRUCTURAL DESIGN",
             serviceDescription: "Our forward-thinking structural design solutions prioritize strength and longevity while ensuring the highest standards of safety. Using advanced engineering principles, we create projects that stand the test of time. Combining aesthetic excellence with efficiency, we push the limits of structural design to deliver visually stunning and functionally superior buildings that comply with all relevant codes and regulations.",
