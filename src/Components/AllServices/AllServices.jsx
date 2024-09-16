@@ -13,7 +13,9 @@ const AllServices = () => {
         { path: "/allservices", name: "All Services" },
         // Add more links as needed
     ];
-
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    //   }, []);
     const BIM = useRef(null);
     const REVIT = useRef(null);
     const INTERIOR = useRef(null);

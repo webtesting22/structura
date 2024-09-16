@@ -11,6 +11,12 @@ import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import AutoOpenPoster from "./AutoOpenPoster.jpg"
 import { Modal } from "antd";
+import img1 from "./1.jpg";
+import img2 from "./2.jpg";
+import img3 from "./3.jpg";
+import img4 from "./4.jpg";
+import img5 from "./5.jpg";
+import img6 from "./6.jpg";
 const HomeHero = () => {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const headings = [
@@ -21,7 +27,9 @@ const HomeHero = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [fade, setFade] = useState(true);
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     useEffect(() => {
         const interval = setInterval(() => {
             setFade(false);  // Start fading out
@@ -36,16 +44,16 @@ const HomeHero = () => {
 
     const StructuraCarousalImages = [
         {
-            image: "https://images.unsplash.com/photo-1591955506264-3f5a6834570a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: img1,
         },
         {
-            image: "https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: img5,
         },
         {
-            image: "https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: img3,
         },
         {
-            image: "https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: img4,
         }
     ]
     useEffect(() => {
@@ -63,7 +71,7 @@ const HomeHero = () => {
 
     return (
         <>
-            <div id="HomeModal">
+            {/* <div id="HomeModal">
                 <Modal
                     title={null}
                     visible={isModalVisible}
@@ -74,7 +82,7 @@ const HomeHero = () => {
 
                     <img src={AutoOpenPoster} alt="" style={{ width: "100%" }} />
                 </Modal>
-            </div>
+            </div> */}
             <section id="StructuraHeroSection">
                 <div className="Herosectionadjust">
 
@@ -146,7 +154,7 @@ const HomeHero = () => {
 
                                 <img src={DownArrow} alt="" style={{ width: "100%", cursor: "pointer" }} onClick={() => window.scrollBy({ top: 650, behavior: 'smooth' })} />
                             </div>
-                            <div className="BottomContactContainer">
+                            {/* <div className="BottomContactContainer">
                                 <div>
                                     <h4> <span>SAUMYA C. SHAH & SHYAM C. SHAH</span>
                                         <br /> CEO, STRUCTURA CONSULTANTS</h4>
@@ -161,7 +169,7 @@ const HomeHero = () => {
                                     </span>
                                 </div>
 
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className="imageOverlay">

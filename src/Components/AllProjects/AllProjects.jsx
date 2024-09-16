@@ -22,7 +22,9 @@ const AllProjects = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     const routeLinks = [
         { path: "/", name: "Home" },
         { path: "/AllProjects", name: "All Projects" },

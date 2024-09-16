@@ -7,43 +7,52 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode, Autoplay, Pagination } from 'swiper/modules';
 import { TbCheckbox } from "react-icons/tb";
+import HospitalityIcon from "./ICONS/HOSPITALITY.png";
+import CorporateIcon from "./ICONS/CORPORATE.png";
+import RetailIcon from "./ICONS/RETAIL.png";
+import CommercialIcon from "./ICONS/COMMERCIAL.png";
+import ResidentialIcon from "./ICONS/RESIDENTIAL.png";
+import HealthcareIcon from "./ICONS/HEALTH-CARE.png";
+import InstitutionalIcon from "./ICONS/INSTITUTIONAL.png";
+import MixedUseIcon from "./ICONS/MIXED-USE.png";
+import AgedCareIcon from "./ICONS/AGED-CARE.png";
 import Title from "antd/es/skeleton/Title";
 const BoxCarousalContainer = () => {
     const AboutUsExpertisecarousalData = [
         {
-            Icon: <TbCheckbox />,
+            Icon:HospitalityIcon,
             Title: "Hospitality"
         },
         {
-            Icon: <TbCheckbox />,
+            Icon: CorporateIcon,
             Title: "Corporate"
         },
         {
-            Icon: <TbCheckbox />,
+            Icon:RetailIcon,
             Title: "Retail"
         },
         {
-            Icon: <TbCheckbox />,
+            Icon: CommercialIcon,
             Title: "Commercial"
         },
         {
-            Icon: <TbCheckbox />,
+            Icon: ResidentialIcon,
             Title: "Residential"
         },
         {
-            Icon: <TbCheckbox />,
+            Icon: HealthcareIcon,
             Title: "Healthcare"
         },
         {
-            Icon: <TbCheckbox />,
+            Icon: InstitutionalIcon,
             Title: "Institutional"
         },
         {
-            Icon: <TbCheckbox />,
+            Icon: MixedUseIcon,
             Title: "Mixed-use"
         },
         {
-            Icon: <TbCheckbox />,
+            Icon: AgedCareIcon,
             Title: "Aged-Care"
         },
     ]
@@ -78,7 +87,7 @@ const BoxCarousalContainer = () => {
                     {AboutUsExpertisecarousalData.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div className="continuesCarousalItems">
-                                <div className="icons"><span>{item.Icon}</span></div>
+                                <div className="icons"><img src={item.Icon}/></div>
                                 <div><h5>{item.Title}</h5></div>
                             </div>
                         </SwiperSlide>

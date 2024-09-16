@@ -10,9 +10,11 @@ import img8 from "./Images/8.png"
 import img9 from "./Images/9.png"
 import img10 from "./Images/10.png"
 import img11 from "./Images/11.png"
-const AnimatedStackCards = ({activeCard }) => {
+const AnimatedStackCards = ({ activeCard }) => {
     const containersRef = useRef([]);
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     useEffect(() => {
         const observerOptions = {
             threshold: 0.7,
@@ -42,18 +44,22 @@ const AnimatedStackCards = ({activeCard }) => {
     useEffect(() => {
         const hash = window.location.hash;
         if (hash) {
-            const element = document.getElementById(hash.substring(1));  // Remove the # from the hash
-            if (element) {
-                element.scrollIntoView({ behavior:'auto' });
-            }
+            const timer = setTimeout(() => {
+                const element = document.getElementById(hash.substring(1));  // Remove the # from the hash
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);  // 2000ms delay
+
+            return () => clearTimeout(timer);  // Cleanup the timer on component unmount
         }
     }, []);
-    
+
 
     const StackCards = [
         {
-            id:"StructuralDesign",
-            ref:"StructuralDesign",
+            id: "StructuralDesign",
+            ref: "StructuralDesign",
             img: img1,
             serviceTitle: "STRUCTURAL DESIGN",
             serviceDescription: "Our forward-thinking structural design solutions prioritize strength and longevity while ensuring the highest standards of safety. Using advanced engineering principles, we create projects that stand the test of time. Combining aesthetic excellence with efficiency, we push the limits of structural design to deliver visually stunning and functionally superior buildings that comply with all relevant codes and regulations.",
@@ -66,7 +72,7 @@ const AnimatedStackCards = ({activeCard }) => {
             ]
         },
         {
-            id:"MepDesign",
+            id: "MepDesign",
             img: img2,
             serviceTitle: "MEP DESIGN",
             serviceDescription: "Our MEP designs focus on optimizing the mechanical, electrical, and plumbing systems to ensure efficient and comfortable environments. Using the latest in Building Information Modeling (BIM) and 3D modeling, we tailor each system to the unique needs of the project, ensuring it meets performance standards while maintaining operational efficiency.",
@@ -79,7 +85,7 @@ const AnimatedStackCards = ({activeCard }) => {
             ]
         },
         {
-            id:"InteriorDesign",
+            id: "InteriorDesign",
             img: img3,
             serviceTitle: "INTERIOR DESIGN",
             serviceDescription: "Our interior design services are crafted to elevate living and working spaces with a focus on functionality and style. From luxurious homes to dynamic commercial spaces, we customize each project to reflect the client's unique vision while ensuring sustainability and eco-friendly practices throughout the design process.",
@@ -92,7 +98,7 @@ const AnimatedStackCards = ({activeCard }) => {
             ]
         },
         {
-            id:"Architecture",
+            id: "Architecture",
             img: img4,
             serviceTitle: "ARCHITECTURAL CAD DRAFTING",
             serviceDescription: "We provide top-notch architectural CAD services, from detailed 2D drawings to advanced 3D renderings. Our experienced team ensures precise architectural construction drawings that comply with all local building codes and standards, providing a seamless design-to-construction workflow.",
@@ -105,7 +111,7 @@ const AnimatedStackCards = ({activeCard }) => {
             ]
         },
         {
-            id:"MepDrafting",
+            id: "MepDrafting",
             img: img5,
             serviceTitle: "MEP CAD DRAFTING",
             serviceDescription: "Our MEP CAD drafting services ensure optimal design for mechanical, electrical, and plumbing systems, integrating architectural and structural drawings to meet project requirements. We specialize in creating accurate MEP CAD drawings for seamless installation and construction management.",
@@ -118,7 +124,7 @@ const AnimatedStackCards = ({activeCard }) => {
             ]
         },
         {
-            id:"StructureDrafting",
+            id: "StructureDrafting",
             img: img6,
             serviceTitle: "STRUCTURAL CAD DRAFTING",
             serviceDescription: "We possess the technical knowledge and technological resources, combined with our thorough research, to deliver the best structural drawings and solutions for each challenge. Specializing in generating structural CAD drawings for residential, commercial, and industrial buildings, we adhere to the standards dictated by project locations and building codes, ensuring optimal results in every project.",
@@ -134,7 +140,7 @@ const AnimatedStackCards = ({activeCard }) => {
             ]
         },
         {
-            id:"ArchitectureBIM",
+            id: "ArchitectureBIM",
             img: img7,
             serviceTitle: "ARCHITECTURAL BIM SERVICES",
             serviceDescription: "We offer solutions tailored for dynamic environments where business and technology strategies intersect. Our expertise lies in creating detailed 3D visuals that validate building designs before construction begins. Our adept architectural drafters excel at identifying design issues, detecting clashes early, and minimizing costly rework, ensuring a smoother and more efficient construction process.",
@@ -147,7 +153,7 @@ const AnimatedStackCards = ({activeCard }) => {
             ]
         },
         {
-            id:"StructureBIM",
+            id: "StructureBIM",
             img: img8,
             serviceTitle: "STRUCTURAL BIM SERVICES",
             serviceDescription: "We specialize in providing comprehensive structural engineering BIM services tailored for residential, industrial, and commercial projects. Our team of BIM experts excels in developing detailed structural BIM models, drafting, and producing comprehensive shop drawings for precision and efficiency throughout the project lifecycle.",
@@ -160,7 +166,7 @@ const AnimatedStackCards = ({activeCard }) => {
             ]
         },
         {
-            id:"MepBim",
+            id: "MepBim",
             img: img9,
             serviceTitle: "MEP BIM SERVICES",
             serviceDescription: "We develop accurate MEP models that enable consultants, contractors, manufacturers, and fabricators to seamlessly manage on-site activities. Our services cover standalone and integrated BIM modeling, adhering to international standards for complex projects such as laboratories, hospitals, schools, universities, and industrial facilities.",
@@ -173,7 +179,7 @@ const AnimatedStackCards = ({activeCard }) => {
             ]
         },
         {
-            id:"FacadeBim",
+            id: "FacadeBim",
             img: img10,
             serviceTitle: "FACADE BIM SERVICES",
             serviceDescription: "We specialize in creating comprehensive 2D and 3D drawings, along with 3D to 5D BIM models, to enhance building data management, visualization, and BOQ calculations. Our facade BIM services encompass glazing, cladding, prefabricated metals, canopies, doors, windows, and skylights, meeting diverse project needs.",
@@ -186,7 +192,7 @@ const AnimatedStackCards = ({activeCard }) => {
             ]
         },
         {
-            id:"Rendering",
+            id: "Rendering",
             img: img11,
             serviceTitle: "RENDERING SERVICES",
             serviceDescription: "At Structura Consultants, we elevate your vision with comprehensive 3D visualization and branding services. From architectural rendering to product modeling, we bring ideas to life with precision and creativity, crafting immersive experiences tailored to your unique needs.",
@@ -213,19 +219,22 @@ const AnimatedStackCards = ({activeCard }) => {
                     };
                     return (
                         <div
-                        key={index}
-                        id={item.id}
+                            key={index}
+                            id={item.id}
                             className="StackCardContainer"
-                            
+
                             ref={(el) => (containersRef.current[index] = el)}
                         >
                             <img src={item.img} alt="" />
                             <div className="Imageoverlay"></div>
                             <div className="AnimatedCardContentContainer">
                                 <div className="ContentInsideContainer">
-                                    <h4 className="ServiceTitle" dangerouslySetInnerHTML={{ __html: wrapFirstWord(item.serviceTitle) }} />
-                                    <p>{item.serviceDescription}</p>
-                                    <ul className="ServicePointsList">
+                                    <h4  data-aos="fade-right"
+                                        data-aos-duration="1000"  className="ServiceTitle" dangerouslySetInnerHTML={{ __html: wrapFirstWord(item.serviceTitle) }} />
+                                    <p  data-aos="fade-up"
+                                        data-aos-duration="1000" >{item.serviceDescription}</p>
+                                    <ul  data-aos="fade-up"
+                                        data-aos-duration="1000"  className="ServicePointsList">
                                         {item.servicePoints.map((point, i) => (
                                             <li key={i}>{point}</li>
                                         ))}

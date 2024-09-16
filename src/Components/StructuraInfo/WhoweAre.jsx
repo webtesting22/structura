@@ -64,22 +64,28 @@ const WhoweAre = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className="SingleBox" data-aos="fade-up"
-                                data-aos-duration="2000">
+                            <div className="SingleBox" data-aos="fade-up"
+                                data-aos-duration="2000" >
                                 <div className="CounterBox">
+                                    <CountUp
+                                        end={40}
+                                        duration={10}
+                                        suffix="+"
+                                    />
+                                    <p>Total Number of our Projects</p><br/><br/>
                                     <div className="icon-box">
-
+                                        <i class='bx bx-buildings' ></i>
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                     <div className="WhoweareContent-container">
                         <div className="WhoweareContentText">
                             {/* <div className="Smalltagline"><h4 className="sectionHeading"><div></div>WHO WE ARE</h4></div> */}
                             {/* <div style={{display}}> */}
-                                <img src={StructuraLogo} style={{ width: "50px" }} alt="" /><h1 data-aos="fade-up"
-                                    data-aos-duration="1000">STRUCTURA CONSULTANTS</h1>
+                            <img src={StructuraLogo} style={{ width: "50px" }} alt="" /><h1 data-aos="fade-up"
+                                data-aos-duration="1000">STRUCTURA CONSULTANTS</h1>
                             {/* </div> */}
                             <p data-aos="fade-up"
                                 data-aos-duration="2000">Our team has worked on 1500+ multifarious projects. Positioning itself as a navigator, SKETS has been

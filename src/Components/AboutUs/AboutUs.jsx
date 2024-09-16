@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import { Link } from "react-router-dom";
 import { Descriptions } from "antd";
@@ -15,9 +15,12 @@ import BoxCarousalContainer from "../MinimillisticComponents/BoxCarousalContaine
 import AnimatedHoverableCards from "../AnimatedHoverableCard/AnimatedHoverableCard";
 import AboutUsPoster from "../AboutUs/1.png"
 const AboutUs = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const routeLinks = [
-        { path: "/", name: "Home" },
-        { path: "/AboutUs", name: "About Us" },
+        // { path: "/", name: "Home" },
+        // { path: "/AboutUs", name: "About Us" },
         // Add more links as needed
     ];
 
@@ -31,9 +34,13 @@ const AboutUs = () => {
             />
             <section id="servicesSection">
                 <div className="sectionPadding"></div>
-                <div className="sectionPadding"></div>
+                {/* <div className="sectionPadding"></div> */}
                 <div>
-                    <div className="Smalltagline"><h4 className="sectionHeading"><div></div>WHO WE ARE</h4></div>
+                    {/* <div className="Smalltagline">
+                    <h4 className="sectionHeading">
+                    
+                    WHO WE ARE</h4>
+                    </div> */}
                     <h1 data-aos="fade-up" className="bigHeading"
                         data-aos-duration="1000">Our Expertise</h1>
                     <br /><br />
@@ -72,6 +79,8 @@ const AboutUs = () => {
                 </div> */}
                 <div className="sectionPadding"></div>
                 <div className="sectionPadding"></div>
+                <h1 data-aos="fade-up" className="bigHeading"
+                        data-aos-duration="1000">Services</h1>
                 <BoxCarousalContainer />
 
             </section>
