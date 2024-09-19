@@ -27,7 +27,7 @@ const Footer = () => {
                                             <a href="tel:+919099024581">+91-9099024581</a>
                                         </span>
                                     </div>
-                                    <button className="commomBtn">Connect</button>
+                                    {/* <button className="commomBtn">Connect</button> */}
                                 </div>
                             </Col>
                             <Col lg={12}>
