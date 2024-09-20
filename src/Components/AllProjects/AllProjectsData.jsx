@@ -203,6 +203,50 @@ import DEEPBHAIBUNGALOWImage3 from "/images/ProjectsImages/Banglows/DEEPBHAI - B
 import DEEPBHAIBUNGALOWImage5 from "/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/05.jpg"
 import DEEPBHAIBUNGALOWImage6 from "/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/06.jpg"
 
+//Weekend Villas 
+
+//360 Villas
+import Villa360Image1 from "/images/ProjectsImages/WeekendVillas/360Villa/1.jpg"
+import Villa360Image2 from "/images/ProjectsImages/WeekendVillas/360Villa/2.jpg"
+import Villa360Image3 from "/images/ProjectsImages/WeekendVillas/360Villa/3.jpg"
+
+//Butterfly Trails
+
+import ButterflyTrailImage1 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/1.jpg";
+import ButterflyTrailImage2 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/2.jpg";
+import ButterflyTrailImage3 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/3.jpg";
+import ButterflyTrailImage4 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/4.jpeg";
+import ButterflyTrailImage5 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/5.jpg";
+import ButterflyTrailImage6 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/6.jpg";
+import ButterflyTrailImage7 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/7.jpg";
+import ButterflyTrailImage8 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/8.jpg";
+import ButterflyTrailImage9 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/9.jpg";
+import ButterflyTrailImage10 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/10.jpg";
+import ButterflyTrailImage11 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/11.jpg";
+import ButterflyTrailImage12 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/12.jpg";
+import ButterflyTrailImage13 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/13.jpg";
+import ButterflyTrailImage14 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/14.jpg";
+import ButterflyTrailImage15 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/15.jpg";
+import ButterflyTrailImage16 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/16.jpg";
+import ButterflyTrailImage17 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/17.jpg";
+import ButterflyTrailImage18 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/18.jpg";
+import ButterflyTrailImage19 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/19.jpg";
+import ButterflyTrailImage20 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/20.jpg";
+import ButterflyTrailImage21 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/21.jpg";
+
+//Weekend Homes At Dehgam
+
+import WeekendHomeDehgamImage1 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/1.jpg";
+import WeekendHomeDehgamImage2 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/2.jpg";
+import WeekendHomeDehgamImage3 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/3.jpg";
+import WeekendHomeDehgamImage4 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/4.jpg";
+import WeekendHomeDehgamImage5 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/5.jpg";
+import WeekendHomeDehgamImage6 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/6.jpg";
+import WeekendHomeDehgamImage7 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/7.jpg";
+import WeekendHomeDehgamImage8 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/8.jpg";
+import WeekendHomeDehgamImage9 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/9.jpg";
+import WeekendHomeDehgamImage10 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/10.jpg";
+import WeekendHomeDehgamImage11 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/11.jpg";
 const AllProjectsData = [
     {
         Title: "High Rise Buildings",
@@ -494,20 +538,23 @@ const AllProjectsData = [
         Title: "Weekend Villas",
         ProjectDetails: [
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: Villa360Image3,
+                galleryImages:[Villa360Image1,Villa360Image2,Villa360Image3],
                 cardTitle: "360 VILLA",
                 Location: "CHALODA",
                 ArchitectName: "DCPL"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                cardTitle: "BUTTERFLY TRIALS",
+                cardImage:ButterflyTrailImage15,
+                galleryImages:[ButterflyTrailImage1,ButterflyTrailImage2,ButterflyTrailImage3,ButterflyTrailImage4,ButterflyTrailImage5,ButterflyTrailImage6,ButterflyTrailImage7,ButterflyTrailImage8,ButterflyTrailImage9,ButterflyTrailImage10,ButterflyTrailImage11,ButterflyTrailImage12,ButterflyTrailImage13,ButterflyTrailImage14,ButterflyTrailImage15,ButterflyTrailImage16,ButterflyTrailImage17,ButterflyTrailImage18,ButterflyTrailImage19,ButterflyTrailImage20,ButterflyTrailImage21],
+                cardTitle: "BUTTERFLY TRAILS",
                 Location: "CHALODA",
                 ArchitectName: "DCPL"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                cardTitle: "WEEKAND HOMES AT DEHGAM",
+                cardImage:WeekendHomeDehgamImage2,
+                galleryImages:[WeekendHomeDehgamImage1,WeekendHomeDehgamImage2,WeekendHomeDehgamImage3,WeekendHomeDehgamImage4,WeekendHomeDehgamImage5,WeekendHomeDehgamImage6,WeekendHomeDehgamImage7,WeekendHomeDehgamImage8,WeekendHomeDehgamImage9,WeekendHomeDehgamImage10,WeekendHomeDehgamImage11],
+                cardTitle: "WEEKEND HOMES AT DEHGAM",
                 Location: "DEHGAM",
                 ArchitectName: "DCPL"
             },

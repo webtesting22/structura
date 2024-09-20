@@ -55,7 +55,7 @@ const ClientsAndDirectors = () => {
                 <div className="BoardAndDirectorsContainer">
                     <Row>
                         {DirectorsContent.map((item, index) => (
-                            <Col lg={8} md={12} key={index}>
+                            <Col lg={8} md={12} key={index}> 
                                 <div className="projectsCardDesigns" data-aos="fade-up" data-aos-duration="1000">
                                     <div className="cardImage">
                                         <img src={item.image} alt={item.cardTitle} />
