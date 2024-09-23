@@ -247,6 +247,30 @@ import WeekendHomeDehgamImage8 from "/images/ProjectsImages/WeekendVillas/Weeken
 import WeekendHomeDehgamImage9 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/9.jpg";
 import WeekendHomeDehgamImage10 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/10.jpg";
 import WeekendHomeDehgamImage11 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/11.jpg";
+
+//Institute
+
+//Hotel For Nilesh Bhai
+
+import NeeleshBhaiHotelImage1 from "/images/ProjectsImages/Institute/HotelForNileshBhai/1.jpeg";
+import NeeleshBhaiHotelImage2 from "/images/ProjectsImages/Institute/HotelForNileshBhai/2.jpg";
+
+//Hyundai Showroom
+
+import HyundaiShowroomImage1 from "/images/ProjectsImages/Institute/HyundaiShowroom/1.jpeg";
+import HyundaiShowroomImage2 from "/images/ProjectsImages/Institute/HyundaiShowroom/2.jpeg";
+
+//Maruti Industrial Estate
+import MarutiImage1 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/01-min.jpg";
+import MarutiImage2 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/02-min.jpg";
+import MarutiImage3 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/03-min.jpg";
+import MarutiImage4 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/04-min.jpg";
+//Shubham Automation
+import ShubhamAutomationImage1 from "/images/ProjectsImages/Institute/ShubhamAutomation/F1.jpg";
+import ShubhamAutomationImage2 from "/images/ProjectsImages/Institute/ShubhamAutomation/F2.jpg";
+import ShubhamAutomationImage3 from "/images/ProjectsImages/Institute/ShubhamAutomation/F3.jpg";
+import ShubhamAutomationImage4 from "/images/ProjectsImages/Institute/ShubhamAutomation/F5.jpg";
+
 const AllProjectsData = [
     {
         Title: "High Rise Buildings",
@@ -564,25 +588,34 @@ const AllProjectsData = [
         Title: "Institute",
         ProjectDetails: [
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage:NeeleshBhaiHotelImage1,
+                galleryImages:[NeeleshBhaiHotelImage2],
                 cardTitle: "HOTEL FOR NILESHBHAI",
                 Location: "NAVSARI",
                 ArchitectName: "DCPL",
             },
+            // {
+            //     cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            //     cardTitle: "VATVA INDUSTRIAL BLOCKS",
+            //     Location: "Ahmedabad",
+            //     ArchitectName: "ARTH DESIGN",
+            // },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                cardTitle: "VATVA INDUSTRIAL BLOCKS",
-                Location: "Ahmedabad",
-                ArchitectName: "ARTH DESIGN",
+                cardImage:MarutiImage2,
+                galleryImages:[MarutiImage1,MarutiImage2,MarutiImage3,MarutiImage4],
+                cardTitle:"MARUTI INDUSTRIAL ESTATE",
+                ArchitectName:"",
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                cardTitle: "SUBHAM FACTORY",
+                cardImage:ShubhamAutomationImage1,
+                galleryImages:[ShubhamAutomationImage1,ShubhamAutomationImage2,ShubhamAutomationImage3,ShubhamAutomationImage4],
+                cardTitle: "SHUBHAM AUTOMATION",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL",
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage:HyundaiShowroomImage1,
+                galleryImages:[HyundaiShowroomImage1,HyundaiShowroomImage2],
                 cardTitle: "HYUNDAI SHOWROOM",
                 Location: "Ahmedabad",
                 ArchitectName: "V TECH GROUP",
