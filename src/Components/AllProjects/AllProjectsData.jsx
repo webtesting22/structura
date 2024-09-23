@@ -234,19 +234,19 @@ import ButterflyTrailImage19 from "/images/ProjectsImages/WeekendVillas/Butterfl
 import ButterflyTrailImage20 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/20.jpg";
 import ButterflyTrailImage21 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/21.jpg";
 
-//Weekend Homes At Dehgam
+//Meshwo Nest
 
-import WeekendHomeDehgamImage1 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/1.jpg";
-import WeekendHomeDehgamImage2 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/2.jpg";
-import WeekendHomeDehgamImage3 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/3.jpg";
-import WeekendHomeDehgamImage4 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/4.jpg";
-import WeekendHomeDehgamImage5 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/5.jpg";
-import WeekendHomeDehgamImage6 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/6.jpg";
-import WeekendHomeDehgamImage7 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/7.jpg";
-import WeekendHomeDehgamImage8 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/8.jpg";
-import WeekendHomeDehgamImage9 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/9.jpg";
-import WeekendHomeDehgamImage10 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/10.jpg";
-import WeekendHomeDehgamImage11 from "/images/ProjectsImages/WeekendVillas/WeekendHomesAtDehgam/11.jpg";
+import MeshwoNestImage1 from "/images/ProjectsImages/WeekendVillas/MeshwoNest/1.jpg";
+import MeshwoNestImage2 from "/images/ProjectsImages/WeekendVillas/MeshwoNest/2.jpg";
+import MeshwoNestImage3 from "/images/ProjectsImages/WeekendVillas/MeshwoNest/3.jpg";
+import MeshwoNestImage4 from "/images/ProjectsImages/WeekendVillas/MeshwoNest/4.jpg";
+import MeshwoNestImage5 from "/images/ProjectsImages/WeekendVillas/MeshwoNest/5.jpg";
+import MeshwoNestImage6 from "/images/ProjectsImages/WeekendVillas/MeshwoNest/6.jpg";
+import MeshwoNestImage7 from "/images/ProjectsImages/WeekendVillas/MeshwoNest/7.jpg";
+import MeshwoNestImage8 from "/images/ProjectsImages/WeekendVillas/MeshwoNest/8.jpg";
+import MeshwoNestImage9 from "/images/ProjectsImages/WeekendVillas/MeshwoNest/9.jpg";
+import MeshwoNestImage10 from "/images/ProjectsImages/WeekendVillas/MeshwoNest/10.jpg";
+import MeshwoNestImage11 from "/images/ProjectsImages/WeekendVillas/MeshwoNest/11.jpg";
 
 //Institute
 
@@ -576,9 +576,9 @@ const AllProjectsData = [
                 ArchitectName: "DCPL"
             },
             {
-                cardImage:WeekendHomeDehgamImage2,
-                galleryImages:[WeekendHomeDehgamImage1,WeekendHomeDehgamImage2,WeekendHomeDehgamImage3,WeekendHomeDehgamImage4,WeekendHomeDehgamImage5,WeekendHomeDehgamImage6,WeekendHomeDehgamImage7,WeekendHomeDehgamImage8,WeekendHomeDehgamImage9,WeekendHomeDehgamImage10,WeekendHomeDehgamImage11],
-                cardTitle: "WEEKEND HOMES AT DEHGAM",
+                cardImage:MeshwoNestImage2,
+                galleryImages:[MeshwoNestImage1,MeshwoNestImage2,MeshwoNestImage3,MeshwoNestImage4,MeshwoNestImage5,MeshwoNestImage6,MeshwoNestImage7,MeshwoNestImage8,MeshwoNestImage9,MeshwoNestImage10,MeshwoNestImage11],
+                cardTitle: "MESHWO NEST",
                 Location: "DEHGAM",
                 ArchitectName: "DCPL"
             },
