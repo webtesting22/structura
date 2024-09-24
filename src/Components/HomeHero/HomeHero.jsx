@@ -187,7 +187,7 @@ const HomeHero = () => {
                             }}
                             loop={true}
                             speed={1000}
-                            modules={[Autoplay, Pagination]}
+                            modules={[Autoplay]}
                             className="mySwiper"
                             id="Myswiper"
                         >
