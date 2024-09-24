@@ -3,18 +3,27 @@ import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./ProjectComponent.css";
 import { Row, Col } from "antd";
-import HighRise1 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/05.jpeg"
-import HighRise2 from "/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/12.jpg"
-import HighRise3 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/07.jpeg"
-import Bungalow1 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/08.jpeg"
-import Bungalow2 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/10.jpeg"
-import Bungalow3 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/09.jpeg"
-import WeekendVilla1 from "/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/02.jpg"
-import WeekendVilla2 from "/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/03.jpg"
-import WeekendVilla3 from "/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/04.jpg"
-import Institute1 from "/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/04.jpg"
-import Institute2 from "/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/06.jpg"
-import Institute3 from "/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/07.jpg"
+import HighRise1 from "/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/012.jpg"
+import HighRise2 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/17.jpeg"
+import HighRise3 from "/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/05.jpg"
+import Bungalow1 from "/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/01.jpg";
+import Bungalow2 from "/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/01.jpg";
+import Bungalow3 from "/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/04.jpg";
+// import Bungalow1 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/08.jpeg"
+// import Bungalow2 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/10.jpeg"
+// import Bungalow3 from "/images/ProjectsImages/HighRiseBuilding/IVORY ORCHARDS/09.jpeg"
+import WeekendVilla1 from "/images/ProjectsImages/WeekendVillas/ButterflyTrails/2.jpg";
+import WeekendVilla2 from "/images/ProjectsImages/WeekendVillas/360Villa/3.jpg";
+import WeekendVilla3 from "/images/ProjectsImages/WeekendVillas/MeshwoNest/1.jpg";
+// import WeekendVilla1 from "/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/02.jpg"
+// import WeekendVilla2 from "/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/03.jpg"
+// import WeekendVilla3 from "/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/04.jpg"
+// import Institute1 from "/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/04.jpg"
+// import Institute2 from "/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/06.jpg"
+// import Institute3 from "/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/07.jpg"
+import Institute1 from "/images/ProjectsImages/Institute/ShubhamAutomation/F2.jpg";
+import Institute2 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/02-min.jpg";
+import Institute3 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/04-min.jpg";
 
 const ProjectComponent = () => {
     const [activeProject, setActiveProject] = useState('High Rise Buildings');
