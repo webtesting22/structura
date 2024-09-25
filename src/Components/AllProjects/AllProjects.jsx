@@ -145,7 +145,7 @@ const AllProjects = () => {
                                                 </div>
                                                 <div className="cardContent">
                                                     <span className="Category">{details.Status}</span>
-                                                    <h2 >{truncateTitle(details.cardTitle, 20)}</h2>
+                                                    <h2 >{truncateTitle(details.cardTitle, 30)}</h2>
                                                     {/* <Modal mask={false} title="Project Images" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
                                                         <Col span={8}><img src={details.galleryImages} className="modalImage" /></Col>
                                                     </Modal> */}

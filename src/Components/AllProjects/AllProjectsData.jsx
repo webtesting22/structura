@@ -564,21 +564,21 @@ const AllProjectsData = [
             {
                 cardImage: Villa360Image3,
                 galleryImages:[Villa360Image1,Villa360Image2,Villa360Image3],
-                cardTitle: "360 VILLA",
+                cardTitle: "360 Villa",
                 Location: "CHALODA",
                 ArchitectName: "DCPL"
             },
             {
                 cardImage:ButterflyTrailImage15,
                 galleryImages:[ButterflyTrailImage1,ButterflyTrailImage2,ButterflyTrailImage3,ButterflyTrailImage4,ButterflyTrailImage5,ButterflyTrailImage6,ButterflyTrailImage7,ButterflyTrailImage8,ButterflyTrailImage9,ButterflyTrailImage10,ButterflyTrailImage11,ButterflyTrailImage12,ButterflyTrailImage13,ButterflyTrailImage14,ButterflyTrailImage15,ButterflyTrailImage16,ButterflyTrailImage17,ButterflyTrailImage18,ButterflyTrailImage19,ButterflyTrailImage20,ButterflyTrailImage21],
-                cardTitle: "BUTTERFLY TRAILS",
+                cardTitle: "Butterfly Trails",
                 Location: "CHALODA",
                 ArchitectName: "DCPL"
             },
             {
                 cardImage:MeshwoNestImage2,
                 galleryImages:[MeshwoNestImage1,MeshwoNestImage2,MeshwoNestImage3,MeshwoNestImage4,MeshwoNestImage5,MeshwoNestImage6,MeshwoNestImage7,MeshwoNestImage8,MeshwoNestImage9,MeshwoNestImage10,MeshwoNestImage11],
-                cardTitle: "MESHWO NEST",
+                cardTitle: "Meshwo Nest",
                 Location: "DEHGAM",
                 ArchitectName: "DCPL"
             },
@@ -590,7 +590,7 @@ const AllProjectsData = [
             {
                 cardImage:NeeleshBhaiHotelImage1,
                 galleryImages:[NeeleshBhaiHotelImage2],
-                cardTitle: "HOTEL FOR NILESHBHAI",
+                cardTitle: "Hotel For Nileshbhai",
                 Location: "NAVSARI",
                 ArchitectName: "DCPL",
             },
@@ -603,20 +603,20 @@ const AllProjectsData = [
             {
                 cardImage:MarutiImage2,
                 galleryImages:[MarutiImage1,MarutiImage2,MarutiImage3,MarutiImage4],
-                cardTitle:"MARUTI INDUSTRIAL ESTATE",
-                ArchitectName:"",
+                cardTitle:"Maruti Industrial Estate",
+                
             },
             {
                 cardImage:ShubhamAutomationImage1,
                 galleryImages:[ShubhamAutomationImage1,ShubhamAutomationImage2,ShubhamAutomationImage3,ShubhamAutomationImage4],
-                cardTitle: "SHUBHAM AUTOMATION",
+                cardTitle: "Shubham Automation",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL",
             },
             {
                 cardImage:HyundaiShowroomImage1,
                 galleryImages:[HyundaiShowroomImage1,HyundaiShowroomImage2],
-                cardTitle: "HYUNDAI SHOWROOM",
+                cardTitle: "Hyundai Showroom",
                 Location: "Ahmedabad",
                 ArchitectName: "V TECH GROUP",
             },
