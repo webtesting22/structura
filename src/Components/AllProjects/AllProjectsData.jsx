@@ -711,6 +711,7 @@ const AllProjectsData = [
             },
             {
                 cardImage: BHADRESHBHAIBUNGALOW,
+                galleryImages:[BHADRESHBHAIBUNGALOW],
                 cardTitle: "Bhadreshbhai",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
