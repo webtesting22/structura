@@ -544,6 +544,7 @@ const AllProjectsData = [
             },
             {
                 cardImage: SaanviCasa,
+                galleryImages:[SaanviCasaImage1,SaanviCasaImage2,SaanviCasaImage3,SaanviCasaImage4,SaanviCasaImage5],
                 cardTitle: "Saanvi Casa",
                 Location: "BARODA",
                 ArchitectName: "DCPL"
