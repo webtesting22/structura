@@ -67,7 +67,7 @@ const Footer = () => {
                                                 297 & 298, Patparganj Industrial Estate,
                                                 Delhi 110092, India.
                                             </a><br />
-                                            <a href="+91-981004142">Phone +91-981004142</a>
+                                            <a href="tel:+91-981004142">Phone +91-981004142</a>
                                         </p>
                                     </div>
                                 </div>
