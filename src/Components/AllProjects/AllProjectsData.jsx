@@ -723,6 +723,13 @@ const AllProjectsData = [
                 Location: "Ahmedabad",
                 ArchitectName: "KBA STUDIO"
             },
+            {
+                cardImage:RamanBhaiImage2,
+                galleryImages:[RamanBhaiImage1,RamanBhaiImage2,RamanBhaiImage3,RamanBhaiImage4,RamanBhaiImage5,RamanBhaiImage6],
+                cardTitle:"Ramanbhai Bungalow",
+                Location:"",
+                ArchitectName:"",
+            }
         ]
     },
     {
