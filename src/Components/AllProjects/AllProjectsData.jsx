@@ -614,14 +614,14 @@ const AllProjectsData = [
             {
                 cardImage: SatwikBungalowImage3,
                 galleryImages: [SatwikBungalowImage1, SatwikBungalowImage2, SatwikBungalowImage3, SatwikBungalowImage4, SatwikBungalowImage5, SatwikBungalowImage6, SatwikBungalowImage7],
-                cardTitle: "Satvik Bunglows",
+                cardTitle: "Satwik Bungalows",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
             {
                 cardImage: DEEPBHAIBUNGALOW,
                 galleryImages: [DEEPBHAIBUNGALOWImage1, DEEPBHAIBUNGALOWImage2, DEEPBHAIBUNGALOWImage3, DEEPBHAIBUNGALOWImage5, DEEPBHAIBUNGALOWImage6],
-                cardTitle: "Deep Bhai Bunglow",
+                cardTitle: "Deep Bhai Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
@@ -635,7 +635,7 @@ const AllProjectsData = [
             {
                 cardImage: SiddharthBhaiBungalowImage1,
                 galleryImages:[SiddharthBhaiBungalowImage1,SiddharthBhaiBungalowImage2],
-                cardTitle: "Siddharthbhai Residence",
+                cardTitle: "Siddharthbhai Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "R+R"
             },
@@ -649,7 +649,7 @@ const AllProjectsData = [
             {
                 cardImage: RakeshbhaiImage2,
                 galleryImages:[RakeshbhaiImage1,RakeshbhaiImage2,RakeshbhaiImage3,RakeshbhaiImage4],
-                cardTitle: "Rakeshbhai Bunglow",
+                cardTitle: "Rakeshbhai Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET"
             },
@@ -663,14 +663,14 @@ const AllProjectsData = [
             {
                 cardImage: PankajBhaiImage4,
                 galleryImages:[PankajBhaiImage1,PankajBhaiImage2,PankajBhaiImage3,PankajBhaiImage4,PankajBhaiImage5,PankajBhaiImage6,PankajBhaiImage7,PankajBhaiImage8],
-                cardTitle: "Pankajbhai Bunglow",
+                cardTitle: "Pankajbhai Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET"
             },
             {
                 cardImage: PiyushBhaiImage1,
                 galleryImages:[PiyushBhaiImage1],
-                cardTitle: "Piyushbhai Bunglow",
+                cardTitle: "Piyushbhai Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
@@ -684,7 +684,7 @@ const AllProjectsData = [
             {
                 cardImage: KCPATELImage1,
                 galleryImages:[KCPATELImage1,KCPATELImage2,KCPATELImage3,KCPATELImage4,KCPATELImage5,KCPATELImage6,KCPATELImage7,KCPATELImage8,KCPATELImage9,KCPATELImage10,KCPATELImage11],
-                cardTitle: "Kc Patel",
+                cardTitle: "Kc Patel Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
@@ -705,21 +705,21 @@ const AllProjectsData = [
             {
                 cardImage: YogeshBhaiBungalowImage1,
                 galleryImages: [YogeshBhaiBungalowImage1],
-                cardTitle: "Yogeshbhai Bunglow",
+                cardTitle: "Yogeshbhai Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
             {
                 cardImage: BHADRESHBHAIBUNGALOW,
                 galleryImages:[BHADRESHBHAIBUNGALOW],
-                cardTitle: "Bhadreshbhai",
+                cardTitle: "Bhadreshbhai Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
             {
                 cardImage: KunalNagraniImage2,
                 galleryImages: [KunalNagraniImage1, KunalNagraniImage2, KunalNagraniImage3, KunalNagraniImage4],
-                cardTitle: "Kunal Nagrani Bunglow",
+                cardTitle: "Kunal Nagrani Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "KBA STUDIO"
             },
