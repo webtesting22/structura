@@ -182,14 +182,14 @@ const AllProjects = () => {
                                     <Row>
                                         {modalDetails.galleryImages && modalDetails.galleryImages.length > 0 ? (
                                             modalDetails.galleryImages.map((image, index) => (
-                                                <Col span={12} key={index}>
+                                                <Col lg={12} key={index}>
                                                     <div style={{ padding: "5px" }}>
                                                         <img style={{ width: "100%" }} src={image} className="modalImage" alt={`Project Image ${index + 1}`} />
                                                     </div>
                                                 </Col>
                                             ))
                                         ) : (
-                                            <Col span={24} style={{ textAlign: 'center', padding: '20px' }}>
+                                            <Col lg={24} style={{ textAlign: 'center', padding: '20px' }}>
                                                 <p>No Images Found</p>
                                             </Col>
                                         )}

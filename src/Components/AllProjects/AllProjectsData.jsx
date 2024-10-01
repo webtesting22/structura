@@ -7,11 +7,13 @@ import NirmanSahvas from "/images/ProjectsImages/HighRiseBuilding/NirmanSahvas/0
 import Nirmansatva from "/images/ProjectsImages/HighRiseBuilding/Nirmansatva/01.jpg"
 import NirmanGiriraj from "/images/ProjectsImages/HighRiseBuilding/NirmanGiriraj/01.jpg"
 import ProfitRoyal from "/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/01.jpg"
+import Rudveda from "/images/ProjectsImages/HighRiseBuilding/Rudveda/03.jpg"
 import SankalpAnanta from "/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/01.jpg"
 import sukirtanAura from "/images/ProjectsImages/HighRiseBuilding/sukirtanAura/01.png"
 import SuparnaResidence from "/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/01.jpg"
 import ZaveriGreens from "/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/01.jpg"
 import ZionSkyfields from "/images/ProjectsImages/HighRiseBuilding/ZionSkyfields/01.jpg"
+import SaanviCasa from "/images/ProjectsImages/HighRiseBuilding/Saanvi Casa/03.jpg"
 
 
 import AmitBhaiBunglow from "/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/01.jpg"
@@ -83,6 +85,18 @@ import MajesticSquareImage5 from "/images/ProjectsImages/HighRiseBuilding/Majest
 import MajesticSquareImage6 from "/images/ProjectsImages/HighRiseBuilding/MajesticSquare/06.jpg"
 import MajesticSquareImage7 from "/images/ProjectsImages/HighRiseBuilding/MajesticSquare/07.jpg"
 
+//Rudveda
+
+import RudvedaImage1 from "/images/ProjectsImages/HighRiseBuilding/Rudveda/01.jpg"
+import RudvedaImage2 from "/images/ProjectsImages/HighRiseBuilding/Rudveda/02.jpg"
+import RudvedaImage3 from "/images/ProjectsImages/HighRiseBuilding/Rudveda/03.jpg"
+import RudvedaImage4 from "/images/ProjectsImages/HighRiseBuilding/Rudveda/04.jpg"
+import RudvedaImage5 from "/images/ProjectsImages/HighRiseBuilding/Rudveda/05.jpg"
+import RudvedaImage6 from "/images/ProjectsImages/HighRiseBuilding/Rudveda/06.jpg"
+import RudvedaImage7 from "/images/ProjectsImages/HighRiseBuilding/Rudveda/07.jpg"
+import RudvedaImage8 from "/images/ProjectsImages/HighRiseBuilding/Rudveda/08.jpg"
+import RudvedaImage9 from "/images/ProjectsImages/HighRiseBuilding/Rudveda/09.jpg"
+
 //Nirman Giriraj
 
 import NirmanGirirajImage1 from "/images/ProjectsImages/HighRiseBuilding/NirmanGiriraj/01.jpg"
@@ -124,7 +138,13 @@ import ProfitRoyalImage3 from '/images/ProjectsImages/HighRiseBuilding/ProfitRoy
 import ProfitRoyalImage4 from '/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/04.jpg'
 import ProfitRoyalImage5 from '/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/05.jpg'
 
+//Saanvi casa
 
+import SaanviCasaImage1 from "/images/ProjectsImages/HighRiseBuilding/Saanvi Casa/01.jpg"
+import SaanviCasaImage2 from "/images/ProjectsImages/HighRiseBuilding/Saanvi Casa/02.jpg"
+import SaanviCasaImage3 from "/images/ProjectsImages/HighRiseBuilding/Saanvi Casa/03.jpg"
+import SaanviCasaImage4 from "/images/ProjectsImages/HighRiseBuilding/Saanvi Casa/04.jpg"
+import SaanviCasaImage5 from "/images/ProjectsImages/HighRiseBuilding/Saanvi Casa/05.jpg"
 //Sankalp Ananta
 
 import SankalpAnantaImage1 from '/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/01.jpg'
@@ -194,6 +214,11 @@ import CHINTANBHAIRESIDENCEImage2 from "/images/ProjectsImages/Banglows/CHINTANB
 import CHINTANBHAIRESIDENCEImage3 from "/images/ProjectsImages/Banglows/CHINTANBHAI RESIDENCE/DAY_CAM 03.jpg"
 import CHINTANBHAIRESIDENCEImage4 from "/images/ProjectsImages/Banglows/CHINTANBHAI RESIDENCE/DAY_CAM 04.jpg"
 
+//House for Suresh Mukhi
+
+import SureshMukhiImage1 from "/images/ProjectsImages/Banglows/SURESH MUKHI/01.jpg";
+import SureshMukhiImage2 from "/images/ProjectsImages/Banglows/SURESH MUKHI/02.jpg";
+
 //Deep Bhai Bungalow
 
 import DEEPBHAIBUNGALOWImage1 from "/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/01.jpg"
@@ -202,6 +227,131 @@ import DEEPBHAIBUNGALOWImage3 from "/images/ProjectsImages/Banglows/DEEPBHAI - B
 // import DEEPBHAIBUNGALOWImage4 from "/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/04.jpg"
 import DEEPBHAIBUNGALOWImage5 from "/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/05.jpg"
 import DEEPBHAIBUNGALOWImage6 from "/images/ProjectsImages/Banglows/DEEPBHAI - BUNGALOW/06.jpg"
+
+
+//House for Kanak Bhai
+
+import KanakBhaiImage1 from "/images/ProjectsImages/Banglows/HOUSE FOR KANAKBHAI/01.jpg"
+import KanakBhaiImage2 from "/images/ProjectsImages/Banglows/HOUSE FOR KANAKBHAI/02.jpg"
+import KanakBhaiImage3 from "/images/ProjectsImages/Banglows/HOUSE FOR KANAKBHAI/03.jpg"
+import KanakBhaiImage4 from "/images/ProjectsImages/Banglows/HOUSE FOR KANAKBHAI/04.jpg"
+import KanakBhaiImage5 from "/images/ProjectsImages/Banglows/HOUSE FOR KANAKBHAI/05.jpg"
+import KanakBhaiImage6 from "/images/ProjectsImages/Banglows/HOUSE FOR KANAKBHAI/06.jpg"
+import KanakBhaiImage7 from "/images/ProjectsImages/Banglows/HOUSE FOR KANAKBHAI/07.jpg"
+import KanakBhaiImage8 from "/images/ProjectsImages/Banglows/HOUSE FOR KANAKBHAI/08.jpg"
+import KanakBhaiImage9 from "/images/ProjectsImages/Banglows/HOUSE FOR KANAKBHAI/09.jpg"
+import KanakBhaiImage10 from "/images/ProjectsImages/Banglows/HOUSE FOR KANAKBHAI/10.jpg"
+import KanakBhaiImage11 from "/images/ProjectsImages/Banglows/HOUSE FOR KANAKBHAI/11.jpg"
+import KanakBhaiImage12 from "/images/ProjectsImages/Banglows/HOUSE FOR KANAKBHAI/12.jpg"
+
+//Jayani Farm
+
+import JayaniFarmImage1 from "/images/ProjectsImages/Banglows/JAYANI FARM/01.jpeg"
+import JayaniFarmImage2 from "/images/ProjectsImages/Banglows/JAYANI FARM/02.jpeg"
+
+//KC PATEl Bungalow
+import KCPATELImage1 from "/images/ProjectsImages/Banglows/K.C.PATEL BUNGLOW/01.jpg"
+import KCPATELImage2 from "/images/ProjectsImages/Banglows/K.C.PATEL BUNGLOW/02.jpg"
+import KCPATELImage3 from "/images/ProjectsImages/Banglows/K.C.PATEL BUNGLOW/03.jpg"
+import KCPATELImage4 from "/images/ProjectsImages/Banglows/K.C.PATEL BUNGLOW/04.jpg"
+import KCPATELImage5 from "/images/ProjectsImages/Banglows/K.C.PATEL BUNGLOW/05.jpg"
+import KCPATELImage6 from "/images/ProjectsImages/Banglows/K.C.PATEL BUNGLOW/06.jpg"
+import KCPATELImage7 from "/images/ProjectsImages/Banglows/K.C.PATEL BUNGLOW/07.jpg"
+import KCPATELImage8 from "/images/ProjectsImages/Banglows/K.C.PATEL BUNGLOW/08.jpg"
+import KCPATELImage9 from "/images/ProjectsImages/Banglows/K.C.PATEL BUNGLOW/09.jpg"
+import KCPATELImage10 from "/images/ProjectsImages/Banglows/K.C.PATEL BUNGLOW/10.jpg"
+import KCPATELImage11 from "/images/ProjectsImages/Banglows/K.C.PATEL BUNGLOW/11.jpg"
+
+//Kunal Nagrani
+
+import KunalNagraniImage1 from "/images/ProjectsImages/Banglows/KUNAL NAGRANI BUNGLOW/01.jpeg"
+import KunalNagraniImage2 from "/images/ProjectsImages/Banglows/KUNAL NAGRANI BUNGLOW/02.jpeg"
+import KunalNagraniImage3 from "/images/ProjectsImages/Banglows/KUNAL NAGRANI BUNGLOW/03.jpeg"
+import KunalNagraniImage4 from "/images/ProjectsImages/Banglows/KUNAL NAGRANI BUNGLOW/04.jpeg"
+
+//RakeshBhai Bungalow
+
+import RakeshbhaiImage1 from "/images/ProjectsImages/Banglows/RAKESHBHAI BUNGLOW/01.jpg"
+import RakeshbhaiImage2 from "/images/ProjectsImages/Banglows/RAKESHBHAI BUNGLOW/02.jpg"
+import RakeshbhaiImage3 from "/images/ProjectsImages/Banglows/RAKESHBHAI BUNGLOW/03.jpg"
+import RakeshbhaiImage4 from "/images/ProjectsImages/Banglows/RAKESHBHAI BUNGLOW/04.jpg"
+import RakeshbhaiImage5 from "/images/ProjectsImages/Banglows/RAKESHBHAI BUNGLOW/05.jpg"
+
+//NilangBhai Bungalow
+
+import NilangBhaiImage1 from "/images/ProjectsImages/Banglows/NILANGBHAI - BUNGALOW/01.jpg"
+import NilangBhaiImage2 from "/images/ProjectsImages/Banglows/NILANGBHAI - BUNGALOW/02.jpg"
+import NilangBhaiImage3 from "/images/ProjectsImages/Banglows/NILANGBHAI - BUNGALOW/03.jpg"
+import NilangBhaiImage4 from "/images/ProjectsImages/Banglows/NILANGBHAI - BUNGALOW/04.jpg"
+import NilangBhaiImage5 from "/images/ProjectsImages/Banglows/NILANGBHAI - BUNGALOW/05.jpg"
+import NilangBhaiImage6 from "/images/ProjectsImages/Banglows/NILANGBHAI - BUNGALOW/06.jpg"
+import NilangBhaiImage7 from "/images/ProjectsImages/Banglows/NILANGBHAI - BUNGALOW/07.jpg"
+import NilangBhaiImage8 from "/images/ProjectsImages/Banglows/NILANGBHAI - BUNGALOW/08.jpg"
+
+//Pankajbhai Bungalow
+
+import PankajBhaiImage1 from "/images/ProjectsImages/Banglows/PANKAJ BHAI BUNGALOW/01.jpg"
+import PankajBhaiImage2 from "/images/ProjectsImages/Banglows/PANKAJ BHAI BUNGALOW/02.jpg"
+import PankajBhaiImage3 from "/images/ProjectsImages/Banglows/PANKAJ BHAI BUNGALOW/03.jpg"
+import PankajBhaiImage4 from "/images/ProjectsImages/Banglows/PANKAJ BHAI BUNGALOW/04.jpg"
+import PankajBhaiImage5 from "/images/ProjectsImages/Banglows/PANKAJ BHAI BUNGALOW/05.jpg"
+import PankajBhaiImage6 from "/images/ProjectsImages/Banglows/PANKAJ BHAI BUNGALOW/06.jpg"
+import PankajBhaiImage7 from "/images/ProjectsImages/Banglows/PANKAJ BHAI BUNGALOW/07.jpg"
+import PankajBhaiImage8 from "/images/ProjectsImages/Banglows/PANKAJ BHAI BUNGALOW/08.jpg"
+
+//PiyushBhai Bungalow
+
+import PiyushBhaiImage1 from "/images/ProjectsImages/Banglows/PIYUSHBHAI - BUNGALOW/01.jpg"
+
+//Radhe Avenue
+
+import RadheAvenueImage1 from "/images/ProjectsImages/Banglows/RADHE AVANUE/01.jpg"
+import RadheAvenueImage2 from "/images/ProjectsImages/Banglows/RADHE AVANUE/02.jpg"
+import RadheAvenueImage3 from "/images/ProjectsImages/Banglows/RADHE AVANUE/03.jpg"
+import RadheAvenueImage4 from "/images/ProjectsImages/Banglows/RADHE AVANUE/04.jpg"
+import RadheAvenueImage5 from "/images/ProjectsImages/Banglows/RADHE AVANUE/05.jpg"
+
+//RamanBhai Bungalow
+
+import RamanBhaiImage1 from "/images/ProjectsImages/Banglows/RAMANBHAI - BUNGALOW/01.jpg"
+import RamanBhaiImage2 from "/images/ProjectsImages/Banglows/RAMANBHAI - BUNGALOW/02.jpg"
+import RamanBhaiImage3 from "/images/ProjectsImages/Banglows/RAMANBHAI - BUNGALOW/03.jpg"
+import RamanBhaiImage4 from "/images/ProjectsImages/Banglows/RAMANBHAI - BUNGALOW/04.jpg"
+import RamanBhaiImage5 from "/images/ProjectsImages/Banglows/RAMANBHAI - BUNGALOW/05.jpg"
+import RamanBhaiImage6 from "/images/ProjectsImages/Banglows/RAMANBHAI - BUNGALOW/06.jpg"
+
+//Satwik Bungalows
+
+import SatwikBungalowImage1 from "/images/ProjectsImages/Banglows/SATWIK - BUNGALOWS/01.jpg"
+import SatwikBungalowImage2 from "/images/ProjectsImages/Banglows/SATWIK - BUNGALOWS/02.jpg"
+import SatwikBungalowImage3 from "/images/ProjectsImages/Banglows/SATWIK - BUNGALOWS/03.jpg"
+import SatwikBungalowImage4 from "/images/ProjectsImages/Banglows/SATWIK - BUNGALOWS/04.jpg"
+import SatwikBungalowImage5 from "/images/ProjectsImages/Banglows/SATWIK - BUNGALOWS/05.jpg"
+import SatwikBungalowImage6 from "/images/ProjectsImages/Banglows/SATWIK - BUNGALOWS/06.jpg"
+import SatwikBungalowImage7 from "/images/ProjectsImages/Banglows/SATWIK - BUNGALOWS/07.jpg"
+
+//Shilp Bungalows
+
+import ShilpBungalowsImage1 from "/images/ProjectsImages/Banglows/SHILP BUNGLOWS/01.jpg"
+import ShilpBungalowsImage2 from "/images/ProjectsImages/Banglows/SHILP BUNGLOWS/02.jpg"
+import ShilpBungalowsImage3 from "/images/ProjectsImages/Banglows/SHILP BUNGLOWS/03.jpg"
+import ShilpBungalowsImage4 from "/images/ProjectsImages/Banglows/SHILP BUNGLOWS/04.jpg"
+import ShilpBungalowsImage5 from "/images/ProjectsImages/Banglows/SHILP BUNGLOWS/05.jpg"
+import ShilpBungalowsImage6 from "/images/ProjectsImages/Banglows/SHILP BUNGLOWS/06.jpg"
+import ShilpBungalowsImage7 from "/images/ProjectsImages/Banglows/SHILP BUNGLOWS/07.jpg"
+import ShilpBungalowsImage8 from "/images/ProjectsImages/Banglows/SHILP BUNGLOWS/08.jpg"
+import ShilpBungalowsImage9 from "/images/ProjectsImages/Banglows/SHILP BUNGLOWS/09.jpg"
+import ShilpBungalowsImage10 from "/images/ProjectsImages/Banglows/SHILP BUNGLOWS/10.jpg"
+import ShilpBungalowsImage11 from "/images/ProjectsImages/Banglows/SHILP BUNGLOWS/11.jpg"
+
+//Siddharth Bhai Bungalow
+
+import SiddharthBhaiBungalowImage1 from "/images/ProjectsImages/Banglows/SIDDHARTHBHAI BUNGLOW/01.jpg"
+import SiddharthBhaiBungalowImage2 from "/images/ProjectsImages/Banglows/SIDDHARTHBHAI BUNGLOW/02.jpg"
+
+//YogeshBhai Bungalow
+
+import YogeshBhaiBungalowImage1 from "/images/ProjectsImages/Banglows/YOGESHBHAI - BUNGALOW/01.jpg"
 
 //Weekend Villas 
 
@@ -317,8 +467,8 @@ const AllProjectsData = [
             {
                 cardImage: ZaveriGreens,
                 galleryImages: [
-                    ZaveriGreensImage1, ZaveriGreensImage2, ZaveriGreensImage3, ZaveriGreensImage4, ZaveriGreensImage5, ZaveriGreensImage6, 
-                    ZaveriGreensImage7, ZaveriGreensImage9, ZaveriGreensImage10, ZaveriGreensImage11, ZaveriGreensImage12, ZaveriGreensImage13, 
+                    ZaveriGreensImage1, ZaveriGreensImage2, ZaveriGreensImage3, ZaveriGreensImage4, ZaveriGreensImage5, ZaveriGreensImage6,
+                    ZaveriGreensImage7, ZaveriGreensImage9, ZaveriGreensImage10, ZaveriGreensImage11, ZaveriGreensImage12, ZaveriGreensImage13,
                     ZaveriGreensImage14, ZaveriGreensImage15, ZaveriGreensImage16, ZaveriGreensImage17, ZaveriGreensImage18, ZaveriGreensImage19,
                 ],
                 cardTitle: "Zaveri Greens",
@@ -328,8 +478,8 @@ const AllProjectsData = [
             },
             {
                 cardImage: ZionSkyfields,
-                galleryImages:[
-                    ZionSkyfieldsImage1,ZionSkyfieldsImage2,ZionSkyfieldsImage3,ZionSkyfieldsImage4,ZionSkyfieldsImage5,ZionSkyfieldsImage6,ZionSkyfieldsImage7
+                galleryImages: [
+                    ZionSkyfieldsImage1, ZionSkyfieldsImage2, ZionSkyfieldsImage3, ZionSkyfieldsImage4, ZionSkyfieldsImage5, ZionSkyfieldsImage6, ZionSkyfieldsImage7
                 ],
                 cardTitle: "Zion Skyfield",
                 Location: "Ahmedabad",
@@ -338,37 +488,38 @@ const AllProjectsData = [
             },
             {
                 cardImage: MajesticSquare,
-                galleryImages:[MajesticSquareImage1,MajesticSquareImage2,MajesticSquareImage3,MajesticSquareImage4,MajesticSquareImage5,MajesticSquareImage6,MajesticSquareImage7],
+                galleryImages: [MajesticSquareImage1, MajesticSquareImage2, MajesticSquareImage3, MajesticSquareImage4, MajesticSquareImage5, MajesticSquareImage6, MajesticSquareImage7],
                 cardTitle: "Majestic Square",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: Rudveda,
+                galleryImages: [RudvedaImage1, RudvedaImage2, RudvedaImage3, RudvedaImage4, RudvedaImage5, RudvedaImage6, RudvedaImage7, RudvedaImage8, RudvedaImage9],
                 cardTitle: "Rudveda",
                 Location: "ANAND",
                 ArchitectName: "DCPL"
             },
             {
                 cardImage: AmayProjects,
-                galleryImages:[AmayProjectsImage1,AmayProjectsImage2,AmayProjectsImage3],
+                galleryImages: [AmayProjectsImage1, AmayProjectsImage2, AmayProjectsImage3],
                 cardTitle: "Amay Projects",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET"
             },
             {
                 cardImage: SankalpAnanta,
-                galleryImages:[SankalpAnantaImage1,SankalpAnantaImage2,SankalpAnantaImage3,SankalpAnantaImage4,SankalpAnantaImage5],
+                galleryImages: [SankalpAnantaImage1, SankalpAnantaImage2, SankalpAnantaImage3, SankalpAnantaImage4, SankalpAnantaImage5],
                 cardTitle: "Sankalp Ananta Sahibag",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET",
                 Developer: "Sankalp Group"
             },
             {
-                cardImage:IvoryOrchardsImage14 ,
-                galleryImages:[IvoryOrchardsImage1,IvoryOrchardsImage2,IvoryOrchardsImage3,IvoryOrchardsImage4,IvoryOrchardsImage5,IvoryOrchardsImage6,
-                    IvoryOrchardsImage7,IvoryOrchardsImage8,IvoryOrchardsImage9,IvoryOrchardsImage10,IvoryOrchardsImage11,IvoryOrchardsImage12,
-                    IvoryOrchardsImage13,IvoryOrchardsImage14,IvoryOrchardsImage15,IvoryOrchardsImage16],
+                cardImage: IvoryOrchardsImage14,
+                galleryImages: [IvoryOrchardsImage1, IvoryOrchardsImage2, IvoryOrchardsImage3, IvoryOrchardsImage4, IvoryOrchardsImage5, IvoryOrchardsImage6,
+                    IvoryOrchardsImage7, IvoryOrchardsImage8, IvoryOrchardsImage9, IvoryOrchardsImage10, IvoryOrchardsImage11, IvoryOrchardsImage12,
+                    IvoryOrchardsImage13, IvoryOrchardsImage14, IvoryOrchardsImage15, IvoryOrchardsImage16],
                 cardTitle: "Ivory Orchards",
                 Location: "AVNAV ARCHITECT",
                 ArchitectName: "9th STREET",
@@ -377,31 +528,31 @@ const AllProjectsData = [
             {
                 cardImage: BeaufortPark,
                 cardTitle: "Beaufort Park",
-                galleryImages:[BeaufortParkImage1,BeaufortParkImage2,BeaufortParkImage3,BeaufortParkImage4,BeaufortParkImage5,BeaufortParkImage6,
-                    BeaufortParkImage7,BeaufortParkImage8,BeaufortParkImage9,BeaufortParkImage10,BeaufortParkImage11,BeaufortParkImage12,
-                    BeaufortParkImage13,BeaufortParkImage14],
+                galleryImages: [BeaufortParkImage1, BeaufortParkImage2, BeaufortParkImage3, BeaufortParkImage4, BeaufortParkImage5, BeaufortParkImage6,
+                    BeaufortParkImage7, BeaufortParkImage8, BeaufortParkImage9, BeaufortParkImage10, BeaufortParkImage11, BeaufortParkImage12,
+                    BeaufortParkImage13, BeaufortParkImage14],
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET",
                 Developer: "Tryshka"
             },
             {
                 cardImage: Girirajdreams,
-                galleryImages:[GirirajdreamsImage1,GirirajdreamsImage2],
+                galleryImages: [GirirajdreamsImage1, GirirajdreamsImage2],
                 cardTitle: "Giriraj Dreams",
                 Location: "Ahmedabad",
                 ArchitectName: "VEDIC ARCHITECT"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: SaanviCasa,
                 cardTitle: "Saanvi Casa",
                 Location: "BARODA",
                 ArchitectName: "DCPL"
             },
             {
                 cardImage: NirmanSahvas,
-                galleryImages:[NirmanSahvasImage1,NirmanSahvasImage2,NirmanSahvasImage3,NirmanSahvasImage4,NirmanSahvasImage5,NirmanSahvasImage6,
-                    NirmanSahvasImage7,NirmanSahvasImage8,NirmanSahvasImage9,NirmanSahvasImage10,NirmanSahvasImage11,NirmanSahvasImage12,
-                    NirmanSahvasImage13,NirmanSahvasImage14,NirmanSahvasImage15,NirmanSahvasImage16,NirmanSahvasImage17,NirmanSahvasImage18],
+                galleryImages: [NirmanSahvasImage1, NirmanSahvasImage2, NirmanSahvasImage3, NirmanSahvasImage4, NirmanSahvasImage5, NirmanSahvasImage6,
+                    NirmanSahvasImage7, NirmanSahvasImage8, NirmanSahvasImage9, NirmanSahvasImage10, NirmanSahvasImage11, NirmanSahvasImage12,
+                    NirmanSahvasImage13, NirmanSahvasImage14, NirmanSahvasImage15, NirmanSahvasImage16, NirmanSahvasImage17, NirmanSahvasImage18],
                 cardTitle: "Nirmaan Sahvas",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET",
@@ -409,18 +560,18 @@ const AllProjectsData = [
             },
             {
                 cardImage: ProfitRoyal,
-                galleryImages:[ProfitRoyalImage1,ProfitRoyalImage2,ProfitRoyalImage3,ProfitRoyalImage4,ProfitRoyalImage5],
+                galleryImages: [ProfitRoyalImage1, ProfitRoyalImage2, ProfitRoyalImage3, ProfitRoyalImage4, ProfitRoyalImage5],
                 cardTitle: "Profit Royal",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET"
             },
             {
-                cardImage:NirmanGiriraj,
-                galleryImages:[NirmanGirirajImage1,NirmanGirirajImage2,NirmanGirirajImage3],
-                cardTitle:"Nirman Giriraj",
-                Location:"Ahmedabad",
-                ArchitectName:"9th STREET",
-                Developer:"Nirmaan Group",
+                cardImage: NirmanGiriraj,
+                galleryImages: [NirmanGirirajImage1, NirmanGirirajImage2, NirmanGirirajImage3],
+                cardTitle: "Nirman Giriraj",
+                Location: "Ahmedabad",
+                ArchitectName: "9th STREET",
+                Developer: "Nirmaan Group",
             },
         ]
     },
@@ -435,13 +586,14 @@ const AllProjectsData = [
             },
             {
                 cardImage: AmitBhaiBunglow,
-                galleryImages:[AmitBhaiBunglowImage1,AmitBhaiBunglowImage2,AmitBhaiBunglowImage3,AmitBhaiBunglowImage4,AmitBhaiBunglowImage5],
+                galleryImages: [AmitBhaiBunglowImage1, AmitBhaiBunglowImage2, AmitBhaiBunglowImage3, AmitBhaiBunglowImage4, AmitBhaiBunglowImage5],
                 cardTitle: "House For Amit Shah",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: NilangBhaiImage1,
+                galleryImages: [NilangBhaiImage1, NilangBhaiImage2, NilangBhaiImage3, NilangBhaiImage4, NilangBhaiImage5, NilangBhaiImage6, NilangBhaiImage7, NilangBhaiImage8],
                 cardTitle: "Shri Nilang Shah",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
@@ -459,87 +611,99 @@ const AllProjectsData = [
                 ArchitectName: "DCPL"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: SatwikBungalowImage3,
+                galleryImages: [SatwikBungalowImage1, SatwikBungalowImage2, SatwikBungalowImage3, SatwikBungalowImage4, SatwikBungalowImage5, SatwikBungalowImage6, SatwikBungalowImage7],
                 cardTitle: "Satvik Bunglows",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
             {
                 cardImage: DEEPBHAIBUNGALOW,
-                galleryImages:[DEEPBHAIBUNGALOWImage1,DEEPBHAIBUNGALOWImage2,DEEPBHAIBUNGALOWImage3,DEEPBHAIBUNGALOWImage5,DEEPBHAIBUNGALOWImage6],
+                galleryImages: [DEEPBHAIBUNGALOWImage1, DEEPBHAIBUNGALOWImage2, DEEPBHAIBUNGALOWImage3, DEEPBHAIBUNGALOWImage5, DEEPBHAIBUNGALOWImage6],
                 cardTitle: "Deep Bhai Bunglow",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: KanakBhaiImage3,
+                galleryImages:[KanakBhaiImage1,KanakBhaiImage2,KanakBhaiImage3,KanakBhaiImage4,KanakBhaiImage5,KanakBhaiImage6,KanakBhaiImage7,KanakBhaiImage8,KanakBhaiImage9,KanakBhaiImage10,KanakBhaiImage11],
                 cardTitle: "House For Kanakbhai",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: SiddharthBhaiBungalowImage1,
+                galleryImages:[SiddharthBhaiBungalowImage1,SiddharthBhaiBungalowImage2],
                 cardTitle: "Siddharthbhai Residence",
                 Location: "Ahmedabad",
                 ArchitectName: "R+R"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: ShilpBungalowsImage4,
+                galleryImages: [ShilpBungalowsImage1, ShilpBungalowsImage2, ShilpBungalowsImage3, ShilpBungalowsImage4, ShilpBungalowsImage5, ShilpBungalowsImage6, ShilpBungalowsImage7, ShilpBungalowsImage8, ShilpBungalowsImage9, ShilpBungalowsImage10, ShilpBungalowsImage11],
                 cardTitle: "Shilp Bunglows",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: RakeshbhaiImage2,
+                galleryImages:[RakeshbhaiImage1,RakeshbhaiImage2,RakeshbhaiImage3,RakeshbhaiImage4],
                 cardTitle: "Rakeshbhai Bunglow",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: JayaniFarmImage1,
+                galleryImages:[JayaniFarmImage1,JayaniFarmImage2],
                 cardTitle: "Jayani Farm",
                 Location: "Ahmedabad",
                 ArchitectName: "DPA DESIGN STUDIO"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: PankajBhaiImage4,
+                galleryImages:[PankajBhaiImage1,PankajBhaiImage2,PankajBhaiImage3,PankajBhaiImage4,PankajBhaiImage5,PankajBhaiImage6,PankajBhaiImage7,PankajBhaiImage8],
                 cardTitle: "Pankajbhai Bunglow",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                cardTitle: "Piyueshbhai Bunglow",
+                cardImage: PiyushBhaiImage1,
+                galleryImages:[PiyushBhaiImage1],
+                cardTitle: "Piyushbhai Bunglow",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: SureshMukhiImage1,
+                galleryImages:[SureshMukhiImage1,SureshMukhiImage2],
                 cardTitle: "House For Sureshmukhi",
                 Location: "Ahmedabad",
                 ArchitectName: "SHILP CONSULTANT"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: KCPATELImage1,
+                galleryImages:[KCPATELImage1,KCPATELImage2,KCPATELImage3,KCPATELImage4,KCPATELImage5,KCPATELImage6,KCPATELImage7,KCPATELImage8,KCPATELImage9,KCPATELImage10,KCPATELImage11],
                 cardTitle: "Kc Patel",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: RadheAvenueImage3,
+                galleryImages:[RadheAvenueImage1,RadheAvenueImage2,RadheAvenueImage3,RadheAvenueImage4,RadheAvenueImage5],
                 cardTitle: "Radhe Avenue",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
             {
                 cardImage: CHINTANBHAIRESIDENCEImage4,
-                galleryImages:[CHINTANBHAIRESIDENCEImage1,CHINTANBHAIRESIDENCEImage2,CHINTANBHAIRESIDENCEImage3,CHINTANBHAIRESIDENCEImage4],
+                galleryImages: [CHINTANBHAIRESIDENCEImage1, CHINTANBHAIRESIDENCEImage2, CHINTANBHAIRESIDENCEImage3, CHINTANBHAIRESIDENCEImage4],
                 cardTitle: "Chintanbhai Residence",
                 Location: "Ahmedabad",
                 ArchitectName: "DREAMSCAPE"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: YogeshBhaiBungalowImage1,
+                galleryImages: [YogeshBhaiBungalowImage1],
                 cardTitle: "Yogeshbhai Bunglow",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
@@ -551,7 +715,8 @@ const AllProjectsData = [
                 ArchitectName: "DCPL"
             },
             {
-                cardImage: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                cardImage: KunalNagraniImage2,
+                galleryImages: [KunalNagraniImage1, KunalNagraniImage2, KunalNagraniImage3, KunalNagraniImage4],
                 cardTitle: "Kunal Nagrani Bunglow",
                 Location: "Ahmedabad",
                 ArchitectName: "KBA STUDIO"
@@ -563,21 +728,21 @@ const AllProjectsData = [
         ProjectDetails: [
             {
                 cardImage: Villa360Image3,
-                galleryImages:[Villa360Image1,Villa360Image2,Villa360Image3],
+                galleryImages: [Villa360Image1, Villa360Image2, Villa360Image3],
                 cardTitle: "360 Villa",
                 Location: "CHALODA",
                 ArchitectName: "DCPL"
             },
             {
-                cardImage:ButterflyTrailImage15,
-                galleryImages:[ButterflyTrailImage1,ButterflyTrailImage2,ButterflyTrailImage3,ButterflyTrailImage4,ButterflyTrailImage5,ButterflyTrailImage6,ButterflyTrailImage7,ButterflyTrailImage8,ButterflyTrailImage9,ButterflyTrailImage10,ButterflyTrailImage11,ButterflyTrailImage12,ButterflyTrailImage13,ButterflyTrailImage14,ButterflyTrailImage15,ButterflyTrailImage16,ButterflyTrailImage17,ButterflyTrailImage18,ButterflyTrailImage19,ButterflyTrailImage20,ButterflyTrailImage21],
+                cardImage: ButterflyTrailImage15,
+                galleryImages: [ButterflyTrailImage1, ButterflyTrailImage2, ButterflyTrailImage3, ButterflyTrailImage4, ButterflyTrailImage5, ButterflyTrailImage6, ButterflyTrailImage7, ButterflyTrailImage8, ButterflyTrailImage9, ButterflyTrailImage10, ButterflyTrailImage11, ButterflyTrailImage12, ButterflyTrailImage13, ButterflyTrailImage14, ButterflyTrailImage15, ButterflyTrailImage16, ButterflyTrailImage17, ButterflyTrailImage18, ButterflyTrailImage19, ButterflyTrailImage20, ButterflyTrailImage21],
                 cardTitle: "Butterfly Trails",
                 Location: "CHALODA",
                 ArchitectName: "DCPL"
             },
             {
-                cardImage:MeshwoNestImage2,
-                galleryImages:[MeshwoNestImage1,MeshwoNestImage2,MeshwoNestImage3,MeshwoNestImage4,MeshwoNestImage5,MeshwoNestImage6,MeshwoNestImage7,MeshwoNestImage8,MeshwoNestImage9,MeshwoNestImage10,MeshwoNestImage11],
+                cardImage: MeshwoNestImage2,
+                galleryImages: [MeshwoNestImage1, MeshwoNestImage2, MeshwoNestImage3, MeshwoNestImage4, MeshwoNestImage5, MeshwoNestImage6, MeshwoNestImage7, MeshwoNestImage8, MeshwoNestImage9, MeshwoNestImage10, MeshwoNestImage11],
                 cardTitle: "Meshwo Nest",
                 Location: "DEHGAM",
                 ArchitectName: "DCPL"
@@ -588,8 +753,8 @@ const AllProjectsData = [
         Title: "Institute",
         ProjectDetails: [
             {
-                cardImage:NeeleshBhaiHotelImage1,
-                galleryImages:[NeeleshBhaiHotelImage2],
+                cardImage: NeeleshBhaiHotelImage1,
+                galleryImages: [NeeleshBhaiHotelImage2],
                 cardTitle: "Hotel For Nileshbhai",
                 Location: "NAVSARI",
                 ArchitectName: "DCPL",
@@ -601,21 +766,21 @@ const AllProjectsData = [
             //     ArchitectName: "ARTH DESIGN",
             // },
             {
-                cardImage:MarutiImage2,
-                galleryImages:[MarutiImage1,MarutiImage2,MarutiImage3,MarutiImage4],
-                cardTitle:"Maruti Industrial Estate",
-                
+                cardImage: MarutiImage2,
+                galleryImages: [MarutiImage1, MarutiImage2, MarutiImage3, MarutiImage4],
+                cardTitle: "Maruti Industrial Estate",
+
             },
             {
-                cardImage:ShubhamAutomationImage1,
-                galleryImages:[ShubhamAutomationImage1,ShubhamAutomationImage2,ShubhamAutomationImage3,ShubhamAutomationImage4],
+                cardImage: ShubhamAutomationImage1,
+                galleryImages: [ShubhamAutomationImage1, ShubhamAutomationImage2, ShubhamAutomationImage3, ShubhamAutomationImage4],
                 cardTitle: "Shubham Automation",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL",
             },
             {
-                cardImage:HyundaiShowroomImage1,
-                galleryImages:[HyundaiShowroomImage1,HyundaiShowroomImage2],
+                cardImage: HyundaiShowroomImage1,
+                galleryImages: [HyundaiShowroomImage1, HyundaiShowroomImage2],
                 cardTitle: "Hyundai Showroom",
                 Location: "Ahmedabad",
                 ArchitectName: "V TECH GROUP",
