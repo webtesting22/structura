@@ -43,7 +43,7 @@ const WhyUsComponent = () => {
             // Title: "Architectural BIM Services",
             // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
             Title:"Experience",
-            Descriptions:"We have completed over 1500 large-scale projects along with 20,000+ Retail roll-outs across 32 countries over the past 18 years",
+            Descriptions:"We have completed over 1500 large-scale projects along with 20,000+ Retail roll-outs across 32 countries over the past 18 years.",
         },
         {
             // Title: "Facade BIM Services",

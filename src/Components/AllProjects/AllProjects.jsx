@@ -171,7 +171,7 @@ const AllProjects = () => {
                             {modalDetails && (
                                 <Modal
                                     width={800}
-                                    title="Project Images"
+                                    title="Project Gallery"
                                     open={isModalOpen}
                                     onOk={handleOk}
                                     onCancel={handleCancel}
