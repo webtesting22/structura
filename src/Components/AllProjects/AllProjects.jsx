@@ -3,7 +3,7 @@ import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import TopBack from '../AllProjects/2.png';
 import "./AllProjects.css";
 import AllProjectsData from "./AllProjectsData";
-import { Row, Col, Modal } from "antd";
+import { Row, Col, Modal,Image } from "antd";
 
 const AllProjects = () => {
     const [activeTab, setActiveTab] = useState('Residential');
@@ -184,7 +184,7 @@ const AllProjects = () => {
                                             modalDetails.galleryImages.map((image, index) => (
                                                 <Col lg={12} key={index}>
                                                     <div style={{ padding: "5px" }}>
-                                                        <img style={{ width: "100%" }} src={image} className="modalImage" alt={`Project Image ${index + 1}`} />
+                                                        <Image style={{ width: "100%" }} src={image} className="modalImage" alt={`Project Image ${index + 1}`} />
                                                     </div>
                                                 </Col>
                                             ))
