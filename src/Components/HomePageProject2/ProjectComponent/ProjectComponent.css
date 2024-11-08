@@ -74,11 +74,13 @@
 
  .projectTitle {
    margin: 20px 0px;
+   padding: 0 5px;
    font-weight: 500;
  }
 
  .projectDescription{
   margin-bottom: 20px;
+  padding: 0 5px;
 }
  .mainAreaContent {
    height: 100%;
