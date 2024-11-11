@@ -30,13 +30,13 @@ const AnimatedHoverableCards = () => {
             Descriptions: "We are Market Leader in Interior Design Documentation with specialization in Hospitality.",
             redirect: "/AllServices#MepDesign",
         },
-        {
-            // iconImage: EngeneeringIcon,
-            Title: "Interior Design",
-            img: img3,
-            Descriptions: "We have experienced Engineers and CAD Operators providing HVAC/Mechanical, Electrical, Plumbing, Fire Fighting, Documentation services to Consultants, Contractors, Real-Estate Developers, and Owners.",
-            redirect: "/AllServices#InteriorDesign",
-        },
+        // {
+        //     // iconImage: EngeneeringIcon,
+        //     Title: "Interior Design",
+        //     img: img3,
+        //     Descriptions: "We have experienced Engineers and CAD Operators providing HVAC/Mechanical, Electrical, Plumbing, Fire Fighting, Documentation services to Consultants, Contractors, Real-Estate Developers, and Owners.",
+        //     redirect: "/AllServices#InteriorDesign",
+        // },
         {
             // iconImage: ArchitectureIcon,
             Title: "Architectural CAD Drafting",
@@ -84,14 +84,14 @@ const AnimatedHoverableCards = () => {
             redirect: "/AllServices#MepBim"
 
         },
-        {
-            // iconImage: VisualizationIcon,
-            Title: "Facade BIM Services",
-            img: img10,
-            Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
-            redirect: "/AllServices#FacadeBim"
+        // {
+        //     // iconImage: VisualizationIcon,
+        //     Title: "Facade BIM Services",
+        //     img: img10,
+        //     Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
+        //     redirect: "/AllServices#FacadeBim"
 
-        },
+        // },
         {
             // iconImage: VisualizationIcon,
             Title: " Rendering Services",

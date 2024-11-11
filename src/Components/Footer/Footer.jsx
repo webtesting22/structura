@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="footerSection">
                     <div>
                         <Row>
-                            <Col lg={12}>
+                            <Col lg={16}>
                                 <div className="FooterRebuild">
                                     <img src={StructuraLogo} alt="" />
                                     <br /><br />
@@ -21,18 +21,18 @@ const Footer = () => {
                                     <div className="Contact">
                                         <span><MdEmail />&nbsp; <a href="mailto:connect@structuraconsultants.com">connect@structuraconsultants.com</a></span>
                                         <span><FaPhone /> &nbsp;        <a href="tel:+919825324480">+91-9825324480</a>
-                                        &nbsp; 
+                                            &nbsp;
                                             OR
-                                            &nbsp; 
+                                            &nbsp;
                                             <a href="tel:+919099024581">+91-9099024581</a>
                                         </span>
                                     </div>
                                     {/* <button className="commomBtn">Connect</button> */}
                                 </div>
                             </Col>
-                            <Col lg={12}>
+                            <Col lg={8}>
                                 <div className="AddressColums">
-                                    <div>
+                                    {/* <div>
 
                                         <h2>New York Office</h2>
                                         <hr />
@@ -43,8 +43,8 @@ const Footer = () => {
                                             </a><br />
                                             <a href="tel:9174146441">Phone: 9174146441</a>
                                         </p>
-                                    </div>
-                                    <div>
+                                    </div> */}
+                                    {/* <div>
 
                                         <h2>HeadQuarters</h2>
                                         <hr />
@@ -56,8 +56,8 @@ const Footer = () => {
                                             </a><br />
                                             <a href="tel:+91-981004142">Phone +91-981004142</a>
                                         </p>
-                                    </div>
-                                    <div>
+                                    </div> */}
+                                    {/* <div>
 
                                         <h2>SKETS Campus</h2>
                                         <hr />
@@ -68,6 +68,16 @@ const Footer = () => {
                                                 Delhi 110092, India.
                                             </a><br />
                                             <a href="tel:+91-981004142">Phone +91-981004142</a>
+                                        </p>
+                                    </div> */}
+                                    <div>
+                                        <h2>Office</h2>
+                                        <hr />
+                                        <p>
+                                            <a href="#" target="_blank">
+                                                901, A.Shridhar Athens, Ambawadi,
+                                                Ahmedabad, Gujarat 380015, India.
+                                            </a>
                                         </p>
                                     </div>
                                 </div>

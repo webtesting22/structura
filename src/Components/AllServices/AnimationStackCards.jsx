@@ -84,19 +84,19 @@ const AnimatedStackCards = ({ activeCard }) => {
                 "Heritage Building Repair"
             ]
         },
-        {
-            id: "InteriorDesign",
-            img: img3,
-            serviceTitle: "INTERIOR DESIGN",
-            serviceDescription: "Our interior design services are crafted to elevate living and working spaces with a focus on functionality and style. From luxurious homes to dynamic commercial spaces, we customize each project to reflect the client's unique vision while ensuring sustainability and eco-friendly practices throughout the design process.",
-            servicePoints: [
-                "Residential Interiors",
-                "Commercial Spaces",
-                "Renovation & Remodeling",
-                "Furniture and Decor Selection",
-                "Sustainable Design Solutions"
-            ]
-        },
+        // {
+        //     id: "InteriorDesign",
+        //     img: img3,
+        //     serviceTitle: "INTERIOR DESIGN",
+        //     serviceDescription: "Our interior design services are crafted to elevate living and working spaces with a focus on functionality and style. From luxurious homes to dynamic commercial spaces, we customize each project to reflect the client's unique vision while ensuring sustainability and eco-friendly practices throughout the design process.",
+        //     servicePoints: [
+        //         "Residential Interiors",
+        //         "Commercial Spaces",
+        //         "Renovation & Remodeling",
+        //         "Furniture and Decor Selection",
+        //         "Sustainable Design Solutions"
+        //     ]
+        // },
         {
             id: "Architecture",
             img: img4,
@@ -178,19 +178,19 @@ const AnimatedStackCards = ({ activeCard }) => {
                 "Piping Modeling"
             ]
         },
-        {
-            id: "FacadeBim",
-            img: img10,
-            serviceTitle: "FACADE BIM SERVICES",
-            serviceDescription: "We specialize in creating comprehensive 2D and 3D drawings, along with 3D to 5D BIM models, to enhance building data management, visualization, and BOQ calculations. Our facade BIM services encompass glazing, cladding, prefabricated metals, canopies, doors, windows, and skylights, meeting diverse project needs.",
-            servicePoints: [
-                "Glazing and Cladding",
-                "Prefabricated Metals",
-                "Canopies, Doors, and Windows",
-                "Skylights",
-                "BOQ Calculation"
-            ]
-        },
+        // {
+        //     id: "FacadeBim",
+        //     img: img10,
+        //     serviceTitle: "FACADE BIM SERVICES",
+        //     serviceDescription: "We specialize in creating comprehensive 2D and 3D drawings, along with 3D to 5D BIM models, to enhance building data management, visualization, and BOQ calculations. Our facade BIM services encompass glazing, cladding, prefabricated metals, canopies, doors, windows, and skylights, meeting diverse project needs.",
+        //     servicePoints: [
+        //         "Glazing and Cladding",
+        //         "Prefabricated Metals",
+        //         "Canopies, Doors, and Windows",
+        //         "Skylights",
+        //         "BOQ Calculation"
+        //     ]
+        // },
         {
             id: "Rendering",
             img: img11,

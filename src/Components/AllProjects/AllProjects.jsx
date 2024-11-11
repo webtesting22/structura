@@ -98,6 +98,7 @@ const AllProjects = () => {
                                         setSelectedTitle(e.target.value);
                                         const selectedIndex = AllProjectsData.findIndex(item => item.Title === e.target.value);
                                         setActiveTab(selectedIndex);
+                                         
                                     }}
                                     id="SelectMobile"
                                 >
