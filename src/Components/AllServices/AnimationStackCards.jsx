@@ -1,15 +1,26 @@
 import React, { useEffect, useRef } from "react";
-import img1 from "./Images/1.png"
-import img2 from "./Images/2.png"
-import img3 from "./Images/3.png"
-import img4 from "./Images/4.png"
-import img5 from "./Images/5.png"
-import img6 from "./Images/6.png"
-import img7 from "./Images/7.png"
-import img8 from "./Images/8.png"
-import img9 from "./Images/9.png"
-import img10 from "./Images/10.png"
-import img11 from "./Images/11.png"
+// import img1 from "./Images/1.png"
+// import img2 from "./Images/2.png"
+// import img3 from "./Images/3.png"
+// import img4 from "./Images/4.png"
+// import img5 from "./Images/5.png"
+// import img6 from "./Images/6.png"
+// import img7 from "./Images/7.png"
+// import img8 from "./Images/8.png"
+// import img9 from "./Images/9.png"
+// import img10 from "./Images/10.png"
+// import img11 from "./Images/11.png"
+
+import icon1 from "./Images/A-BIM.png"
+import icon2 from "./Images/ACD.png"
+import icon3 from "./Images/MEP_CAD.png"
+import icon4 from "./Images/MEP_BIM.png"
+import icon5 from "./Images/MEP.png"
+import icon6 from "./Images/RS.png"
+import icon7 from "./Images/S-BIM.png"
+import icon8 from "./Images/SCD.png"
+import icon9 from "./Images/structural.png"
+
 const AnimatedStackCards = ({ activeCard }) => {
     const containersRef = useRef([]);
     useEffect(() => {
@@ -60,7 +71,7 @@ const AnimatedStackCards = ({ activeCard }) => {
         {
             id: "StructuralDesign",
             ref: "StructuralDesign",
-            img: img1,
+            img: icon9,
             serviceTitle: "STRUCTURAL DESIGN",
             serviceDescription: "Our forward-thinking structural design solutions prioritize strength and longevity while ensuring the highest standards of safety. Using advanced engineering principles, we create projects that stand the test of time. Combining aesthetic excellence with efficiency, we push the limits of structural design to deliver visually stunning and functionally superior buildings that comply with all relevant codes and regulations.",
             servicePoints: [
@@ -73,7 +84,7 @@ const AnimatedStackCards = ({ activeCard }) => {
         },
         {
             id: "MepDesign",
-            img: img2,
+            img: icon5,
             serviceTitle: "MEP DESIGN",
             serviceDescription: "Our MEP designs focus on optimizing the mechanical, electrical, and plumbing systems to ensure efficient and comfortable environments. Using the latest in Building Information Modeling (BIM) and 3D modeling, we tailor each system to the unique needs of the project, ensuring it meets performance standards while maintaining operational efficiency.",
             servicePoints: [
@@ -99,7 +110,7 @@ const AnimatedStackCards = ({ activeCard }) => {
         // },
         {
             id: "Architecture",
-            img: img4,
+            img: icon2,
             serviceTitle: "ARCHITECTURAL CAD DRAFTING",
             serviceDescription: "We provide top-notch architectural CAD services, from detailed 2D drawings to advanced 3D renderings. Our experienced team ensures precise architectural construction drawings that comply with all local building codes and standards, providing a seamless design-to-construction workflow.",
             servicePoints: [
@@ -112,7 +123,7 @@ const AnimatedStackCards = ({ activeCard }) => {
         },
         {
             id: "MepDrafting",
-            img: img5,
+            img: icon3,
             serviceTitle: "MEP CAD DRAFTING",
             serviceDescription: "Our MEP CAD drafting services ensure optimal design for mechanical, electrical, and plumbing systems, integrating architectural and structural drawings to meet project requirements. We specialize in creating accurate MEP CAD drawings for seamless installation and construction management.",
             servicePoints: [
@@ -125,7 +136,7 @@ const AnimatedStackCards = ({ activeCard }) => {
         },
         {
             id: "StructureDrafting",
-            img: img6,
+            img: icon8,
             serviceTitle: "STRUCTURAL CAD DRAFTING",
             serviceDescription: "We possess the technical knowledge and technological resources, combined with our thorough research, to deliver the best structural drawings and solutions for each challenge. Specializing in generating structural CAD drawings for residential, commercial, and industrial buildings, we adhere to the standards dictated by project locations and building codes, ensuring optimal results in every project.",
             servicePoints: [
@@ -141,7 +152,7 @@ const AnimatedStackCards = ({ activeCard }) => {
         },
         {
             id: "ArchitectureBIM",
-            img: img7,
+            img: icon1,
             serviceTitle: "ARCHITECTURAL BIM SERVICES",
             serviceDescription: "We offer solutions tailored for dynamic environments where business and technology strategies intersect. Our expertise lies in creating detailed 3D visuals that validate building designs before construction begins. Our adept architectural drafters excel at identifying design issues, detecting clashes early, and minimizing costly rework, ensuring a smoother and more efficient construction process.",
             servicePoints: [
@@ -154,7 +165,7 @@ const AnimatedStackCards = ({ activeCard }) => {
         },
         {
             id: "StructureBIM",
-            img: img8,
+            img: icon7,
             serviceTitle: "STRUCTURAL BIM SERVICES",
             serviceDescription: "We specialize in providing comprehensive structural engineering BIM services tailored for residential, industrial, and commercial projects. Our team of BIM experts excels in developing detailed structural BIM models, drafting, and producing comprehensive shop drawings for precision and efficiency throughout the project lifecycle.",
             servicePoints: [
@@ -167,7 +178,7 @@ const AnimatedStackCards = ({ activeCard }) => {
         },
         {
             id: "MepBim",
-            img: img9,
+            img: icon4,
             serviceTitle: "MEP BIM SERVICES",
             serviceDescription: "We develop accurate MEP models that enable consultants, contractors, manufacturers, and fabricators to seamlessly manage on-site activities. Our services cover standalone and integrated BIM modeling, adhering to international standards for complex projects such as laboratories, hospitals, schools, universities, and industrial facilities.",
             servicePoints: [
@@ -193,7 +204,7 @@ const AnimatedStackCards = ({ activeCard }) => {
         // },
         {
             id: "Rendering",
-            img: img11,
+            img: icon6,
             serviceTitle: "RENDERING SERVICES",
             serviceDescription: "At Structura Consultants, we elevate your vision with comprehensive 3D visualization and branding services. From architectural rendering to product modeling, we bring ideas to life with precision and creativity, crafting immersive experiences tailored to your unique needs.",
             servicePoints: [

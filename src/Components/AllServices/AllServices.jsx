@@ -53,14 +53,71 @@ const AllServices = () => {
         };
     }, []);
 
+    const ServicesData = [
+        {
+            // iconImage: BimIcon,
+            Title: "Structural Design",
+            Descriptions: "Having adopted BIM early on, SKETS' BIM Studio is among the largest globally. SKETS has more than 200 experts dedicated for BIM who have completed 325+ large scale projects till date.",
+        },
+        {
+            // iconImage: InteriorDesignIcon,
+            Title: "MEP Design",
+            Descriptions: "We are Market Leader in Interior Design Documentation with specialization in Hospitality.",
+        },
+        {
+            // iconImage: ArchitectureIcon,
+            Title: "Architectural CAD Drafting",
+            Descriptions: "SKETS has completed over 400 Architectural projects using both Revit and AutoCad. We also have a dedicated studio working on Structural projects.",
+           
+        },
+        {
+            // iconImage: VisualizationIcon,
+            Title: "Structural CAD Drafting",
+            Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
+        
+
+        },
+        {
+            // iconImage: VisualizationIcon,
+            Title: " MEP CAD Drafting",
+            Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
+
+        },
+        {
+            // iconImage: VisualizationIcon,
+            Title: " Architectural BIM Services",
+            Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
+
+        },
+        {
+            // iconImage: VisualizationIcon,
+            Title: "Structural BIM Services",
+            Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
+
+
+        },
+        {
+            // iconImage: VisualizationIcon,
+            Title: "MEP BIM Services",
+            Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
+
+        },
+        {
+            // iconImage: VisualizationIcon,
+            Title: " Rendering Services",
+            Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
+
+        },
+    ]
+
     return (
         <>
             <StructuraCommonHero image={Image} text="Services" routeLinks={routeLinks} />
             <section>
             <h1 className="bigHeading">Our Services</h1>
             </section>
-            {/* <AnimatedStackCards /> */}
-            {/* <section>
+            {/* <AnimatedStackCards />  */}
+             {/* <section>
                 <div className="Smalltagline">
                     <h4 className="sectionHeading"><div></div>All Services</h4>
                     <h1 data-aos="fade-up" className="bigHeading"
@@ -283,8 +340,8 @@ const AllServices = () => {
                         showcased our work process, ability to handle & deliver complex Revit projects & our dedication towards
                         quality excellence.</p>
                     </div>
-                </div>
-            </div> */}
+                </div> */}
+            
         </>
     );
 };
