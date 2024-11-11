@@ -21,14 +21,14 @@ const AnimatedHoverableCards = () => {
             Title: "Structural Design",
             img: img1,
             Descriptions: "Having adopted BIM early on, SKETS' BIM Studio is among the largest globally. SKETS has more than 200 experts dedicated for BIM who have completed 325+ large scale projects till date.",
-            redirect: "/AllServices#StructuralDesign",
+            redirect: "/Services#StructuralDesign",
         },
         {
             // iconImage: InteriorDesignIcon,
             Title: "MEP Design",
             img: img2,
             Descriptions: "We are Market Leader in Interior Design Documentation with specialization in Hospitality.",
-            redirect: "/AllServices#MepDesign",
+            redirect: "/Services#MepDesign",
         },
         // {
         //     // iconImage: EngeneeringIcon,
@@ -42,14 +42,14 @@ const AnimatedHoverableCards = () => {
             Title: "Architectural CAD Drafting",
             img: img4,
             Descriptions: "SKETS has completed over 400 Architectural projects using both Revit and AutoCad. We also have a dedicated studio working on Structural projects.",
-            redirect: "/AllServices#Architecture",
+            redirect: "/Services#Architecture",
         },
         {
             // iconImage: VisualizationIcon,
             Title: "Structural CAD Drafting",
             img: img5,
             Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
-            redirect: "/AllServices#StructureDrafting"
+            redirect: "/Services#StructureDrafting"
 
         },
         {
@@ -57,7 +57,7 @@ const AnimatedHoverableCards = () => {
             Title: " MEP CAD Drafting",
             img: img6,
             Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
-            redirect: "/AllServices#MepDrafting"
+            redirect: "/Services#MepDrafting"
 
         },
         {
@@ -65,7 +65,7 @@ const AnimatedHoverableCards = () => {
             Title: " Architectural BIM Services",
             img: img7,
             Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
-            redirect: "/AllServices#ArchitectureBIM"
+            redirect: "/Services#ArchitectureBIM"
 
         },
         {
@@ -73,7 +73,7 @@ const AnimatedHoverableCards = () => {
             Title: "Structural BIM Services",
             img: img8,
             Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
-            redirect: "/AllServices#StructureBIM"
+            redirect: "/Services#StructureBIM"
 
         },
         {
@@ -81,7 +81,7 @@ const AnimatedHoverableCards = () => {
             Title: "MEP BIM Services",
             img: img9,
             Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
-            redirect: "/AllServices#MepBim"
+            redirect: "/Services#MepBim"
 
         },
         // {
@@ -97,7 +97,7 @@ const AnimatedHoverableCards = () => {
             Title: " Rendering Services",
             img: img11,
             Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
-            redirect: "/AllServices#Rendering"
+            redirect: "/Services#Rendering"
 
         },
     ]
@@ -107,20 +107,20 @@ const AnimatedHoverableCards = () => {
                 <Row>
                     {ServicesCardData.map((item, index) => (
                         <Col lg={6} md={8} key={index}>
-                            <Link to={item.redirect}>
+                            {/* <Link to={item.redirect}> */}
                                 <div className="animatedCardContainer" >
                                     <img src={item.img} alt="" />
                                     <div className="insideContainer">
                                         <div className="topSideAnimationBar">
                                             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
                                                 <h1>{item.Title}</h1>
-                                                <i className='bx bx-right-arrow-alt'></i>
+                                                {/* <i className='bx bx-right-arrow-alt'></i> */}
                                             </div>
                                             <hr />
                                         </div>
                                     </div>
                                 </div>
-                            </Link>
+                            {/* </Link> */}
                         </Col>
                     ))}
 

@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import StructuraLogo from "/images/structuraLogo.png"
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
+import { MdOutlineLocationOn } from "react-icons/md";
+
 const Footer = () => {
     return (
         <>
@@ -26,52 +28,19 @@ const Footer = () => {
                                             &nbsp;
                                             <a href="tel:+919099024581">+91-9099024581</a>
                                         </span>
+                                        <span><MdOutlineLocationOn />&nbsp;<a href="https://maps.app.goo.gl/DfKxgYaKkWJnAAix9"> 901, A.Shridhar Athens, Ambawadi,
+                                            Ahmedabad, Gujarat 380015, India.</a>
+                                        </span>
                                     </div>
                                     {/* <button className="commomBtn">Connect</button> */}
                                 </div>
                             </Col>
-                            <Col lg={8}>
+                            
+                            {/* <Col lg={8}>
                                 <div className="AddressColums">
-                                    {/* <div>
-
-                                        <h2>New York Office</h2>
-                                        <hr />
-                                        <p>
-                                            <a href="#">
-                                                SKETS studio, 373 BroadWay, Suite 611,
-                                                New York City, New York 10013
-                                            </a><br />
-                                            <a href="tel:9174146441">Phone: 9174146441</a>
-                                        </p>
-                                    </div> */}
-                                    {/* <div>
-
-                                        <h2>HeadQuarters</h2>
-                                        <hr />
-                                        <p>
-                                            <a href="https://maps.app.goo.gl/VKarCGeVPBPBTqURA" target="_blank">
-                                                SKETS Studio Private Limited
-                                                226, Patparganj Functional Industrial Estate,
-                                                Delhi 110092, India.
-                                            </a><br />
-                                            <a href="tel:+91-981004142">Phone +91-981004142</a>
-                                        </p>
-                                    </div> */}
-                                    {/* <div>
-
-                                        <h2>SKETS Campus</h2>
-                                        <hr />
-                                        <p>
-                                            <a href="https://maps.app.goo.gl/JBJ9rw34fWbAUmjv9" target="_blank">
-                                                SKETS Studio Private Limited
-                                                297 & 298, Patparganj Industrial Estate,
-                                                Delhi 110092, India.
-                                            </a><br />
-                                            <a href="tel:+91-981004142">Phone +91-981004142</a>
-                                        </p>
-                                    </div> */}
+                                   
                                     <div>
-                                        <h2>Office</h2>
+                                        <h2>Address </h2>
                                         <hr />
                                         <p>
                                             <a href="#" target="_blank">
@@ -81,7 +50,7 @@ const Footer = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </Col>
+                            </Col> */}
                         </Row>
 
                         <hr />

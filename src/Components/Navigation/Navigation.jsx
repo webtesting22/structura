@@ -52,9 +52,10 @@ const Navigation = () => {
                 <div className="overlay"> </div>
                 <ul>
                     <li onClick={toggleNav}><Link to="/AboutUs">About Us</Link></li>
-                    <li onClick={toggleNav}><Link to="/AllProjects">All Projects</Link></li>
+                    <li onClick={toggleNav}><Link to="/Projects">Projects</Link></li>
                     <li onClick={toggleNav}><Link to="/ClientsAndDirectors">Directors And Clients</Link></li>
-                    <li onClick={toggleNav}><Link to="/AllServices">Services</Link></li>
+                    <li onClick={toggleNav}><Link to="/Services">Services</Link></li>
+                    <li onClick={toggleNav}><Link to="/Contact">Contact</Link></li>
                     {/* <li><Link to="https://nirmaan-main.vercel.app/" target="_blank">Nirmaan</Link></li> */}
                 </ul>
 

@@ -85,7 +85,7 @@ const ProjectComponent = () => {
                             <p className="projectDescription">
                                 {projectImages[activeProject]?.description}
                             </p>
-                          <Link to="/AllProjects"><button className="commomBtn" style={{margin:"10px 0px"}}>View More</button></Link>
+                          <Link to="/Projects"><button className="commomBtn" style={{margin:"10px 0px"}}>View More</button></Link>
                             
                         </div>
                     </Col>

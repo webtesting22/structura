@@ -1,0 +1,34 @@
+.contactImageContainer {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactImageContainer img {
+  width: 80%;
+}
+.contactTextContainer {
+  padding: 3rem 7rem;
+}
+.contactTextContainer h1 {
+  color: rgb(188, 119, 66);
+  padding-bottom: 2rem;
+}
+.contactTextContainer p {
+  padding-top: 10px;
+  margin: 0;
+  color: black;
+}
+.contactTextContainer a {
+  color: black;
+}
+.contactTextContainer a:hover{
+    color: rgb(188, 119, 66);
+}
+@media (max-width: 769px) {
+  .contactTextContainer {
+    padding: 2rem 3rem;
+  }
+}

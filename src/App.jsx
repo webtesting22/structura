@@ -12,6 +12,7 @@ import BottomToTopBtn from './Components/BottomTotopBtn/BottomTotopBtn';
 import AllProjects from './Components/AllProjects/AllProjects';
 import ClientsAndDirectors from './Components/ClientsAndDirectors/ClientsAndDirectors';
 import AllServices from './Components/AllServices/AllServices';
+import Contact from './Components/Contact/Contact';
 function App() {
 
   return (
@@ -21,9 +22,10 @@ function App() {
         <Route exact path="/" element={<StructuraHome />} />
         <Route exact path="/AboutUs" element={<AboutUs />} />
         <Route exact path="/StructuraCommonHero" element={<StructuraCommonHero />} />
-        <Route exact path="/AllProjects" element={<AllProjects />} />
+        <Route exact path="/Projects" element={<AllProjects />} />
         <Route exact path="/clientsanddirectors" element={<ClientsAndDirectors />} />
-        <Route exact path="/allservices" element={<AllServices />} />
+        <Route exact path="/Services" element={<AllServices />} />
+        <Route exact path="/Contact" element={<Contact/>}/>
       </Routes>
       <BottomToTopBtn />
       <Footer />

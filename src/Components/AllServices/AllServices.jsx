@@ -13,9 +13,9 @@ const AllServices = () => {
         { path: "/allservices", name: "All Services" },
         // Add more links as needed
     ];
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    //   }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     const BIM = useRef(null);
     const REVIT = useRef(null);
     const INTERIOR = useRef(null);
@@ -55,8 +55,11 @@ const AllServices = () => {
 
     return (
         <>
-            <StructuraCommonHero image={Image} text="All Services" routeLinks={routeLinks} />
-            <AnimatedStackCards />
+            <StructuraCommonHero image={Image} text="Services" routeLinks={routeLinks} />
+            <section>
+            <h1 className="bigHeading">Our Services</h1>
+            </section>
+            {/* <AnimatedStackCards /> */}
             {/* <section>
                 <div className="Smalltagline">
                     <h4 className="sectionHeading"><div></div>All Services</h4>
