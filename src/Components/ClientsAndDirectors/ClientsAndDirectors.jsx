@@ -86,13 +86,13 @@ const ClientsAndDirectors = () => {
 
 
             </section>
-            <section>
+            {/* <section>
                 <div id="clientSection">
                     <h1 className="bigHeading">Our Clients</h1>
                     <br /><br />
                     <ClientCard />
                 </div>
-            </section>
+            </section> */}
         </>
     )
 }

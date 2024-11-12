@@ -185,56 +185,45 @@
 } */
 
 .AnimatedStackCards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
-    padding: 10px;
+  padding: 2rem 6rem;
+}
+.cardHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stackCardCollapse {
+  font-family: "PT Sans", sans-serif;
+}
+.serviceTitle {
+  padding: 5px 0;
+}
+.ant-collapse-item {
+  /* border: 2px solid red !important; */
+  border-radius: 10px !important;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  overflow: hidden;
+  background-color: white;
+}
+.ant-collapse-header {
+  width: 100% !important;
+}
+.ant-collapse-header:hover .cardHeader img {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  overflow: hidden;
+}
+@media (max-width: 769px) {
+  .AnimatedStackCards {
+    padding: 1rem 2rem;
   }
-  
-  .accordion-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .accordion-image {
-    height: 80px;
-    width: 80px;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  .accordion-text{
-    font-weight: 600;
-    margin-bottom: 40px;
-  }
-  
-  .accordion-image:hover {
-    transform: scale(1.05);
-  }
-  
-  .accordion-content {
-    display: none; /* Initially hide the accordion content */
-    
-  }
-  
-  .accordion-content.show {
-    display: block; /* Show when clicked */
-  }
-  
-  .accordion-list {
-    padding: 5px;
-    list-style-type: disc;
+  .ant-row {
+    /* width: 100%; */
     margin: 0;
   }
-  
-  
-
-
-@media (max-width: 769px) {
-
-    .AnimatedStackCards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 2rem;
-        /* gap: 10px 5rem; */
-    }
 }

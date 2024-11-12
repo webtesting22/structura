@@ -12,13 +12,13 @@ const StructuraHome = () => {
             <HomeHero />
             <StrucuraInfo/>
             <HomePageProject2 />
-            <section>
+            {/* <section>
                 <div id="clientSection">
                     <h1 className="bigHeading" style={{textAlign:"center"}}>Our Clients</h1>
                     <br /><br />
                     <ClientCard />
                 </div>
-            </section>
+            </section> */}
             {/* <HomePageProject/> */}
             {/* <GalleryCarousal/> */}
             {/* <BottomToTopBtn/> */}

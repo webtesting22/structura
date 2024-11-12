@@ -104,6 +104,7 @@ const ProjectComponent = () => {
 
                 </Row>
             </div>
+            <div className="sectionPadding"/>
         </>
     )
 }

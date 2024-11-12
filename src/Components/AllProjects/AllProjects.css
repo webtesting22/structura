@@ -50,7 +50,7 @@
     justify-content: center;
     font-family: "Roboto", sans-serif;
     width: 100%;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 .FilterContainer .nonActiveBtnActive {
@@ -63,7 +63,7 @@
     margin: 0px 10px;
     cursor: pointer;
     transition: .5s;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 .FilterContainer .nonActiveBtn:hover {
@@ -76,7 +76,7 @@
     margin: 0px 10px;
     cursor: pointer;
     transition: .5s;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 .ColumsStyleContainers {
