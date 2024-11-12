@@ -14,6 +14,7 @@ import WhyUsComponent from "../MinimillisticComponents/WhyUsComponent";
 import BoxCarousalContainer from "../MinimillisticComponents/BoxCarousalContainer/BoxCarousalContainer";
 import AnimatedHoverableCards from "../AnimatedHoverableCard/AnimatedHoverableCard";
 import AboutUsPoster from "../AboutUs/1.png"
+import NewAbout from "../NewAbout/NewAbout";
 const AboutUs = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -44,6 +45,9 @@ const AboutUs = () => {
                     <h1 data-aos="fade-up" className="bigHeading"
                         data-aos-duration="1000">Our Expertise</h1>
                     <br /><br />
+                    <div className="New-About">
+                           <NewAbout/>
+                    </div>
 
                     <div className="expertiseCards">
                         <div className="animatedCards">

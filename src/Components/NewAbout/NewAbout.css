@@ -1,0 +1,33 @@
+/* .About-Row {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.About-img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About-img img{
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+
+.About-content {
+    padding: 2rem 2rem;
+  }
+  .About-content h1 {
+    color: rgb(188, 119, 66);
+    padding-bottom: 1rem;
+  }
+  .About-content p {
+    padding-top: 0px;
+    margin: 0;
+    color: black;
+  }
