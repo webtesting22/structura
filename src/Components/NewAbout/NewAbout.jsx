@@ -67,7 +67,6 @@ const NewAbout = () => {
           <div className='About-img'>
             <img src="/images/ProjectsImages/HighRiseBuilding/BeaufortPark/03.jpg" />
           </div>
-          <br/><br/>
         </Col>
         <Col lg={12} md={24}>
           <div className='About-content'>
