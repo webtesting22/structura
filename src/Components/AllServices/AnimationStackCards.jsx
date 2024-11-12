@@ -20,19 +20,12 @@ import icon6 from "./Images/RS.png"
 import icon7 from "./Images/S-BIM.png"
 import icon8 from "./Images/SCD.png"
 import icon9 from "./Images/structural.png"
-import { div } from "framer-motion/client";
+import { Collapse } from "antd";
+
+const { Panel } = Collapse;
 
 const AnimatedStackCards = () => {
-    const [selectedCard, setSelectedCard] = useState(null);
-
-    const handleCardClick = (card) => {
-        setSelectedCard(card); // Open modal with the selected card
-    };
-
-    const closeModal = () => {
-        setSelectedCard(null); // Close modal
-    };
-
+    const [activeKey, setActiveKey] = useState(null);
 
     const StackCards = [
         {
@@ -182,42 +175,46 @@ const AnimatedStackCards = () => {
             ]
         }
     ];
+    const handleImageClick = (index) => {
+        setActiveKey(activeKey === index ? null : index); // Toggle the panel
+    };
 
     return (
         <>
             <div className="AnimatedStackCards">
-
                 {StackCards.map((card, index) => (
-                    <div>
+                    <div key={index} className="accordion-item">
+                        {/* Image that toggles the accordion panel */}
                         <img
-                            key={index}
                             src={card.img}
-                            alt={`Card ${index + 1}`}
-                            onClick={() => handleCardClick(card)}
-                            className="stack-card-image"
-
+                            alt=""
+                            className="accordion-image"
+                            onClick={() => handleImageClick(index)}
                         />
-                        <p className="stack-card-name">{card.serviceTitle}</p>
-                    </div>
-                ))}
-            </div>
-
-            {selectedCard && (
-                
-                    <div className="modal-background" onClick={closeModal}>
-                        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                            <span className="close" onClick={closeModal}>&times;</span>
-                            <h3>{selectedCard.serviceTitle}</h3>
-                            <p>{selectedCard.description}</p>
-                            <ul>
-                                {selectedCard.servicePoints.map((point, index) => (
-                                    <li key={index}>{point}</li>
-                                ))}
-                            </ul>
+                        <p className="accordion-text">{card.serviceTitle}</p>
+                        {/* Display panel only if the image is clicked */}
+                        <div className={`accordion-content ${activeKey === index ? 'show' : ''}`}>
+                            {activeKey === index && (
+                                <Collapse
+                                    accordion
+                                    activeKey={`${index}`}
+                                    expandIconPosition={null} // Hide the default arrow
+                                >
+                                    <Panel header={card.serviceTitle} key={index}>
+                                        <ul className="accordion-list">
+                                            {card.servicePoints.map((point, pointIndex) => (
+                                                <li key={pointIndex}>{point}</li>
+                                            ))}
+                                        </ul>
+                                    </Panel>
+                                </Collapse>
+                            )}
                         </div>
                     </div>
-                
-            )}
+                ))}
+
+            </div>
+
         </>
     )
 }
