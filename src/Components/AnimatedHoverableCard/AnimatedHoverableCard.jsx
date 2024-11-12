@@ -106,7 +106,7 @@ const AnimatedHoverableCards = () => {
             <div className="animatedCardSection">
                 <Row>
                     {ServicesCardData.map((item, index) => (
-                        <Col lg={6} md={8} key={index}>
+                        <Col lg={6} md={8} key={index} data-aos-duration="1000" data-aos="fade-up" data-aos-delay={index*200}>
                             {/* <Link to={item.redirect}> */}
                                 <div className="animatedCardContainer" >
                                     <img src={item.img} alt="" />

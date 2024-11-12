@@ -192,6 +192,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px 0;
+}
+.cardHeader img {
+  padding: 10px 0;
 }
 .stackCardCollapse {
   font-family: "PT Sans", sans-serif;

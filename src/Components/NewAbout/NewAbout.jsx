@@ -7,12 +7,12 @@ const NewAbout = () => {
   return (
     <>
       <Row className='About-Row'>
-        <Col lg={12} md={24}>
+        <Col lg={12} md={24} data-aos-duration="1000" data-aos="fade-up">
           <div className='About-img'>
             <img src="/images/ProjectsImages/HighRiseBuilding/MajesticSquare/05.jpg" />
           </div>
         </Col>
-        <Col lg={12} md={24}>
+        <Col lg={12} md={24} data-aos-duration="1000" data-aos="fade-up">
           <div className='About-content'>
             <h1 className='bigHeading'>About Us</h1>
             <br></br>
@@ -34,7 +34,7 @@ const NewAbout = () => {
       </Row>
 
       <Row className='About-Row'>
-        <Col lg={12} md={24}>
+        <Col lg={12} md={24} data-aos-duration="1000" data-aos="fade-up">
           <div className='About-content'>
             <p>Structura Consultants is a premier outsourcing company <b>specializing in CAD drafting services</b>. We are a dedicated and
               professional team committed to excellence in every project. Our guiding principles—<b>superior quality, unwavering integrity, and
@@ -50,12 +50,12 @@ const NewAbout = () => {
               to provide high-quality drafting work and production-ready 2D CAD drawings. In addition to drafting and drawings, we offer
               exceptional <b>MEP design, interior design, building information modeling (BIM), and rendering services</b>. Utilizing industry
               standard tools, we produce excellent 3D visualizations that are both cost-effective and reliable. Our team leaves no stone unturned
-              in leveraging our in-house capabilities to achieve excellence in every project
+              in leveraging our in-house capabilities to achieve excellence in every project.
             </p>
 
           </div>
         </Col>
-        <Col lg={12} md={24}>
+        <Col lg={12} md={24} data-aos-duration="1000" data-aos="fade-up">
           <div className='About-img'>
             <img src="/images/ProjectsImages/HighRiseBuilding/Nirmansatva/01.jpg" />
           </div>
@@ -63,12 +63,12 @@ const NewAbout = () => {
       </Row>
 
       <Row className='About-Row'>
-        <Col lg={12} md={24}>
+        <Col lg={12} md={24} data-aos-duration="1000" data-aos="fade-up">
           <div className='About-img'>
             <img src="/images/ProjectsImages/HighRiseBuilding/BeaufortPark/03.jpg" />
-          </div>
+          </div> 
         </Col>
-        <Col lg={12} md={24}>
+        <Col lg={12} md={24} data-aos-duration="1000" data-aos="fade-up">
           <div className='About-content'>
           <h1 className='bigHeading'>Vision</h1>
             <br></br>

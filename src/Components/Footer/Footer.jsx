@@ -14,10 +14,11 @@ const Footer = () => {
                 <div className="footerSection">
                     <div>
                         <Row>
-                            <Col lg={16}>
+                            <Col lg={124}>
                                 <div className="FooterRebuild">
                                     <img src={StructuraLogo} alt="" />
                                     <br /><br />
+                                    
                                     <p>At <b>STRUCTURA</b>, we specialize in delivering high-quality construction services, combining innovation and craftsmanship to bring your vision to life, ensuring lasting results with professionalism and integrity on every project.</p>
                                     <br />
                                     <div className="Contact">

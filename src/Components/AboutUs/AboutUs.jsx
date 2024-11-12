@@ -34,7 +34,8 @@ const AboutUs = () => {
                 routeLinks={routeLinks}
             />
             <section id="servicesSection">
-                <div className="sectionPadding"></div>
+          
+                {/* <div className="sectionPadding"></div> */}
                 {/* <div className="sectionPadding"></div> */}
                 <div>
                     {/* <div className="Smalltagline">
@@ -42,14 +43,15 @@ const AboutUs = () => {
                     
                     WHO WE ARE</h4>
                     </div> */}
-                    <h1 data-aos="fade-up" className="bigHeading"
-                        data-aos-duration="1000">Our Expertise</h1>
+                   
                     <br /><br />
                     <div className="New-About">
                            <NewAbout/>
                     </div>
 
                     <div className="expertiseCards">
+                    <h1 data-aos="fade-up" className="bigHeading"
+                        data-aos-duration="1000">Our Expertise</h1>
                         <div className="animatedCards">
                             <AnimatedHoverableCards />
                         </div>
