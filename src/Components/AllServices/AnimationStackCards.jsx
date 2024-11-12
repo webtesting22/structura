@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // import img1 from "./Images/1.png"
 // import img2 from "./Images/2.png"
 // import img3 from "./Images/3.png"
@@ -20,51 +20,18 @@ import icon6 from "./Images/RS.png"
 import icon7 from "./Images/S-BIM.png"
 import icon8 from "./Images/SCD.png"
 import icon9 from "./Images/structural.png"
+import { div } from "framer-motion/client";
 
-const AnimatedStackCards = ({ activeCard }) => {
-    const containersRef = useRef([]);
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-    useEffect(() => {
-        const observerOptions = {
-            threshold: 0.7,
-        };
+const AnimatedStackCards = () => {
+    const [selectedCard, setSelectedCard] = useState(null);
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                const container = entry.target;
-                if (entry.isIntersecting) {
-                    container.classList.remove('dark');
-                } else {
-                    container.classList.add('dark');
-                }
-            });
-        }, observerOptions);
+    const handleCardClick = (card) => {
+        setSelectedCard(card); // Open modal with the selected card
+    };
 
-        containersRef.current.forEach((container) => {
-            if (container) observer.observe(container);
-        });
-
-        return () => {
-            containersRef.current.forEach((container) => {
-                if (container) observer.unobserve(container);
-            });
-        };
-    }, []);
-    useEffect(() => {
-        const hash = window.location.hash;
-        if (hash) {
-            const timer = setTimeout(() => {
-                const element = document.getElementById(hash.substring(1));  // Remove the # from the hash
-                if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                }
-            }, 100);  // 2000ms delay
-
-            return () => clearTimeout(timer);  // Cleanup the timer on component unmount
-        }
-    }, []);
+    const closeModal = () => {
+        setSelectedCard(null); // Close modal
+    };
 
 
     const StackCards = [
@@ -219,43 +186,38 @@ const AnimatedStackCards = ({ activeCard }) => {
     return (
         <>
             <div className="AnimatedStackCards">
-                {StackCards.map((item, index) => {
 
-                    const wrapFirstWord = (text) => {
-                        const words = text.split(' ');
-                        if (words.length > 1) {
-                            return `<span class="FirstWord">${words[0]}</span> ${words.slice(1).join(' ')}`;
-                        }
-                        return text;
-                    };
-                    return (
-                        <div
+                {StackCards.map((card, index) => (
+                    <div>
+                        <img
                             key={index}
-                            id={item.id}
-                            className="StackCardContainer"
+                            src={card.img}
+                            alt={`Card ${index + 1}`}
+                            onClick={() => handleCardClick(card)}
+                            className="stack-card-image"
 
-                            ref={(el) => (containersRef.current[index] = el)}
-                        >
-                            <img src={item.img} alt="" />
-                            <div className="Imageoverlay"></div>
-                            <div className="AnimatedCardContentContainer">
-                                <div className="ContentInsideContainer">
-                                    <h4  data-aos="fade-right"
-                                        data-aos-duration="1000"  className="ServiceTitle" dangerouslySetInnerHTML={{ __html: wrapFirstWord(item.serviceTitle) }} />
-                                    <p  data-aos="fade-up"
-                                        data-aos-duration="1000" >{item.serviceDescription}</p>
-                                    <ul  data-aos="fade-up"
-                                        data-aos-duration="1000"  className="ServicePointsList">
-                                        {item.servicePoints.map((point, i) => (
-                                            <li key={i}>{point}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    )
-                })}
+                        />
+                        <p className="stack-card-name">{card.serviceTitle}</p>
+                    </div>
+                ))}
             </div>
+
+            {selectedCard && (
+                
+                    <div className="modal-background" onClick={closeModal}>
+                        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                            <span className="close" onClick={closeModal}>&times;</span>
+                            <h3>{selectedCard.serviceTitle}</h3>
+                            <p>{selectedCard.description}</p>
+                            <ul>
+                                {selectedCard.servicePoints.map((point, index) => (
+                                    <li key={index}>{point}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                
+            )}
         </>
     )
 }
