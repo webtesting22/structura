@@ -197,6 +197,9 @@
 .cardHeader img {
   padding: 10px 0;
 }
+.cardHeader:hover p{
+    color: rgb(188,119,66);
+}
 .stackCardCollapse {
   font-family: "PT Sans", sans-serif;
 }
@@ -221,6 +224,7 @@
   transform: scale(1.1);
   transition: transform 0.5s;
   overflow: hidden;
+  transform: rotateY(180deg);
 }
 @media (max-width: 769px) {
   .AnimatedStackCards {
