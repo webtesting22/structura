@@ -6,22 +6,23 @@ import ShilpBungalowsImage1 from "/images/ProjectsImages/Banglows/SHILP BUNGLOWS
 const NewAbout = () => {
   return (
     <>
-      <Row className='About-Row'>
-        <Col lg={12} md={24} data-aos-duration="1000" data-aos="fade-up">
+      <Row className='About-Row row1'>
+        <Col lg={10} md={24} data-aos-duration="1000" data-aos="fade-up" >
           <div className='About-img'>
             <img src="/images/ProjectsImages/HighRiseBuilding/MajesticSquare/05.jpg" />
           </div>
         </Col>
-        <Col lg={12} md={24} data-aos-duration="1000" data-aos="fade-up">
+        <Col lg={1} />
+        <Col lg={12} md={24} data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200">
           <div className='About-content'>
-            <h1 className='bigHeading'>About Us</h1>
-            <br></br>
+
+            {/* <br></br> */}
             <p>We focus on designing and restoring the timeless values of buildings.</p><br></br>
             <p>Structura Consultants, a distinguished privately-owned firm with an
               eight-year legacy, excels in design and drafting services. As a venture
-              of the renowned <b>Nirman Group</b>—Gujarat's leading developer since 1976,
-              headed by <b>Prashant Shah</b> and <b>Chetan Shah</b>—Structura Consultants has
-              firmly established its reputation in the industry.</p><br></br>
+              of the renowned Nirman Group—Gujarat's leading developer since 1976,
+              headed by Prashant Shah and Chetan Shah—Structura Consultants has
+              firmly established its reputation in the industry.</p><br />
             <p>We provide professional consulting services for a wide range of
               properties, including residential, commercial, industrial, institutional, and
               public. Our expertise lies in structural and earth-retaining design, as well
@@ -31,46 +32,51 @@ const NewAbout = () => {
 
           </div>
         </Col>
+
       </Row>
 
-      <Row className='About-Row'>
-        <Col lg={12} md={24} data-aos-duration="1000" data-aos="fade-up">
+      <Row className='About-Row row2'>
+        <Col lg={13} md={24} data-aos-duration="1000" data-aos="fade-up">
           <div className='About-content'>
-            <p>Structura Consultants is a premier outsourcing company <b>specializing in CAD drafting services</b>. We are a dedicated and
-              professional team committed to excellence in every project. Our guiding principles—<b>superior quality, unwavering integrity, and
-              timely delivery</b>—are deeply embedded in our services, earning us a distinguished reputation and fostering long-lasting client
+            <p>Structura Consultants is a premier outsourcing company specializing in CAD drafting services. We are a dedicated and
+              professional team committed to excellence in every project. Our guiding principles—superior quality, unwavering integrity, and
+              timely delivery—are deeply embedded in our services, earning us a distinguished reputation and fostering long-lasting client
               relationships</p>
             <p>
-              Our <b>flexible working strategy</b> enables us to build strong, candid relationships with our clients. We take immense pride in our work,
-              approaching each task with a <b>dynamic perspective and a problem-solving mindset</b>. Our commitment is to <b>deliver top-quality
-              results</b> while continuously expanding our services to meet the ever-growing demands of the industry.
+              Our flexible working strategy enables us to build strong, candid relationships with our clients. We take immense pride in our work,
+              approaching each task with a dynamic perspective and a problem-solving mindset. Our commitment is to deliver top-quality
+              results while continuously expanding our services to meet the ever-growing demands of the industry.
             </p>
             <p>
               Our team of expert designers and drafters collaborates closely with architects, engineers, contractors, and design professionals
               to provide high-quality drafting work and production-ready 2D CAD drawings. In addition to drafting and drawings, we offer
-              exceptional <b>MEP design, interior design, building information modeling (BIM), and rendering services</b>. Utilizing industry
+              exceptional MEP design, interior design, building information modeling (BIM), and rendering services. Utilizing industry
               standard tools, we produce excellent 3D visualizations that are both cost-effective and reliable. Our team leaves no stone unturned
               in leveraging our in-house capabilities to achieve excellence in every project.
             </p>
 
           </div>
         </Col>
-        <Col lg={12} md={24} data-aos-duration="1000" data-aos="fade-up">
+        <Col lg={1} />
+
+        <Col lg={10} md={24} data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200">
           <div className='About-img'>
             <img src="/images/ProjectsImages/HighRiseBuilding/Nirmansatva/01.jpg" />
           </div>
         </Col>
       </Row>
 
-      <Row className='About-Row'>
-        <Col lg={12} md={24} data-aos-duration="1000" data-aos="fade-up">
+      <Row className='About-Row row3'>
+        <Col lg={10} md={24} data-aos-duration="1000" data-aos="fade-up" >
           <div className='About-img'>
             <img src="/images/ProjectsImages/HighRiseBuilding/BeaufortPark/03.jpg" />
-          </div> 
+          </div>
         </Col>
-        <Col lg={12} md={24} data-aos-duration="1000" data-aos="fade-up">
+        <Col lg={1} />
+
+        <Col lg={13} md={24} data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200">
           <div className='About-content'>
-          <h1 className='bigHeading'>Vision</h1>
+            <h1 className='bigHeading'>Vision</h1>
             <br></br>
             <p>Our vision is to be the premier outsourcing company for CAD drafting and design
               services, recognized for our commitment to quality, integrity, and timely delivery.
@@ -79,7 +85,7 @@ const NewAbout = () => {
               industry. Through continuous innovation and leveraging the best industry
               standard tools, we strive to deliver exceptional 3D visualizations and
               comprehensive design services, ensuring excellence in every project.</p>
-              
+
           </div>
         </Col>
       </Row>

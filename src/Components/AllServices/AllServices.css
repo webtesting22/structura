@@ -186,6 +186,9 @@
 
 .AnimatedStackCards {
   padding: 2rem 6rem;
+  /* background-image: url('../AnimatedHoverableCard/10.png'); */
+  /* background-size: cover; */
+  /* background-color: rgba(255, 255, 255, 0.454); */
 }
 .cardHeader {
   width: 100%;
@@ -213,25 +216,31 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-
+  
   overflow: hidden;
-  background-color: white;
+  background-color:rgba(245, 245, 245, 0.906);
 }
 .ant-collapse-header {
   width: 100% !important;
 }
 .ant-collapse-header:hover .cardHeader img {
-  transform: scale(1.1);
-  transition: transform 0.5s;
-  overflow: hidden;
+  /* transform: scale(1.1); */
+  transition: transform 0.5s ease-in-out ;
+  /* overflow: hidden; */
   transform: rotateY(180deg);
+}
+.ant-collapse-item:hover{
+    background-color: whitesmoke;
+    transition:  0.5s;
+}
+.ant-collapse-header:hover .cardHeader h4{
+    color: rgb(188,119,66);
 }
 @media (max-width: 769px) {
   .AnimatedStackCards {
     padding: 1rem 2rem;
   }
   .ant-row {
-    /* width: 100%; */
     margin: 0;
   }
 }

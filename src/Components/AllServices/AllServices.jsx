@@ -112,11 +112,12 @@ const AllServices = () => {
 
     return (
         <>
-            <StructuraCommonHero image={Image} text="Services" routeLinks={routeLinks} />
+            <StructuraCommonHero image={Image} text="Your Partner in Precision Design and Visualization" routeLinks={routeLinks} />
             <section>
             <h1 className="bigHeading">Our Services</h1>
-            </section>
             <AnimatedStackCards /> 
+            </section>
+            
              {/* <section>
                 <div className="Smalltagline">
                     <h4 className="sectionHeading"><div></div>All Services</h4>

@@ -1,16 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-// import img1 from "./Images/1.png"
-// import img2 from "./Images/2.png"
-// import img3 from "./Images/3.png"
-// import img4 from "./Images/4.png"
-// import img5 from "./Images/5.png"
-// import img6 from "./Images/6.png"
-// import img7 from "./Images/7.png"
-// import img8 from "./Images/8.png"
-// import img9 from "./Images/9.png"
-// import img10 from "./Images/10.png"
-// import img11 from "./Images/11.png"
-
+// import img1 from "../AnimatedHoverableCard/8.png";
 import icon1 from "./Images/A-BIM.png";
 import icon2 from "./Images/ACD.png";
 import icon3 from "./Images/MEP_CAD.png";
@@ -20,7 +9,7 @@ import icon6 from "./Images/RS.png";
 import icon7 from "./Images/S-BIM.png";
 import icon8 from "./Images/SCD.png";
 import icon9 from "./Images/structural.png";
-import { Collapse, Row, Col, Image,theme } from "antd";
+import { Collapse, Row, Col, Image, theme } from "antd";
 
 const { Panel } = Collapse;
 
@@ -31,8 +20,8 @@ const AnimatedStackCards = () => {
     // marginBottom: 24,
     background: token.colorFillAlter,
     borderRadius: token.borderRadiusMD,
-    
-    width:100,
+
+    width: 100,
   };
   const StackCards = [
     {
@@ -51,7 +40,6 @@ const AnimatedStackCards = () => {
         "Repair and Conservation of Heritage Buildings",
       ],
       style: panelStyle,
-
     },
     {
       key: "2",
@@ -68,7 +56,6 @@ const AnimatedStackCards = () => {
         "Heritage Building Repair",
       ],
       style: panelStyle,
-
     },
     // {
     //     id: "InteriorDesign",
@@ -98,7 +85,6 @@ const AnimatedStackCards = () => {
         "Scan-to-CAD Drafting Services",
       ],
       style: panelStyle,
-
     },
     {
       key: "4",
@@ -115,7 +101,6 @@ const AnimatedStackCards = () => {
         "MEP Detail Drawings",
       ],
       style: panelStyle,
-
     },
     {
       key: "5",
@@ -135,7 +120,6 @@ const AnimatedStackCards = () => {
         "Reinforcement Detailing",
       ],
       style: panelStyle,
-
     },
     {
       key: "6",
@@ -152,7 +136,6 @@ const AnimatedStackCards = () => {
         "Efficient Construction Workflow",
       ],
       style: panelStyle,
-
     },
     {
       key: "7",
@@ -169,7 +152,6 @@ const AnimatedStackCards = () => {
         "Precision Engineering",
       ],
       style: panelStyle,
-
     },
     {
       key: "8",
@@ -186,7 +168,6 @@ const AnimatedStackCards = () => {
         "Piping Modeling",
       ],
       style: panelStyle,
-
     },
     // {
     //     id: "FacadeBim",
@@ -215,11 +196,9 @@ const AnimatedStackCards = () => {
         "Site Plan 3D Rendering",
       ],
       style: panelStyle,
-
     },
   ];
-//   const cards=StackCards(panelStyle);
-
+  //   const cards=StackCards(panelStyle);
 
   return (
     <>
@@ -257,7 +236,16 @@ const AnimatedStackCards = () => {
       <div className="AnimatedStackCards">
         <Row gutter={[16, 16]}>
           {StackCards.map((card, index) => (
-            <Col xs={24} sm={12} md={8} lg={8} key={index}>
+            <Col
+              xs={24}
+              sm={12}
+              md={8}
+              lg={12}
+              key={index}
+              data-aos-delay={index * 200}
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <Collapse
                 // expandIconPosition="end"
                 bordered={false}
@@ -271,7 +259,7 @@ const AnimatedStackCards = () => {
                   header={
                     <div className="cardHeader">
                       <img src={card.img} alt={card.serviceTitle} width={50} />
-                      <p className="serviceTitle">{card.serviceTitle}</p>
+                      <h4 className="serviceTitle">{card.serviceTitle}</h4>
                     </div>
                   }
                   key={card.id}
