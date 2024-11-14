@@ -1,5 +1,5 @@
 .About-Row {
-  margin: 2rem 0rem;
+  margin: 4rem 0rem;
 }
 .About-img {
   width: 100%;
@@ -25,7 +25,7 @@
 }
 .About-content p {
   padding-top: 0px;
-  text-align: left;
+  text-align: justify;
   margin: 0;
 }
 .row1 .About-img {

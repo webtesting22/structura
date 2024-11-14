@@ -198,6 +198,12 @@
 .cardHeader img {
   padding: 10px 0;
   transition: 0.5s;
+  /* width: 100%; */
+  /* height: 50%; */
+  /* border-radius: 100px; */
+}
+.cardHeader:hover img{
+  border-radius: 0  ;
 }
 .cardHeader:hover p {
   color: rgb(188, 119, 66);
@@ -206,17 +212,20 @@
   font-family: "PT Sans", sans-serif;
 }
 .serviceTitle {
-  padding: 5px 0;
+  /* font-weight: 500; */
+  /* padding: 5px 0; */
+}
+.ant-collapse {
+  background-color: transparent !important;
 }
 .ant-collapse-item {
-  /* border: 2px solid red !important; */
-
   border-radius: 10px !important;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  /* background-color: transparent !important; */
   /* background-color: rgba(245, 245, 245, 0.906); */
   background-color: white;
   transition: 0.5s;
@@ -238,10 +247,12 @@
 }
 .allServicesSection {
   background-image: url(/images/4872987.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 .stackCardCollapse ul li {
-    font-size: 16px;
-    font-weight: 550 !important;
+  font-size: 16px;
+  font-weight: 550 !important;
 }
 @media (max-width: 769px) {
   .AnimatedStackCards {

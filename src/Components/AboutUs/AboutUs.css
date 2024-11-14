@@ -1,6 +1,7 @@
 #servicesSection {
   background-color: whitesmoke;
   background-image: url("/images/4940019.jpg");
+  background-attachment: fixed;
 }
 
 .servicesiconbox {

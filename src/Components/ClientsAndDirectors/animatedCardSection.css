@@ -1,4 +1,5 @@
 #ClientsAndDirectorsSection{
     background-image: url('/images/4916671.jpg');
     background-size: cover;
+    background-attachment: fixed;
 }

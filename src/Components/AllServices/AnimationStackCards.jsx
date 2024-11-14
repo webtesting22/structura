@@ -259,7 +259,7 @@ const AnimatedStackCards = () => {
                   header={
                     <div className="cardHeader">
                       <img src={card.img} alt={card.serviceTitle} width={50} />
-                      <h4 className="serviceTitle">{card.serviceTitle}</h4>
+                      <p className="serviceTitle">{card.serviceTitle}</p>
                     </div>
                   }
                   key={card.id}
