@@ -230,15 +230,18 @@
 }
 .ant-collapse-item:hover {
   background-color: rgba(255, 255, 255, 0.579);
-  
+
   transition: background 0.5s !important;
-  
 }
 .ant-collapse-header:hover .cardHeader h4 {
   color: rgb(188, 119, 66);
 }
-.allServicesSection{
-    background-image: url(/images/4872987.jpg);
+.allServicesSection {
+  background-image: url(/images/4872987.jpg);
+}
+.stackCardCollapse ul li {
+    font-size: 16px;
+    font-weight: 550 !important;
 }
 @media (max-width: 769px) {
   .AnimatedStackCards {
