@@ -77,7 +77,9 @@
     rotate: -45deg;
     transition: .5s;
 }
-
+.animatedCardSection{
+    margin: 1rem 0;
+}
 @media (max-width:769px) {
     .animatedCardContainer {
         height: 100%;
@@ -92,5 +94,10 @@
         position: relative;
         transition: .5s;
         margin: 20px 0px;
+    }
+}
+@media (max-width:576px){
+    .animatedCardSection{
+        margin: 2rem 0;
     }
 }

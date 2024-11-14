@@ -183,13 +183,11 @@
         margin: 0;
     }
 } */
-
 .AnimatedStackCards {
   padding: 2rem 6rem;
-  /* background-image: url('../AnimatedHoverableCard/10.png'); */
-  /* background-size: cover; */
-  /* background-color: rgba(255, 255, 255, 0.454); */
+  position: relative;
 }
+
 .cardHeader {
   width: 100%;
   display: flex;
@@ -199,9 +197,10 @@
 }
 .cardHeader img {
   padding: 10px 0;
+  transition: 0.5s;
 }
-.cardHeader:hover p{
-    color: rgb(188,119,66);
+.cardHeader:hover p {
+  color: rgb(188, 119, 66);
 }
 .stackCardCollapse {
   font-family: "PT Sans", sans-serif;
@@ -211,30 +210,35 @@
 }
 .ant-collapse-item {
   /* border: 2px solid red !important; */
+
   border-radius: 10px !important;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  
   overflow: hidden;
-  background-color:rgba(245, 245, 245, 0.906);
+  /* background-color: rgba(245, 245, 245, 0.906); */
+  background-color: white;
+  transition: 0.5s;
 }
 .ant-collapse-header {
   width: 100% !important;
 }
 .ant-collapse-header:hover .cardHeader img {
-  /* transform: scale(1.1); */
-  transition: transform 0.5s ease-in-out ;
-  /* overflow: hidden; */
+  transition: transform 0.5s ease-in-out;
   transform: rotateY(180deg);
 }
-.ant-collapse-item:hover{
-    background-color: whitesmoke;
-    transition:  0.5s;
+.ant-collapse-item:hover {
+  background-color: rgba(255, 255, 255, 0.579);
+  
+  transition: background 0.5s !important;
+  
 }
-.ant-collapse-header:hover .cardHeader h4{
-    color: rgb(188,119,66);
+.ant-collapse-header:hover .cardHeader h4 {
+  color: rgb(188, 119, 66);
+}
+.allServicesSection{
+    background-image: url(/images/4872987.jpg);
 }
 @media (max-width: 769px) {
   .AnimatedStackCards {

@@ -1,5 +1,6 @@
 #servicesSection {
   background-color: whitesmoke;
+  background-image: url("/images/4940019.jpg");
 }
 
 .servicesiconbox {
@@ -74,8 +75,11 @@
   }
 }
 .New-About {
-  padding: 0rem 0rem;
-  background-image: url('/images/');
+  /* padding: 1.5rem 0rem; */
+  /* padding-top: 1.5rem; */
+  /* background-image: url("/images/4940019.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 @media (max-width: 700px) {
   .servicesCards {

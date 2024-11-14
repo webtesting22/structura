@@ -46,6 +46,10 @@ const AboutUs = () => {
 
                     {/* <br /><br /> */}
                     <div className="New-About">
+                    <div className="Smalltagline">
+                    
+                        <h4 className="sectionHeading"><div></div>About</h4>
+                    </div>
                     <h1 className='bigHeading' data-aos="fade-up" data-aos-duration="1000">About Us</h1>
 
                         <NewAbout />
@@ -85,8 +89,8 @@ const AboutUs = () => {
                         </span>
                     </div>
                 </div> */}
-                <div className="sectionPadding"></div>
-                <div className="sectionPadding"></div>
+                <div className="sectionPadding mobileNone"></div>
+                <div className="sectionPadding mobileNone"></div>
                 {/* <h1 data-aos="fade-up" className="bigHeading"
                         data-aos-duration="1000">Industries</h1>
                 <BoxCarousalContainer /> */}

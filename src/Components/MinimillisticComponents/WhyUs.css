@@ -126,9 +126,10 @@
     }
 
     .left-column {
-        margin-top: 1rem;
+        margin-top: 0rem;
         margin-right: 0px;
-        padding: 20px;
+        /* padding: 20px; */
+        padding: 10px 20px;
     }
 
     .left-column .contentContainer {

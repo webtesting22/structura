@@ -12,8 +12,8 @@ const NewAbout = () => {
             <img src="/images/ProjectsImages/HighRiseBuilding/MajesticSquare/05.jpg" />
           </div>
         </Col>
-        <Col lg={1} />
-        <Col lg={12} md={24} data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200">
+        <Col lg={1} md={0} />
+        <Col lg={13} md={24} data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200">
           <div className='About-content'>
 
             {/* <br></br> */}
@@ -41,12 +41,12 @@ const NewAbout = () => {
             <p>Structura Consultants is a premier outsourcing company specializing in CAD drafting services. We are a dedicated and
               professional team committed to excellence in every project. Our guiding principles—superior quality, unwavering integrity, and
               timely delivery—are deeply embedded in our services, earning us a distinguished reputation and fostering long-lasting client
-              relationships</p>
-            <p>
+              relationships.</p>
+            <p><br />
               Our flexible working strategy enables us to build strong, candid relationships with our clients. We take immense pride in our work,
               approaching each task with a dynamic perspective and a problem-solving mindset. Our commitment is to deliver top-quality
               results while continuously expanding our services to meet the ever-growing demands of the industry.
-            </p>
+            </p><br />
             <p>
               Our team of expert designers and drafters collaborates closely with architects, engineers, contractors, and design professionals
               to provide high-quality drafting work and production-ready 2D CAD drawings. In addition to drafting and drawings, we offer
@@ -57,7 +57,7 @@ const NewAbout = () => {
 
           </div>
         </Col>
-        <Col lg={1} />
+        <Col lg={1} md={0} />
 
         <Col lg={10} md={24} data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200">
           <div className='About-img'>

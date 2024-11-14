@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import { Row, Col } from "antd";
 import ClientCard from "./ClientCard";
@@ -11,7 +11,7 @@ import ShamitGuptaImg from "/images/DirectorImages/ShamitGupta1.jpg";
 const ClientsAndDirectors = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
     const routeLinks = [
         // { path: "/", name: "Home" },
         // { path: "/clientsanddirectors", name: "/Director And Clients" },
@@ -39,10 +39,10 @@ const ClientsAndDirectors = () => {
         //     DirectorContent: "Mr. Shamit Gupta has over eighteen years of experience in the field of Architecture and Hospitality Design Documentation. He started his career with Hirsch Bedner Associates, HBA. He has managed over 100 large scale hospitality projects and his immense knowledge has helped SKETS in becoming one of the top firms in Design Documentation space."
         // },
         {
-            image:"",
-            DirectorName:"Saumya Shah",
-            DirectorPosition:"CEO",
-            DirectorContent:"A structural engineer with 3.5 years of experience in the field of structural designing and currently working as structural designer. Owner of STRUCTURA-Design Consultants at Ahmedabad and also associated with Nirman developers for their design and construction of buildings. A quick, analytical and logical thinker with specific interest in restoration and retrofitting of old masonry buildings along with designing RCC and Steel structures.",
+            image: "",
+            DirectorName: "Saumya Shah",
+            DirectorPosition: "CEO",
+            DirectorContent: "Saumya Shah, an experienced structural engineer and founder of Structura-Design Consultants in Ahmedabad, specializes in structural design, restoration, and retrofitting. With 3.5 years in the field, he has led projects for high-rise buildings, industrial structures, and historic renovations. Saumya holds multiple academic awards, including a Gold Medal from GICEA and distinctions from CEPT University, where he also served as a teaching associate. His expertise includes AutoCAD, STAAD.Pro, MATLAB, SAP 2000, and REVIT, and he collaborates with Nirman Developers on residential and commercial projects.",
         }
 
     ]
@@ -59,10 +59,22 @@ const ClientsAndDirectors = () => {
                     data-aos-duration="1000">Boards Of Directors</h1>
                 <br /><br />
                 <div className="BoardAndDirectorsContainer">
-                    <Row>
-                        {DirectorsContent.map((item, index) => (
-                            <Col lg={8} md={12} key={index}> 
-                                <div className="projectsCardDesigns" data-aos="fade-up" data-aos-duration="1000">
+
+                    {DirectorsContent.map((item, index) => (
+                        <Row>
+                            <Col lg={8} md={12} key={index}>
+                                <div className="directorImage">
+                                    <img src={item.image} alt="Director Photo Here"/>
+                                </div>
+                            </Col>
+                            <Col lg={16} md={12} key={index}>
+                                <div className="directorContent">
+                                    <h2>{item.DirectorName}</h2><br/>
+                                    <h3>{item.DirectorPosition}</h3><br/>
+                                    <p>{item.DirectorContent}</p><br/>
+                                </div>
+                            </Col>
+                            {/* <div className="projectsCardDesigns" data-aos="fade-up" data-aos-duration="1000">
                                     <div className="cardImage">
                                         <img src={item.image} alt={item.cardTitle} />
                                     </div>
@@ -70,22 +82,19 @@ const ClientsAndDirectors = () => {
                                         <h2>{item.DirectorName}</h2>
                                         <br />
                                         <p style={{minHeight:"180px"}}>{item.DirectorContent}</p>
-                                        {/* Add other content here */}
                                     </div>
-                                    {/* <div className="arrowIcon">
-                                    <i className='bx bx-right-arrow-alt'></i> 
-                                </div> */}
                                     <hr />
-                                </div>
-                            </Col>
-                        ))}
+                                </div> */}
 
-                    </Row>
+
+                        </Row>
+                    ))}
+
 
                 </div>
 
 
-            </section>
+            </section >
             {/* <section>
                 <div id="clientSection">
                     <h1 className="bigHeading">Our Clients</h1>

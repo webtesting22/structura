@@ -89,8 +89,8 @@ const WhyUsComponent = () => {
 
                         {/* <div className="container"> */}
                         <div className='leftSideContainer'>
-                            <div className="sectionPadding"></div>
-                            <div className="sectionPadding"></div>
+                            <div className="sectionPadding mobileNone"></div>
+                            <div className="sectionPadding mobileNone"></div>
 
                             <div className={`left-column ${isSticky ? 'sticky' : ''}`}>
 

@@ -14,7 +14,7 @@ const Footer = () => {
                 <div className="footerSection">
                     <div>
                         <Row>
-                            <Col lg={124}>
+                            <Col lg={24}>
                                 <div className="FooterRebuild">
                                     <img src={StructuraLogo} alt="" />
                                     <br /><br />

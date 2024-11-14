@@ -15,7 +15,7 @@ const AllServices = () => {
     ];
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
     const BIM = useRef(null);
     const REVIT = useRef(null);
     const INTERIOR = useRef(null);
@@ -68,13 +68,13 @@ const AllServices = () => {
             // iconImage: ArchitectureIcon,
             Title: "Architectural CAD Drafting",
             Descriptions: "SKETS has completed over 400 Architectural projects using both Revit and AutoCad. We also have a dedicated studio working on Structural projects.",
-           
+
         },
         {
             // iconImage: VisualizationIcon,
             Title: "Structural CAD Drafting",
             Descriptions: "Our knowledge in Architecture and Interiors makes us one of the best in this space. We are experts in producing Interactive flythroughs & walkthroughs in Unreal Engine.",
-        
+
 
         },
         {
@@ -112,13 +112,14 @@ const AllServices = () => {
 
     return (
         <>
-            <StructuraCommonHero image={Image} text="Your Partner in Precision Design and Visualization" routeLinks={routeLinks} />
-            <section>
-            <h1 className="bigHeading">Our Services</h1>
-            <AnimatedStackCards /> 
+            <StructuraCommonHero image={Image} text="Expert Services, Exceptional Results"
+                routeLinks={routeLinks} />
+            <section className="allServicesSection">
+                <h1 className="bigHeading">Our Services</h1>
+                <AnimatedStackCards />
             </section>
-            
-             {/* <section>
+
+            {/* <section>
                 <div className="Smalltagline">
                     <h4 className="sectionHeading"><div></div>All Services</h4>
                     <h1 data-aos="fade-up" className="bigHeading"
@@ -342,7 +343,7 @@ const AllServices = () => {
                         quality excellence.</p>
                     </div>
                 </div> */}
-            
+
         </>
     );
 };
