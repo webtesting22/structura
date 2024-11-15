@@ -1,97 +1,92 @@
 .Herosectionadjust {
-    display: flex;
-    height: 100vh;
-    position: relative;
-
+  display: flex;
+  height: 100vh;
+  position: relative;
 }
 
 #StructuraHeroSection {
-    padding: 0px;
+  padding: 0px;
 }
-
 
 /* leftsidecontainer css -----------------------------------------*/
 .left-side-container {
-    width: 30%;
-    height: 100%;
-    position: relative;
-    background-color: rgba(0, 0, 0);
-    /* background: url(/images/bg3.jpg); */
-    background-size: cover;
-    background-position: center;
-
+  width: 30%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0);
+  /* background: url(/images/bg3.jpg); */
+  background-size: cover;
+  background-position: center;
 }
 
 .content-container {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 3;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 3;
 }
 
 .content-container .content {
-    position: absolute;
-    left: 50px;
-    width: 50%;
+  position: absolute;
+  left: 50px;
+  width: 50%;
 }
 
-
 .content-container .content h4 {
-    /* text-align: center; */
-    font-size: 3rem;
-    color: white;
-    font-weight: 300;
+  /* text-align: center; */
+  font-size: 3rem;
+  color: white;
+  font-weight: 300;
 }
 
 .scrollDownBtnContainer {
-    height: 50px;
-    width: 50px;
-    background-color: transparent;
-    border-radius: 50%;
-    position: absolute;
-    left: 200px;
-    margin-top: -20px;
-    /* bottom: 200px;  */
-    z-index: 6666;
-    border: 1px solid white;
-    animation: scrollAnimation 2s infinite;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  left: 200px;
+  margin-top: -20px;
+  /* bottom: 200px;  */
+  z-index: 6666;
+  border: 1px solid white;
+  animation: scrollAnimation 2s infinite;
 }
 
 @keyframes scrollAnimation {
-    0% {
-        top: calc(65% - 5px);
-        /* Initial position */
-    }
+  0% {
+    top: calc(65% - 5px);
+    /* Initial position */
+  }
 
-    50% {
-        top: calc(65% + 5px);
-        /* Move down by 5px halfway through the animation */
-    }
+  50% {
+    top: calc(65% + 5px);
+    /* Move down by 5px halfway through the animation */
+  }
 
-    100% {
-        top: calc(65% - 5px);
-        /* Return to the initial position at the end */
-    }
+  100% {
+    top: calc(65% - 5px);
+    /* Return to the initial position at the end */
+  }
 }
 
 .fade {
-    transition: opacity 1s ease-in-out;
-    opacity: 1;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
 }
 
 .fade-exit {
-    opacity: 0;
+  opacity: 0;
 }
-
 
 /* rightsidecontainer css -----------------------------------------*/
 .right-side-image-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: .5s;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 0.5s;
 }
 
 /* .right-side-image-container img{
@@ -99,164 +94,163 @@
 } */
 .right-side-image-container .imageOverlay,
 .left-side-container .imageOverlay {
-    height: 100vh;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.587);
+}
+
+.slidesImg-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.zoom-animation {
+  animation: zoomInOut 30s infinite alternate;
+  /* Zoom in and out animation for 3s with infinite loop */
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+    /* Initial scale */
+  }
+
+  50% {
+    transform: scale(1.1);
+    /* Zoom in halfway through the animation */
+  }
+
+  100% {
+    transform: scale(1);
+    /* Return to original scale at the end */
+  }
+}
+
+.slidesImg-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.view-only-Mobile {
+  display: none;
+}
+
+#MySwiper {
+  height: 100vh;
+}
+
+.BottomContactContainer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  /* padding: 0px; */
+  display: flex;
+  justify-content: space-between;
+  color: #c2c2c2a3;
+  font-size: 13px;
+}
+
+.BottomContactContainer a {
+  color: #c2c2c2a3;
+}
+
+.BottomContactContainer > div {
+  padding: 0px 30px;
+}
+
+.BottomContactContainer > div h4 {
+  text-align: center;
+}
+
+.BottomContactContainer > div h4 span {
+  color: white;
+}
+
+.BottomContactContainer > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+@media (max-width: 800px) {
+  .content-container .content h4 {
+    font-size: 1.2rem;
+  }
+
+  .content-container .content {
+    width: 90%;
+    left: 10px;
+    bottom: 50px;
+  }
+
+  .scrollDownBtnContainer {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+    margin-top: 10px;
+    display: none;
+    /* bottom: 200px;  */
+    z-index: 6666;
+    border: 1px solid white;
+    animation: scrollAnimation 2s infinite;
+  }
+
+  .Herosectionadjust {
+    display: flex;
+    height: 100%;
+    position: relative;
+  }
+
+  .BottomContactContainer {
+    display: none;
+  }
+
+  .right-side-image-container .imageOverlay,
+  .left-side-container .imageOverlay {
+    height: 40vh;
     width: 100%;
     position: absolute;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.587);
-}
+  }
 
-
-.slidesImg-container {
-    height: 100vh;
+  .slidesImg-container {
+    height: 40vh;
     overflow: hidden;
-}
+  }
 
-.zoom-animation {
-    animation: zoomInOut 30s infinite alternate;
-    /* Zoom in and out animation for 3s with infinite loop */
-}
+  #MySwiper {
+    height: 40vh;
+  }
 
-@keyframes zoomInOut {
-    0% {
-        transform: scale(1);
-        /* Initial scale */
-    }
-
-    50% {
-        transform: scale(1.1);
-        /* Zoom in halfway through the animation */
-    }
-
-    100% {
-        transform: scale(1);
-        /* Return to original scale at the end */
-    }
-}
-
-.slidesImg-container img {
-    width: 100%;
-    height: 100%;
-}
-
-.view-only-Mobile {
+  .left-side-container {
     display: none;
-}
+    width: 0px;
+    transition: 0.5s;
+  }
 
-#MySwiper {
-    height: 100vh;
-}
-
-.BottomContactContainer {
-    position: absolute;
-    bottom: 10px;
+  .right-side-image-container {
     width: 100%;
-    /* padding: 0px; */
-    display: flex;
-    justify-content: space-between;
-    color: #c2c2c2a3;
-    font-size: 13px;
+    transition: 0.5s;
+  }
 }
 
-.BottomContactContainer a {
-    color: #c2c2c2a3;
+
+.ant-modal .ant-modal-content {
+  /* display: flex; */
+  padding: 0px !important;
 }
-
-.BottomContactContainer>div {
-    padding: 0px 30px;
+.ant-modal .ant-modal-body {
+  display: flex;
 }
-
-.BottomContactContainer>div h4 {
-    text-align: center;
+.ant-modal .ant-modal-close {
+  color: white;
 }
-
-.BottomContactContainer>div h4 span {
-    color: white;
-}
-
-.BottomContactContainer>div:last-child {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
-
-@media (max-width:800px) {
-    .content-container .content h4 {
-        font-size: 1.2rem;
-    }
-
-    .content-container .content {
-        width: 90%;
-        left: 10px;
-        bottom: 50px;
-    }
-
-    .scrollDownBtnContainer {
-        height: 30px;
-        width: 30px;
-        background-color: transparent;
-        border-radius: 50%;
-        position: absolute;
-        left: 40px;
-        margin-top: 10px;
-        display: none;
-        /* bottom: 200px;  */
-        z-index: 6666;
-        border: 1px solid white;
-        animation: scrollAnimation 2s infinite;
-    }
-
-    .Herosectionadjust {
-        display: flex;
-        height: 100%;
-        position: relative;
-
-    }
-
-    .BottomContactContainer {
-        display: none;
-    }
-
-    .right-side-image-container .imageOverlay,
-    .left-side-container .imageOverlay {
-        height: 40vh;
-        width: 100%;
-        position: absolute;
-        z-index: 2;
-        background-color: rgba(0, 0, 0, 0.587);
-    }
-
-    .slidesImg-container {
-        height: 40vh;
-        overflow: hidden;
-    }
-
-    #MySwiper {
-        height: 40vh;
-    }
-
-    .left-side-container {
-        display: none;
-        width: 0px;
-        transition: .5s;
-    }
-
-    .right-side-image-container {
-        width: 100%;
-        transition: .5s;
-    }
-}
-
-.ant-modal .ant-modal-content{
-    /* display: flex; */
-    padding: 0px !important;
-}
-.ant-modal .ant-modal-body{
-    display: flex;
-}
-.ant-modal .ant-modal-close{
-    color: white;
-}
-.ant-modal .ant-modal-close:hover{
-    color: white;
+.ant-modal .ant-modal-close:hover {
+  color: white;
 }

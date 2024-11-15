@@ -46,11 +46,11 @@ const AboutUs = () => {
 
                     {/* <br /><br /> */}
                     <div className="New-About">
-                    <div className="Smalltagline">
-                    
-                        <h4 className="sectionHeading"><div></div>About</h4>
-                    </div>
-                    <h1 className='bigHeading' data-aos="fade-up" data-aos-duration="1000">About Us</h1>
+                        <div className="Smalltagline">
+
+                            <h4 className="sectionHeading"><div></div>About</h4>
+                        </div>
+                        <h1 className='bigHeading' data-aos="fade-up" data-aos-duration="1000">About Us</h1>
 
                         <NewAbout />
                     </div>

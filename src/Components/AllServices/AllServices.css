@@ -191,29 +191,43 @@
 .cardHeader {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px 0;
+  background-color: white; /* padding-left: 20px; */
+  transition: 0.5s;
+
 }
 .cardHeader img {
-  padding: 10px 0;
+  padding: 10px 20px;
   transition: 0.5s;
-  /* width: 100%; */
-  /* height: 50%; */
-  /* border-radius: 100px; */
 }
-.cardHeader:hover img{
-  border-radius: 0  ;
+.cardHeader:hover {
+  cursor: pointer;
+  padding: 20px 0;
+  transition: 0.5s;
+}
+.cardHeader:hover img {
+  border-radius: 0;
+  transform: rotateY(180deg);
+  transition: 0.5s;
+}
+.serviceTitle {
+  color: rgb(188, 119, 66);
 }
 .cardHeader:hover p {
-  color: rgb(188, 119, 66);
+  color: black;
 }
 .stackCardCollapse {
   font-family: "PT Sans", sans-serif;
 }
-.serviceTitle {
-  /* font-weight: 500; */
-  /* padding: 5px 0; */
+.AnimatedStackCards .ant-row .ant-col:nth-child(2) .cardHeader,
+.AnimatedStackCards .ant-row .ant-col:nth-child(3) .cardHeader,
+.AnimatedStackCards .ant-row .ant-col:nth-child(6) .cardHeader,
+.AnimatedStackCards .ant-row .ant-col:nth-child(7) .cardHeader {
+  background-color: whitesmoke;
 }
 .ant-collapse {
   background-color: transparent !important;
@@ -230,21 +244,8 @@
   background-color: white;
   transition: 0.5s;
 }
-.ant-collapse-header {
-  width: 100% !important;
-}
-.ant-collapse-header:hover .cardHeader img {
-  transition: transform 0.5s ease-in-out;
-  transform: rotateY(180deg);
-}
-.ant-collapse-item:hover {
-  background-color: rgba(255, 255, 255, 0.579);
 
-  transition: background 0.5s !important;
-}
-.ant-collapse-header:hover .cardHeader h4 {
-  color: rgb(188, 119, 66);
-}
+
 .allServicesSection {
   background-image: url(/images/4872987.jpg);
   background-size: cover;
@@ -254,11 +255,53 @@
   font-size: 16px;
   font-weight: 550 !important;
 }
+.serviceModal {
+  padding: 30px;
+}
+.serviceModal p {
+  text-align: justify;
+}
+.serviceModal ul li {
+  font-size: 16px;
+  font-weight: 550 !important;
+}
+.cardHeader {
+  display: flex;
+}
+.ant-modal .ant-modal-close {
+  color: black;
+}
+.even {
+  background-color: whitesmoke;
+}
+.serviceTagline{
+  font-size: 15px;
+}
+
 @media (max-width: 769px) {
+  .cardHeader img{
+    padding: 10px 20px;
+  }
   .AnimatedStackCards {
     padding: 1rem 2rem;
   }
+  .serviceTitle{
+    padding: 0 10px;
+  }
+  .serviceTagline{
+    font-size: 13px;
+    padding: 0 10px;
+  }
   .ant-row {
     margin: 0;
+  }
+  .serviceModal .serviceTitle{
+    padding:10px 0;
+  }
+}
+@media (max-width:576px){
+  .cardHeader img{
+    padding:10px;
+    padding-left: 20px;
   }
 }
