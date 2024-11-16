@@ -15,8 +15,6 @@ const NewAbout = () => {
         <Col lg={1} md={0} />
         <Col lg={13} md={24} data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200">
           <div className='About-content'>
-
-            {/* <br></br> */}
             <p>We focus on designing and restoring the timeless values of buildings.</p><br></br>
             <p>Structura Consultants, a distinguished privately-owned firm with an
               eight-year legacy, excels in design and drafting services. As a venture
@@ -58,14 +56,12 @@ const NewAbout = () => {
           </div>
         </Col>
         <Col lg={1} md={0} />
-
         <Col lg={10} md={24} data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200">
           <div className='About-img'>
             <img src="/images/ProjectsImages/HighRiseBuilding/Nirmansatva/01.jpg" />
           </div>
         </Col>
       </Row>
-
       <Row className='About-Row row3'>
         <Col lg={10} md={24} data-aos-duration="1000" data-aos="fade-up" >
           <div className='About-img'>
@@ -73,7 +69,6 @@ const NewAbout = () => {
           </div>
         </Col>
         <Col lg={1} />
-
         <Col lg={13} md={24} data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200">
           <div className='About-content'>
             <h1 className='bigHeading'>Vision</h1>
@@ -85,7 +80,6 @@ const NewAbout = () => {
               industry. Through continuous innovation and leveraging the best industry
               standard tools, we strive to deliver exceptional 3D visualizations and
               comprehensive design services, ensuring excellence in every project.</p>
-
           </div>
         </Col>
       </Row>

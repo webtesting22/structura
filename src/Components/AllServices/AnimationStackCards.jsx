@@ -9,23 +9,13 @@ import icon6 from "./Images/RS.png";
 import icon7 from "./Images/S-BIM.png";
 import icon8 from "./Images/SCD.png";
 import icon9 from "./Images/structural.png";
-import { Collapse, Row, Col, Image, theme, Modal } from "antd";
+import {  Row, Col,   Modal } from "antd";
 
-const { Panel } = Collapse;
 
 const AnimatedStackCards = () => {
-  const [activeKey, setActiveKey] = useState(null);
-  const { token } = theme.useToken();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
 
-  const panelStyle = {
-    // marginBottom: 24,
-    background: token.colorFillAlter,
-    borderRadius: token.borderRadiusMD,
-
-    width: 100,
-  };
   const StackCards = [
     {
       key: "1",
@@ -44,7 +34,6 @@ const AnimatedStackCards = () => {
       ],
       serviceTagline:
         "Designing resilient structures that stand the test of time and meet the highest standards of safety.",
-      style: panelStyle,
     },
     {
       key: "2",
@@ -62,7 +51,6 @@ const AnimatedStackCards = () => {
       ],
       serviceTagline:
         "Efficient and integrated MEP systems for optimal comfort and performance.",
-      style: panelStyle,
     },
     // {
     //     id: "InteriorDesign",
@@ -91,7 +79,6 @@ const AnimatedStackCards = () => {
         "Furniture Layouts",
         "Scan-to-CAD Drafting Services",
       ],
-      style: panelStyle,
       serviceTagline:
         "Transforming ideas into detailed drawings that bring projects to life.",
     },
@@ -109,7 +96,6 @@ const AnimatedStackCards = () => {
         "Fire Protection CAD Drawings",
         "MEP Detail Drawings",
       ],
-      style: panelStyle,
       serviceTagline:
         "Precision-driven MEP drawings for seamless construction management.",
     },
@@ -130,7 +116,6 @@ const AnimatedStackCards = () => {
         "Connection Sketches",
         "Reinforcement Detailing",
       ],
-      style: panelStyle,
       serviceTagline:
         "Accurate drafting solutions tailored to meet structural standards.",
     },
@@ -148,7 +133,6 @@ const AnimatedStackCards = () => {
         "Rework Minimization",
         "Efficient Construction Workflow",
       ],
-      style: panelStyle,
       serviceTagline:
         "3D BIM solutions that streamline the design-to-construction process.",
     },
@@ -166,7 +150,6 @@ const AnimatedStackCards = () => {
         "Lifecycle Project Management",
         "Precision Engineering",
       ],
-      style: panelStyle,
       serviceTagline:
         "Comprehensive BIM models for precision and lifecycle management.",
     },
@@ -184,23 +167,10 @@ const AnimatedStackCards = () => {
         "Electrical BIM Modeling",
         "Piping Modeling",
       ],
-      style: panelStyle,
       serviceTagline:
         "Integrated MEP models that simplify on-site coordination and installation.",
     },
-    // {
-    //     id: "FacadeBim",
-    //     img: img10,
-    //     serviceTitle: "FACADE BIM SERVICES",
-    //     serviceDescription: "We specialize in creating comprehensive 2D and 3D drawings, along with 3D to 5D BIM models, to enhance building data management, visualization, and BOQ calculations. Our facade BIM services encompass glazing, cladding, prefabricated metals, canopies, doors, windows, and skylights, meeting diverse project needs.",
-    //     servicePoints: [
-    //         "Glazing and Cladding",
-    //         "Prefabricated Metals",
-    //         "Canopies, Doors, and Windows",
-    //         "Skylights",
-    //         "BOQ Calculation"
-    //     ]
-    // },
+
     {
       key: "9",
       id: "Rendering",
@@ -214,12 +184,10 @@ const AnimatedStackCards = () => {
         "3D Animation/Walkthrough Services",
         "Site Plan 3D Rendering",
       ],
-      style: panelStyle,
       serviceTagline:
         "Immersive 3D visuals that bring your architectural vision to reality.",
     },
   ];
-  //   const cards=StackCards(panelStyle);
   const handleOpenModal = (card) => {
     setSelectedCard(card);
     setIsModalVisible(true);
@@ -231,96 +199,29 @@ const AnimatedStackCards = () => {
   };
   return (
     <>
-      {/* <div className="AnimatedStackCards">
-                {StackCards.map((card, index) => (
-                    <div key={index} className="accordion-item">
-                        <img
-                            src={card.img}
-                            alt=""
-                            className="accordion-image"
-                            onClick={() => handleImageClick(index)}
-                        />
-                        <p className="accordion-text">{card.serviceTitle}</p>
-                        <div className={`accordion-content ${activeKey === index ? 'show' : ''}`}>
-                            {activeKey === index && (
-                                <Collapse
-                                    accordion
-                                    activeKey={`${index}`}
-                                    expandIconPosition={null} // Hide the default arrow
-                                >
-                                    <Panel header={card.serviceTitle} key={index}>
-                                        <ul className="accordion-list">
-                                            {card.servicePoints.map((point, pointIndex) => (
-                                                <li key={pointIndex}>{point}</li>
-                                            ))}
-                                        </ul>
-                                    </Panel>
-                                </Collapse>
-                            )}
-                        </div>
-                    </div>
-                ))}
-
-            </div> */}
       <div className="AnimatedStackCards">
         <Row gutter={[16, 16]}>
           {StackCards.map((card, index) => (
-            <>
-              {index === 2 ? (
-                // If the index is even, place the card on the right with an empty column on the left
-                <>
-                  <Col
-                  
-                    md={24}
-                    lg={12}
-                    key={index}
-                    data-aos-delay={index * 200}
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                  >
-                    <div
-                      className="cardHeader even"
-                      onClick={() => handleOpenModal(card)}
-                    >
-                      <img src={card.img} alt={card.serviceTitle} width={50} />
-                      <div>
-                        <p className="serviceTitle">{card.serviceTitle}</p>
-                        <p className="serviceTagline">{card.serviceTagline}</p>
-                      </div>
-                    </div>
-                  </Col>
-                </>
-              ) : (
-                // If the index is odd, place the card on the left with an empty column on the right
-                <>
-                  <Col
-                   
-                    md={24}
-                    lg={12}
-                    key={index}
-                    data-aos-delay={index * 200}
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                  >
-                    <div
-                      className="cardHeader odd"
-                      onClick={() => handleOpenModal(card)}
-                    >
-                      <img src={card.img} alt={card.serviceTitle} width={50} />
-                      <div>
-                        <p className="serviceTitle">{card.serviceTitle}</p>
-                        <p className="serviceTagline">{card.serviceTagline}</p>
-                      </div>{" "}
-                    </div>
-                  </Col>
-                </>
-              )}
-            </>
+            <Col
+              md={24}
+              lg={12}
+              key={index}
+              data-aos-delay={index * 200}
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div className="cardHeader" onClick={() => handleOpenModal(card)}>
+                <img src={card.img} alt={card.serviceTitle} width={50} />
+                <div>
+                  <p className="serviceTitle">{card.serviceTitle}</p>
+                  <p className="serviceTagline">{card.serviceTagline}</p>
+                </div>
+              </div>
+            </Col>
           ))}
         </Row>
       </div>
       <Modal
-        // title={selectedCard?.serviceTitle}
         visible={isModalVisible}
         onCancel={handleCloseModal}
         footer={null}
@@ -346,33 +247,4 @@ const AnimatedStackCards = () => {
 };
 export default AnimatedStackCards;
 {
-  /* <Collapse
-              
-                bordered={false}
-                expandIcon={() => null} // Hides the default arrow icon
-                className="stackCardCollapse"
-                accordion
-                activeKey={activeKey}
-                onChange={(key) => setActiveKey(key)}
-              >
-                <Panel
-                  header={
-                    <div
-                      className="cardHeader"
-                      onClick={() => handleOpenModal(card)}
-                    >
-                      <img src={card.img} alt={card.serviceTitle} width={50} />
-                      <p className="serviceTitle">{card.serviceTitle}</p>
-                    </div>
-                  }
-                  key={card.id}
-                >
-                  {/* <p>{card.serviceDescription}</p>
-                  <ul>
-                    {card.servicePoints.map((point, i) => (
-                      <li key={i}>{point}</li>
-                    ))}
-                  </ul> 
-                </Panel>
-              </Collapse> */
 }

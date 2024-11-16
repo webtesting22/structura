@@ -1,188 +1,3 @@
-/* .AllServicesSection {
-    background-color: transparent;
-    display: flex;
-    
-}
-
-.AllServicesSection .LeftSideAnimatedLinks {
-    width: 10%;
-    
-    height: 50vh;
-    margin: 10px;
-    position: sticky;
-    top: 30%;
-    
-}
-
-.AllServicesSection .AllServicesdata {
-    width: 90%;
-    
-    margin: 10px;
-    padding-left: 5rem;
-}
-
-.leftSideLinksContainer ul {
-    padding: 0px;
-}
-
-.LeftSideAnimatedLinks ul {
-    padding: 0px;
-    list-style: none;
-    margin-left: 10px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-}
-
-.LeftSideAnimatedLinks ul li {
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.leftSideLinksContainer ul li {
-    list-style: none;
-    margin: 20px 0px;
-}
-
-.leftSideProgressContainer {
-    display: flex;
-}
-
-.leftSideProgressContainer .ProgressBarPageScroll {
-    height: 50vh;
-    width: 5px;
-    background-color: red;
-}
-
-.progressbar {
-    width: 4px;
-    border-radius: 10px;
-    height: 50vh;
-    background-color: rgb(188, 119, 66);
-    position: absolute;
-
-}
-
-.awards-container {
-    margin-left: 260px;
-}
-
-.AllServicesdata>div {
-    margin: 1rem 0rem;
-}
-
-.PaddingAdjust {
-    padding: 2rem 3rem;
-}
-
-
-
-.StackCardContainer {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    transition: filter 0.5s ease;
-    
-}
-
-.StackCardContainer img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.StackCardContainer .Imageoverlay {
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.53);
-    
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    transition: background-color 0.5s ease;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
-        rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-
-
-.StackCardContainer.dark {
-    filter: brightness(0.5);
-    
-}
-
-
-.AnimatedCardContentContainer {
-    position: absolute;
-    z-index: 55;
-    top: 0px;
-    color: white;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.ContentInsideContainer {
-    width: 60%;
-    margin: 20px 30px;
-}
-
-.ContentInsideContainer h4 {
-    font-size: 40px;
-    font-weight: 500;
-}
-
-.ContentInsideContainer ul li,
-.ContentInsideContainer p {
-    color: white;
-    margin: 10px 0px;
-    font-size: 18px;
-}
-.FirstWord {
-    color: rgb(188, 119, 66); 
-}
-
-
-@media (max-width:769px) {
-    .ContentInsideContainer {
-        width: 100%;
-        margin: 20px 10px;
-    }
-    .PaddingAdjust {
-        padding: 0rem;
-    }
-
-    .LeftSideAnimatedLinks {
-        display: none;
-    }
-
-    .AllServicesSection .AllServicesdata {
-        width: 100%;
-        margin: 10px;
-        padding-left: 0rem;
-    }
-
-    .awards-container {
-        width: 100%;
-        margin: 10px 0px;
-    }
-
-    .AllServicesSection {
-        padding: 0;
-        margin: 0;
-    }
-} */
 .AnimatedStackCards {
   padding: 2rem 6rem;
   position: relative;
@@ -191,14 +6,12 @@
 .cardHeader {
   width: 100%;
   display: flex;
-  /* flex-direction: column; */
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding: 10px 0;
-  background-color: white; /* padding-left: 20px; */
+  background-color: white;
   transition: 0.5s;
-
 }
 .cardHeader img {
   padding: 10px 20px;
@@ -220,31 +33,13 @@
 .cardHeader:hover p {
   color: black;
 }
-.stackCardCollapse {
-  font-family: "PT Sans", sans-serif;
-}
+
 .AnimatedStackCards .ant-row .ant-col:nth-child(2) .cardHeader,
 .AnimatedStackCards .ant-row .ant-col:nth-child(3) .cardHeader,
 .AnimatedStackCards .ant-row .ant-col:nth-child(6) .cardHeader,
 .AnimatedStackCards .ant-row .ant-col:nth-child(7) .cardHeader {
   background-color: whitesmoke;
 }
-.ant-collapse {
-  background-color: transparent !important;
-}
-.ant-collapse-item {
-  border-radius: 10px !important;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  overflow: hidden;
-  /* background-color: transparent !important; */
-  /* background-color: rgba(245, 245, 245, 0.906); */
-  background-color: white;
-  transition: 0.5s;
-}
-
 
 .allServicesSection {
   background-image: url(/images/4872987.jpg);
@@ -274,34 +69,49 @@
 .even {
   background-color: whitesmoke;
 }
-.serviceTagline{
+.serviceTagline {
   font-size: 15px;
 }
 
 @media (max-width: 769px) {
-  .cardHeader img{
+  .cardHeader img {
     padding: 10px 20px;
   }
   .AnimatedStackCards {
     padding: 1rem 2rem;
   }
-  .serviceTitle{
+  .serviceTitle {
     padding: 0 10px;
   }
-  .serviceTagline{
+  .serviceTagline {
     font-size: 13px;
     padding: 0 10px;
   }
   .ant-row {
     margin: 0;
   }
-  .serviceModal .serviceTitle{
-    padding:10px 0;
+  .serviceModal .serviceTitle {
+    padding: 10px 0;
   }
 }
-@media (max-width:576px){
-  .cardHeader img{
-    padding:10px;
+@media (max-width: 576px) {
+  .cardHeader img {
+    padding: 10px;
     padding-left: 20px;
+  }
+}
+@media (max-width: 990px) {
+  .AnimatedStackCards .ant-row .ant-col:nth-child(2) .cardHeader,
+  .AnimatedStackCards .ant-row .ant-col:nth-child(4) .cardHeader,
+  .AnimatedStackCards .ant-row .ant-col:nth-child(6) .cardHeader,
+  .AnimatedStackCards .ant-row .ant-col:nth-child(8) .cardHeader {
+    background-color: whitesmoke;
+  }
+  .AnimatedStackCards .ant-row .ant-col:nth-child(1) .cardHeader,
+  .AnimatedStackCards .ant-row .ant-col:nth-child(3) .cardHeader,
+  .AnimatedStackCards .ant-row .ant-col:nth-child(5) .cardHeader,
+  .AnimatedStackCards .ant-row .ant-col:nth-child(7) .cardHeader,
+  .AnimatedStackCards .ant-row .ant-col:nth-child(9) .cardHeader{
+    background-color: white;
   }
 }

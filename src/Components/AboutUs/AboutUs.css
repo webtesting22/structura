@@ -79,8 +79,13 @@
   /* padding: 1.5rem 0rem; */
   /* padding-top: 1.5rem; */
   /* background-image: url("/images/4940019.jpg"); */
+  
   background-size: cover;
   background-repeat: no-repeat;
+
+}
+.expertiseCards{
+  padding-top: 2rem;
 }
 @media (max-width: 700px) {
   .servicesCards {
