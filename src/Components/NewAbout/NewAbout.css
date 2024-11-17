@@ -4,6 +4,7 @@
   /* border-bottom: 1px solid black; */
   border-right: 0.5px solid rgba(0, 0, 0, 0.51);
   border-left: 0.5px solid rgba(0, 0, 0, 0.51);
+  overflow: hidden;
   padding: 2rem 5rem;
 }
 .row1 {

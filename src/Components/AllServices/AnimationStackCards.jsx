@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-// import img1 from "../AnimatedHoverableCard/8.png";
 import icon1 from "./Images/A-BIM.png";
 import icon2 from "./Images/ACD.png";
 import icon3 from "./Images/MEP_CAD.png";
@@ -9,12 +8,18 @@ import icon6 from "./Images/RS.png";
 import icon7 from "./Images/S-BIM.png";
 import icon8 from "./Images/SCD.png";
 import icon9 from "./Images/structural.png";
-import {  Row, Col,   Modal } from "antd";
-
+import { Row, Col, Modal } from "antd";
+import AOS from "aos";
 
 const AnimatedStackCards = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false, // This allows animations to occur more than once
+    });
+  }, []);
 
   const StackCards = [
     {
@@ -34,6 +39,7 @@ const AnimatedStackCards = () => {
       ],
       serviceTagline:
         "Designing resilient structures that stand the test of time and meet the highest standards of safety.",
+      dataAosType: "fade-right",
     },
     {
       key: "2",
@@ -51,20 +57,9 @@ const AnimatedStackCards = () => {
       ],
       serviceTagline:
         "Efficient and integrated MEP systems for optimal comfort and performance.",
+      dataAosType: "fade-left",
     },
-    // {
-    //     id: "InteriorDesign",
-    //     img: img3,
-    //     serviceTitle: "INTERIOR DESIGN",
-    //     serviceDescription: "Our interior design services are crafted to elevate living and working spaces with a focus on functionality and style. From luxurious homes to dynamic commercial spaces, we customize each project to reflect the client's unique vision while ensuring sustainability and eco-friendly practices throughout the design process.",
-    //     servicePoints: [
-    //         "Residential Interiors",
-    //         "Commercial Spaces",
-    //         "Renovation & Remodeling",
-    //         "Furniture and Decor Selection",
-    //         "Sustainable Design Solutions"
-    //     ]
-    // },
+
     {
       key: "3",
       id: "Architecture",
@@ -81,6 +76,7 @@ const AnimatedStackCards = () => {
       ],
       serviceTagline:
         "Transforming ideas into detailed drawings that bring projects to life.",
+      dataAosType: "fade-right",
     },
     {
       key: "4",
@@ -98,6 +94,7 @@ const AnimatedStackCards = () => {
       ],
       serviceTagline:
         "Precision-driven MEP drawings for seamless construction management.",
+      dataAosType: "fade-left",
     },
     {
       key: "5",
@@ -118,6 +115,7 @@ const AnimatedStackCards = () => {
       ],
       serviceTagline:
         "Accurate drafting solutions tailored to meet structural standards.",
+      dataAosType: "fade-right",
     },
     {
       key: "6",
@@ -135,6 +133,7 @@ const AnimatedStackCards = () => {
       ],
       serviceTagline:
         "3D BIM solutions that streamline the design-to-construction process.",
+      dataAosType: "fade-left",
     },
     {
       key: "7",
@@ -152,6 +151,7 @@ const AnimatedStackCards = () => {
       ],
       serviceTagline:
         "Comprehensive BIM models for precision and lifecycle management.",
+      dataAosType: "fade-right",
     },
     {
       key: "8",
@@ -169,6 +169,7 @@ const AnimatedStackCards = () => {
       ],
       serviceTagline:
         "Integrated MEP models that simplify on-site coordination and installation.",
+      dataAosType: "fade-left",
     },
 
     {
@@ -186,16 +187,21 @@ const AnimatedStackCards = () => {
       ],
       serviceTagline:
         "Immersive 3D visuals that bring your architectural vision to reality.",
+      dataAosType: "fade-right",
     },
   ];
   const handleOpenModal = (card) => {
     setSelectedCard(card);
     setIsModalVisible(true);
+    setTimeout(() => {
+      AOS.refresh();
+    }, 100);
   };
 
   const handleCloseModal = () => {
     setIsModalVisible(false);
     setSelectedCard(null);
+    AOS.refresh();
   };
   return (
     <>
@@ -206,15 +212,38 @@ const AnimatedStackCards = () => {
               md={24}
               lg={12}
               key={index}
-              data-aos-delay={index * 200}
-              data-aos="fade-up"
+              data-aos-delay={index * 100}
+              // data-aos="fade-right"
+              data-aos={card.dataAosType}
+              data-aos-offset="0"
               data-aos-duration="1000"
             >
               <div className="cardHeader" onClick={() => handleOpenModal(card)}>
-                <img src={card.img} alt={card.serviceTitle} width={50} />
+                <img
+                  src={card.img}
+                  alt={card.serviceTitle}
+                  width={50}
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  // data-aos-delay={index * 100}
+                />
                 <div>
-                  <p className="serviceTitle">{card.serviceTitle}</p>
-                  <p className="serviceTagline">{card.serviceTagline}</p>
+                  <p
+                    className="serviceTitle"
+                    data-aos="fade-left"
+                    data-aos-duration="800"
+                    // data-aos-delay={index * 100}
+                  >
+                    {card.serviceTitle}
+                  </p>
+                  <p
+                    className="serviceTagline"
+                    data-aos="fade-left"
+                    data-aos-duration="800"
+                    // data-aos-delay={index * 100}
+                  >
+                    {card.serviceTagline}
+                  </p>
                 </div>
               </div>
             </Col>
@@ -226,16 +255,29 @@ const AnimatedStackCards = () => {
         onCancel={handleCloseModal}
         footer={null}
         width={800}
+        afterClose={() => {
+          // Reset AOS elements when modal closes
+          AOS.refresh();
+        }}
       >
         {selectedCard && (
           <>
             <div className="serviceModal">
               <p className="serviceTitle">{selectedCard.serviceTitle}</p>
 
-              <p>{selectedCard.serviceDescription}</p>
+              <p data-aos="fade-down" data-aos-duration="1000">
+                {selectedCard.serviceDescription}
+              </p>
               <ul>
                 {selectedCard.servicePoints.map((point, i) => (
-                  <li key={i}>{point}</li>
+                  <li
+                    key={i}
+                    // data-aos="fade-right"
+                    // data-aos-duration="800"
+                    // data-aos-delay={200 + i * 100}
+                  >
+                    {point}
+                  </li>
                 ))}
               </ul>
             </div>

@@ -7,13 +7,13 @@ const NewAbout = () => {
   return (
     <>
       <Row className='About-Row row1'>
-        <Col lg={10} md={24} data-aos-duration="1000" data-aos="fade-up" >
-          <div className='About-img'>
+        <Col lg={10} md={24} >
+          <div className='About-img' data-aos-duration="1000" data-aos="fade-right" >
             <img src="/images/ProjectsImages/HighRiseBuilding/MajesticSquare/05.jpg" />
           </div>
         </Col>
         <Col lg={1} md={0} />
-        <Col lg={13} md={24} data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200">
+        <Col lg={13} md={24} data-aos-duration="1000" data-aos="fade-left" data-aos-delay="200">
           <div className='About-content'>
             <p>We focus on designing and restoring the timeless values of buildings.</p><br></br>
             <p>Structura Consultants, a distinguished privately-owned firm with an
@@ -34,7 +34,7 @@ const NewAbout = () => {
       </Row>
 
       <Row className='About-Row row2'>
-        <Col lg={13} md={24} data-aos-duration="1000" data-aos="fade-up">
+        <Col lg={13} md={24} data-aos-duration="1000" data-aos="fade-right">
           <div className='About-content'>
             <p>Structura Consultants is a premier outsourcing company specializing in CAD drafting services. We are a dedicated and
               professional team committed to excellence in every project. Our guiding principles—superior quality, unwavering integrity, and
@@ -56,20 +56,20 @@ const NewAbout = () => {
           </div>
         </Col>
         <Col lg={1} md={0} />
-        <Col lg={10} md={24} data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200">
+        <Col lg={10} md={24} data-aos-duration="1000" data-aos="fade-left" data-aos-delay="200">
           <div className='About-img'>
             <img src="/images/ProjectsImages/HighRiseBuilding/Nirmansatva/01.jpg" />
           </div>
         </Col>
       </Row>
       <Row className='About-Row row3'>
-        <Col lg={10} md={24} data-aos-duration="1000" data-aos="fade-up" >
+        <Col lg={10} md={24} data-aos-duration="1000" data-aos="fade-right" >
           <div className='About-img'>
             <img src="/images/ProjectsImages/HighRiseBuilding/BeaufortPark/03.jpg" />
           </div>
         </Col>
         <Col lg={1} />
-        <Col lg={13} md={24} data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200">
+        <Col lg={13} md={24} data-aos-duration="1000" data-aos="fade-left" data-aos-delay="200">
           <div className='About-content'>
             <h1 className='bigHeading'>Vision</h1>
             <br></br>

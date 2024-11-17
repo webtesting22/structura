@@ -1,6 +1,7 @@
 .AnimatedStackCards {
   padding: 2rem 6rem;
   position: relative;
+  overflow: hidden;
 }
 
 .cardHeader {
@@ -24,7 +25,7 @@
 }
 .cardHeader:hover img {
   border-radius: 0;
-  transform: rotateY(180deg);
+  transform: rotateZ(360deg);
   transition: 0.5s;
 }
 .serviceTitle {

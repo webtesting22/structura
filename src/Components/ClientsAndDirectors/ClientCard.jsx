@@ -1,5 +1,5 @@
 import React from "react"
-import clientData from "./ClientsLogo"
+// import clientData from "./ClientsLogo"
 import { Row, Col } from "antd";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation, FreeMode } from 'swiper/modules';
