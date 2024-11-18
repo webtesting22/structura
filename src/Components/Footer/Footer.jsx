@@ -32,14 +32,14 @@ const Footer = () => {
                                         <br />
                                     </div>
                                     <div className="Contact">
-                                        <span><MdEmail />&nbsp; <a href="mailto:connect@structuraconsultants.com">connect@structuraconsultants.com</a></span>
-                                        <span><FaPhone /> &nbsp;        <a href="tel:+919825324480">+91-9825324480</a>
+                                        <span><MdEmail className="footerlocationicon"/>&nbsp; <a href="mailto:connect@structuraconsultants.com">connect@structuraconsultants.com</a></span>
+                                        <span><FaPhone className="footerlocationicon"/> &nbsp;        <a href="tel:+919825324480">+91-9825324480</a>
                                             &nbsp;
                                             OR
                                             &nbsp;
                                             <a href="tel:+919099024581">+91-9099024581</a>
                                         </span>
-                                        <span><MdOutlineLocationOn />&nbsp;<a href="https://maps.app.goo.gl/DfKxgYaKkWJnAAix9"> 901, A.Shridhar Athens, Ambawadi,
+                                        <span><MdOutlineLocationOn className="footerlocationicon footerlocation3" />&nbsp;<a href="https://maps.app.goo.gl/DfKxgYaKkWJnAAix9"> 901, A.Shridhar Athens, Ambawadi,
                                             Ahmedabad, Gujarat 380015, India.</a>
                                         </span>
                                     </div>

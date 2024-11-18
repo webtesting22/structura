@@ -1,5 +1,6 @@
 .contactImageContainer {
   width: 100%;
+  height: 100%;
   aspect-ratio: 3/2;
   object-fit: contain;
   display: flex;
@@ -7,10 +8,14 @@
   align-items: center;
 }
 .contactImageContainer img {
-  width: 80%;
+  width: 70%;
 }
 .contactTextContainer {
-  padding: 3rem 7rem;
+  padding: 4rem 3rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .contactTextContainer h1 {
   color: rgb(188, 119, 66);
@@ -20,6 +25,7 @@
   padding-top: 10px;
   margin: 0;
   color: black;
+  text-align: justify;
 }
 .contactTextContainer a {
   color: black;
@@ -30,5 +36,13 @@
 @media (max-width: 769px) {
   .contactTextContainer {
     padding: 2rem 3rem;
+  }
+  .contactImageContainer{
+    /* padding:0 3rem; */
+    /* justify-content: unset; */
+    /* text-align: justify; */
+  }
+  .contactImageContainer img{
+    width: 75%;
   }
 }

@@ -35,7 +35,7 @@
   width: 20px;
   border-radius: 20px;
   border: 1px solid rgb(188, 119, 66);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .SocialIcons i:hover {
@@ -48,7 +48,7 @@
   height: 20px;
   width: 20px;
   border-radius: 10px;
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 
@@ -67,33 +67,32 @@
 .CopywriteText p a {
   color: rgb(188, 119, 66);
 }
-.AddressColums{
+.AddressColums {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 .AddressColums h2 {
   color: white;
   font-weight: 500;
 }
 
-.AddressColums>div {
+.AddressColums > div {
   margin-bottom: 20px;
   /* width: 50%; */
 }
 
-.AddressColums>div p a:hover {
+.AddressColums > div p a:hover {
   color: white;
 }
 
-.AddressColums>div p a {
+.AddressColums > div p a {
   color: rgb(188, 188, 188);
 }
 
-.AddressColums>div hr {
+.AddressColums > div hr {
   background-color: rgb(188, 119, 66);
   border: 1px solid rgb(188, 119, 66);
   width: 50px;
@@ -101,10 +100,10 @@
   margin: 0px;
   margin-top: 5px;
   margin-bottom: 10px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.AddressColums>div:hover hr {
+.AddressColums > div:hover hr {
   background-color: rgb(188, 119, 66);
   border: 1px solid rgb(188, 119, 66);
   width: 100px;
@@ -112,7 +111,7 @@
   margin: 0px;
   margin-top: 5px;
   margin-bottom: 10px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .FooterRebuild div span {
@@ -133,15 +132,20 @@
   flex-direction: column;
 }
 
-.Contact a:hover{
+.Contact a:hover {
   color: white;
 }
-.FooterRebuild{
+.FooterRebuild {
   display: flex;
   overflow: hidden;
   gap: 5rem;
 }
-@media (max-width:769px) {
+
+.footerlocationicon {
+  font-size: 16px;
+  padding: 0;
+}
+@media (max-width: 769px) {
   .footerSection {
     background-color: rgb(25 25 25);
     /* width: 100%; */
@@ -150,26 +154,28 @@
 
     padding-left: 1rem;
     padding-right: 1rem;
-     /* display: flex; */
+    /* display: flex; */
     /* align-items: center; */
   }
-  .FooterRebuild{
+  .FooterRebuild {
     width: 100%;
     flex-direction: column;
     gap: 5px;
   }
-
-  .FooterRebuild .para{
-   display: none;
+  .FooterRebuild .Contact {
+    padding: 0rem;
   }
-  .footer-logo img{
+  .FooterRebuild .para {
+    display: none;
+  }
+  .footer-logo img {
     width: 100%;
   }
-  .Contact{
+  .Contact {
     width: 100%;
   }
 
-  .AddressColums>div:first-child {
+  .AddressColums > div:first-child {
     margin-top: 20px;
   }
 
@@ -182,32 +188,26 @@
     text-align: center;
     padding-bottom: 10px;
   }
+  .footerlocationicon {
+    font-size: 18px;
+  }
+  .footerlocation3 {
+    font-size: 30px;
+  }
 }
 
-
-.footer-logo{
+.footer-logo {
   width: 100%;
   text-align: center;
 }
-.footer-logo img{
+.footer-logo img {
   width: 65%;
   aspect-ratio: 3/2;
   object-fit: contain;
 }
-.para{
+.para {
   width: 100%;
 }
-.para p{
+.para p {
   width: 80%;
 }
-
-
-
-
-
-
-
-
-
-
-
