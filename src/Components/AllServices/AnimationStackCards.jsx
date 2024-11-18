@@ -17,6 +17,7 @@ const AnimatedStackCards = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
+      offset: 100, // Start animations slightly earlier
       once: false, // This allows animations to occur more than once
     });
   }, []);
@@ -215,10 +216,10 @@ const AnimatedStackCards = () => {
               data-aos-delay={index * 100}
               // data-aos="fade-right"
               data-aos={card.dataAosType}
-              data-aos-offset="0"
+              
               data-aos-duration="1000"
             >
-              <div className="cardHeader" onClick={() => handleOpenModal(card)}>
+              <div className="cardHeader" onClick={() => handleOpenModal(card)} >
                 <img
                   src={card.img}
                   alt={card.serviceTitle}
@@ -240,6 +241,7 @@ const AnimatedStackCards = () => {
                     className="serviceTagline"
                     data-aos="fade-left"
                     data-aos-duration="800"
+                    data-aos-delay="500"
                     // data-aos-delay={index * 100}
                   >
                     {card.serviceTagline}
@@ -265,9 +267,7 @@ const AnimatedStackCards = () => {
             <div className="serviceModal">
               <p className="serviceTitle">{selectedCard.serviceTitle}</p>
 
-              <p data-aos="fade-down" data-aos-duration="1000">
-                {selectedCard.serviceDescription}
-              </p>
+              <p>{selectedCard.serviceDescription}</p>
               <ul>
                 {selectedCard.servicePoints.map((point, i) => (
                   <li
