@@ -89,8 +89,8 @@ const AboutUs = () => {
                         </span>
                     </div>
                 </div> */}
-                <div className="sectionPadding mobileNone"></div>
-                <div className="sectionPadding mobileNone"></div>
+                {/* <div className="sectionPadding mobileNone"></div> */}
+                {/* <div className="sectionPadding mobileNone"></div> */}
                 {/* <h1 data-aos="fade-up" className="bigHeading"
                         data-aos-duration="1000">Industries</h1>
                 <BoxCarousalContainer /> */}

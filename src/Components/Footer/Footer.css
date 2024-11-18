@@ -127,7 +127,7 @@
 }
 
 .FooterRebuild .Contact {
-  padding: 1rem;
+  /* padding: 1rem; */
   justify-content: center;
   display: flex;
   flex-direction: column;

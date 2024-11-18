@@ -27,10 +27,11 @@
   aspect-ratio: 3/2;
   object-fit: contain;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  /* flex-direction: row; */
 }
 .About-img img {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
 }
 
@@ -53,8 +54,10 @@
   align-items: flex-start;
 }
 .row2 .About-img {
-  justify-content: flex-end;
+  height: 100%;
+  justify-content: center;
 }
+
 .row3 .About-img {
   align-items: flex-start;
 }
