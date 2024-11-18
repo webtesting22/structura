@@ -136,6 +136,11 @@
 .Contact a:hover{
   color: white;
 }
+.FooterRebuild{
+  display: flex;
+  overflow: hidden;
+  gap: 5rem;
+}
 @media (max-width:769px) {
   .footerSection {
     background-color: rgb(25 25 25);
@@ -145,8 +150,23 @@
 
     padding-left: 1rem;
     padding-right: 1rem;
-    /* display: flex; */
+     /* display: flex; */
     /* align-items: center; */
+  }
+  .FooterRebuild{
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .FooterRebuild .para{
+   display: none;
+  }
+  .footer-logo img{
+    width: 100%;
+  }
+  .Contact{
+    width: 100%;
   }
 
   .AddressColums>div:first-child {
@@ -164,11 +184,7 @@
   }
 }
 
-.FooterRebuild{
-  overflow: hidden;
-  display: flex;
-  gap: 6rem;
-}
+
 .footer-logo{
   width: 100%;
   text-align: center;
