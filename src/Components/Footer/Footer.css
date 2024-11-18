@@ -16,7 +16,6 @@
 
 .FooterRebuild p {
   color: white;
-  padding-right: 20px;
 }
 
 .footerSection hr {
@@ -62,6 +61,7 @@
 
 .CopywriteText p {
   color: white;
+  margin-right: 25px;
 }
 
 .CopywriteText p a {
@@ -127,6 +127,8 @@
 }
 
 .FooterRebuild .Contact {
+  padding: 1rem;
+  justify-content: center;
   display: flex;
   flex-direction: column;
 }
@@ -161,3 +163,35 @@
     padding-bottom: 10px;
   }
 }
+
+.FooterRebuild{
+  overflow: hidden;
+  display: flex;
+  gap: 6rem;
+}
+.footer-logo{
+  width: 100%;
+  text-align: center;
+}
+.footer-logo img{
+  width: 65%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.para{
+  width: 100%;
+}
+.para p{
+  width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+

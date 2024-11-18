@@ -14,13 +14,23 @@ const Footer = () => {
                 <div className="footerSection">
                     <div>
                         <Row>
-                            <Col lg={24}>
-                                <div className="FooterRebuild">
-                                    <img src={StructuraLogo} alt="" />
-                                    <br /><br />
-                                    
-                                    <p>At <b>STRUCTURA</b>, we specialize in delivering high-quality construction services, combining innovation and craftsmanship to bring your vision to life, ensuring lasting results with professionalism and integrity on every project.</p>
+
+                            <div className="FooterRebuild">
+                                <Col lg={8} >
+                                    <div className="footer-logo">
+                                        <img src={StructuraLogo} alt="" />
+                                    </div>
+
+                                </Col>
+                                {/* <Col lg={8} >
+                                    <p className="footer-para">At <b>STRUCTURA</b>, we specialize in delivering high-quality construction services, combining innovation and craftsmanship to bring your vision to life, ensuring lasting results with professionalism and integrity on every project.</p>
                                     <br />
+                                </Col> */}
+                                <Col lg={16} >
+                                    <div className="para">
+                                        <p>At <b>STRUCTURA</b>, we specialize in delivering high-quality construction services, combining innovation and craftsmanship to bring your vision to life, ensuring lasting results with professionalism and integrity on every project.</p>
+                                        <br />
+                                    </div>
                                     <div className="Contact">
                                         <span><MdEmail />&nbsp; <a href="mailto:connect@structuraconsultants.com">connect@structuraconsultants.com</a></span>
                                         <span><FaPhone /> &nbsp;        <a href="tel:+919825324480">+91-9825324480</a>
@@ -33,10 +43,11 @@ const Footer = () => {
                                             Ahmedabad, Gujarat 380015, India.</a>
                                         </span>
                                     </div>
-                                    {/* <button className="commomBtn">Connect</button> */}
-                                </div>
-                            </Col>
-                            
+                                </Col>
+                                {/* <button className="commomBtn">Connect</button> */}
+                            </div>
+
+
                             {/* <Col lg={8}>
                                 <div className="AddressColums">
                                    
