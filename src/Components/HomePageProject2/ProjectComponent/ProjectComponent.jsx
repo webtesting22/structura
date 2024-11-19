@@ -46,7 +46,7 @@ const ProjectComponent = () => {
         },
         'Institute': {
             images: [Institute1, Institute2, Institute3],
-            description: 'Institutes are centers of education and innovation, dedicated to nurturing knowledge and inspiring growth.'
+            description: 'Institutes are hubs of innovation and growth, designed to inspire learning and foster excellence. Each project embodies purpose, creativity, and architectural brilliance.'
         },
     };
 

@@ -164,6 +164,9 @@
     height: 100% !important;
     width: 100% !important;
 }
+.ProjectModal .ant-row{
+    width: 100%;
+}
 .ProjectModal .ant-row .ant-col{
     width: 100%;
 }
