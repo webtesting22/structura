@@ -58,6 +58,7 @@ section {
     font-size: 40px;
     font-weight: 400;
     color: rgb(188,119,66);
+    text-transform: uppercase;
 }
 
 .openBtn,

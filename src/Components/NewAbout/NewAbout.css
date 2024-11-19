@@ -41,6 +41,7 @@
   width: 100%;
   flex-direction: column;
   justify-content: center;
+
 }
 .About-content h1 {
   color: rgb(188, 119, 66);
@@ -49,6 +50,7 @@
   padding-top: 0px;
   text-align: justify;
   margin: 0;
+  color: black;
 }
 .row1 .About-img {
   align-items: flex-start;

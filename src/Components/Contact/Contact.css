@@ -38,6 +38,9 @@
 .contactTextContainer a {
   color: black;
 }
+.contactTextContainer i{
+  color: rgb(188, 119, 66);
+}
 .contactTextContainer a:hover {
   color: rgb(188, 119, 66);
 }

@@ -17,10 +17,11 @@ const Contact = () => {
                             <p>Structura Consultants is your premier partner for bespoke design
                                 and engineering solutions. Specializing in various services, we
                                 deliver projects of distinction across residential, commercial, and
-                                industrial sectors</p>
+                                industrial sectors.</p>
 
                             <p>Partner with us to elevate your next project. Contact our team
                                 today to discuss how we can turn your vision into reality!</p>
+                                
                             <p>
                                 <i class='bx bx-envelope'></i>&nbsp;
                                 <a href="mailto:connect@structuraconsultants.com">connect@structuraconsultants.com</a>
