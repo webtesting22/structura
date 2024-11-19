@@ -92,6 +92,7 @@ section {
 .commomBtn {
     height: 40px;
     border: none;
+    border-radius: 5px;
     width: 150px;
     font-size: 18px;
     background-color: rgb(188,119,66);
@@ -104,7 +105,9 @@ section {
 .commomBtn:hover {
     height: 40px;
     border: 1px solid rgb(188,119,66);
+    border-radius: 10px;
     width: 150px;
+    scale: 1.02;
     background-color: transparent;
     color: rgb(188,119,66);
     margin: 10px 0px;

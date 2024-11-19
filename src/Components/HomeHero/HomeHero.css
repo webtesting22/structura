@@ -38,6 +38,18 @@
   font-size: 3rem;
   color: white;
   font-weight: 300;
+  animation: colorChange 5s infinite;
+}
+@keyframes colorChange {
+  0% {
+    color: white; 
+  }
+  50% {
+    color: #BC7742; 
+  }
+  100% {
+    color: white; 
+  }
 }
 
 .scrollDownBtnContainer {
@@ -72,7 +84,7 @@
 }
 
 .fade {
-  transition: opacity 1s ease-in-out;
+  transition: opacity 5s ease-in-out;
   opacity: 1;
 }
 
