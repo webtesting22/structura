@@ -42,7 +42,7 @@ const ClientsAndDirectors = () => {
             image: "",
             DirectorName: "Saumya Shah",
             DirectorPosition: "CEO",
-            DirectorContent: "Saumya Shah, an experienced structural engineer and founder of Structura-Design Consultants in Ahmedabad, specializes in structural design, restoration, and retrofitting. With 3.5 years in the field, he has led projects for high-rise buildings, industrial structures, and historic renovations. Saumya holds multiple academic awards, including a Gold Medal from GICEA and distinctions from CEPT University, where he also served as a teaching associate. His expertise includes AutoCAD, STAAD.Pro, MATLAB, SAP 2000, and REVIT, and he collaborates with Nirman Developers on residential and commercial projects.",
+            DirectorContent: "Saumya Shah, an experienced structural engineer and founder of Structura-Design Consultants in Ahmedabad, specializes in structural design, restoration, and retrofitting. With 3.5 years in the field, he has led projects for high-rise buildings, industrial structures, and historic renovations. Saumya holds multiple academic awards, including a Gold Medal from GICEA and distinctions from CEPT University, where he also served as a teaching associate. His expertise includes AutoCAD, STAAD.Pro, MATLAB, SAP 2000, and REVIT, and he collaborates with Nirmaan Developers on residential and commercial projects.",
         }
 
     ]
