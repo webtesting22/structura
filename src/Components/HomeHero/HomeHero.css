@@ -84,12 +84,13 @@
 }
 
 .fade {
-  transition: opacity 5s ease-in-out;
+  transition: opacity 1s ease-in-out;
   opacity: 1;
 }
 
 .fade-exit {
   opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 /* rightsidecontainer css -----------------------------------------*/

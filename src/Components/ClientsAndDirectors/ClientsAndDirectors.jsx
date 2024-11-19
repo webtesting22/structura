@@ -64,14 +64,14 @@ const ClientsAndDirectors = () => {
                         <Row>
                             <Col lg={8} md={12} key={index}>
                                 <div className="directorImage">
-                                    <img src={item.image} alt="Director Photo Here"/>
+                                    <img src={item.image} alt="Director Photo Here" />
                                 </div>
                             </Col>
                             <Col lg={16} md={12} key={index}>
                                 <div className="directorContent">
-                                    <h2>{item.DirectorName}</h2><br/>
-                                    <h3>{item.DirectorPosition}</h3><br/>
-                                    <p>{item.DirectorContent}</p><br/>
+                                    <h2>{item.DirectorName}</h2><br />
+                                    <h3>{item.DirectorPosition}</h3><br />
+                                    <p>{item.DirectorContent}</p><br />
                                 </div>
                             </Col>
                             {/* <div className="projectsCardDesigns" data-aos="fade-up" data-aos-duration="1000">

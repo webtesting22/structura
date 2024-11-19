@@ -132,8 +132,8 @@
   flex-direction: column;
 }
 
-.Contact a:hover {
-  color: white;
+.Contact a:hover  {
+  color: rgb(188, 119, 66);
 }
 .FooterRebuild {
   display: flex;

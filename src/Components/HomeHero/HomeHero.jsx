@@ -29,7 +29,7 @@ const HomeHero = () => {
     const [fade, setFade] = useState(true);
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
     useEffect(() => {
         const interval = setInterval(() => {
             setFade(false);  // Start fading out
