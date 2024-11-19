@@ -33,12 +33,12 @@ const WhyUsComponent = () => {
     }, []);
     
     const WhyChooseUsCards = [
-        {
-            // Title: "Architectural CAD Drafting",
-            // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
-            Title:"Interior Design",
-            Descriptions:"We are a Market Leader in Interior Design Documentation with a specialization in Hospitality.",
-        },
+        // {
+        //     // Title: "Architectural CAD Drafting",
+        //     // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
+        //     Title:"Interior Design",
+        //     Descriptions:"We are a Market Leader in Interior Design Documentation with a specialization in Hospitality.",
+        // },
         {
             // Title: "Architectural BIM Services",
             // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"

@@ -72,7 +72,7 @@ const WhoweAre = () => {
                                         duration={10}
                                         suffix="+"
                                     />
-                                    <p>Total Number of our Projects</p><br/><br/>
+                                    <p>Total Number of our Projects</p><br /><br />
                                     <div className="icon-box">
                                         <i class='bx bx-buildings' ></i>
                                     </div>
@@ -88,8 +88,7 @@ const WhoweAre = () => {
                                 data-aos-duration="1000">STRUCTURA CONSULTANTS</h1>
                             {/* </div> */}
                             <p data-aos="fade-up"
-                                data-aos-duration="2000">Our team has worked on 1500+ multifarious projects. Positioning itself as a navigator, SKETS has been
-                                guiding customers on their quest for maximizing business value.</p>
+                                data-aos-duration="2000">Structura Consultants specializes in structural design and heritage restoration, preserving timeless architectural values.</p>
                             <Link to="/AboutUs"> <button className="commomBtn">About Us</button></Link>
                         </div>
                     </div>
