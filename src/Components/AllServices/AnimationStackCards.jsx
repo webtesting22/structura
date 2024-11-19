@@ -226,14 +226,12 @@ const AnimatedStackCards = () => {
                   width={50}
                   data-aos="zoom-in"
                   data-aos-duration="800"
-                  // data-aos-delay={index * 100}
                 />
                 <div>
                   <p
                     className="serviceTitle"
                     data-aos="fade-left"
                     data-aos-duration="800"
-                    // data-aos-delay={index * 100}
                   >
                     {card.serviceTitle}
                   </p>
@@ -241,8 +239,7 @@ const AnimatedStackCards = () => {
                     className="serviceTagline"
                     data-aos="fade-left"
                     data-aos-duration="800"
-                    data-aos-delay="500"
-                    // data-aos-delay={index * 100}
+                    data-aos-delay="200"
                   >
                     {card.serviceTagline}
                   </p>

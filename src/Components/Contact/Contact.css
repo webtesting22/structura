@@ -1,25 +1,33 @@
+.contactRow{
+  padding: 2rem 3rem;
+}
+
 .contactImageContainer {
   width: 100%;
   height: 100%;
   aspect-ratio: 3/2;
   object-fit: contain;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
+  /* flex-direction: column; */
+  justify-content: flex-end;
   align-items: center;
 }
 .contactImageContainer img {
-  width: 70%;
+  width: 80%;
+  height: 100%;
 }
 .contactTextContainer {
-  padding: 4rem 3rem;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  width: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items:center; */
+  /* justify-content: center; */
 }
 .contactTextContainer h1 {
   color: rgb(188, 119, 66);
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
 }
 .contactTextContainer p {
   padding-top: 10px;
@@ -30,19 +38,32 @@
 .contactTextContainer a {
   color: black;
 }
-.contactTextContainer a:hover{
-    color: rgb(188, 119, 66);
+.contactTextContainer a:hover {
+  color: rgb(188, 119, 66);
+}
+@media (max-width: 999px) {
+  .contactTextContainer {
+    padding: 2rem 0rem;
+  }
+  .contactImageContainer{
+    justify-content: unset;
+    /* padding-left:  3rem; */
+  }
+  .contactImageContainer img{
+    width: 100%;
+  }
 }
 @media (max-width: 769px) {
   .contactTextContainer {
-    padding: 2rem 3rem;
+    padding: 0rem 0rem;
+    padding-bottom: 2rem;
   }
-  .contactImageContainer{
-    /* padding:0 3rem; */
+  .contactImageContainer {
+    padding:0rem;
     /* justify-content: unset; */
     /* text-align: justify; */
   }
-  .contactImageContainer img{
-    width: 75%;
+  .contactImageContainer img {
+    width: 100%;
   }
 }

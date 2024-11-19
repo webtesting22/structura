@@ -17,10 +17,11 @@ const Footer = () => {
 
                             <div className="FooterRebuild">
                                 <Col lg={8} >
-                                    <div className="footer-logo">
-                                        <img src={StructuraLogo} alt="" />
-                                    </div>
-
+                                    <Link to="/">
+                                        <div className="footer-logo">
+                                            <img src={StructuraLogo} alt="" />
+                                        </div>
+                                    </Link>
                                 </Col>
                                 {/* <Col lg={8} >
                                     <p className="footer-para">At <b>STRUCTURA</b>, we specialize in delivering high-quality construction services, combining innovation and craftsmanship to bring your vision to life, ensuring lasting results with professionalism and integrity on every project.</p>
@@ -32,8 +33,8 @@ const Footer = () => {
                                         <br />
                                     </div>
                                     <div className="Contact">
-                                        <span><MdEmail className="footerlocationicon"/>&nbsp; <a href="mailto:connect@structuraconsultants.com">connect@structuraconsultants.com</a></span>
-                                        <span><FaPhone className="footerlocationicon"/> &nbsp;        <a href="tel:+919825324480">+91-9825324480</a>
+                                        <span><MdEmail className="footerlocationicon" />&nbsp; <a href="mailto:connect@structuraconsultants.com">connect@structuraconsultants.com</a></span>
+                                        <span><FaPhone className="footerlocationicon" /> &nbsp;        <a href="tel:+919825324480">+91-9825324480</a>
                                             &nbsp;
                                             OR
                                             &nbsp;
