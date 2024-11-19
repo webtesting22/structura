@@ -179,7 +179,7 @@ const HomeHero = () => {
                             spaceBetween={30}
                             // effect={'fade'}
                             autoplay={{
-                                delay: 2000,
+                                delay: 2300,
                                 disableOnInteraction: false,
                             }}
                             pagination={{
