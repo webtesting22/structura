@@ -42,7 +42,7 @@ const Navigation = () => {
         <nav className={`navbar ${isNavVisible ? 'nav-open' : ''}`}>
 
             <div className="logo-container">
-                <Link to="/">
+                <Link to="/" onClick={toggleNav}>
                     <img src={StructuraLogo} />
                 </Link>
             </div>
