@@ -55,13 +55,13 @@ const AboutUs = () => {
                         <NewAbout />
                     </div>
 
-                    <div className="expertiseCards">
+                    {/* <div className="expertiseCards">
                         <h1 data-aos="fade-up" className="bigHeading"
                             data-aos-duration="1000">Our Expertise</h1>
                         <div className="animatedCards">
                             <AnimatedHoverableCards />
                         </div>
-                    </div>
+                    </div> */}
                     {/* <div className="servicecontainerRow">
                         {ServicesCardData.map((item, index) => (
                             <div key={index} className="servicesSingleBox" data-aos="fade-up" data-aos-delay={`${index * 300}`} data-aos-duration="1000">
