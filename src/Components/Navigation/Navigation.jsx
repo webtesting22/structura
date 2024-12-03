@@ -10,6 +10,9 @@ const Navigation = () => {
     const toggleNav = () => {
         setIsNavVisible(prevState => !prevState);
     };
+    const hideNav = () => {
+        setIsNavVisible(false);
+    }
     const [open, setOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const showDrawer = () => {
@@ -42,7 +45,7 @@ const Navigation = () => {
         <nav className={`navbar ${isNavVisible ? 'nav-open' : ''}`}>
 
             <div className="logo-container">
-                <Link to="/" >
+                <Link to="/" onClick={() => hideNav()}>
                     <img src={StructuraLogo} />
                 </Link>
             </div>
