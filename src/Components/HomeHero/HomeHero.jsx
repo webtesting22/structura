@@ -11,14 +11,18 @@ import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import AutoOpenPoster from "./AutoOpenPoster.jpg"
 import { Modal } from "antd";
-import img1 from "./1.jpg";
-import img2 from "./2.jpg";
-import img3 from "./3.jpg";
-import img4 from "./4.jpg";
-import img5 from "./5.jpg";
+// import img2 from "./2.jpg";
+// import img3 from "./3.jpg";
+// import img4 from "./4.jpg";
+// import img5 from "./5.jpg";
 import img6 from "./6.jpg";
+import img7 from "/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/01.jpg"
+import img1 from '/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/01.jpg'
+import img2 from "/images/ProjectsImages/HighRiseBuilding/Rudveda/02.jpg"
+import img3 from "/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/05.jpg"
+import img4 from "/images/ProjectsImages/HighRiseBuilding/SuparnaResidence/01.jpg"
+import img5 from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/01.jpg"
 const HomeHero = () => {
-    const [isModalVisible, setIsModalVisible] = useState(false);
     const headings = [
         "Together, let's build a better construction experience",
         'Building with confidence and trust',
@@ -43,31 +47,38 @@ const HomeHero = () => {
     }, []);
 
     const StructuraCarousalImages = [
+        // {
+        //     image: img6,
+        // },
+        // {
+        //     image: img5,
+        // },
+        // {
+        //     image: img3,
+        // },
+        // {
+        //     image: img4,
+        // },
         {
-            image: img6,
+            image: img7,
         },
         {
-            image: img5,
+            image:img1,
         },
         {
-            image: img3,
+            image:img2,
         },
         {
-            image: img4,
+            image:img3,
+        },
+        {
+            image:img4,
+        },
+        {
+            image:img5,
         }
     ]
-    useEffect(() => {
-        // This will trigger when the component mounts (e.g., page reloads)
-        setIsModalVisible(true);
-    }, []);
 
-    const handleOk = () => {
-        setIsModalVisible(false);
-    };
-
-    const handleCancel = () => {
-        setIsModalVisible(false);
-    };
 
     return (
         <>
