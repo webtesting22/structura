@@ -8,13 +8,11 @@
   padding: 0px;
 }
 
-/* leftsidecontainer css -----------------------------------------*/
 .left-side-container {
   width: 30%;
   height: 100%;
   position: relative;
   background-color: rgba(0, 0, 0);
-  /* background: url(/images/bg3.jpg); */
   background-size: cover;
   background-position: center;
 }
@@ -42,13 +40,13 @@
 }
 @keyframes colorChange {
   0% {
-    color: white; 
+    color: white;
   }
   50% {
-    color: #BC7742; 
+    color: #bc7742;
   }
   100% {
-    color: white; 
+    color: white;
   }
 }
 
@@ -69,17 +67,14 @@
 @keyframes scrollAnimation {
   0% {
     top: calc(65% - 5px);
-    /* Initial position */
   }
 
   50% {
     top: calc(65% + 5px);
-    /* Move down by 5px halfway through the animation */
   }
 
   100% {
     top: calc(65% - 5px);
-    /* Return to the initial position at the end */
   }
 }
 
@@ -93,7 +88,6 @@
   transition: opacity 1s ease-in-out;
 }
 
-/* rightsidecontainer css -----------------------------------------*/
 .right-side-image-container {
   width: 100%;
   height: 100%;
@@ -101,9 +95,6 @@
   transition: 0.5s;
 }
 
-/* .right-side-image-container img{
-    width: 100%;
-} */
 .right-side-image-container .imageOverlay,
 .left-side-container .imageOverlay {
   height: 100vh;
@@ -120,23 +111,19 @@
 
 .zoom-animation {
   animation: zoomInOut 30s infinite alternate;
-  /* Zoom in and out animation for 3s with infinite loop */
 }
 
 @keyframes zoomInOut {
   0% {
     transform: scale(1);
-    /* Initial scale */
   }
 
   50% {
     transform: scale(1.1);
-    /* Zoom in halfway through the animation */
   }
 
   100% {
     transform: scale(1);
-    /* Return to original scale at the end */
   }
 }
 
@@ -157,7 +144,6 @@
   position: absolute;
   bottom: 10px;
   width: 100%;
-  /* padding: 0px; */
   display: flex;
   justify-content: space-between;
   color: #c2c2c2a3;
@@ -206,7 +192,6 @@
     left: 40px;
     margin-top: 10px;
     display: none;
-    /* bottom: 200px;  */
     z-index: 6666;
     border: 1px solid white;
     animation: scrollAnimation 2s infinite;
@@ -250,19 +235,4 @@
     width: 100%;
     transition: 0.5s;
   }
-}
-
-
-.ant-modal .ant-modal-content {
-  /* display: flex; */
-  padding: 0px !important;
-}
-.ant-modal .ant-modal-body {
-  display: flex;
-}
-.ant-modal .ant-modal-close {
-  color: white;
-}
-.ant-modal .ant-modal-close:hover {
-  color: white;
 }

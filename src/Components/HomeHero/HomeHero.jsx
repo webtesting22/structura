@@ -5,18 +5,14 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { EffectFade, Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import DownArrow from "../HomeHero/downArrow.png"
-import { MdEmail } from "react-icons/md";
-import { FaPhone } from "react-icons/fa6";
-import AutoOpenPoster from "./AutoOpenPoster.jpg"
-import { Modal } from "antd";
 // import img2 from "./2.jpg";
 // import img3 from "./3.jpg";
 // import img4 from "./4.jpg";
 // import img5 from "./5.jpg";
 import img6 from "./6.jpg";
-import img7 from "/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/01.jpg"
+import img7 from "/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/01.webp"
 import img1 from '/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/01.jpg'
 import img2 from "/images/ProjectsImages/HighRiseBuilding/Rudveda/02.jpg"
 import img3 from "/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/05.jpg"
@@ -63,37 +59,26 @@ const HomeHero = () => {
             image: img7,
         },
         {
-            image:img1,
+            image: img1,
         },
         {
-            image:img2,
+            image: img2,
         },
         {
-            image:img3,
+            image: img3,
         },
         {
-            image:img4,
+            image: img4,
         },
         {
-            image:img5,
+            image: img5,
         }
     ]
 
 
     return (
         <>
-            {/* <div id="HomeModal">
-                <Modal
-                    title={null}
-                    visible={isModalVisible}
-                    onOk={handleOk}
-                    onCancel={handleCancel}
-                    footer={null}
-                >
 
-                    <img src={AutoOpenPoster} alt="" style={{ width: "100%" }} />
-                </Modal>
-            </div> */}
             <section id="StructuraHeroSection">
                 <div className="Herosectionadjust">
 
@@ -160,27 +145,10 @@ const HomeHero = () => {
                                 data-aos-duration="1000"
                                 data-aos-delay="2000"
                             >
-                                {/* <i class='bx bx-down-arrow-alt' style={{ color: "#ffffff" }}  ></i>
-                                <FaArrowDown className="downArrow" /> */}
 
                                 <img src={DownArrow} alt="" style={{ width: "100%", cursor: "pointer" }} onClick={() => window.scrollBy({ top: 650, behavior: 'smooth' })} />
                             </div>
-                            {/* <div className="BottomContactContainer">
-                                <div>
-                                    <h4> <span>SAUMYA C. SHAH & SHYAM C. SHAH</span>
-                                        <br /> CEO, STRUCTURA CONSULTANTS</h4>
-                                </div>
-                                <div>
-                                    <span><MdEmail /> <a href="mailto:CONNECT@STRUCTURACONSULTANTS.COM" target="_blank">CONNECT@STRUCTURACONSULTANTS.COM</a>
-                                    </span>
-                                    <span>
-                                        <FaPhone />&nbsp;
-                                        <a href="tel:+919825324480">+91-9825324480</a>&nbsp;,&nbsp;
-                                        <a href="tel:+919099024581">+91-9099024581</a>
-                                    </span>
-                                </div>
 
-                            </div> */}
                         </div>
 
                         <div className="imageOverlay">
@@ -188,7 +156,6 @@ const HomeHero = () => {
                         </div>
                         <Swiper
                             spaceBetween={30}
-                            // effect={'fade'}
                             autoplay={{
                                 delay: 2300,
                                 disableOnInteraction: false,
