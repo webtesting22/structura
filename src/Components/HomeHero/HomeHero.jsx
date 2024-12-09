@@ -12,7 +12,7 @@ import DownArrow from "../HomeHero/downArrow.png"
 // import img4 from "./4.jpg";
 // import img5 from "./5.jpg";
 import img6 from "./6.jpg";
-import img7 from "/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/01.webp"
+import img7 from "/images/ProjectsImages/Banglows/AMITBHAI - BUNGALOW/01.jpg"
 import img1 from '/images/ProjectsImages/HighRiseBuilding/ProfitRoyal/01.jpg'
 import img2 from "/images/ProjectsImages/HighRiseBuilding/Rudveda/02.jpg"
 import img3 from "/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/05.jpg"
