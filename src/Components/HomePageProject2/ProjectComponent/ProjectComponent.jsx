@@ -22,8 +22,8 @@ import WeekendVilla3 from "/images/ProjectsImages/WeekendVillas/MeshwoNest/1.jpg
 // import Institute2 from "/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/06.jpg"
 // import Institute3 from "/images/ProjectsImages/HighRiseBuilding/SankalpAnanta/07.jpg"
 import Institute1 from "/images/ProjectsImages/Institute/ShubhamAutomation/F2.jpg";
-import Institute2 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/02-min.jpg";
-import Institute3 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/04-min.jpg";
+import Institute2 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/02.jpg";
+import Institute3 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/04.jpg";
 
 const ProjectComponent = () => {
     const [activeProject, setActiveProject] = useState('High Rise Buildings');
