@@ -415,6 +415,7 @@ import MarutiImage1 from "/images/ProjectsImages/Institute/MarutiIndustrialEstat
 import MarutiImage2 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/02.jpg";
 import MarutiImage3 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/03.jpg";
 import MarutiImage4 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/04.jpg";
+import MarutiImage5 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/05.jpg";
 //Shubham Automation
 import ShubhamAutomationImage1 from "/images/ProjectsImages/Institute/ShubhamAutomation/F1.jpg";
 import ShubhamAutomationImage2 from "/images/ProjectsImages/Institute/ShubhamAutomation/F2.jpg";
@@ -544,7 +545,7 @@ const AllProjectsData = [
             },
             {
                 cardImage: SaanviCasa,
-                galleryImages:[SaanviCasaImage1,SaanviCasaImage2,SaanviCasaImage3,SaanviCasaImage4,SaanviCasaImage5],
+                galleryImages: [SaanviCasaImage1, SaanviCasaImage2, SaanviCasaImage3, SaanviCasaImage4, SaanviCasaImage5],
                 cardTitle: "Saanvi Casa",
                 Location: "BARODA",
                 ArchitectName: "DCPL"
@@ -627,14 +628,14 @@ const AllProjectsData = [
             },
             {
                 cardImage: KanakBhaiImage3,
-                galleryImages:[KanakBhaiImage1,KanakBhaiImage2,KanakBhaiImage3,KanakBhaiImage4,KanakBhaiImage5,KanakBhaiImage6,KanakBhaiImage7,KanakBhaiImage8,KanakBhaiImage9,KanakBhaiImage10,KanakBhaiImage11],
+                galleryImages: [KanakBhaiImage1, KanakBhaiImage2, KanakBhaiImage3, KanakBhaiImage4, KanakBhaiImage5, KanakBhaiImage6, KanakBhaiImage7, KanakBhaiImage8, KanakBhaiImage9, KanakBhaiImage10, KanakBhaiImage11],
                 cardTitle: "House For Kanakbhai",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET"
             },
             {
                 cardImage: SiddharthBhaiBungalowImage1,
-                galleryImages:[SiddharthBhaiBungalowImage1,SiddharthBhaiBungalowImage2],
+                galleryImages: [SiddharthBhaiBungalowImage1, SiddharthBhaiBungalowImage2],
                 cardTitle: "Siddharthbhai Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "R+R"
@@ -648,49 +649,49 @@ const AllProjectsData = [
             },
             {
                 cardImage: RakeshbhaiImage2,
-                galleryImages:[RakeshbhaiImage1,RakeshbhaiImage2,RakeshbhaiImage3,RakeshbhaiImage4],
+                galleryImages: [RakeshbhaiImage1, RakeshbhaiImage2, RakeshbhaiImage3, RakeshbhaiImage4],
                 cardTitle: "Rakeshbhai Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET"
             },
             {
                 cardImage: JayaniFarmImage1,
-                galleryImages:[JayaniFarmImage1,JayaniFarmImage2],
+                galleryImages: [JayaniFarmImage1, JayaniFarmImage2],
                 cardTitle: "Jayani Farm",
                 Location: "Ahmedabad",
                 ArchitectName: "DPA DESIGN STUDIO"
             },
             {
                 cardImage: PankajBhaiImage4,
-                galleryImages:[PankajBhaiImage1,PankajBhaiImage2,PankajBhaiImage3,PankajBhaiImage4,PankajBhaiImage5,PankajBhaiImage6,PankajBhaiImage7,PankajBhaiImage8],
+                galleryImages: [PankajBhaiImage1, PankajBhaiImage2, PankajBhaiImage3, PankajBhaiImage4, PankajBhaiImage5, PankajBhaiImage6, PankajBhaiImage7, PankajBhaiImage8],
                 cardTitle: "Pankajbhai Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "9th STREET"
             },
             {
                 cardImage: PiyushBhaiImage1,
-                galleryImages:[PiyushBhaiImage1],
+                galleryImages: [PiyushBhaiImage1],
                 cardTitle: "Piyushbhai Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
             {
                 cardImage: SureshMukhiImage1,
-                galleryImages:[SureshMukhiImage1,SureshMukhiImage2],
+                galleryImages: [SureshMukhiImage1, SureshMukhiImage2],
                 cardTitle: "House For Sureshmukhi",
                 Location: "Ahmedabad",
                 ArchitectName: "SHILP CONSULTANT"
             },
             {
                 cardImage: KCPATELImage1,
-                galleryImages:[KCPATELImage1,KCPATELImage2,KCPATELImage3,KCPATELImage4,KCPATELImage5,KCPATELImage6,KCPATELImage7,KCPATELImage8,KCPATELImage9,KCPATELImage10,KCPATELImage11],
+                galleryImages: [KCPATELImage1, KCPATELImage2, KCPATELImage3, KCPATELImage4, KCPATELImage5, KCPATELImage6, KCPATELImage7, KCPATELImage8, KCPATELImage9, KCPATELImage10, KCPATELImage11],
                 cardTitle: "Kc Patel Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
             },
             {
                 cardImage: RadheAvenueImage3,
-                galleryImages:[RadheAvenueImage1,RadheAvenueImage2,RadheAvenueImage3,RadheAvenueImage4,RadheAvenueImage5],
+                galleryImages: [RadheAvenueImage1, RadheAvenueImage2, RadheAvenueImage3, RadheAvenueImage4, RadheAvenueImage5],
                 cardTitle: "Radhe Avenue",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
@@ -711,7 +712,7 @@ const AllProjectsData = [
             },
             {
                 cardImage: BHADRESHBHAIBUNGALOW,
-                galleryImages:[BHADRESHBHAIBUNGALOW],
+                galleryImages: [BHADRESHBHAIBUNGALOW],
                 cardTitle: "Bhadreshbhai Bungalow",
                 Location: "Ahmedabad",
                 ArchitectName: "DCPL"
@@ -724,11 +725,11 @@ const AllProjectsData = [
                 ArchitectName: "KBA STUDIO"
             },
             {
-                cardImage:RamanBhaiImage2,
-                galleryImages:[RamanBhaiImage1,RamanBhaiImage2,RamanBhaiImage3,RamanBhaiImage4,RamanBhaiImage5,RamanBhaiImage6],
-                cardTitle:"Ramanbhai Bungalow",
-                Location:"",
-                ArchitectName:"",
+                cardImage: RamanBhaiImage2,
+                galleryImages: [RamanBhaiImage1, RamanBhaiImage2, RamanBhaiImage3, RamanBhaiImage4, RamanBhaiImage5, RamanBhaiImage6],
+                cardTitle: "Ramanbhai Bungalow",
+                Location: "",
+                ArchitectName: "",
             }
         ]
     },
@@ -776,7 +777,7 @@ const AllProjectsData = [
             // },
             {
                 cardImage: MarutiImage2,
-                galleryImages: [MarutiImage1, MarutiImage2, MarutiImage3, MarutiImage4],
+                galleryImages: [MarutiImage1, MarutiImage2, MarutiImage3, MarutiImage4, MarutiImage5],
                 cardTitle: "Maruti Industrial Estate",
 
             },
