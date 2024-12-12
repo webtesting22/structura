@@ -180,7 +180,7 @@ const Drafting = () => {
 
                             {modalDetails && (
                                 <Modal
-                                    width={isMobile ? '100%' : 800}
+                                    width={isMobile ? '100%' : '90%'}
                                     title={modalDetails.Title}
                                     visible={isModalOpen}
                                     onOk={handleOk}
@@ -198,7 +198,6 @@ const Drafting = () => {
                                     centered
                                     destroyOnClose
                                 >
-                                    {/* Instead of react-pdf, use an <object> tag */}
                                     <object
                                         data={modalDetails.projectPath}
                                         type="application/pdf"
