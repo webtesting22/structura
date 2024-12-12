@@ -411,10 +411,10 @@ import HyundaiShowroomImage1 from "/images/ProjectsImages/Institute/HyundaiShowr
 import HyundaiShowroomImage2 from "/images/ProjectsImages/Institute/HyundaiShowroom/2.jpeg";
 
 //Maruti Industrial Estate
-import MarutiImage1 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/01-min.jpg";
-import MarutiImage2 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/02-min.jpg";
-import MarutiImage3 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/03-min.jpg";
-import MarutiImage4 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/04-min.jpg";
+import MarutiImage1 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/01.jpg";
+import MarutiImage2 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/02.jpg";
+import MarutiImage3 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/03.jpg";
+import MarutiImage4 from "/images/ProjectsImages/Institute/MarutiIndustrialEstate/04.jpg";
 //Shubham Automation
 import ShubhamAutomationImage1 from "/images/ProjectsImages/Institute/ShubhamAutomation/F1.jpg";
 import ShubhamAutomationImage2 from "/images/ProjectsImages/Institute/ShubhamAutomation/F2.jpg";
