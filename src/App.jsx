@@ -13,6 +13,7 @@ import AllProjects from './Components/AllProjects/AllProjects';
 import ClientsAndDirectors from './Components/ClientsAndDirectors/ClientsAndDirectors';
 import AllServices from './Components/AllServices/AllServices';
 import Contact from './Components/Contact/Contact';
+import Drafting from './Components/Drafting/Drafting';
 function App() {
 
   return (
@@ -23,9 +24,10 @@ function App() {
         <Route exact path="/AboutUs" element={<AboutUs />} />
         <Route exact path="/StructuraCommonHero" element={<StructuraCommonHero />} />
         <Route exact path="/Projects" element={<AllProjects />} />
+        <Route exact path='/Drafting' element={<Drafting />} />
         <Route exact path="/clientsanddirectors" element={<ClientsAndDirectors />} />
         <Route exact path="/Services" element={<AllServices />} />
-        <Route exact path="/Contact" element={<Contact/>}/>
+        <Route exact path="/Contact" element={<Contact />} />
       </Routes>
       <BottomToTopBtn />
       <Footer />

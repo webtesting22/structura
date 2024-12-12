@@ -56,6 +56,7 @@ const Navigation = () => {
                 <ul>
                     <li onClick={toggleNav}><Link to="/AboutUs">About Us</Link></li>
                     <li onClick={toggleNav}><Link to="/Projects">Projects</Link></li>
+                    <li onClick={toggleNav}><Link to="/Drafting">Drafting</Link></li>
                     <li onClick={toggleNav}><Link to="/ClientsAndDirectors">Directors And Clients</Link></li>
                     <li onClick={toggleNav}><Link to="/Services">Services</Link></li>
                     <li onClick={toggleNav}><Link to="/Contact">Contact</Link></li>
@@ -70,7 +71,7 @@ const Navigation = () => {
             >
                 {isNavVisible ? <RxCross2 /> : <MdMenu />}
             </button>
-        </nav>
+        </nav >
     );
 };
 
