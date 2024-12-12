@@ -1,90 +1,89 @@
 .subCategoryProjectsBtn {
-    display: flex;
+  display: flex;
 }
 
 .activeBtnSub {
-    height: 50px;
-    border-bottom: 2px solid black;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 200px;
-    background-color: whitesmoke;
-    color: black;
-    margin: 0px 10px;
-    cursor: pointer;
-
+  height: 50px;
+  border-bottom: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 200px;
+  background-color: whitesmoke;
+  color: black;
+  margin: 0px 10px;
+  cursor: pointer;
 }
-.projectsCardDesigns{
-    cursor:pointer;
+.projectsCardDesigns {
+  cursor: pointer;
 }
 .nonActiveBtnSub {
-    height: 50px;
-    border-bottom: 2px solid transparent;
-    border: none;
-    width: 200px;
-    background-color: transparent;
-    color: rgb(0, 0, 0);
-    margin: 0px 10px;
-    cursor: pointer;
+  height: 50px;
+  border-bottom: 2px solid transparent;
+  border: none;
+  width: 200px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  margin: 0px 10px;
+  cursor: pointer;
 }
 
 .ColumsStyleContainers {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .ColumsStyleContainers .FiltersContainers {
-    width: 20%;
+  width: 20%;
 }
 
 .ColumsStyleContainers .FiltersProjectsContainer {
-    width: 80%;
+  width: 80%;
 }
 
 .FilterContainer ul li {
-    text-transform: capitalize;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Roboto", sans-serif;
-    width: 100%;
-    /* border-radius: 15px; */
+  text-transform: capitalize;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  /* border-radius: 15px; */
 }
 
 .FilterContainer .nonActiveBtnActive {
-    height: 50px;
-    border: none;
-    width: 100%;
-    background-color: black;
-    color: rgb(255, 255, 255);
-    border: 1px solid black;
-    margin: 0px 10px;
-    cursor: pointer;
-    transition: .5s;
-    /* border-radius: 15px; */
+  height: 50px;
+  border: none;
+  width: 100%;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+  margin: 0px 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  /* border-radius: 15px; */
 }
 
 .FilterContainer .nonActiveBtn:hover {
-    height: 50px;
-    border: none;
-    width: 100%;
-    background-color: black;
-    color: rgb(255, 255, 255);
-    border: 1px solid black;
-    margin: 0px 10px;
-    cursor: pointer;
-    transition: .5s;
-    /* border-radius: 15px; */
+  height: 50px;
+  border: none;
+  width: 100%;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+  margin: 0px 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  /* border-radius: 15px; */
 }
 
 .ColumsStyleContainers {
-    padding-top: 2rem;
+  padding-top: 2rem;
 }
-.modal-images{
-    height: 80vh;
-    overflow: auto;
+.modal-images {
+  height: 80vh;
+  overflow: auto;
 }
 /* .modal-images img{
     width: 200px;
@@ -93,85 +92,90 @@
     object-fit: contain; */
 /* } */
 #SelectMobile {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    background: black;
-    color: white;
-    border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 5px;
 }
 
 #SelectMobile:active,
 #SelectMobile:focus {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background: black;
-    color: white;
-    border: none;
-    outline: none;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: black;
+  color: white;
+  border: none;
+  outline: none;
 }
 
 .FiltersContainers {
-    padding-right: 30px;
-    position: sticky;
-    top: 10%;
-    z-index: 5;
+  padding-right: 30px;
+  position: sticky;
+  top: 10%;
+  z-index: 5;
 }
 
 .FilterContainer {
-    position: sticky;
-    top: 30%;
-    z-index: 5;
+  position: sticky;
+  top: 30%;
+  z-index: 5;
 }
 
+@media (max-width: 769px) {
+  .ColumsStyleContainers {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
 
-@media (max-width:769px) {
-    .ColumsStyleContainers {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        padding-top: 0.5rem;
-    }
+  .ColumsStyleContainers .FiltersContainers {
+    width: 100%;
+  }
 
-    .ColumsStyleContainers .FiltersContainers {
-        width: 100%;
-    }
+  .ColumsStyleContainers .FiltersProjectsContainer {
+    width: 100%;
+  }
 
-    .ColumsStyleContainers .FiltersProjectsContainer {
-        width: 100%;
-    }
-
-    .projectsCardDesigns {
-        margin: 10px 0px;
-    }
-    .ProjectsDataContainer .ant-row .ant-col{
-        width: 100%;
-    }
+  .projectsCardDesigns {
+    margin: 10px 0px;
+  }
+  .ProjectsDataContainer .ant-row .ant-col {
+    width: 100%;
+  }
 }
-.ant-modal .ant-modal-content{
-    box-shadow: none;
+.ant-modal .ant-modal-content {
+  box-shadow: none;
 }
 
-.ProjectModal .ant-modal-close{
-    color: black;
+.ProjectModal .ant-modal-close {
+  color: black;
 }
 .ProjectModal .ant-modal-body,
-.ProjectModal .ant-modal-header{
-   padding: 10px 20px;
+.ProjectModal .ant-modal-header {
+  padding: 10px 20px;
 }
-.ProjectModal .ant-image{
-    height: 100% !important;
-    width: 100% !important;
+.ProjectModal .ant-image {
+  height: 100% !important;
+  width: 100% !important;
 }
-.ProjectModal .ant-row{
-    width: 100%;
+.ProjectModal .ant-row {
+  width: 100%;
 }
-.ProjectModal .ant-row .ant-col{
-    width: 100%;
+.ProjectModal .ant-row .ant-col {
+  width: 100%;
 }
-.modalImage{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.modalImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 769px) {
+  .ProjectModal .ant-modal-body,
+  .ProjectModal .ant-modal-header {
+    padding: 10px;
+  }
 }

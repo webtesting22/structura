@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import TopBack from '../AllProjects/2.png';
 import "../AllProjects/AllProjects.css"
@@ -37,7 +37,21 @@ const Drafting = () => {
     //     const matchesStatus = project.Status === activeSubTab;
     //     return matchesCategory && matchesStatus;
     // });
+    const filterProjectsContainerRef = useRef(null);
+    const offsetValue = 150; // Set your desired offset here
 
+    const handleLinkClick = () => {
+        if (filterProjectsContainerRef.current) {
+            const rect = filterProjectsContainerRef.current.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const offsetPosition = rect.top + scrollTop - offsetValue;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    };
     const truncateTitle = (title, length) => {
         if (title.length > length) {
             return title.substring(0, length) + '...';
@@ -94,11 +108,14 @@ const Drafting = () => {
                             </ul> */}
                             {isMobile ? (
                                 <select
+
                                     value={selectedTitle}
                                     onChange={(e) => {
                                         setSelectedTitle(e.target.value);
                                         const selectedIndex = DraftingData.findIndex(item => item.Title === e.target.value);
                                         setActiveTab(selectedIndex);
+                                        // Scroll to FiltersProjectsContainer after clicking
+                                        handleLinkClick();
 
                                     }}
                                     id="SelectMobile"
@@ -117,6 +134,8 @@ const Drafting = () => {
                                             onClick={() => {
                                                 setSelectedTitle(item.Title);
                                                 setActiveTab(index);
+                                                handleLinkClick();
+
                                             }}
                                             className={selectedTitle === item.Title ? 'nonActiveBtnActive' : 'nonActiveBtn'}
                                             style={{ margin: "20px 0px", cursor: 'pointer' }}
@@ -128,7 +147,7 @@ const Drafting = () => {
                             )}
                         </div>
                     </div>
-                    <div className="FiltersProjectsContainer">
+                    <div className="FiltersProjectsContainer" ref={filterProjectsContainerRef}>
                         <div className="ProjectsDataContainer">
                             <Row>
                                 {DraftingData.filter(project => project.Title === selectedTitle).map((filteredProject, index) => (
@@ -194,7 +213,7 @@ const Drafting = () => {
                                         </Button>,
                                     ]}
                                     className="ProjectModal"
-                                    style={{ padding: '20px' }}
+                                    style={{ padding: isMobile ? '0px' : "20px" }}
                                     centered
                                     destroyOnClose
                                 >
@@ -203,6 +222,7 @@ const Drafting = () => {
                                         type="application/pdf"
                                         width="100%"
                                         height={isMobile ? "300px" : "600px"}
+                                        style={{ padding: "0" }}
                                     >
                                         <p>
                                             Your browser does not support PDF viewing. You can download the file
