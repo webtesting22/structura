@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import { Row, Col } from 'antd';
 import "./Contact.css"
 import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
-import bgImage from "./bg.jpg";
+import bgImage from "/images/ProjectsImages/HighRiseBuilding/ZaveriGreens/04.jpg"
 const Contact = () => {
     useEffect(() => {
         window.scrollTo(0, 0);

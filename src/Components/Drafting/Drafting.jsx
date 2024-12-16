@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
-import TopBack from '../AllProjects/2.png';
+import TopBack from "/images/ProjectsImages/Banglows/JAYANI FARM/02.jpeg"
 import "../AllProjects/AllProjects.css"
 // import "./AllProjects.css";
 import { Row, Col, Modal, Image, Button } from "antd";

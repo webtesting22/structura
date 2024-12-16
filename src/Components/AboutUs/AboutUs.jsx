@@ -13,7 +13,8 @@ import VisualizationIcon from "./IconsImages/VISUALIZATION.png"
 import WhyUsComponent from "../MinimillisticComponents/WhyUsComponent";
 import BoxCarousalContainer from "../MinimillisticComponents/BoxCarousalContainer/BoxCarousalContainer";
 import AnimatedHoverableCards from "../AnimatedHoverableCard/AnimatedHoverableCard";
-import AboutUsPoster from "../AboutUs/1.png"
+// import AboutUsPoster from "../AboutUs/1.png"
+import AboutUsPoster from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/07.jpg";
 import NewAbout from "../NewAbout/NewAbout";
 const AboutUs = () => {
     useEffect(() => {

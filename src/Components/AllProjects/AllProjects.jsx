@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
-import TopBack from '../AllProjects/2.png';
+// import TopBack from '../AllProjects/2.png';
+import TopBack from "/images/ProjectsImages/HighRiseBuilding/BeaufortPark/11.jpg"
 import "./AllProjects.css";
 import AllProjectsData from "./AllProjectsData";
-import { Row, Col, Modal,Image } from "antd";
+import { Row, Col, Modal, Image } from "antd";
 
 const AllProjects = () => {
     const [activeTab, setActiveTab] = useState('Residential');
@@ -24,7 +25,7 @@ const AllProjects = () => {
     }, []);
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
     const routeLinks = [
         { path: "/", name: "Home" },
         { path: "/AllProjects", name: "All Projects" },
@@ -98,7 +99,7 @@ const AllProjects = () => {
                                         setSelectedTitle(e.target.value);
                                         const selectedIndex = AllProjectsData.findIndex(item => item.Title === e.target.value);
                                         setActiveTab(selectedIndex);
-                                         
+
                                     }}
                                     id="SelectMobile"
                                 >
@@ -184,8 +185,8 @@ const AllProjects = () => {
                                         {modalDetails.galleryImages && modalDetails.galleryImages.length > 0 ? (
                                             modalDetails.galleryImages.map((image, index) => (
                                                 <Col lg={8} key={index}>
-                                                    <div style={{ padding: "5px",height:"300px" }}>
-                                                        <Image style={{ width: "100%",height:"100%" }} src={image} className="modalImage" alt={`Project Image ${index + 1}`} />
+                                                    <div style={{ padding: "5px", height: "300px" }}>
+                                                        <Image style={{ width: "100%", height: "100%" }} src={image} className="modalImage" alt={`Project Image ${index + 1}`} />
                                                     </div>
                                                 </Col>
                                             ))

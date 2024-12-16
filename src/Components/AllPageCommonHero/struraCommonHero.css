@@ -1,34 +1,74 @@
 #commonHerosection {
-    padding: 0px;
-    height: 70vh;
-    overflow: hidden;
-    position: relative;
+  padding: 0px;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
 }
 
 .imageContainer {
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 
 .imageContainer img {
-    width: 100%;
-    /* height: 100%; */
-
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .contentContainer1 {
-    position: absolute;
-    z-index: 4;
+  position: absolute;
+  z-index: 4;
 }
 
 .contentContainer1 .content h4 {
-    text-align: center;
-    font-size: 3rem;
-    color: white;
-    font-weight: 300;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: 300;
 }
 
 .commonHerosectionOverlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.539);
+  z-index: 3;
+  height: 70vh;
+}
+
+.imageContainerWithText {
+  height: 70vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linksNames {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.linksNames a {
+  font-size: 20px;
+}
+
+@media (max-width: 769px) {
+  .linksNames a {
+    font-size: 16px;
+  }
+
+  #commonHerosection {
+    padding: 0px;
+    height: 35vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .commonHerosectionOverlay {
     position: absolute;
     left: 0;
     right: 0;
@@ -36,76 +76,32 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.539);
     z-index: 3;
-    height: 70vh;
+    height: 35vh;
+  }
 
-}
-
-.imageContainerWithText {
-    height: 70vh;
+  .imageContainerWithText {
+    height: 35vh;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.linksNames {
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contentContainer1 .content h4 {
     text-align: center;
-    margin: 20px 0px;
-}
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 300;
+  }
 
-.linksNames a {
-    font-size: 20px;
-}
-
-@media (max-width:769px) {
-    .linksNames a {
-        font-size: 16px;
-    }
-
-    #commonHerosection {
-        padding: 0px;
-        height: 35vh;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .commonHerosectionOverlay {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.539);
-        z-index: 3;
-        height: 35vh;
-
-    }
-
-    .imageContainerWithText {
-        height: 35vh;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .imageContainer img {
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .contentContainer1 .content h4 {
-        text-align: center;
-        font-size: 1.2rem;
-        color: white;
-        font-weight: 300;
-    }
-
-    .contentContainer1 {
-        position: absolute;
-        z-index: 4;
-        bottom: 5%;
-    }
-
+  .contentContainer1 {
+    position: absolute;
+    z-index: 4;
+    bottom: 5%;
+  }
 }

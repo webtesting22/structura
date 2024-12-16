@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import { Row, Col } from "antd";
 import "./animatedCardSection.css"
-import HeroImage from "../ClientsAndDirectors/3.png"
+import HeroImage from "/images/ProjectsImages/Banglows/K.C.PATEL BUNGLOW/02.jpg"
 import ClientCard from "./ClientCard.jsx"
 const ClientsAndDirectors = () => {
     useEffect(() => {

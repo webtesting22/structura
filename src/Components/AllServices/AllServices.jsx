@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import StructuraCommonHero from "../AllPageCommonHero/StructuraCommonHero";
 import "./AllServices.css";
-import Image from "../AllServices/4.png"
+import Image from "/images/ProjectsImages/Banglows/RAKESHBHAI BUNGLOW/02.jpg"
 import AnimatedStackCards from "./AnimationStackCards";
 
 const AllServices = () => {
