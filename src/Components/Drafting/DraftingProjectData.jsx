@@ -96,7 +96,7 @@ const DraftingProjectData = [
         ProjectDetails: [
             {
                 Title: "Project 1",
-                projectPath: "/Documents/Oomo Studio/Project-1.pdf",
+                projectPath: "/Documents/Oomo studio/Project-1.pdf",
             }
         ]
     },
