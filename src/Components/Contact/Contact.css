@@ -57,6 +57,9 @@
   }
 }
 @media (max-width: 769px) {
+  .contactRow{
+    padding: 1rem;
+  }
   .contactTextContainer {
     padding: 0rem 0rem;
     padding-bottom: 2rem;
