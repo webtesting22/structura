@@ -31,7 +31,7 @@ const WhyUsComponent = () => {
             window.removeEventListener('resize', handleScroll);
         };
     }, []);
-    
+
     const WhyChooseUsCards = [
         // {
         //     // Title: "Architectural CAD Drafting",
@@ -42,44 +42,44 @@ const WhyUsComponent = () => {
         {
             // Title: "Architectural BIM Services",
             // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
-            Title:"Experience",
-            Descriptions:"We have completed over 1500 large-scale projects along with 20,000+ Retail roll-outs across 32 countries over the past 18 years.",
+            Title: "Experience",
+            Descriptions: "We have completed over 1500 large-scale projects along with 20,000+ Retail roll-outs across 32 countries over the past 18 years.",
         },
         {
             // Title: "Facade BIM Services",
             // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
-            Title:"Infrastructure",
-            Descriptions:"State of the art IT infrastructure with Data Integrity and data security, Global Connectivity, up to date Hardware/Software, Cloud & Remote Collaboration with IT-enabled Project Planning and Tracking mechanisms.",
+            Title: "Infrastructure",
+            Descriptions: "State of the art IT infrastructure with Data Integrity and data security, Global Connectivity, up to date Hardware/Software, Cloud & Remote Collaboration with IT-enabled Project Planning and Tracking mechanisms.",
         },
         {
             // Title: "Structural CAD Drafting",
             // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
-            Title:"Bim Expertise",
-            Descriptions:"Completed over 300 projects in BIM - both in Architecture & Engineering.",
+            Title: "Bim Expertise",
+            Descriptions: "Completed over 300 projects in BIM - both in Architecture & Engineering.",
         },
         {
             // Title: 'MEP CAD Drafting',
             // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
-            Title:"Flexibility",
-            Descriptions:"625+ architects and engineers provide flexibility of ramping team size up/down based on project requirements.",
+            Title: "Flexibility",
+            Descriptions: "625+ architects and engineers provide flexibility of ramping team size up/down based on project requirements.",
         },
         {
             // Title: "Structural BIM Services",
             // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
-            Title:"PROCESS EXCELLENCE",
-            Descriptions:"We deliver unmatched business value through process excellence and quality frameworks.",
+            Title: "PROCESS EXCELLENCE",
+            Descriptions: "We deliver unmatched business value through process excellence and quality frameworks.",
         },
         {
             // Title: "MEP BIM Services",
             // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
-            Title:"REPEAT CLIENTELE",
-            Descriptions:"Most of our clients are long-standing as we provide relationship-based, tailor-made solutions. Since inception, we have had 4 large studios running, turning our clients into Partners in growth & success."
+            Title: "REPEAT CLIENTELE",
+            Descriptions: "Most of our clients are long-standing as we provide relationship-based, tailor-made solutions. Since inception, we have had 4 large studios running, turning our clients into Partners in growth & success."
         },
         {
-            Title:"RETENTION RATE",
-            Descriptions:"We have a near 100% retention rate since inception.",
+            Title: "RETENTION RATE",
+            Descriptions: "We have a near 100% retention rate since inception.",
         }
-       
+
     ]
     return (
         <>
@@ -114,16 +114,16 @@ const WhyUsComponent = () => {
                             <div style={{ width: "100%" }}>
 
                                 <div className='rightSideContainerColum'>
-                                    <Row style={{ textAlign: "center",display:"flex",justifyContent:"center" }}>
+                                    <Row style={{ textAlign: "center", display: "flex", justifyContent: "center" }}>
                                         {WhyChooseUsCards.map((item, index) => (
                                             <Col lg={12} key={index}>
                                                 <div className='cardContainerWhyChooseUS' data-aos="fade-up" data-aos-delay={`${index * 300}`} data-aos-duration="500">
                                                     <div className='iconCardContainer'>
                                                         {/* <i class='bx bxs-hard-hat' ></i> */}
-                                                        <img src={StructuraLogo} style={{width:"15%"}}/>
+                                                        <img src={StructuraLogo} style={{ width: "15%" }} />
                                                     </div>
-                                                    <h4 style={{marginBottom:"10px"}}>{item.Title}</h4>
-                                                    <p style={{fontSize:"16px"}}>{item.Descriptions}</p>
+                                                    <h4 style={{ marginBottom: "10px" }}>{item.Title}</h4>
+                                                    <p style={{ fontSize: "16px" }}>{item.Descriptions}</p>
                                                 </div>
                                             </Col>
                                         ))}
