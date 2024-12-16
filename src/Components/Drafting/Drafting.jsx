@@ -152,7 +152,7 @@ const Drafting = () => {
                             <Row>
                                 {DraftingData.filter(project => project.Title === selectedTitle).map((filteredProject, index) => (
                                     filteredProject.ProjectDetails.map((details, detailIndex) => (
-                                        <Col lg={8} md={12} key={detailIndex}>
+                                        <Col lg={6} md={12} key={detailIndex}>
                                             <div
                                                 onClick={() => showModal(details)}
                                                 className="projectsCardDesigns"
