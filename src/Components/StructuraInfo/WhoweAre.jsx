@@ -190,14 +190,14 @@ const WhoweAre = () => {
                             <p data-aos="fade-up" data-aos-duration="2000">
                                 At Structura Consultants, we are proud to collaborate with renowned architects who bring unique visions to life. Together, we create designs that blend innovation with tradition, pushing the boundaries of structural excellence.
                             </p>
-                            <Link to="/Drafting"> <button className="commomBtn">Drafting Services</button></Link>
+                            <Link to="/Drafting"> <button className="commomBtn">Drafting</button></Link>
                         </div>
                     </div>
                     <div className="WhoweareImage-container">
                         <div className="boxesContainer">
                             <div className="SingleBox" data-aos="fade-up"
                                 data-aos-duration="2000" >
-                                <img src="/images/Structural Architects/ApurvaAmin.svg" />
+                                <img src="/images/Structural Architects/ApurvaAmin.svg" style={{ width: "70%" }} />
                             </div>
                             <div className="SingleBox" data-aos="fade-up"
                                 data-aos-duration="2000" >
