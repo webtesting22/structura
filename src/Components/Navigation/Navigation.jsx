@@ -7,8 +7,13 @@ import { RxCross2 } from "react-icons/rx";
 
 const Navigation = () => {
     const [isNavVisible, setIsNavVisible] = useState(false);
+    const [isProjectsOpen, setIsProjectsOpen] = useState(false); // Mobile dropdown state
+
     const toggleNav = () => {
         setIsNavVisible(prevState => !prevState);
+    };
+    const toggleProjectsDropdown = () => {
+        setIsProjectsOpen(!isProjectsOpen);
     };
     const hideNav = () => {
         setIsNavVisible(false);
@@ -55,8 +60,22 @@ const Navigation = () => {
                 <div className="overlay"> </div>
                 <ul>
                     <li onClick={toggleNav}><Link to="/AboutUs">About Us</Link></li>
-                    <li onClick={toggleNav}><Link to="/Projects">Projects</Link></li>
-                    <li onClick={toggleNav}><Link to="/Drafting">Drafting</Link></li>
+                    <li
+                        className="dropdown"
+                        onMouseEnter={() => setIsProjectsOpen(true)}
+                        onMouseLeave={() => setIsProjectsOpen(false)}
+                        onClick={toggleProjectsDropdown}
+                    >
+                        <span className="nav-link">Projects</span>
+                        <ul className={`dropdown-menu ${isProjectsOpen ? "open" : ""}`}>
+                            <li onClick={toggleNav}>
+                                <Link to="/Projects">Structural Projects</Link>
+                            </li>
+                            <li onClick={toggleNav}>
+                                <Link to="/Drafting">Drafting Projects</Link>
+                            </li>
+                        </ul>
+                    </li>
                     <li onClick={toggleNav}><Link to="/ClientsAndDirectors">Directors And Clients</Link></li>
                     <li onClick={toggleNav}><Link to="/Services">Services</Link></li>
                     <li onClick={toggleNav}><Link to="/Contact">Contact</Link></li>
