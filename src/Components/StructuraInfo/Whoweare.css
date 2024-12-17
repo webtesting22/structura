@@ -117,6 +117,55 @@
   height: 40px;
   width: 40px;
 }
+/* Container with transition effect */
+.transition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out; /* Smooth fade effect */
+}
+
+/* Smooth fade for logo changes */
+.WhoweAreContainer .boxesContainer {
+  transition: all 0.8s ease-in-out; /* Smooth transition */
+}
+
+/* Individual logo box */
+.SingleBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  max-width: 200px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  background-color: #f9f9f9; /* Subtle background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.SingleBox img {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0;
+  animation: fadeIn 0.8s forwards; /* Fade-in animation */
+}
+
+/* Keyframe for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @media (max-width: 769px) {
   .WhoweAreContainer {

@@ -1,10 +1,62 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Whoweare.css"
 import WhoweareBack from "../StructuraInfo/Whoweareback.png"
 import { Link } from "react-router-dom";
 import CountUp from 'react-countup';
 import StructuraLogo from "/images/structuraLogo.png"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation, FreeMode } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "./Whoweare.css"; // Your styles
+import StructuralClientsLogo from "../ClientsAndDirectors/StructuralClients.jsx"
+import StructuralArchitects from "../ClientsAndDirectors/StructuralArchitects";
+import "swiper/css";
 const WhoweAre = () => {
+    const [clientIndex, setClientIndex] = useState(0);
+    const [architectIndex, setArchitectIndex] = useState(0);
+
+    const logosPerPage = 6; // Number of logos to show at a time
+
+    // Function to cycle through client logos every 3 seconds
+    useEffect(() => {
+        const clientInterval = setInterval(() => {
+            setClientIndex((prevIndex) =>
+                (prevIndex + logosPerPage) % StructuralClientsLogo.length
+            );
+        }, 3000);
+
+        return () => clearInterval(clientInterval);
+    }, []);
+
+    // Function to cycle through architect logos every 3 seconds
+    useEffect(() => {
+        const architectInterval = setInterval(() => {
+            setArchitectIndex((prevIndex) =>
+                (prevIndex + logosPerPage) % StructuralArchitects.length
+            );
+        }, 3000);
+
+        return () => clearInterval(architectInterval);
+    }, []);
+
+    // Get the current 4 clients
+    const visibleClients = StructuralClientsLogo.slice(
+        clientIndex,
+        clientIndex + logosPerPage
+    ).concat(
+        StructuralClientsLogo.slice(0, Math.max(0, clientIndex + logosPerPage - StructuralClientsLogo.length))
+    );
+
+    // Get the current 4 architects
+    const visibleArchitects = StructuralArchitects.slice(
+        architectIndex,
+        architectIndex + logosPerPage
+    ).concat(
+        StructuralArchitects.slice(0, Math.max(0, architectIndex + logosPerPage - StructuralArchitects.length))
+    );
+
     return (
 
         <>
@@ -80,7 +132,22 @@ const WhoweAre = () => {
                         </div>
                     </div> */}
                     <div className="WhoweareImage-container">
-                        <div className="boxesContainer">
+                        <div className="boxesContainer transition">
+                            {visibleClients.map((client, index) => (
+                                <div
+                                    key={index}
+                                    className="SingleBox"
+                                    data-aos="fade-up"
+                                    data-aos-duration="2000"
+                                >
+                                    <img
+                                        src={client.companyLogo}
+                                        alt={client.companyTitle}
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                        {/* <div className="boxesContainer">
                             <div className="SingleBox" data-aos="fade-up"
                                 data-aos-duration="2000" >
                                 <img src="/images/Structural Clients/AShridhar.png" />
@@ -97,7 +164,7 @@ const WhoweAre = () => {
                                 data-aos-duration="2000" >
                                 <img src="/images/Structural Clients/addor_group_logo_dark.png" />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="WhoweareContent-container">
                         <div className="WhoweareContentText">
@@ -194,7 +261,22 @@ const WhoweAre = () => {
                         </div>
                     </div>
                     <div className="WhoweareImage-container">
-                        <div className="boxesContainer">
+                        <div className="boxesContainer transition">
+                            {visibleArchitects.map((client, index) => (
+                                <div
+                                    key={index}
+                                    className="SingleBox"
+                                    data-aos="fade-up"
+                                    data-aos-duration="2000"
+                                >
+                                    <img
+                                        src={client.companyLogo}
+                                        alt={client.companyTitle}
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                        {/* <div className="boxesContainer">
                             <div className="SingleBox" data-aos="fade-up"
                                 data-aos-duration="2000" >
                                 <img src="/images/Structural Architects/ApurvaAmin.svg" style={{ width: "70%" }} />
@@ -211,7 +293,7 @@ const WhoweAre = () => {
                                 data-aos-duration="2000" >
                                 <img src="/images/Structural Architects/9th-street-clientele.jpg" />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
 
