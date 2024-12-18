@@ -142,31 +142,51 @@
   height: 150px;
   overflow: hidden;
   position: relative;
-  background-color: #f9f9f9; /* Subtle background */
+  background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: none;
+  backface-visibility: hidden;
 }
 
 .SingleBox img {
   width: 60%;
   height: auto;
   object-fit: contain;
-  opacity: 0;
-  animation: fadeIn 0.8s forwards; /* Fade-in animation */
+  opacity: 1;
+  /* animation: flipIn 1s forwards;  */
+  /* backface-visibility: hidden;  */
+}
+/* Flip-in animation for the container */
+.SingleBox.flipIn {
+  animation: flipIn 1s forwards;
 }
 
-/* Keyframe for fade-in effect */
-@keyframes fadeIn {
+/* Flip-out animation for the container */
+.SingleBox.flipOut {
+  animation: flipOut 1s forwards;
+}
+/* Keyframes for flip effect */
+@keyframes flipIn {
   from {
-    opacity: 0;
-    transform: translateY(10px);
+    transform: rotateY(90deg);
+    opacity: 1;
   }
   to {
+    transform: rotateY(0deg);
     opacity: 1;
-    transform: translateY(0);
   }
 }
-
+@keyframes flipOut {
+  from {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotateY(-90deg);
+    opacity: 1;
+  }
+}
 @media (max-width: 769px) {
   .WhoweAreContainer {
     width: 100%;

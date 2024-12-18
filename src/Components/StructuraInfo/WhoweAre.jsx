@@ -13,49 +13,82 @@ import "./Whoweare.css"; // Your styles
 import StructuralClientsLogo from "../ClientsAndDirectors/StructuralClients.jsx"
 import StructuralArchitects from "../ClientsAndDirectors/StructuralArchitects";
 import "swiper/css";
+
 const WhoweAre = () => {
     const [clientIndex, setClientIndex] = useState(0);
     const [architectIndex, setArchitectIndex] = useState(0);
 
-    const logosPerPage = 6; // Number of logos to show at a time
+    const logosPerPage = 6;
 
-    // Function to cycle through client logos every 3 seconds
+    const [clientImages, setClientImages] = useState([]);
+    const [architectImages, setArchitectImages] = useState([]);
+
     useEffect(() => {
-        const clientInterval = setInterval(() => {
-            setClientIndex((prevIndex) =>
-                (prevIndex + logosPerPage) % StructuralClientsLogo.length
-            );
-        }, 3000);
-
-        return () => clearInterval(clientInterval);
+        setClientImages(
+            StructuralClientsLogo.slice(0, logosPerPage).map((client) => ({
+                ...client,
+                flipOut: false,
+            }))
+        );
+        setArchitectImages(
+            StructuralArchitects.slice(0, logosPerPage).map((architect) => ({
+                ...architect,
+                flipOut: false,
+            }))
+        );
     }, []);
 
-    // Function to cycle through architect logos every 3 seconds
-    useEffect(() => {
-        const architectInterval = setInterval(() => {
-            setArchitectIndex((prevIndex) =>
-                (prevIndex + logosPerPage) % StructuralArchitects.length
+    const flipDuration = 1000; // Duration of flipOut animation in milliseconds
+    const updateClientImages = () => {
+        // Step 1: Trigger flipOut animation for the containers
+        setClientImages((prev) =>
+            prev.map((img) => ({
+                ...img,
+                flipOut: true,
+            }))
+        );
+
+        // Step 2: Update content after animation completes
+        setTimeout(() => {
+            setClientImages((prev) =>
+                prev.map((_, index) => ({
+                    ...StructuralClientsLogo[(clientIndex + index + logosPerPage) % StructuralClientsLogo.length],
+                    flipOut: false, // Reset for flipIn animation
+                }))
             );
-        }, 3000);
+            setClientIndex((prevIndex) => (prevIndex + logosPerPage) % StructuralClientsLogo.length);
+        }, flipDuration); // Match flipOut duration
+    };
 
-        return () => clearInterval(architectInterval);
-    }, []);
+    const updateArchitectImages = () => {
+        // Step 1: Trigger flipOut animation for the containers
+        setArchitectImages((prev) =>
+            prev.map((img) => ({
+                ...img,
+                flipOut: true,
+            }))
+        );
 
-    // Get the current 4 clients
-    const visibleClients = StructuralClientsLogo.slice(
-        clientIndex,
-        clientIndex + logosPerPage
-    ).concat(
-        StructuralClientsLogo.slice(0, Math.max(0, clientIndex + logosPerPage - StructuralClientsLogo.length))
-    );
+        // Step 2: Update content after animation completes
+        setTimeout(() => {
+            setArchitectImages((prev) =>
+                prev.map((_, index) => ({
+                    ...StructuralArchitects[(architectIndex + index + logosPerPage) % StructuralArchitects.length],
+                    flipOut: false, // Reset for flipIn animation
+                }))
+            );
+            setArchitectIndex((prevIndex) => (prevIndex + logosPerPage) % StructuralArchitects.length);
+        }, flipDuration); // Match flipOut duration
+    };
+    useEffect(() => {
+        const clientInterval = setInterval(updateClientImages, 2000);
+        const architectInterval = setInterval(updateArchitectImages, 2000);
 
-    // Get the current 4 architects
-    const visibleArchitects = StructuralArchitects.slice(
-        architectIndex,
-        architectIndex + logosPerPage
-    ).concat(
-        StructuralArchitects.slice(0, Math.max(0, architectIndex + logosPerPage - StructuralArchitects.length))
-    );
+        return () => {
+            clearInterval(clientInterval);
+            clearInterval(architectInterval);
+        };
+    }, [clientIndex, architectIndex]);
 
     return (
 
@@ -133,16 +166,19 @@ const WhoweAre = () => {
                     </div> */}
                     <div className="WhoweareImage-container">
                         <div className="boxesContainer transition">
-                            {visibleClients.map((client, index) => (
+                            {clientImages.map((client, index) => (
                                 <div
                                     key={index}
-                                    className="SingleBox"
-                                    data-aos="fade-up"
-                                    data-aos-duration="2000"
+                                    className={`SingleBox ${client.flipOut ? "flipOut" : "flipIn"}`}
+                                // data-aos="fade-up"
+                                //   data-aos-duration="2000"
                                 >
                                     <img
                                         src={client.companyLogo}
                                         alt={client.companyTitle}
+                                    // className={client.flipOut ? "flipOut" : "flipIn"}
+
+
                                     />
                                 </div>
                             ))}
@@ -262,16 +298,19 @@ const WhoweAre = () => {
                     </div>
                     <div className="WhoweareImage-container">
                         <div className="boxesContainer transition">
-                            {visibleArchitects.map((client, index) => (
+                            {architectImages.map((architect, index) => (
                                 <div
                                     key={index}
-                                    className="SingleBox"
-                                    data-aos="fade-up"
-                                    data-aos-duration="2000"
+                                    // className="SingleBox"
+                                    className={`SingleBox ${architect.flipOut ? "flipOut" : "flipIn"}`}
+
+                                //data-aos="fade-up"
+                                //data-aos-duration="2000"
                                 >
                                     <img
-                                        src={client.companyLogo}
-                                        alt={client.companyTitle}
+                                        src={architect.companyLogo}
+                                        alt={architect.companyTitle}
+                                    // className={architect.flipOut ? "flipOut" : "flipIn"}
                                     />
                                 </div>
                             ))}
