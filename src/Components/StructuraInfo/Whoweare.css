@@ -71,10 +71,12 @@
   /* position: relative; */
   /* height: 100%; */
 }
+
 .SingleBox img {
   width: 40%;
   object-fit: contain;
 }
+
 .CounterBox {
   width: 100%;
   display: flex;
@@ -117,6 +119,7 @@
   height: 40px;
   width: 40px;
 }
+
 /* Container with transition effect */
 .transition {
   display: flex;
@@ -124,12 +127,14 @@
   align-items: center;
   gap: 20px;
   opacity: 1;
-  transition: opacity 0.8s ease-in-out; /* Smooth fade effect */
+  transition: opacity 0.8s ease-in-out;
+  /* Smooth fade effect */
 }
 
 /* Smooth fade for logo changes */
 .WhoweAreContainer .boxesContainer {
-  transition: all 0.8s ease-in-out; /* Smooth transition */
+  transition: all 0.8s ease-in-out;
+  /* Smooth transition */
 }
 
 /* Individual logo box */
@@ -157,6 +162,7 @@
   /* animation: flipIn 1s forwards;  */
   /* backface-visibility: hidden;  */
 }
+
 /* Flip-in animation for the container */
 .SingleBox.flipIn {
   animation: flipIn 1s forwards;
@@ -166,27 +172,32 @@
 .SingleBox.flipOut {
   animation: flipOut 1s forwards;
 }
+
 /* Keyframes for flip effect */
 @keyframes flipIn {
   from {
     transform: rotateY(90deg);
     opacity: 1;
   }
+
   to {
     transform: rotateY(0deg);
     opacity: 1;
   }
 }
+
 @keyframes flipOut {
   from {
     transform: rotateY(0deg);
     opacity: 1;
   }
+
   to {
     transform: rotateY(-90deg);
     opacity: 1;
   }
 }
+
 @media (max-width: 769px) {
   .WhoweAreContainer {
     width: 100%;
@@ -205,16 +216,20 @@
     display: flex;
     /* flex-direction: column; */
   }
+
   .architectswhoweare {
     flex-direction: column-reverse;
   }
+
   .SingleBox {
-    width: 50%;
+    width: 46%;
     max-width: 200px;
   }
+
   .SingleBox img {
     width: 60%;
   }
+
   .WhoweareContentText {
     padding: 0.5rem;
   }

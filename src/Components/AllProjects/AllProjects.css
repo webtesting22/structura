@@ -14,9 +14,11 @@
   margin: 0px 10px;
   cursor: pointer;
 }
+
 .projectsCardDesigns {
   cursor: pointer;
 }
+
 .nonActiveBtnSub {
   height: 50px;
   border-bottom: 2px solid transparent;
@@ -59,8 +61,8 @@
   background-color: rgb(188, 119, 66);
   /* background-color: black; */
   /* color: rgb(255, 255, 255); */
-  color: black;
-  border: 1px solid black;
+  color: white;
+  /* border: 1px solid black; */
   margin: 0px 10px;
   cursor: pointer;
   transition: 0.5s;
@@ -83,10 +85,12 @@
 .ColumsStyleContainers {
   padding-top: 2rem;
 }
+
 .modal-images {
   height: 80vh;
   overflow: auto;
 }
+
 /* .modal-images img{
     width: 200px;
     height: 200px;
@@ -126,6 +130,27 @@
   z-index: 5;
 }
 
+#ProjectsDataContainer .projectsCardDesigns {
+  border-bottom: 0.5px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  transition: .5s;
+}
+#ProjectsDataContainer .projectsCardDesigns:hover{
+  background-color: white;
+  transition: .5s;
+}
+
+#ProjectsDataContainer .projectsCardDesigns .arrowIcon {
+  display: none;
+}
+
+#ProjectsDataContainer .projectsCardDesigns h2 {
+  text-align: center;
+}
+
 @media (max-width: 769px) {
   .ColumsStyleContainers {
     display: flex;
@@ -145,10 +170,12 @@
   .projectsCardDesigns {
     margin: 10px 0px;
   }
+
   .ProjectsDataContainer .ant-row .ant-col {
     width: 100%;
   }
 }
+
 .ant-modal .ant-modal-content {
   box-shadow: none;
 }
@@ -156,26 +183,33 @@
 .ProjectModal .ant-modal-close {
   color: black;
 }
+
 .ProjectModal .ant-modal-body,
 .ProjectModal .ant-modal-header {
   padding: 10px 20px;
 }
+
 .ProjectModal .ant-image {
   height: 100% !important;
   width: 100% !important;
 }
+
 .ProjectModal .ant-row {
   width: 100%;
 }
+
 .ProjectModal .ant-row .ant-col {
   width: 100%;
 }
+
 .modalImage {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+
 @media (max-width: 769px) {
+
   .ProjectModal .ant-modal-body,
   .ProjectModal .ant-modal-header {
     padding: 10px;

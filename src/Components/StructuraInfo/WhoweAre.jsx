@@ -169,7 +169,7 @@ const WhoweAre = () => {
                             {clientImages.map((client, index) => (
                                 <div
                                     key={index}
-                                    className={`SingleBox ${client.flipOut ? "flipOut" : "flipIn"}`}
+                                    className='SingleBox'
                                 // data-aos="fade-up"
                                 //   data-aos-duration="2000"
                                 >
@@ -302,7 +302,7 @@ const WhoweAre = () => {
                                 <div
                                     key={index}
                                     // className="SingleBox"
-                                    className={`SingleBox ${architect.flipOut ? "flipOut" : "flipIn"}`}
+                                    className="SingleBox"
 
                                 //data-aos="fade-up"
                                 //data-aos-duration="2000"
@@ -338,7 +338,7 @@ const WhoweAre = () => {
 
                 </div>
 
-                <div className="sectionPadding mobileNone"></div>
+                {/* <div className="sectionPadding mobileNone"></div> */}
             </section >
         </>
     )

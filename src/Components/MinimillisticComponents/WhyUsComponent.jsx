@@ -77,7 +77,7 @@ const WhyUsComponent = () => {
         },
         {
             Title: "RETENTION RATE",
-            Descriptions: "We have a near 100% retention rate since inception.",
+            Descriptions: "We have a near 96% retention rate since inception.",
         }
 
     ]
@@ -122,7 +122,7 @@ const WhyUsComponent = () => {
                                                         {/* <i class='bx bxs-hard-hat' ></i> */}
                                                         <img src={StructuraLogo} style={{ width: "15%" }} />
                                                     </div>
-                                                    <h4 style={{ marginBottom: "10px" }}>{item.Title}</h4>
+                                                    <h2 style={{ marginBottom: "10px" }}>{item.Title}</h2>
                                                     <p style={{ fontSize: "16px" }}>{item.Descriptions}</p>
                                                 </div>
                                             </Col>

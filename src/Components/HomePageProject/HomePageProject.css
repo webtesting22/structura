@@ -60,6 +60,12 @@
 }
 .projectsCardDesigns .cardImage img{
     width: 100%;
+    transition: .5s;
+    object-fit: cover;
+}
+.projectsCardDesigns .cardImage img:hover{
+    transform: scale(1.1);
+    transition: .5s;
 }
 .projectsCardDesigns .cardContent{
     padding: 10px 0px;

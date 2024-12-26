@@ -33,7 +33,7 @@
 .colorOverlayBack {
     height: 300vh;
     width: 100%;
-    background-color: rgba(245, 245, 245, 0.737);
+    background-color: rgb(245 245 245 / 87%);
     position: absolute;
     left: 0;
     bottom: 0px;

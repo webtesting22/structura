@@ -11,7 +11,7 @@ const StructuraHome = () => {
         <>
             <HomeHero />
             <StrucuraInfo/>
-            <HomePageProject2 />
+            {/* <HomePageProject2 /> */}
             {/* <section>
                 <div id="clientSection">
                     <h1 className="bigHeading" style={{textAlign:"center"}}>Our Clients</h1>

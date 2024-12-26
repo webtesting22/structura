@@ -148,11 +148,11 @@ const Drafting = () => {
                         </div>
                     </div>
                     <div className="FiltersProjectsContainer" ref={filterProjectsContainerRef}>
-                        <div className="ProjectsDataContainer">
+                        <div className="ProjectsDataContainer" id="ProjectsDataContainer">
                             <Row>
                                 {DraftingData.filter(project => project.Title === selectedTitle).map((filteredProject, index) => (
                                     filteredProject.ProjectDetails.map((details, detailIndex) => (
-                                        <Col lg={6} md={12} key={detailIndex}>
+                                        <Col lg={8} md={12} key={detailIndex}>
                                             <div
                                                 onClick={() => showModal(details)}
                                                 className="projectsCardDesigns"
@@ -176,13 +176,13 @@ const Drafting = () => {
                                                         <i className='bx bx-right-arrow-alt'></i>
                                                     </div>
                                                 </div> */}
-                                                <div className="cardImage" style={{ height: "10vh", display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                {/* <div className="cardImage" style={{ height: "10vh", display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                                     <img
                                                         src="/images/pdf.png"
                                                         alt="PDF Icon"
                                                         style={{ width: "40px", height: "40px" }}
                                                     />
-                                                </div>
+                                                </div> */}
                                                 <div className="cardContent">
                                                     <h2>{details.Title}</h2>
                                                     <br />
