@@ -89,7 +89,7 @@ const Drafting = () => {
             <section id="AllProjects">
                 <div className="container">
                     <div className="Smalltagline">
-                        <h4 className="sectionHeading"><div></div>All Projects</h4>
+                        <h4 className="sectionHeading"><div></div>Projects Brochures</h4>
                     </div>
 
                 </div>

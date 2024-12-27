@@ -143,6 +143,9 @@ section {
     margin-bottom: 2rem;
 }
 
+.ant-modal-mask{
+    backdrop-filter: blur(5px);
+}
 @media (max-width:600px) {
     .DualTopHeading {
         font-size: 30px;

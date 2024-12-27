@@ -80,6 +80,9 @@
     font-weight: 400;
     color: black;
 }
+.projectsCardDesigns:hover .cardContent h2{
+    color: rgb(188, 119, 66);
+}
 .projectsCardDesigns .arrowIcon{
     position: absolute;
     right: 0px;

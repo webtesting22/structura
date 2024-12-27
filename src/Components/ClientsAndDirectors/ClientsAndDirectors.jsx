@@ -38,9 +38,9 @@ const ClientsAndDirectors = () => {
             />
             <section id="ClientsAndDirectorsSection">
                 <div className="Smalltagline"><h4 className="sectionHeading"><div></div>Directors and Clients</h4></div>
-                <h1 data-aos="fade-up" className="bigHeading"
-                    data-aos-duration="1000">Board Of Directors</h1>
-                <br /><br />
+                {/* <h1 data-aos="fade-up" className="bigHeading"
+                    data-aos-duration="1000">Board Of Directors</h1>*/}
+                <br /><br /> 
                 <div className="BoardAndDirectorsContainer">
 
                     {DirectorsContent.map((item, index) => (
@@ -60,6 +60,7 @@ const ClientsAndDirectors = () => {
                         </Row>
                     ))}
                 </div>
+                <br /><br /> 
                 <div id="clientSection">
 
                     <ClientCard />
