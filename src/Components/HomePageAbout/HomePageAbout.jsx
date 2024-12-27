@@ -7,9 +7,10 @@ const HomePageAbout = () => {
                 <div className="AboutInfoContainer">
                     <div className="ContentContainerAbout" data-aos="fade-right" data-aos-duration="1000">
                         <div>
-                        <h1>Crafting Excellence: Innovative Construction Solutions with Integrity</h1>
-                        <p>At <b>STRUCTURA</b>, we specialize in delivering high-quality construction services, combining innovation and craftsmanship to bring your vision to life, ensuring lasting results with professionalism and integrity on every project.
-                        </p>
+                        <div className="Smalltagline"><h4 className="sectionHeading"><div></div>About Structura</h4></div>
+                            <h2>Crafting Excellence: Innovative Construction Solutions with Integrity</h2>
+                            <p>At <b>STRUCTURA</b>, we specialize in delivering high-quality construction services, combining innovation and craftsmanship to bring your vision to life, ensuring lasting results with professionalism and integrity on every project.
+                            </p>
                         </div>
                     </div>
                     <div className="PositionImageAjust" data-aos="fade-left" data-aos-duration="1000">
