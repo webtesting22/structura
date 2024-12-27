@@ -5,11 +5,13 @@ import HomePageProject from "../HomePageProject/HomePageProject";
 import HomePageProject2 from "../HomePageProject2/HomePageProject2";
 import GalleryCarousal from "../GalleryCarousal/GalleryCarousal";
 import ClientCard from "../ClientsAndDirectors/ClientCard";
+import HomePageAbout from "../HomePageAbout/HomePageAbout";
 // import BottomToTopBtn from "../BottomTotopBtn/BottomTotopBtn";
 const StructuraHome = () => {
     return (
         <>
             <HomeHero />
+            <HomePageAbout/>
             <StrucuraInfo/>
             {/* <HomePageProject2 /> */}
             {/* <section>

@@ -19,6 +19,7 @@
 .contentContainer1 {
   position: absolute;
   z-index: 4;
+  bottom: 20%;
 }
 
 .contentContainer1 .content h4 {

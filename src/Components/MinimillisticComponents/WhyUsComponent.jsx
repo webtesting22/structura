@@ -19,9 +19,9 @@ const WhyUsComponent = () => {
         if (rightColumnRef.current) {
             const rect = rightColumnRef.current.getBoundingClientRect();
             if (rect.bottom <= window.innerHeight) {
-                setTimeout(() => setIsSticky(true), 100); // Delay to smoothen the transition
+                setTimeout(() => setIsSticky(true), 100);
             } else {
-                setTimeout(() => setIsSticky(true), 100); // Delay to smoothen the transition
+                setTimeout(() => setIsSticky(true), 100);
             }
         }
     };
@@ -52,47 +52,47 @@ const WhyUsComponent = () => {
             // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
             Title: "Experience",
             image: experience,
-            Descriptions: "We have completed over 1500 large-scale projects along with 20,000+ Retail roll-outs across 32 countries over the past 18 years.",
+            Descriptions: "In the past 18 years, we have delivered over 1,500 large-scale projects and more than 20,000 retail roll-outs across 32 countries.",
         },
         {
             // Title: "Facade BIM Services",
             // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
             Title: "Infrastructure",
-            image:infrastructure,
-            Descriptions: "State of the art IT infrastructure with Data Integrity and data security, Global Connectivity, up to date Hardware/Software, Cloud & Remote Collaboration with IT-enabled Project Planning and Tracking mechanisms.",
+            image: infrastructure,
+            Descriptions: "We offer state-of-the-art IT infrastructure, ensuring data security and integrity, global connectivity, and the latest hardware/software. Our cloud-enabled collaboration and IT-supported project tracking ensure seamless execution.",
         },
         {
             // Title: "Structural CAD Drafting",
             // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
             Title: "Bim Expertise",
-            image:expertise,
-            Descriptions: "Completed over 300 projects in BIM - both in Architecture & Engineering.",
+            image: expertise,
+            Descriptions: "Having completed 300+ BIM projects in both architecture and engineering, we have vast experience in leveraging this technology to optimize outcomes.",
         },
         {
             // Title: 'MEP CAD Drafting',
             // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
             Title: "Flexibility",
-            image:flexibility,
-            Descriptions: "625+ architects and engineers provide flexibility of ramping team size up/down based on project requirements.",
+            image: flexibility,
+            Descriptions: "With a team of over 625 architects and engineers, we offer the flexibility to adjust team size according to project needs and scope.",
         },
         {
             // Title: "Structural BIM Services",
             // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
             Title: "PROCESS EXCELLENCE",
-            image:process,
-            Descriptions: "We deliver unmatched business value through process excellence and quality frameworks.",
+            image: process,
+            Descriptions: "We provide unmatched business value through process excellence, utilizing comprehensive quality frameworks to ensure the best results.",
         },
         {
             // Title: "MEP BIM Services",
             // Descriptions: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut a nam fuga quidem. Repellendus impedit quae fuga quas deserunt?"
             Title: "REPEAT CLIENTELE",
-            image:repeat,
-            Descriptions: "Most of our clients are long-standing as we provide relationship-based, tailor-made solutions. Since inception, we have had 4 large studios running, turning our clients into Partners in growth & success."
+            image: repeat,
+            Descriptions: "Our client relationships are long-lasting, with tailor-made solutions built on trust. Since our founding, we have maintained four major studios, evolving clients into partners in success."
         },
         {
             Title: "RETENTION RATE",
-            image:retention,
-            Descriptions: "We have a near 96% retention rate since inception.",
+            image: retention,
+            Descriptions: "We have achieved an impressive 96% client retention rate since our inception, highlighting the strength of our relationships and results.",
         }
 
     ]
@@ -109,7 +109,7 @@ const WhyUsComponent = () => {
 
                             <div className={`left-column ${isSticky ? 'sticky' : ''}`}>
 
-                                {/* Content for left column */}
+
                                 <div style={{ position: "relative" }}>
                                     <div >
                                         <div>
@@ -125,7 +125,7 @@ const WhyUsComponent = () => {
                             <div className='colorOverlayBack'>
 
                             </div>
-                            {/* Content for right column */}
+
                             <div style={{ width: "100%" }}>
 
                                 <div className='rightSideContainerColum'>
@@ -145,7 +145,6 @@ const WhyUsComponent = () => {
                                     </Row>
                                 </div>
                             </div>
-                            {/* Repeat as needed to ensure the column is tall */}
                         </div>
                         {/* </div> */}
                     </div>
