@@ -1,8 +1,26 @@
 #servicesSection {
   background-color: whitesmoke;
-  background-image: url("/images/4940019.jpg");
+  background-image: url("./AboutUsBack.jpg");
   background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
 }
+
+#servicesSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255 255 255 / 90%);
+  /* White overlay with 50% transparency */
+  z-index: 0;
+  pointer-events: none;
+  /* Ensures overlay doesn’t interfere with content */
+}
+
 
 .servicesiconbox {
   height: 50px;
@@ -60,9 +78,11 @@
   width: 33%;
   position: relative;
 }
+
 #WhyUssection {
   padding: 0px;
 }
+
 @media (min-width: 700px) and (max-width: 980px) {
   .servicesCards {
     background-color: white;
@@ -75,19 +95,40 @@
     position: relative;
   }
 }
+.hoverableTags h1{
+  text-align: center;
+  line-height: 55px;
+}
+.hoverableTags h1 span{
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0px 5px;
+  border-bottom: 3px solid black;
+  text-transform: uppercase;
+}
+.hoverableTags h1 span:hover{
+  color: rgb(188,119,66);
+}
+
 .New-About {
+  min-height: 60vh;
   /* padding: 1.5rem 0rem; */
   /* padding-top: 1.5rem; */
   /* background-image: url("/images/4940019.jpg"); */
-  
+
   background-size: cover;
   background-repeat: no-repeat;
 
 }
-.expertiseCards{
+
+.expertiseCards {
   padding-top: 2rem;
 }
+
 @media (max-width: 700px) {
+  .hoverableTags{
+    display: none;
+  }
   .servicesCards {
     background-color: white;
     margin: 10px;
@@ -108,6 +149,7 @@
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.1);
   }

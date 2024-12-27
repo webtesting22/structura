@@ -1,12 +1,73 @@
-import React from 'react'
-import { Col, Row } from 'antd'
+import React, { useEffect, useState } from 'react'
+import { Col, Row, Tooltip } from 'antd'
 import "./NewAbout.css"
 import ShilpBungalowsImage1 from "/images/ProjectsImages/Banglows/SHILP BUNGLOWS/01.jpg"
-
+import image1 from "/images/ProjectsImages/HighRiseBuilding/MajesticSquare/05.jpg"
+import image2 from "/images/ProjectsImages/HighRiseBuilding/Nirmansatva/01.jpg"
+const images = [
+  image1,
+  image2,
+  // "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&w=2940&q=80&auto=format&fit=crop",
+];
 const NewAbout = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 2000); // Change image every 2 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
   return (
     <>
-      <Row className='About-Row row1'>
+
+      <section id='AboutUsNewContainer'>
+        <div className='hoverableTags'>
+          <h1>
+            <Tooltip title="We bring creativity and advanced techniques to every structural and drafting design project.">
+              <span>We create Innovation</span>
+            </Tooltip>
+            <Tooltip title="Our meticulous approach ensures every detail aligns perfectly with your vision and needs.">
+              <span>We ensure Precision</span>
+            </Tooltip>
+            <Tooltip title="We deliver smart, cost-effective solutions that maximize value without compromising quality.">
+              <span>We deliver Efficiency</span>
+            </Tooltip>
+            <Tooltip title="We design with an eco-conscious mindset, balancing functionality and environmental responsibility.">
+              <span>We promote Sustainability</span>
+            </Tooltip>
+            <Tooltip title="Our team works closely with clients, ensuring seamless integration of ideas into designs.">
+              <span>We foster Collaboration</span>
+            </Tooltip>
+          </h1>
+        </div>
+        <div className='AdjustHeightContainer'>
+          <div className="AboutUsImageContainer">
+            {images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt=""
+                className={`fade-image ${index === currentImageIndex ? "active" : ""
+                  }`}
+              />
+            ))}
+          </div>
+        </div>
+        <div className='BorderContainer'>
+          <div className='AboutUsTextContent'>
+            <h2 style={{ textTransform: "uppercase", color: "rgb(188,119,66)" }}>Preserving Legacies, Designing the Future with Excellence</h2>
+            <br />
+            <p>Structura Consultants, a trusted name in structural design and drafting, brings over eight years of expertise to every project. As a proud venture of the esteemed Nirman Group, we specialize in creating innovative designs for residential, commercial, industrial, and heritage properties. Our services include CAD drafting, MEP design, BIM modeling, and the restoration of timeless structures. With a commitment to quality, integrity, and timely delivery, we collaborate closely with architects, engineers, and contractors to deliver exceptional results that stand the test of time.</p>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* <Row className='About-Row row1'>
         <Col lg={10} md={24} >
           <div className='About-img' data-aos-duration="1000" data-aos="fade-right" >
             <img src="/images/ProjectsImages/HighRiseBuilding/MajesticSquare/05.jpg" />
@@ -82,7 +143,7 @@ const NewAbout = () => {
               comprehensive design services, ensuring excellence in every project.</p>
           </div>
         </Col>
-      </Row>
+      </Row> */}
     </>
   )
 }

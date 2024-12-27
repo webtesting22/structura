@@ -204,7 +204,7 @@ const WhoweAre = () => {
                     </div>
                     <div className="WhoweareContent-container">
                         <div className="WhoweareContentText">
-                            <img src={StructuraLogo} style={{ width: "50px" }} alt="" />
+                            {/* <img src={StructuraLogo} style={{ width: "50px" }} alt="" /> */}
                             <h1 data-aos="fade-up" data-aos-duration="1000">OUR ESTEEMED CLIENTS</h1>
                             <p data-aos="fade-up" data-aos-duration="2000">
                                 At Structura Consultants, we have had the privilege of working with some of the most visionary clients across various industries. Our collaborations focus on delivering innovative and sustainable solutions, ensuring that every project reflects the highest standards of excellence and craftsmanship.
@@ -288,7 +288,7 @@ const WhoweAre = () => {
                     </div> */}
                     <div className="WhoweareContent-container">
                         <div className="WhoweareContentText">
-                            <img src={StructuraLogo} style={{ width: "50px" }} alt="" />
+                            {/* <img src={StructuraLogo} style={{ width: "50px" }} alt="" /> */}
                             <h1 data-aos="fade-up" data-aos-duration="1000">OUR PARTNER ARCHITECTS</h1>
                             <p data-aos="fade-up" data-aos-duration="2000">
                                 At Structura Consultants, we are proud to collaborate with renowned architects who bring unique visions to life. Together, we create designs that blend innovation with tradition, pushing the boundaries of structural excellence.
