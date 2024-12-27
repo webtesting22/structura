@@ -60,7 +60,7 @@ const NewAbout = () => {
           <div className='AboutUsTextContent'>
             <h2 style={{ textTransform: "uppercase", color: "rgb(188,119,66)" }}>Preserving Legacies, Designing the Future with Excellence</h2>
             <br />
-            <p>Structura Consultants, a trusted name in structural design and drafting, brings over eight years of expertise to every project. As a proud venture of the esteemed Nirman Group, we specialize in creating innovative designs for residential, commercial, industrial, and heritage properties. Our services include CAD drafting, MEP design, BIM modeling, and the restoration of timeless structures. With a commitment to quality, integrity, and timely delivery, we collaborate closely with architects, engineers, and contractors to deliver exceptional results that stand the test of time.</p>
+            <p><b>Structura Consultants</b>, a trusted name in <b>structural design and drafting</b>, brings over <b>eight years of expertise</b> to every project. As a proud venture of the esteemed Nirman Group, we specialize in creating innovative <b>designs for residential, commercial, industrial, and heritage</b> properties. Our services include <b>CAD drafting, MEP design, BIM modeling, and the restoration</b> of timeless structures. With a commitment to quality, integrity, and timely delivery, we collaborate closely with architects, engineers, and contractors to deliver exceptional results that stand the test of time.</p>
           </div>
         </div>
       </section>
