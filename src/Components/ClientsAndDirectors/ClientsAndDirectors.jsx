@@ -19,13 +19,13 @@ const ClientsAndDirectors = () => {
             image: "",
             DirectorName: "Saumya Shah",
             DirectorPosition: "Director",
-            DirectorContent: "Saumya Shah, an experienced structural engineer and founder of Structura-Design Consultants in Ahmedabad, specializes in structural design, restoration, and retrofitting. With 3.5 years in the field, he has led projects for high-rise buildings, industrial structures, and historic renovations. Saumya holds multiple academic awards, including a Gold Medal from GICEA and distinctions from CEPT University, where he also served as a teaching associate. His expertise includes AutoCAD, STAAD.Pro, MATLAB, SAP 2000, and REVIT, and he collaborates with Nirmaan Developers on residential and commercial projects.",
+            DirectorContent: "Saumya Shah, founder of Structura-Design Consultants in Ahmedabad, is an award-winning structural engineer specializing in design, restoration, and retrofitting. With 3.5 years of experience, he has led high-rise, industrial, and historic renovation projects while collaborating with Nirmaan Developers. Proficient in AutoCAD, STAAD.Pro, SAP 2000, and REVIT, he is a Gold Medalist from GICEA and a CEPT University alumnus.",
         },
         {
             image: "",
             DirectorName: "Shyam Shah",
             DirectorPosition: "CEO",
-            DirectorContent: "Shyam Shah, a dynamic and forward-thinking structural engineer, is the CEO of Structura-Design Consultants. With a Master’s in Structural Engineering from Nirma University (2023) and a Bachelor’s in Civil Engineering from CEPT University (2021), he blends academic excellence with practical innovation. Shyam specializes in developing modern and sustainable structural solutions for residential and commercial projects. His expertise spans advanced design software like AutoCAD, STAAD.Pro, SAP 2000, and REVIT. As a young leader, Shyam’s fresh perspective and commitment to innovation drive the company’s mission to deliver cutting-edge designs that balance functionality and aesthetics.",
+            DirectorContent: "Shyam Shah, CEO of Structura-Design Consultants, is a structural engineer specializing in modern, sustainable solutions for residential and commercial projects. A Master’s graduate in Structural Engineering from Nirma University (2023) and a CEPT alumnus, he excels in using advanced tools like AutoCAD, STAAD.Pro, SAP 2000, and REVIT. His leadership blends academic excellence, innovation, and a commitment to functional and aesthetic designs.",
         }
 
     ]
@@ -40,29 +40,40 @@ const ClientsAndDirectors = () => {
                 <div className="Smalltagline"><h4 className="sectionHeading"><div></div>Directors and Clients</h4></div>
                 {/* <h1 data-aos="fade-up" className="bigHeading"
                     data-aos-duration="1000">Board Of Directors</h1>*/}
-                <br /><br /> 
+                <br /><br />
                 <div className="BoardAndDirectorsContainer">
-
-                    {DirectorsContent.map((item, index) => (
-                        <Row key={index}>
-                            <Col lg={8} md={12} >
-                                <div className="directorImage">
-                                    <img src={item.image} alt="Director Photo Here" />
-                                </div>
+                    <div>
+                        <Row>
+                            <Col lg={14}>
+                                <h1 className="bigHeading">Meet Our <br /> Visionary Founder</h1>
                             </Col>
-                            <Col lg={16} md={12}>
-                                <div className="directorContent">
-                                    <h2>{item.DirectorName}</h2><br />
-                                    <h3>{item.DirectorPosition}</h3><br />
-                                    <p>{item.DirectorContent}</p><br />
-                                </div>
+                            <br />
+                            <Col lg={10}>
+                                <p>Saumya Shah, the founder of Structura-Design Consultants, is a Gold Medalist and award-winning structural engineer with a passion for innovative design and restoration. With expertise in high-rise buildings, industrial structures, and historic renovations, he leads the company with a blend of excellence and dedication.</p>
                             </Col>
                         </Row>
-                    ))}
-                </div>
-                <br /><br /> 
-                <div id="clientSection">
+                    </div>
+                    <br /><br />
+                    <Row >
+                        {DirectorsContent.map((item, index) => (
 
+                            <Col lg={12} md={12} key={index}>
+                                <div className="FounderCardDesign">
+                                    {/* <div className="directorImage">
+                                        <img src="https://images.unsplash.com/photo-1535957998253-26ae1ef29506?q=80&w=2836&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Director Photo Here" />
+                                    </div> */}
+                                    <div className="directorContent">
+                                        <h2>{item.DirectorName}</h2>
+                                        <h3>{item.DirectorPosition}</h3><br />
+                                        <p>{item.DirectorContent}</p><br />
+                                    </div>
+                                </div>
+                            </Col>
+                        ))}
+                    </Row>
+                </div>
+                <br /><br />
+                <div id="clientSection">
                     <ClientCard />
                 </div>
 
