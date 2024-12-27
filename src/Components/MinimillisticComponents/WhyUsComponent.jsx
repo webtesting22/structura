@@ -116,6 +116,8 @@ const WhyUsComponent = () => {
                                             <div className="Smalltagline"><h4 className="sectionHeading"><div></div>Why Us</h4></div>
                                             <h1 data-aos="fade-up" className="bigHeading"
                                                 data-aos-duration="1000">Why Choose Us</h1>
+                                                <br />
+                                                <p data-aos="fade-up" data-aos-duration="600">With over eight years of expertise in structural design and drafting, Structura Consultants delivers innovative, high-quality solutions across diverse property types, backed by cutting-edge technology, a skilled team, and a commitment to excellence.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -134,7 +136,7 @@ const WhyUsComponent = () => {
                                             <Col lg={12} key={index}>
                                                 <div className='cardContainerWhyChooseUS' data-aos="fade-up" data-aos-delay={`${index * 200}`} data-aos-duration="200">
                                                     <div className='iconCardContainer'>
-                                                        {/* <i class='bx bxs-hard-hat' ></i> */}
+                                                        {/* <i className='bx bxs-hard-hat' ></i> */}
                                                         <img src={item.image} style={{ width: "15%" }} />
                                                     </div>
                                                     <h2 style={{ marginBottom: "10px" }}>{item.Title}</h2>

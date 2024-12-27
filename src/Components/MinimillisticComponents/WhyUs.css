@@ -23,17 +23,18 @@
 
 .right-column {
     width: 60%;
-    background-image: url("./backOverlay.jpeg");
+    background-image: url("/images/61534751a5068cf57c7440e6_cross-pattern-green.png");
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
     position: relative;
+    background-size: 10%;
 }
 
 .colorOverlayBack {
     height: 300vh;
     width: 100%;
-    background-color: rgb(245 245 245 / 87%);
+    background-color: rgba(245, 245, 245, 0.862);
     position: absolute;
     left: 0;
     bottom: 0px;
@@ -54,6 +55,7 @@
 .left-column.sticky {
     position: sticky;
     top: 50%;
+    padding-bottom: 10px;
     align-self: flex-start;
     transition: top 0.5s ease, position 0.5s ease;
 }
@@ -113,11 +115,12 @@
 @media (max-width:769px) {
     .right-column {
         width: 60%;
-        background-image: url("./backOverlay.jpeg");
+        background-image: url("/images/61534751a5068cf57c7440e6_cross-pattern-green.png");
         background-size: cover;
         background-attachment: fixed;
         overflow: hidden;
         position: relative;
+        background-size: 40%;
     }
 
     .rightSideContainerColum {
@@ -129,7 +132,7 @@
         margin-top: 0rem;
         margin-right: 0px;
         /* padding: 20px; */
-        padding: 10px 20px;
+        padding: 40px 20px;
     }
 
     .left-column .contentContainer {

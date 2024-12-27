@@ -70,9 +70,9 @@ const Footer = () => {
                     </div>
                     <div className="BottomLine">
                         <div className="SocialIcons">
-                            <i class='bx bxl-instagram'></i>
-                            <i class='bx bxl-linkedin' ></i>
-                            <i class='bx bxl-facebook' ></i>
+                            <i className='bx bxl-instagram'></i>
+                            <i className='bx bxl-linkedin' ></i>
+                            <i className='bx bxl-facebook' ></i>
                         </div>
                         <div className="CopywriteText">
                             <p>@2024 <Link to="https://www.outleadsolutions.com/" target="_blank"><b>OutLead solutions.</b></Link> All rights reserved.</p>
@@ -81,9 +81,9 @@ const Footer = () => {
 
                     {/* <div className="copyrightText">
                         <div className="iconsContainer">
-                            <i class='bx bxl-instagram'></i>
-                            <i class='bx bxl-linkedin' ></i>
-                            <i class='bx bxl-facebook' ></i>
+                            <i className='bx bxl-instagram'></i>
+                            <i className='bx bxl-linkedin' ></i>
+                            <i className='bx bxl-facebook' ></i>
                         </div>
                        
                         <p>@2024 <Link to="https://www.outleadsolutions.com/" target="_blank"><b>Outlead solutions.</b></Link> All rights reserved.</p>

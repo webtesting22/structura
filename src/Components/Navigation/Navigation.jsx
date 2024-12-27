@@ -70,7 +70,7 @@ const Navigation = () => {
                     >
                         <span className="nav-link" style={{ color: isMobile || isScrolled ? "black" : "white",cursor:"pointer" }}>Projects</span>
                         <ul className={`dropdown-menu ${isProjectsOpen ? "open" : ""}`}>
-                            <li onClick={toggleNav}>
+                            <li onClick={toggleNav} >
                                 <Link to="/Projects">Structural Projects</Link>
                             </li>
                             <li onClick={toggleNav}>

@@ -126,7 +126,7 @@ const HomeHero = () => {
                             data-aos-duration="1000"
                             data-aos-delay="2000"
                         >
-                            <i class='bx bx-down-arrow-alt' style={{color:"#ffffff"}}  ></i>
+                            <i className='bx bx-down-arrow-alt' style={{color:"#ffffff"}}  ></i>
                             <FaArrowDown className="downArrow" />
 
                             <img src={DownArrow} alt="" style={{ width: "100%", cursor: "pointer" }} onClick={() => window.scrollBy({ top: 650, behavior: 'smooth' })} />

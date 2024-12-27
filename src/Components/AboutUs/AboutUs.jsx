@@ -80,13 +80,13 @@ const AboutUs = () => {
                     </div> */}
                 </div>
 
-                {/* <div class="marquee">
-                    <div class="marquee--inner">
+                {/* <div className="marquee">
+                    <div className="marquee--inner">
                         <span>
-                            <div><span>Hospitality</span> <i class='bx bx-check-circle'></i> Corporate <i class='bx bx-check-circle'></i> Retail <i class='bx bx-check-circle'></i> Commercial <i class='bx bx-check-circle'></i> Residential <i class='bx bx-check-circle'></i> Healthcare <i class='bx bx-check-circle'></i> Institutional <i class='bx bx-check-circle'></i> Mixed-use <i class='bx bx-check-circle'></i> Aged-Care&nbsp;</div>
+                            <div><span>Hospitality</span> <i className='bx bx-check-circle'></i> Corporate <i className='bx bx-check-circle'></i> Retail <i className='bx bx-check-circle'></i> Commercial <i className='bx bx-check-circle'></i> Residential <i className='bx bx-check-circle'></i> Healthcare <i className='bx bx-check-circle'></i> Institutional <i className='bx bx-check-circle'></i> Mixed-use <i className='bx bx-check-circle'></i> Aged-Care&nbsp;</div>
                         </span>
                         <span>
-                            <div>Hospitality <i class='bx bx-check-circle'></i> Corporate <i class='bx bx-check-circle'></i> Retail <i class='bx bx-check-circle'></i> Commercial <i class='bx bx-check-circle'></i> Residential <i class='bx bx-check-circle'></i> Healthcare <i class='bx bx-check-circle'></i> Institutional <i class='bx bx-check-circle'></i> Mixed-use <i class='bx bx-check-circle'></i> Aged-Care&nbsp;</div>
+                            <div>Hospitality <i className='bx bx-check-circle'></i> Corporate <i className='bx bx-check-circle'></i> Retail <i className='bx bx-check-circle'></i> Commercial <i className='bx bx-check-circle'></i> Residential <i className='bx bx-check-circle'></i> Healthcare <i className='bx bx-check-circle'></i> Institutional <i className='bx bx-check-circle'></i> Mixed-use <i className='bx bx-check-circle'></i> Aged-Care&nbsp;</div>
                         </span>
                     </div>
                 </div> */}

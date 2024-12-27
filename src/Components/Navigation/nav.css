@@ -138,16 +138,23 @@
   text-decoration: none;
   color: black;
   font-size: 18px;
+  border-bottom: 1px solid transparent;
   /* transition: .5s; */
 }
 
 .nav-menu li:hover a {
   color: rgb(188, 119, 66) !important;
   transition: .5s;
+  border-bottom: 1px solid rgb(188, 119, 66);
   /* transform: translateX(10px); */
   /* transform: scale(1.1); */
 }
-
+.dropdown-menu li a{
+  border: none !important;
+}
+.dropdown-menu li:hover a{
+  border: none !important;
+}
 /* .navbar.nav-open .logo-container{
   
 } */

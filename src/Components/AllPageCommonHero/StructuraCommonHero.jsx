@@ -12,7 +12,7 @@ const StructuraCommonHero = (props) => {
                 </div>
                 <div className="imageContainerWithText">
                     <div className="imageContainer" style={{ width: "100%" }}>
-                        <img src={image} alt="Hero Image" />
+                        <img src={image} alt="Hero Image" className="zoom-animation" />
                     </div>
                     <div className="contentContainer1">
                         <div className="content" data-aos="fade-up"

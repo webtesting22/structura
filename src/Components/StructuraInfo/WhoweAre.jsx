@@ -114,7 +114,7 @@ const WhoweAre = () => {
                                     <p>Retail Roll Outs
                                         till date</p>
                                     <div className="icon-box">
-                                        <i class='bx bx-buildings' ></i>
+                                        <i className='bx bx-buildings' ></i>
                                     </div>
                                 </div>
                             </div>
@@ -129,7 +129,7 @@ const WhoweAre = () => {
                                     <p>Near-100% Client
                                         Retention rate</p>
                                     <div className="icon-box">
-                                        <i class='bx bx-buildings' ></i>
+                                        <i className='bx bx-buildings' ></i>
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +144,7 @@ const WhoweAre = () => {
                                     <p>Countries where our
                                         projects have been located</p>
                                     <div className="icon-box">
-                                        <i class='bx bx-buildings' ></i>
+                                        <i className='bx bx-buildings' ></i>
                                     </div>
                                 </div>
                             </div>
@@ -158,7 +158,7 @@ const WhoweAre = () => {
                                     />
                                     <p>Total Number of our Projects</p><br /><br />
                                     <div className="icon-box">
-                                        <i class='bx bx-buildings' ></i>
+                                        <i className='bx bx-buildings' ></i>
                                     </div>
                                 </div>
                             </div>
@@ -236,7 +236,7 @@ const WhoweAre = () => {
                                     <p>Retail Roll Outs
                                         till date</p>
                                     <div className="icon-box">
-                                        <i class='bx bx-buildings' ></i>
+                                        <i className='bx bx-buildings' ></i>
                                     </div>
                                 </div>
                             </div>
@@ -251,7 +251,7 @@ const WhoweAre = () => {
                                     <p>Near-100% Client
                                         Retention rate</p>
                                     <div className="icon-box">
-                                        <i class='bx bx-buildings' ></i>
+                                        <i className='bx bx-buildings' ></i>
                                     </div>
                                 </div>
                             </div>
@@ -266,7 +266,7 @@ const WhoweAre = () => {
                                     <p>Countries where our
                                         projects have been located</p>
                                     <div className="icon-box">
-                                        <i class='bx bx-buildings' ></i>
+                                        <i className='bx bx-buildings' ></i>
                                     </div>
                                 </div>
                             </div>
@@ -280,7 +280,7 @@ const WhoweAre = () => {
                                     />
                                     <p>Total Number of our Projects</p><br /><br />
                                     <div className="icon-box">
-                                        <i class='bx bx-buildings' ></i>
+                                        <i className='bx bx-buildings' ></i>
                                     </div>
                                 </div>
                             </div>
